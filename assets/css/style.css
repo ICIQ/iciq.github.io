@@ -112,25 +112,25 @@ div.header h1 {
 }
 
 #recently-updated-repos {
-  margin-left: 15px;
+  margin-left: 35px;
 }
 
 #recently-updated-repos li {
-  line-height: 1.5;
+  line-height: 1;
 }
 
 #recently-updated-repos li span {
   display: inline-block;
-  padding: 0 1px;
+  padding: 0px 1px 0px 10px;
 }
 
 #recently-updated-repos li span {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 #recently-updated-repos li span.name {
   padding: 0 6px 0 0;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #recently-updated-repos li span.time a,
@@ -141,6 +141,7 @@ div.header h1 {
 
 li.repo {
   height: 250px;
+  font-size: 14px;
 }
 
 li.repo > a {
@@ -168,7 +169,7 @@ li.repo h2 {
 }
 
 li.repo h3 {
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 2px;
   margin-bottom: 15px;
   color: #999;
@@ -186,6 +187,7 @@ li.repo h3 {
   border-right: 50px solid #0080b0;
   pointer-events: none;
   z-index: 2;
+
 }
 
 .repo.javascript:after {
@@ -196,11 +198,11 @@ li.repo h3 {
   border-right-color: #7ac9de;
 }
 
-.repo.ruby:after {
+.repo.fortran:after {
   border-right-color: #cc1100;
 }
 
-.repo.java:after {
+.repo.matlab:after {
   border-right-color: #cc8300;
 }
 
@@ -210,11 +212,11 @@ li.repo h3 {
 
 li.repo .language {
   position: absolute;
-  top: 3px;
+  top: -2px;
   right: 4px;  
   text-align: right;
   z-index: 3;
-  color: #fff;
+  color: #000;
   margin-right: 0;
   margin-top: 0;
 }
@@ -263,3 +265,10 @@ li.repo .language {
   height: 100%;
   overflow: hidden;
 }
+
+#pub {padding: 5px; border-width: 2px; border-style: none; background-color: #fff; font-size: 1.2em; margin-top: 20px; margin-bottom: 20px;}
+#pub a{font-weight: bold; color: #09434e;}
+#pub name{font-weight: bold; color: #09434e;}
+#pub journal{font-style: italic;}
+#pub links{ font-weight: bold; color: black; font-size: large; font-style: italic;}
+#pub links a{ font-weight: bold; color: maroon; font-size: large; font-style: italic;}

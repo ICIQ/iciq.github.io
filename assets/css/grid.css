@@ -1,4 +1,4 @@
-.grid-1, .grid-2, .grid-3, .grid-4 {
+.grid-1, .grid-2, .grid-3, .grid-4, .rep {
   display:inline;
   float: left;
   position: relative;
@@ -19,7 +19,28 @@
 /* Grid >> 4 Columns */
 
 .grid .grid-1 {
-  width: 220px;
+  position: relative;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  width: 210px;
+}
+
+.grid .rep {
+  position: relative;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  width: 210px;
+
+  -webkit-border-radius: .5em; 
+  -moz-border-radius: .5em;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0 5px 3px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 5px 3px rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#999));
+  background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
 }
 
 .grid .grid-2 {
@@ -27,7 +48,7 @@
 }
 
 .grid .grid-3 {
-  width: 700px;
+  width: 700;
 }
 
 .grid .grid-4 {

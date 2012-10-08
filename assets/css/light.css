@@ -147,20 +147,20 @@ textarea {
 
 body {
   margin: 0;
-  font-family: quattrocento-sans, Helvetica, Arial, sans-serif;
+  font-family: Candara, quattrocento-sans, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #657b83;
-  background-color: #fdf6e3;
+  color: maroon;
+  background-color: #eee8c7;
 }
 
 a {
-  color: #268bd2;
+  color: #d33328;
   text-decoration: none;
 }
 
 a:hover {
-  color: #62ade3;
+  color: #bc0202;
   text-decoration: underline;
 }
 
@@ -3569,18 +3569,10 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f7f0dd;
-  background-image: -moz-linear-gradient(top, #fdf6e3, #eee8d5);
-  background-image: -ms-linear-gradient(top, #fdf6e3, #eee8d5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdf6e3), to(#eee8d5));
-  background-image: -webkit-linear-gradient(top, #fdf6e3, #eee8d5);
-  background-image: -o-linear-gradient(top, #fdf6e3, #eee8d5);
-  background-image: linear-gradient(top, #fdf6e3, #eee8d5);
-  background-repeat: repeat-x;
+  background-color: #000000;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fdf6e3', endColorstr='#eee8d5', GradientType=0);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
      -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -3783,7 +3775,7 @@ input[type="submit"].btn.btn-mini {
   float: none;
   padding: 9px 10px 11px;
   line-height: 19px;
-  color: #657b83;
+  color: #cccccc;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3808,9 +3800,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  color: #445258;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #d8ca9f;
+  background-color: #999999;
 }
 
 .navbar .divider-vertical {
@@ -5587,7 +5579,7 @@ section {
 
 .postpreview p {
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
   color: #657b83;
   text-align: justify;

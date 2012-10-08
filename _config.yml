@@ -1,8 +1,8 @@
-title : Carl Boettiger
-tagline: Theoretical ecology and evolution
+title : David Ketcheson
+tagline: Numerical analysis and nonlinear waves
 author :
-  name : Carl Boettiger
-  email : cboettig@gmail.com
+  name : David I. Ketcheson
+  email : dketch@gmail.com
 
 permalink: /:year/:month/:day/:title.html
 redirects: yes
@@ -11,6 +11,10 @@ exclude: [ _posts/source/, _posts/_private/ ]
 markdown: pandoc
 pandoc:
    extensions: [smart, mathjax]
+
+auto: True
+pygments: True
+source: .
 
 #markdown: redcarpet2
 #redcarpet:
