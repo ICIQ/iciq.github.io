@@ -1,0 +1,8 @@
+---
+layout: post
+name: getting-things-to-install-for-correct
+title: Getting things to install for the correct shell in Mac OS X
+time: 2009-11-24 09:31:00.000000000 +03:00
+tags: computing os-x python
+---
+In addition to blogging about KAUST here, I'm also going to post little useful tidbits related to scientific computing in OS X.  Today I was setting up my new Mac Pro.  After installing the <a href="www.enthought.com">Enthought Python Distribution</a>, I found that ipython was not in my path (and the python in my path was not the enthought-installed version).<br /><br />The culprit was the following:  I had changed shells in Terminal's preferences to tcsh, but somehow the EPD installer didn't detect this and thought I was still using bash.  Thus the modifications to my path were placed in ~/.bash_profile rather than in ~/.cshrc.  That was easy enough to fix, but to avoid similar problems in the future, I opened a Terminal and typed<br /><br />chsh -s /bin/tcsh<br /><br />so that next time the installer would know my default shell.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4660225022390848760-8862569247568223495?l=scienceinthesands.blogspot.com' alt='' /></div>
