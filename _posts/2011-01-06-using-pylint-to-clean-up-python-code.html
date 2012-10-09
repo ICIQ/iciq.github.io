@@ -1,0 +1,8 @@
+---
+layout: post
+name: using-pylint-to-clean-up-python-code
+title: Using pylint to clean up Python code
+time: 2011-01-06 05:45:00.000000000 +03:00
+tags: programming pylint python
+---
+I just recently discovered a very useful package for anyone who writes python code: <a href="http://pypi.python.org/pypi/pylint">pylint</a>.  It took a little tweaking to get it to do what I wanted.  Besides looking for outright errors, it checks all the recommended Python coding style conventions.  Since I don't abide by many of those, pylint gave my <a href="http://web.kaust.edu.sa/faculty/davidketcheson/NodePy/">nodepy</a> code a rating of -4.5/10.0 (yes, that's a NEGATIVE rating) initially.  More importantly, I couldn't find the real errors among the thousands of style complaints.  To run pylint without checking all the style conventions, just type<br /><br /><span style="font-family: courier new;">pylint -d C xxxx</span><br /><br />where "xxxx" is the name of a python package or module.  It will still make a lot of subjective judgments about your code (like suggesting that no function should have more than 5 arguments), but to me it's a tolerable level (and sometimes the suggestions really are helpful).  More information about pylint's output messages can be found here: <a href="http://www.logilab.org/card/pylintfeatures">http://www.logilab.org/card/pylintfeatures.</a>  I was able to uncover several previously unnoticed issues in my package in this way.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4660225022390848760-6195851910541010766?l=scienceinthesands.blogspot.com' alt='' /></div>
