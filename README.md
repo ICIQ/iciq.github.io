@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About this site
-published: false
+
 ---
 
 

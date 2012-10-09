@@ -35,4 +35,6 @@ Open science
 I'm a fan (not a guru) of open science.  Michael Nielsen's book "Reinventing
 Discovery" was a real eye-opener for me.  I'm currently running a series of
 blog posts about specific open science practices that I hope will be more
-widely adopted.
+widely adopted.  My notebook on this site is intended to be an open lab
+notebook.  I also contribute to open science by participating in the 
+[Stack Exchange for Scientific Computing](http://scicomp.stackexchange.com).
