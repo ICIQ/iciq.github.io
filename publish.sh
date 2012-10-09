@@ -1,3 +1,2 @@
 #!/bin/bash
-jekyll 
-rsync -avz _site/ carlboettiger.info:~/carlboettiger.info/
+rsync -avz _site/ dketch@davidketcheson.info:~/davidketcheson.info/
