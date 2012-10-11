@@ -29,7 +29,8 @@ was great except that all my plots were gone, of course.  After considering a
 few options, I decided for now to put plots for such posts in a subfolder 
 `jekyll_images/` of my public Dropbox folder.  Then it was a simple matter
 of search/replace all the paths to the images.  At that point, it looked
-great; you can see the result [here](http://davidketcheson.info/2012/10/11/blogging_ipython_notebooks_with_jekyll.html).
+great; you can see the [source](https://github.com/ketch/nodepy/blob/master/examples/Internal_stability.ipynb)
+and the [result](http://davidketcheson.info/2012/10/11/blogging_ipython_notebooks_with_jekyll.html).
 
 The only issue was that I didn't want to manually do all that work every time.
 I considered creating a new Converter class in `nbconvert` to handle it,

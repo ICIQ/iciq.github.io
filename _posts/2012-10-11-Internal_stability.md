@@ -5,6 +5,8 @@ title:  Internal stability of Runge-Kutta methods
 subtitle: Some experiments in NodePy
 tags:   numerical-analysis Runge-Kutta-methods stability roundoff SSP
 ---
+Note: this post was generated from an iPython notebook.  You can [download the
+notebook from github](https://github.com/ketch/nodepy/blob/master/examples/Internal_stability.ipynb) and execute all the code yourself.
 
 Internal stability deals with the growth of errors (such as roundoff) introduced at the Runge-Kutta stages during a single Runge-Kutta step.  It is usually important only for methods with a large number of stages, since that is when the internal amplification factors can be large.  An excellent explanation of internal stability is given in [this paper](http://oai.cwi.nl/oai/asset/1652/1652A.pdf).  Here we demonstrate some tools for studying internal stability in NodePy.
 
