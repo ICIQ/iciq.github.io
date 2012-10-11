@@ -150,17 +150,18 @@ body {
   font-family: Candara, quattrocento-sans, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: maroon;
-  background-color: #eee8c7;
+  color: #4c4938;
+  background-color: #e5ffda;
 }
 
 a {
-  color: #d33328;
+  font-weight: bold;
+  color: #348081;
   text-decoration: none;
 }
 
 a:hover {
-  color: #bc0202;
+  color: #1b424c;
   text-decoration: underline;
 }
 
@@ -3569,7 +3570,8 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #000000;
+  background-image: -moz-linear-gradient(top, #555, #000);
+  background-image: -webkit-linear-gradient(top, #555, #000);
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
@@ -3802,7 +3804,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav .active > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #999999;
+  background-image: -moz-linear-gradient(top, #999, #555);
+  background-image: -webkit-linear-gradient(top, #999, #555);
 }
 
 .navbar .divider-vertical {

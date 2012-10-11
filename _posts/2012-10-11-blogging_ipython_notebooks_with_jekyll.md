@@ -34,7 +34,8 @@ great; you can see the result [here](http://davidketcheson.info/2012/10/11/blogg
 The only issue was that I didn't want to manually do all that work every time.
 I considered creating a new Converter class in `nbconvert` to handle it,
 but finally decided that it would be more convenient to just write a shell
-script that calls `nbconvert` and then operates on the result.  Here it is:
+script that calls `nbconvert` and then operates on the result.  
+Here  it is:
 
     #!/bin/bash
 
@@ -44,9 +45,7 @@ script that calls `nbconvert` and then operates on the result.  Here it is:
     sed  -i '' "s#${fname}_files#https:\/\/dl.dropbox.com\/u\/656693\/jekyll_images\/${fname}_files#g"  ${fname}.md
 
     dt=$(date "+%Y-%m-%d")
-    echo $dt
 
-    #sed -i '' 
     echo "0a
     ---
     layout:    post
@@ -59,3 +58,12 @@ script that calls `nbconvert` and then operates on the result.  Here it is:
     w" | ed ${fname}.md
 
     mv ${fname}.md ~/labnotebook/_posts/${dt}-${fname}.md
+
+It's also on Github [here](https://github.com/ketch/labnotebook/blob/master/nbconv.sh).
+This was a nice educational exercise in constructing shell scripts, in which I learned or re-learned:
+
+ - how to use command-line arguments
+ - how to use sed and ed
+ - how to use data
+
+You can expect a lot more iPython-notebook based posts in the future.

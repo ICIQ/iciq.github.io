@@ -14,16 +14,15 @@ so setting my site up was as easy as following
 [his instructions](http://www.carlboettiger.info/README.html),
 replacing the \_posts directory, and making a few CSS customizations.
 
-Please report any errors or other feedback in the [Issue Tracker](https://github.com/ketch/labnotebook/issues)
+Please report any errors or other feedback in the [Issue Tracker](https://github.com/ketch/labnotebook/issues).
 
 Site Features & Credits
 =======================
 
-* Colors and syntax highlighting with [Solarized](http://ethanschoonover.com/solarized) color schemes
 * Static site generation by [Jekyll](https://github.com/mojombo/jekyll)
 * Equations rendered in [Mathjax](http://www.mathjax.org/)
 * CSS generated with [twitter bootstrap](http://twitter.github.com/bootstrap/)
-* [Custom plugins](https://github.com/cboettig/jekyll-labnotebook-plugins) for Mendeley, Github
+* [Carl Boettiger's plugins](https://github.com/cboettig/jekyll-labnotebook-plugins) for Mendeley, Github
 * Site hosting by [Dreamhost](http://dreamhost.org)
 * Source code hosting on [Github](https://github.com/)
 

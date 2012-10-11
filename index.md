@@ -13,7 +13,8 @@ I lead the [Numerical Mathematics Group](http://numerics.kaust.edu.sa).
 Previously I maintained a blog in addition to my professional website.  This
 new site is intended to fulfill both roles, with the blog being extended to
 a genuine open science notebook.
-My [research](http://www.kaust.edu.sa/davidketcheson/research.html) involves
+
+My [research](http://numerics.kaust.edu.sa/research.html) involves
 analysis and development of new numerical methods for integration of ordinary
 and partial differential equations, as well as the application of such methods
 in high performance software to understand behavior of nonlinear waves in 
