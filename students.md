@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Research
-subtitle: Numerical analysis and nonlinear waves
+title: Students
+subtitle: Information for KAUST students wishing to work with me
 ---
 
-## Information for KAUST students wishing to work with me
 
 I have many research projects waiting for the right student. You may be the
 right student if you are interested in any or all of:

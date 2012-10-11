@@ -117,12 +117,11 @@ module Jekyll
         doc = Nokogiri::HTML.parse(feed.entries[i].summary) # parse the content
         # Print title, content
         out = out + "<li>" + 
-          feed.entries[i].title + ": " +
+          " <a href=\"" + feed.entries[i].url + "\">" +
+          "<h4>"+feed.entries[i].title + "</h4></a>" +
           doc.xpath("//p[1]").text +  
           doc.xpath("//p[2]").text + 
-#          "<em>" + doc.css('blockquote').text + "</em>" + 
-          " <a href=\"" + feed.entries[i].url + "\">" +
-          feed.entries[i].published.strftime("%I:%M %Y/%m/%d") + "</a>" +
+          feed.entries[i].published.strftime("%I:%M %Y/%m/%d") +
           "</li>" 
       end
       out + "</ul>"
