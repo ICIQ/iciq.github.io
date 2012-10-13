@@ -12,10 +12,19 @@ subtitle: My open science notebook and blog
 
 
           <div class="span6">
+               <h4>Subscription links:</h4>
                <h4> <a href="{{ site.url }}/atom.xml"
                onClick="recordOutboundLink(this,
                'Outbound Links', 'RSS'); return false;"
-               ><img src="/assets/img/icon-rss.png" alt="feed">Entries</a></h4>
+               ><img src="/assets/img/icon-rss.png" alt="feed">All Entries</a></h4>
+                <h4> <a href="{{ site.url }}/scienceinthesands.xml"
+               onClick="recordOutboundLink(this,
+               'Outbound Links', 'RSS'); return false;"
+               ><img src="/assets/img/icon-rss.png" alt="feed">Blog Entries</a>: open science, scientific publishing, and such</h4>
+                 <h4> <a href="{{ site.url }}/notebook.xml"
+               onClick="recordOutboundLink(this,
+               'Outbound Links', 'RSS'); return false;"
+               ><img src="/assets/img/icon-rss.png" alt="feed">Notebook Entries</a>: numerical analysis, nonlinear waves, and other research topics</h4>
  
                 {% for post in site.posts limit:10 %}
                 {% include postsummary.html %}

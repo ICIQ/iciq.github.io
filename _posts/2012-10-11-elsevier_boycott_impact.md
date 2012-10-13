@@ -4,6 +4,7 @@ title: Impact of the Elsevier boycott
 name: Impact of the Elsevier boycott
 subtitle: After 7 months
 tags: scientific-publishing academic-spring refereeing
+categories: blog-post
 ---
 
 Seven months ago, I signed the Elsevier boycott at

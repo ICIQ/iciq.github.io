@@ -4,6 +4,7 @@ title: A curious upwind implicit scheme for advection
 name: A curious upwind implicit scheme for advection
 subtitle: Understanding the CFL condition
 tags: numerical-analysis CFL-condition advection
+categories: notebook
 ---
 
 The CFL condition

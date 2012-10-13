@@ -156,7 +156,7 @@ body {
 
 a {
   font-weight: bold;
-  color: #348081;
+  color: #4c4938;
   text-decoration: none;
 }
 
@@ -4983,7 +4983,7 @@ code {
 /* Literal */
 
 .highlight .n {
-  color: #93a1a1;
+  color: #262626;
 }
 
 /* Name */
@@ -5105,7 +5105,7 @@ code {
 /* Keyword.Declaration */
 
 .highlight .kn {
-  color: #859900;
+  color: #cc7833;
 }
 
 /* Keyword.Namespace */
@@ -5201,7 +5201,7 @@ code {
 /* Name.Label */
 
 .highlight .nn {
-  color: #93a1a1;
+  color: #1b424c;
 }
 
 /* Name.Namespace */
@@ -6631,12 +6631,12 @@ pre {
 
 code {
   color: #586e75;
-  background-color: #fdf6e3;
+  background-color: #eee8d5;
   border: 1px solid #93a1a1;
 }
 
 pre {
-  background-color: #eee8d5;
+  background-color: white;
   border: 1px solid #93a1a1;
 }
 
