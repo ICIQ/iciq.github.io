@@ -4,6 +4,7 @@ time: 2012-10-11
 title:  Internal stability of Runge-Kutta methods
 subtitle: Some experiments in NodePy
 tags:   numerical-analysis Runge-Kutta-methods stability roundoff SSP
+categories: notebook
 ---
 Note: this post was generated from an iPython notebook.  You can [download the
 notebook from github](https://github.com/ketch/nodepy/blob/master/examples/Internal_stability.ipynb) and execute all the code yourself.

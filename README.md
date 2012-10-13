@@ -25,6 +25,7 @@ Site Features & Credits
 * [Carl Boettiger's plugins](https://github.com/cboettig/jekyll-labnotebook-plugins) for Mendeley, Github
 * Site hosting by [Dreamhost](http://dreamhost.org)
 * Source code hosting on [Github](https://github.com/)
+* Improved "related posts" plugin from [David Lynch](https://github.com/kemayo/davidlynch.org/blob/master/_plugins/related_posts.rb)
 
 
 License

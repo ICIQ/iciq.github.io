@@ -2,6 +2,7 @@
 layout: post
 title: Blogging an iPython notebook with Jekyll
 subtitle: easy-peasy
+categories: blog-post notebook
 ---
 I've been playing around with [iPython notebooks](http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html)
 for a while and planning to use them instead of [SAGE](http://www.sagemath.org/) 
