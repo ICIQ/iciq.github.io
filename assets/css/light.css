@@ -150,18 +150,18 @@ body {
   font-family: Candara, quattrocento-sans, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #4c4938;
+  color: #342e2a;
   background-color: #e5ffda;
 }
 
 a {
   font-weight: bold;
-  color: #4c4938;
+  color: #9e8a7e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #1b424c;
+  color: #ba9b8a;
   text-decoration: underline;
 }
 
