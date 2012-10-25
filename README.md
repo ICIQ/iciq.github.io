@@ -31,4 +31,4 @@ Site Features & Credits
 License
 -------
 
-[CC0](http://creativecommons.org/publicdomain/zero/1.0/)
+[CC-BY](http://creativecommons.org/licenses/by/3.0/deed.en_US)
