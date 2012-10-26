@@ -146,12 +146,13 @@ textarea {
 }
 
 body {
+  background-repeat: repeat;
   margin: 0;
   font-family: Candara, quattrocento-sans, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #342e2a;
-  background-color: #e4ffda;
+  background-color: #e9ffeb;
 }
 
 a {
@@ -6636,7 +6637,8 @@ code {
 }
 
 pre {
-  background-color: white;
+  color: black;
+  background-color: #eee8d5;
   border: 1px solid #93a1a1;
 }
 
