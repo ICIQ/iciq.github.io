@@ -65,8 +65,9 @@ committee of SIAM leadership is now discussing how SIAM should handle these
 copyright questions like this.
  
 I came away from this feeling like we had made progress, but I still wanted to
-see if I could implement the full RRS with respect to the next paper.  My next
-accepted paper was a submission to [Communications in Applied Mathematics and
+see if I could implement the full RRS with respect to the next paper.  My [next
+accepted paper](http://arxiv.org/pdf/1201.3035v3.pdf) (also still in press) 
+was a submission to [Communications in Applied Mathematics and
 Computational Science](msp.org/camcos/), published by the extremely progressive
 not-for-profit [Math­em­at­ic­al Sci­ences
 Pub­lish­ers](http://msp.org/about/).  This is a truly remarkable journal that
