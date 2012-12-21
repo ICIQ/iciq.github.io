@@ -4,7 +4,7 @@ title: Adopting the Reproducible Research Standard
 name: Adopting the Reproducible Research Standard
 subtitle: Retaining copyright on my papers
 tags: reproducible-research scientific-publishing open-access publications
-categories: blog
+categories: blog-post
 ---
 
 
