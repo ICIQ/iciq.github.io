@@ -24,13 +24,14 @@ See also: [posts tagged with **reproducible-research**](/tags.html#reproducible-
 Scientific publishing and journal pricing
 -----------------------------------------
 I believe that publishing publicly-funded scientific research should not
-be profit-motivated activity.  Charges for access to scientific publications
+be a profit-motivated activity.  Charges for access to scientific publications
 should be kept to a minimum.  I primarily publish my own work in relatively
 inexpensive but highly respected journals run by non-profit professional 
 societies ([SIAM](http://www.siam.org) and the [AMS](http://www.ams.org)).
 I am a signatory to the [Cost of Knowledge](http://thecostofknowledge.com)
 (Elsevier Boycott).  I do not support gold open access (i.e., author-pay) journals,
-for reasons outlined here.
+for reasons outlined 
+[here](http://davidketcheson.info/2011/12/16/in-defense-of-submission-in-scientific.html).
 I place preprints of all my manuscripts on the [arXiv](http://www.arxiv.org)
 when I submit them for publication.  Where allowed by the publisher, I put the
 final version of my published papers on my site, downloadable from
@@ -43,11 +44,13 @@ See also:
 
 Open science
 -------------
-I'm a fan (not a guru) of open science.  Michael Nielsen's book "Reinventing
-Discovery" was a real eye-opener for me.  I'm currently running a series of
+I try to practice "science in the open" in the sense suggested in
+[Reinventing Discovery](http://localhost:4000/2011/11/10/book-review-reinventing-discovery.html).
+I'm currently running a series of
 [blog posts about specific open science practices](http://davidketcheson.info/tags.html#open-science) that I hope will be more
 widely adopted.  My notebook on this site is intended to be an open lab
 notebook.  I also contribute to open science by participating in the 
-[Stack Exchange for Scientific Computing](http://scicomp.stackexchange.com).
+[Stack Exchange for Scientific Computing](http://scicomp.stackexchange.com)
+and by participation in various communities on [Google+]().
 
 See also: [posts tagged with **open-science**](/tags.html#open-science)
