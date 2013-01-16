@@ -9,7 +9,7 @@ categories: blog-post
 
 # Converting a SAGE worksheet to an IPython notebook
 
-Download link: http://github.com/ketch/sage2ipython/
+Download link: [http://github.com/ketch/sage2ipython/]()
 
 I use Python to teach numerical methods here at KAUST, and I'm in the process of
 switching from using [SAGE](http://www.sagemath.org) worksheets to [IPython](http://ipython.org)
