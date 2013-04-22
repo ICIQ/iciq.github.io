@@ -12,9 +12,9 @@ markdown: pandoc
 pandoc:
    extensions: [smart, mathjax]
 
-auto: True
 pygments: True
 source: .
+lsi: True
 
 #markdown: redcarpet2
 #redcarpet:
