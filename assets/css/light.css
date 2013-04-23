@@ -152,7 +152,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #342e2a;
-  background-color: #e9ffeb;
+  background-color: white;
 }
 
 a {
@@ -471,7 +471,7 @@ h2 small {
 
 h3 {
   font-size: 18px;
-  line-height: 33px;
+  line-height: 20px;
 }
 
 h3 small {
@@ -5461,7 +5461,7 @@ code.sourceCode span.er {
 body {
   position: relative;
   padding-top: 90px;
-  background-image: url(../img/grid-18px-masked.png);
+  /*background-image: url(../img/grid-18px-masked.png);*/
   background-position: 0 40px;
   background-repeat: repeat-x;
 }
