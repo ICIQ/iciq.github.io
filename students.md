@@ -1,20 +1,21 @@
 ---
 layout: default
 title: Students
-subtitle: Information for KAUST students wishing to work with me
+subtitle: Information for students wishing to work with me
 ---
 
 
 I have many research projects waiting for the right student. You may be the
 right student if you are interested in any or all of:
- - Numerical analysis / numerical methods
- - Time-dependent hyperbolic PDEs
- - Shock waves
- - Waves in unusual materials
- - Computational science
- - Massively parallel computing
- - Scientific software engineering
- - Global optimization
+
+- Numerical analysis / numerical methods
+- Time-dependent hyperbolic PDEs
+- Shock waves
+- Wave behavior in periodic and random materials
+- Computational science
+- Massively parallel computing
+- Scientific software engineering
+- Global optimization
 
 Most of my research focuses on **numerical methods for time-dependent
 partial differential equations**. I also work with methods for ODEs, because these are
@@ -41,4 +42,5 @@ programming. If you have a strong background in some application area, that may
 also be helpful.  If you are interested in working in [my
 group](http://numerics.kaust.edu.sa), please stop by
 my office on the 4th floor of al-Khwarizmi to discuss potential projects, or
-e-mail me for an appointment.
+e-mail me for an appointment.  You may also with to read the 
+[guidelines for working in my group](guidelines.pdf).
