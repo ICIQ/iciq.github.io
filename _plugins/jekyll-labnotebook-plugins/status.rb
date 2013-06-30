@@ -49,19 +49,21 @@ module Jekyll
       out = "<ul>"
       feed = Feedzirra::Feed.fetch_and_parse("https://github.com/" + @user + ".atom")
       # consider formatting properly
-      for i in 0 ... @count.to_i
-        doc = Nokogiri::HTML.parse(feed.entries[i].content) # parse the content
-        # Print title, content
-        out = out + "<li>" + 
-          feed.entries[i].title + ": " +
-          "<em>" + 
-          doc.css('blockquote').text.gsub(/\n/, ' ').squeeze(' ').strip[0 .. 150] +
-          "</em>" + 
-          " <a href=\"" + feed.entries[i].url + "\">" +
-          feed.entries[i].published.strftime("%I:%M %Y/%m/%d") + "</a>" +
-          "</li>" 
+      if feed != 0
+          for i in 0 ... @count.to_i
+            doc = Nokogiri::HTML.parse(feed.entries[i].content) # parse the content
+            # Print title, content
+            out = out + "<li>" + 
+              feed.entries[i].title + ": " +
+              "<em>" + 
+              doc.css('blockquote').text.gsub(/\n/, ' ').squeeze(' ').strip[0 .. 150] +
+              "</em>" + 
+              " <a href=\"" + feed.entries[i].url + "\">" +
+              feed.entries[i].published.strftime("%I:%M %Y/%m/%d") + "</a>" +
+              "</li>" 
+          end
+          out + "</ul>"
       end
-      out + "</ul>"
     end
   end
 

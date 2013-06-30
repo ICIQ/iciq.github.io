@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 5 reasons why you should submit your next paper to CAMCoS 
-name: 5 reasons why you should submit your next paper to CAMCoS
+title: "5 reasons why you should submit your next paper to CAMCoS"
+name: "5 reasons why you should submit your next paper to CAMCoS"
 subtitle: Based on my experience
 tags: scientific-publishing
 categories: blog-post
