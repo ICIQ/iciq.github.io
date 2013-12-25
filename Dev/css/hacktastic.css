@@ -1,0 +1,26 @@
+/*
+	Brower specific hacks that don't play well with validation
+*/
+
+a:active, a:active * { 
+	-moz-outline-style: none !important; 
+}
+
+a:focus, a:focus * { 
+	-moz-outline-style: none !important; 
+}
+
+
+nav ul li a:hover, nav ul li.active a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeedeb', endColorstr='#dfded9'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#eeedeb), to(#dfded9)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #eeedeb,  #dfded9); /* for firefox 3.6+ */
+}
+
+.content h5 {
+	rotation: -10deg !important;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.98480775, M12=0.17364818, M21=-0.17364818, M22=0.98480775,sizingMethod='auto expand')";
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.98480775, M12=0.17364818, M21=-0.17364818, M22=0.98480775,sizingMethod='auto expand');
+}
