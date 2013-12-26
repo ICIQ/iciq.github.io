@@ -27,8 +27,9 @@ text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 		text-shadow:none;
 		padding:15px 20px;
 		text-decoration:none;
-		font-size:0.9em;
+		font-size:110%;
 		color: #fff;
+    	line-height:130%;
 		}
 
 
@@ -96,7 +97,7 @@ text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 .mainmenu li.sitename a {
 /*	padding-top:0.5em; */
     vertical-align:middle;
-    font-size:0.95em;
+    font-size:110%;
 }
 
 .mainmenu li.sitename a:hover{
@@ -124,12 +125,22 @@ text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 # Main Menu Responsive Customize
 -----------------------------------*/
 
+@media only screen and (max-width : 1100px),
+only screen and (max-device-width : 1100px){
+    .mainmenu li a {
+        font-size:100%;
+        line-height:100%;
+    }
+    .mainmenu li.sitename a {
+        font-size:100%;
+    }
+}
 
-
-@media only screen and (max-width : 930px),
-only screen and (max-device-width : 930px){
+@media only screen and (max-width : 980px),
+only screen and (max-device-width : 980px){
     .mainmenu li a {
         font-size:70%;
+        line-height:100%;
     }
     .mainmenu li.sitename a {
         font-size:0.7em;
