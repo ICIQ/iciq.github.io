@@ -85,16 +85,18 @@ text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 .mainmenu li.sitename {
     float:right;
     position:relative;
-	top:1px;
+	top:0px;
 	left:0;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+    vertical-align:middle;
 }
 
 .mainmenu li.sitename a {
-	padding:10px 20px;
-    font-size:1.2em;
+/*	padding-top:0.5em; */
+    vertical-align:middle;
+    font-size:0.95em;
 }
 
 .mainmenu li.sitename a:hover{
@@ -114,6 +116,26 @@ text-shadow: 0 0 1px transparent; /* google font pixelation fix */
     padding-left:0.5em;
     padding-right:0.5em;
 }
+
+
+
+
+/*---------------------------------
+# Main Menu Responsive Customize
+-----------------------------------*/
+
+
+
+@media only screen and (max-width : 930px),
+only screen and (max-device-width : 930px){
+    .mainmenu li a {
+        font-size:70%;
+    }
+    .mainmenu li.sitename a {
+        font-size:0.7em;
+    }
+}
+
 
 
 
