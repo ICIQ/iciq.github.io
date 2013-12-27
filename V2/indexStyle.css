@@ -1,0 +1,43 @@
+/* --------------------
+# CSS Shapes
+--------------------*/
+
+.up-triangle {
+   width: 0; 
+   height: 0; 
+   border-bottom: 120px solid green; 
+   border-left: 60px solid transparent; 
+   border-right: 60px solid transparent; 
+}
+
+.down-triangle { 
+   width: 0; 
+   height: 0;
+   border-top: 80px solid pink;
+   border-left: 60px solid transparent; 
+   border-right: 60px solid transparent; 
+}
+
+#info {
+    border-bottom:120px solid lightgreen;
+    float:left;
+    margin-right:-30px;
+}
+
+#comp {
+    border-bottom:120px solid rgba(255, 165, 0, 0.8);
+    float:left;
+    margin-left:-30px;
+}
+
+#quan {
+    border-top:120px solid rgb(96, 171, 248);
+    float:left;
+    margin-left:-30px;
+    margin-right:-30px;
+}
+
+#inte {
+   border-bottom: 120px solid pink;
+    margin-left:60px;
+}
