@@ -13,7 +13,7 @@ License
 
 
 
-Information, Computing, Intelligence and Quantum Community Website is licensed under MIT license. This website is bult with HTML KickStart (Joshua Gatcke http://www.99lime.com | HTML KickStart) which is also [released under MIT Open Source license](https://github.com/joshuagatcke/HTML-KickStart#html-kickstart-is-free-and-open-source).
+[The source code of Information, Computing, Intelligence and Quantum (ICIQ) Community Website](https://github.com/ICIQ/iciq.github.io) is licensed under MIT license. This website is bult with HTML KickStart (Joshua Gatcke http://www.99lime.com | HTML KickStart) which is also [released under MIT Open Source license](https://github.com/joshuagatcke/HTML-KickStart#html-kickstart-is-free-and-open-source). Source codes of projects subjected to [ICIQ organization](https://github.com/ICIQ) may use different licenses. 
 
 
 The MIT License (MIT)
