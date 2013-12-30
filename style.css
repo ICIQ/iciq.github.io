@@ -242,3 +242,17 @@ clear:both;
 li {
     padding-left:5px;
 }
+
+
+
+
+/*---------------------------------
+# ficon
+-----------------------------------*/
+
+.ficon {
+    margin-right:4px;
+    margin-bottom:0.2em;
+    width:1em;
+    height:1em;
+}
