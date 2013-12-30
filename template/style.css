@@ -231,3 +231,13 @@ only screen and (max-device-width: 980px) {
     margin-top: 0;
     left: auto;
 }
+
+
+
+/*---------------------------------
+# List
+-----------------------------------*/
+
+li {
+    padding-left:5px;
+}
