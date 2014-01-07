@@ -24,6 +24,16 @@
     <!-- Javascript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/kickstart.js"></script>
+
+
+    <!-- TogetherJS the disscussion tool -->
+    <script>
+        var TogetherJSConfig_siteName = "ICIQ";
+        var TogetherJSConfig_toolName = "Chanel@ICIQ";
+        var TogetherJSConfig_youtube = "True";
+    </script>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
+
 </head>
 
 <body>
@@ -101,7 +111,9 @@
             <h5>
                 <a href="./Entangle/MachineLearningGroup.html">Machine Learning & Deep Learning</a>
             </h5>
-            <h5><a href="./Entangle/QuantumOpticsGroup.html">Advanced Topics in Quantum Optics</a></h5>
+            <h5>
+                <a href="./Entangle/QuantumOpticsGroup.html">Advanced Topics in Quantum Optics</a>
+            </h5>
 
 
             <!-- Divider -->
@@ -123,8 +135,11 @@
             <h5>
                 <a href="./Entangle/RoadmapProject.html">Roadmap Project</a>
             </h5>
-            <h5><a href="http://neuralnetworksanddeeplearning.com">Neural Networks and Deep Learning</a></h5>
-            <h5><a href="http://qutip.org/">QuTiP</a> (Quantum Toolbox in Python)</h5>
+            <h5>
+                <a href="http://neuralnetworksanddeeplearning.com">Neural Networks and Deep Learning</a>
+            </h5>
+            <h5>
+                <a href="http://qutip.org/">QuTiP</a>(Quantum Toolbox in Python)</h5>
 
 
             <!-- Divider -->
@@ -204,6 +219,11 @@
         <span>Built with
             <a href="http://www.99lime.com">HTML KickStart</a>.</span>
         <a id="link-top" href="#top">Top</a>
+        <span class="tooltip" style="float:right;" title="Discussion Tool">
+            <a style="margin-right:15px;padding-bottom:5px;" onclick="TogetherJS(this); return false;" alt="Discussion Tool">
+                <i class="icon-comments-alt icon-2x"></i>
+            </a>
+        </span>
     </div>
 
     <script>
