@@ -43,7 +43,7 @@ here](http://numerics.kaust.edu.sa/RK-opt/RK-coeff-opt.html).
 
 **Update**: *as I'm writing this, I've discovered a new [MATLAB extension for
 Sphinx's
-autodoc](https://bitbucket.org/birkenfeld/sphinx-contrib/src/7fe6d95691bb/matlabdomain?at=default).
+autodoc](https://bitbucket.org/bwanamarko/sphinx-contrib/src/tip/matlabdomain/README.rst).
 I will have to try it out sometime; please let me know in the comments if
 you've used it.*
 
