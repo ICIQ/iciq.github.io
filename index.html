@@ -160,21 +160,31 @@
     
     
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    
-    
-    <div class="clear"></div>
-<div id="footer">
-    <span><a href="https://github.com/ICIQ/iciq.github.io/wiki" target="_blank">Wiki</a></span> | 
-    <span><a href="https://github.com/ICIQ/iciq.github.io/issues" target="_blank">Issues</a></span> | 
-    <span><a href="https://github.com/ICIQ/iciq.github.io/blob/master/LICENSE.md" target="_blank">License</a></span> | 
-    <span><a href="https://github.com/ICIQ/iciq.github.io" target="_blank">Source Code</a> | </span>
-    <span>By <a href="http://iciq.github.io">Information, Computation, Intelligence and Quantum</a></span> | 
-    <span>Built with <a href="http://www.99lime.com">HTML KickStart</a>.</span>
-<a id="link-top" href="#top">Top</a>
-</div>
+        <!-- Footer -->
+        <!-- Footer -->
+
+
+
+        <!-- DO NOT MODIFY THE FOLLOWING PART IF YOU HAVE NO IDEA WHAT YOU ARE DOING!!! Create your own footer by modify/add contents in footer.json -->
+        <div class="clear"></div>
+        <div class="col_12">
+            <div id="footer"></div>
+            <script>
+                $.getJSON('config/footer.json', function(data) {
+                    var output = '<ul>';
+                    for (var i in data.foo) {
+                        output += '<li>' + data.foo[i].display + '</li>';
+                    }
+
+                    output += '</ul>';
+                    document.getElementById("footer").innerHTML = output;
+                });
+            </script>
+
+        </div>
+
+        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER -->
     
     
     

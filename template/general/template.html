@@ -141,6 +141,12 @@
 
 
 
+        <div class="notice promo">
+            <i class="icon-bell icon-large"></i>Find out more built-in styles and functions about this template: <a href="https://github.com/GuokrUnion/html4scientists" target="_blank">HTML4Scientists</a>, <a href="http://www.99lime.com/elements/" target="_blank">HTML KictStart</a>
+            <a href="#close" class="icon-remove"></a>
+        </div>
+        
+        
 
         <div class="col_12">
             <h1 class="center">Here We Are</h1>
@@ -189,21 +195,31 @@
 
 
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
+        <!-- Footer -->
+        <!-- Footer -->
 
 
-    <div class="clear"></div>
-    <div id="footer">
-        <span><a href="https://github.com/ICIQ/iciq.github.io/wiki" target="_blank">Wiki</a></span> | 
-        <span><a href="https://github.com/ICIQ/iciq.github.io/issues" target="_blank">Issues</a></span> | 
-        <span><a href="https://github.com/ICIQ/iciq.github.io/blob/master/LICENSE.md" target="_blank">License</a></span> | 
-        <span><a href="https://github.com/ICIQ/iciq.github.io" target="_blank">Source Code</a> | </span>
-        <span>By <a href="http://iciq.github.io">Information, Computation, Intelligence and Quantum</a></span> | 
-        <span>Built with <a href="http://www.99lime.com">HTML KickStart</a>.</span>
-                <a id="link-top" href="#top">Top</a>
-    </div>
+
+        <!-- DO NOT MODIFY THE FOLLOWING PART IF YOU HAVE NO IDEA WHAT YOU ARE DOING!!! Create your own footer by modify/add contents in footer.json -->
+        <div class="clear"></div>
+        <div class="col_12">
+            <div id="footer"></div>
+            <script>
+                $.getJSON('config/footer.json', function(data) {
+                    var output = '<ul>';
+                    for (var i in data.foo) {
+                        output += '<li>' + data.foo[i].display + '</li>';
+                    }
+
+                    output += '</ul>';
+                    document.getElementById("footer").innerHTML = output;
+                });
+            </script>
+
+        </div>
+
+        <!-- END OF FOOTER -->
+        <!-- END OF FOOTER -->
 
 
 
