@@ -26,3 +26,7 @@ Observe that the first of these equation is the diffusion equation, while the se
 Right?
 
 Wrong.  We've disguised the true nature of this equation by applying our intution (which is based on scalar PDEs) to a system of PDEs.  In the same way, the "reaction-diffusion" label for Schrodinger is obtained by applying intuition based on PDEs with real coefficients to a PDE with complex coefficients.
+
+Of course, in both cases you can use numerical methods that are appropriate for
+reaction-diffusion problems in order to solve a wave equation.  
+[Here is a quick ipython notebook implementation of the obvious method for the system above](http://nbviewer.ipython.org/github/ketch/exposition/blob/master/Wave%20equation%20as%20reaction-diffusion.ipynb).
