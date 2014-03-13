@@ -6,8 +6,6 @@ subtitle:  (unless Yokozuna is lightweight)
 tags:      blog-post petsc pyclaw memory profiling
 ---
 
-#The PETSc DMDA is not lightweight
-
 In [this PETSc-users thread](http://lists.mcs.anl.gov/pipermail/petsc-users/2014-January/020018.html), my good friend Matt Knepley claims that the
 DMDA object is lightweight, and suggests that it is okay to make them willy-
 nilly.  Unfortunately, my experience indicates otherwise.  But words are cheap;

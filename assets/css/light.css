@@ -148,7 +148,8 @@ textarea {
 body {
   background-repeat: repeat;
   margin: 0;
-  font-family: Candara, quattrocento-sans, Helvetica, Arial, sans-serif;
+  font-family: "Quattrocento Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  /*font-family: Helvetica neue, quattrocento-sans, Helvetica, Arial, sans-serif;*/
   font-size: 16px;
   line-height: 22px;
   color: #342e2a;
@@ -471,7 +472,7 @@ h2 small {
 
 h3 {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 60px;
 }
 
 h3 small {
@@ -3775,6 +3776,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav > li > a {
+  font-family: "Rosario";
+  font-weight: bold;
   float: none;
   padding: 9px 10px 11px;
   line-height: 19px;
