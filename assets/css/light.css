@@ -682,10 +682,10 @@ code {
 
 pre {
   display: block;
-  padding: 10.5px;
+  padding: 2.5px;
   margin: 0 0 11px;
   font-size: 14.8px;
-  line-height: 22px;
+  line-height: 16px;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -703,6 +703,7 @@ pre.prettyprint {
 }
 
 pre code {
+  font-size: 13px;
   padding: 0;
   color: inherit;
   background-color: transparent;
@@ -3678,12 +3679,12 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 6px;
-  margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .navbar-search .search-query {
-  padding: 4px 9px;
+  padding: 0px 0px;
   font-family: quattrocento-sans, Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
@@ -3715,7 +3716,6 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-search .search-query:focus,
 .navbar-search .search-query.focused {
-  padding: 5px 10px;
   color: #586e75;
   text-shadow: 0 1px 0 #fdf6e3;
   background-color: #fdf6e3;
@@ -3788,6 +3788,12 @@ input[type="submit"].btn.btn-mini {
   padding: 4px 10px 4px;
   margin: 5px 5px 6px;
   line-height: 22px;
+}
+
+.navbar .btn-mini {
+  padding: 0px 3px 0px 3px;
+  margin: 0px 3px 0px 3px;
+  line-height: 18px;
 }
 
 .navbar .btn-group {
@@ -6471,7 +6477,7 @@ img {
     position: static;
   }
   .navbar-fixed-top {
-    margin-bottom: 22px;
+    margin-bottom: 0px;
   }
   .navbar-fixed-bottom {
     margin-top: 22px;
