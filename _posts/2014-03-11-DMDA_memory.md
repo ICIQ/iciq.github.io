@@ -23,20 +23,21 @@ make use of `memory_profiler`, I'll call it with system commands.  But I've
 pasted the contents here for completeness.  If you're running the notebook, you
 don't need to run the next cell.
 
+```python
+# contents of da.py
+from petsc4py import PETSc
+import sys
 
-    # contents of da.py
-    from petsc4py import PETSc
-    import sys
-    
-    @profile
-    def foo(size=128,ndim=3,dof=1):
-        da = PETSc.DA().create(sizes=[size]*ndim,dof=dof)
-        q1 = da.createGlobalVec()
-        q2 = da.createGlobalVec()
-        q3 = da.createGlobalVec()
-    
-    if __name__ == '__main__':
-        foo(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]))
+@profile
+def foo(size=128,ndim=3,dof=1):
+    da = PETSc.DA().create(sizes=[size]*ndim,dof=dof)
+    q1 = da.createGlobalVec()
+    q2 = da.createGlobalVec()
+    q3 = da.createGlobalVec()
+
+if __name__ == '__main__':
+    foo(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]))
+```
 
 Notice that the command line arguments are
 
