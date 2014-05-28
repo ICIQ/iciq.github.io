@@ -2,7 +2,7 @@
 layout: post
 title: The Schrodinger equation is not a reaction-diffusion equation
 name: The Schrodinger equation is not a reaction-diffusion equation
-tags: wave-equation
+tags: wave-equation mathematical-exposition
 categories: notebook
 ---
 
