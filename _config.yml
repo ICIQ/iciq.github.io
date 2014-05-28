@@ -15,7 +15,11 @@ pandoc:
 pygments: True
 source: .
 lsi: True
-safe: False
+
+pageviews: yes    ## toggle on sidebar pageviews 
+gitstamps: yes
+repo: https://github.com/ketch/labnotebook # used in linking history
+
 
 #markdown: redcarpet
 #redcarpet:
