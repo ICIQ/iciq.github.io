@@ -6,9 +6,8 @@ tags: wave-equation PDE mathematical-exposition
 categories: notebook
 ---
 
-In any course on PDEs or numerical methods for PDEs, students learn that
 Fourier analysis is an essential tool for understanding the behavior of
-solutions to linear equations.  Often, this analysis is introduced in the
+solutions to linear equations.  Often, this analysis is introduced to students in the
 context of scalar equations with real coefficients.  If nothing more is said,
 students may mistakenly apply assumptions based on the scalar case to systems,
 leading to erroneous conclusions.  I'm surprised at how often I've seen

@@ -10,10 +10,10 @@ categories: notebook
 The CFL condition
 -----------------
 
-The [CFL condition][] is one of the most basic and intuitive principles
+The CFL condition is one of the most basic and intuitive principles
 in the numerical solution of hyperbolic PDEs. First formulated by
-Courant, Friedrichs and Lewy in [their seminal paper][] (in English for
-free [here][]), it states that the domain of dependence of a numerical
+Courant, Friedrichs and Lewy in their seminal paper (in English for
+free here](http://www.stat.uchicago.edu/~lekheng/courses/302/classics/courant-friedrichs-lewy.pdf)), it states that the domain of dependence of a numerical
 method for solving a PDE must contain the true domain of dependence.
 Otherwise, the numerical method cannot be convergent.
 
