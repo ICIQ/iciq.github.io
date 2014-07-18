@@ -9,6 +9,27 @@ categories: blog-post
 I'm proud to announce that as of today, KAUST has officially adopted an open access
 policy!  
 
+# What it means
+Institutional open access (OA) policies are a primary tool in the effort to
+allow academics to retain control of their own work.  MIT and Harvard
+were the first to adopt such policies; now hundreds of institutions have
+similar policies.
+
+In short, **the policy ensures that KAUST has non-exclusive rights to distribute
+all research done at KAUST.  This right precedes any publishing or copyright
+agreement terms**.  It also places a responsibility on KAUST faculty to provide a
+pre-print of each paper to the library.
+
+The policy has nothing to do with publishing in open access journals (so-called
+Gold OA).  Authors continue to publish in the same manner -- and the same
+journals -- as before.
+
+KAUST's OA policy is based closely on the text [recommended by the Harvard Open
+Access Project (HOAP)](http://cyber.law.harvard.edu/hoap/Good_practices_for_university_open-access_policies).
+HOAP was an extremely valuable resource for us in developing a policy and 
+convincing the faculty, administration, and legal team to approve it.
+
+
 # How it happened
 This is the culmination of a process that started back in 2011 with a lunch
 conversation between Rick Johnson (KAUST librarian and long-time OA advocate)
@@ -28,19 +49,6 @@ Suzana Nunes and Sahraoui Chaieb, we eventually hammered out something that all
 could agree on (even the lawyers!)  The policy was championed by our new library
 director, Molly Tamarkin, as soon as she arrived at KAUST earlier this year.
 
-
-# What it means
-Institutional open access (OA) policies are a primary tool in the effort to
-allow academics to retain control of their own work.
-In short, the policy ensures that KAUST has non-exclusive rights to distribute
-all research done at KAUST.  This right precedes any publishing or copyright
-agreement terms.  It also places a responsibility on KAUST faculty to provide a
-pre-print of each paper to the library.
-
-KAUST's OA policy is based closely on the text [recommended by the Harvard Open
-Access Project (HOAP)](http://cyber.law.harvard.edu/hoap/Good_practices_for_university_open-access_policies).
-HOAP was an extremely valuable resource for us in developing a policy and 
-convincing the faculty, administration, and legal team to approve it.
 
 # The policy
 Here's the full text of the policy, which at the moment is only available on
