@@ -22,7 +22,7 @@ subtitle: Saving the world, one numerical method at a time
 </span>
 
 ![floatright](assets/img/davidketcheson.jpg)
-I am an assistant professor of [applied mathematics](http://cemse.kaust.edu.sa/academic/programs/applied-mathematics-computational-science/default.aspx) at King Abdullah University
+I am an associate professor of [applied mathematics](http://cemse.kaust.edu.sa/academic/programs/applied-mathematics-computational-science/default.aspx) at King Abdullah University
 of Science and Technology ([KAUST](http://www.kaust.edu.sa)), where
 I lead the [Numerical Mathematics Group](http://numerics.kaust.edu.sa).
 
