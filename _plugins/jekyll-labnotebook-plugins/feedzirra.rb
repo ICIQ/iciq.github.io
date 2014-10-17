@@ -1,12 +1,12 @@
-require 'feedzirra'
+require 'feedjira'
 
 # Need to store feed in cache and just call update?
 
 module Jekyll
 
-  class FeedzirraBlockTag < Liquid::Tag
+  class FeedjiraBlockTag < Liquid::Tag
     def render(context)
-      feed = Feedzirra::Feed.fetch_and_parse("https://github.com/dketch.atom")
+      feed = Feedjira::Feed.fetch_and_parse("https://github.com/dketch.atom")
       # consider formatting properly
       feed.title + feed.entries[0].content + feed.entries[1].content + feed.entries[2].content + feed.entries[3].content 
     end
@@ -14,5 +14,5 @@ module Jekyll
 
 end
 
-Liquid::Template.register_tag('feedzirra', Jekyll::FeedzirraBlockTag)
+Liquid::Template.register_tag('feedjira', Jekyll::FeedjiraBlockTag)
 
