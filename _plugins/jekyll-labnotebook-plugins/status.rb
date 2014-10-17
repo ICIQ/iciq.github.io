@@ -1,4 +1,4 @@
-require 'feedzirra' # atom/rss API
+require 'feedjira' # atom/rss API
 require 'octokit'   # Github API
 require 'twitter'   # Twitter API
 require 'redcarpet' # Formatting links
@@ -47,7 +47,7 @@ module Jekyll
     end
     def render(context)
       out = "<ul>"
-      feed = Feedzirra::Feed.fetch_and_parse("https://github.com/" + @user + ".atom")
+      feed = Feedjira::Feed.fetch_and_parse("https://github.com/" + @user + ".atom")
       # consider formatting properly
       if feed != 0
           for i in 0 ... @count.to_i
@@ -113,7 +113,7 @@ module Jekyll
     end
     def render(context)
       out = "<ul>"
-      feed = Feedzirra::Feed.fetch_and_parse("http://www.mendeley.com/groups/" + @text + "/feed/rss/")
+      feed = Feedjira::Feed.fetch_and_parse("http://www.mendeley.com/groups/" + @text + "/feed/rss/")
       # consider formatting properly
       for i in 0 ... @count.to_i
         doc = Nokogiri::HTML.parse(feed.entries[i].summary) # parse the content
