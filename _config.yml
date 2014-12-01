@@ -12,7 +12,7 @@ markdown: pandoc
 pandoc:
    extensions: [smart, mathjax]
 
-pygments: True
+highlighter: pygments
 source: .
 lsi: True
 
