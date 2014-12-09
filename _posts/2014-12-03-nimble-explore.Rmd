@@ -147,14 +147,15 @@ plot(samples[ , 'alpha'], samples[ , 'beta'], xlab = expression(alpha),
 ylab = expression(beta))
 ```
 
+Note the poor mixing (which is improved by the block sampler, as shown in the manual).
+
 
 ----------------
 
 
-
 ## OU model ##
 
-some sample data
+Sanity test with a simple model,  Start with some sample data from an OU process:
 
 ```{r}
 library(sde)
@@ -211,16 +212,17 @@ samples <- as.data.frame(as.matrix(nfVar(ou_mcmc, 'mvSamples')))
 mean(samples$theta)
 ```
 
-Hmm, why such a poor estimate?
+
 
 ```{r fig.show='hold'}
 plot(samples[ , 'r'], type = 'l', xlab = 'iteration', ylab = expression(r))
 plot(samples[ , 'sigma'], type = 'l', xlab = 'iteration', ylab = expression(sigma))
 plot(samples[ , 'theta'], type = 'l', xlab = 'iteration', ylab = expression(theta))
 plot(samples[ , 'r'], samples[ , 'sigma'], xlab = expression(r), ylab = expression(simga))
+hist(samples[, 'theta'])
 ```
 
-Ouch.  
+  
 
 ### Block sampler ###
 
