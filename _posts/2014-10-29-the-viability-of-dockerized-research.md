@@ -42,12 +42,18 @@ summarize here; the authors can please correct me.
 Advantages:
 
 1) A consistent user interface 
+
 2) A consistent computational environment
+
 3) Iterating on a common environment can result in something much
 more optimized and finely tuned than when everyone manages their own
-installation 4) A way for a user to _share_ their exact computational
+installation 
+
+4) A way for a user to _share_ their exact computational
 environment with others (addressing a major current challenge for
-reproducibility) 5) Avoids breaking things a user already has natively
+reproducibility) 
+
+5) Avoids breaking things a user already has natively
 installed (e.g. by upgrading their libraries etc)
 
 As others mentioned on this list in the earlier thread, I think this

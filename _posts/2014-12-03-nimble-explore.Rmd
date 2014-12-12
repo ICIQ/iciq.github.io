@@ -147,23 +147,27 @@ plot(samples[ , 'alpha'], samples[ , 'beta'], xlab = expression(alpha),
 ylab = expression(beta))
 ```
 
+Note the poor mixing (which is improved by the block sampler, as shown in the manual).
+
 
 ----------------
 
 
-
 ## OU model ##
 
-some sample data
+Sanity test with a simple model,  Start with some sample data from an OU process:
 
 ```{r}
 library(sde)
 set.seed(123)
 d <- expression(0.5 * (10-x))
 s <- expression(1) 
-data <- as.data.frame(sde.sim(X0=6,drift=d, sigma=s, T=10, N=100))
+data <- as.data.frame(sde.sim(X0=6,drift=d, sigma=s, T=20, N=100))
 ```
 
+```{r}
+plot(data)
+```
 
 Specify this model in Nimble BUGS code 
 
@@ -201,7 +205,7 @@ ou_mcmc <- compileNimble(ou_Rmcmc, project = ou_Cmodel)
 Run the MCMC
 
 ```{r}
-ou_mcmc(1e5)
+ou_mcmc(1e4)
 ```
 
 and examine the results
@@ -211,16 +215,17 @@ samples <- as.data.frame(as.matrix(nfVar(ou_mcmc, 'mvSamples')))
 mean(samples$theta)
 ```
 
-Hmm, why such a poor estimate?
+
 
 ```{r fig.show='hold'}
 plot(samples[ , 'r'], type = 'l', xlab = 'iteration', ylab = expression(r))
 plot(samples[ , 'sigma'], type = 'l', xlab = 'iteration', ylab = expression(sigma))
 plot(samples[ , 'theta'], type = 'l', xlab = 'iteration', ylab = expression(theta))
 plot(samples[ , 'r'], samples[ , 'sigma'], xlab = expression(r), ylab = expression(simga))
+hist(samples[, 'theta'])
 ```
 
-Ouch.  
+  
 
 ### Block sampler ###
 
@@ -238,7 +243,7 @@ ou_mcmc2 <- compileNimble(ou_Rmcmc2, project=ou_Rmodel, resetFunctions=TRUE)
 
 
 ```{r}
-ou_mcmc2(1e5)
+ou_mcmc2(1e4)
 ```
 
 ```{r}

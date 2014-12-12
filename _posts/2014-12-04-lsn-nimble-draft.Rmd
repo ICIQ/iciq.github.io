@@ -29,7 +29,7 @@ library(nimble)
 set.seed(123)
 d <- expression(0.5 * (10-x))
 s <- expression(1) 
-data <- as.data.frame(sde.sim(X0=6,drift=d, sigma=s, T=10, N=100))
+data <- as.data.frame(sde.sim(X0=6,drift=d, sigma=s, T=20, N=100))
 ```
 
 
@@ -74,7 +74,7 @@ Cmcmc <- compileNimble(Rmcmc, project = Cmodel)
 
 
 ```{r} 
-Cmcmc(1e4)
+Cmcmc(1e5)
 ```
 
 
@@ -83,14 +83,16 @@ and examine results
 ```{r}
 samples <- as.data.frame(as.matrix(nfVar(Cmcmc, 'mvSamples')))
 mean(samples$theta)
+mean(samples$m)
+mean(samples$sigma)
 ```
 
 
 ```{r fig.show='hold'}
-plot(samples[ , 'm'], type = 'l', xlab = 'iteration', ylab = expression(m))
+plot(samples[ , 'm'], type = 'l', xlab = 'iteration', ylab = 'm')
 plot(samples[ , 'sigma'], type = 'l', xlab = 'iteration', ylab = expression(sigma))
 plot(samples[ , 'theta'], type = 'l', xlab = 'iteration', ylab = expression(theta))
-plot(samples[ , 'm'], samples[ , 'sigma'], xlab = expression(m), ylab = expression(simga))
+plot(samples[ , 'm'], samples[ , 'sigma'], xlab = 'm', ylab = expression(simga))
 ```
 
 
