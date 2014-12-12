@@ -162,9 +162,12 @@ library(sde)
 set.seed(123)
 d <- expression(0.5 * (10-x))
 s <- expression(1) 
-data <- as.data.frame(sde.sim(X0=6,drift=d, sigma=s, T=10, N=100))
+data <- as.data.frame(sde.sim(X0=6,drift=d, sigma=s, T=20, N=100))
 ```
 
+```{r}
+plot(data)
+```
 
 Specify this model in Nimble BUGS code 
 
@@ -202,7 +205,7 @@ ou_mcmc <- compileNimble(ou_Rmcmc, project = ou_Cmodel)
 Run the MCMC
 
 ```{r}
-ou_mcmc(1e5)
+ou_mcmc(1e4)
 ```
 
 and examine the results
@@ -240,7 +243,7 @@ ou_mcmc2 <- compileNimble(ou_Rmcmc2, project=ou_Rmodel, resetFunctions=TRUE)
 
 
 ```{r}
-ou_mcmc2(1e5)
+ou_mcmc2(1e4)
 ```
 
 ```{r}
