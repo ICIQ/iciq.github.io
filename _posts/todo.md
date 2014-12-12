@@ -21,28 +21,33 @@ before starting:
 
 - SSE, SSI, or DIBB 
 - DEB / Career
-- CyberSEES
+- CyberSEES(?) (Dual-PI)
 
 ## Papers ##
 
 - RNeXML 
-  - chat 2014-11-21
+  - Hilmar
 - nonparametric-bayes
-  - Waiting on Steve revisions
+  - waiting on proofs
 - PDG Control
   - revise / tighten up text
 - multiple-uncertainty 
+	 - waiting on Jim? Email Fackler?
 
 ## Teaching ##
 
 - SWC training
   - Update PR for lesson
   - Send Greg completed workshop page? 
+- RRhack workshop
+- course materials
+
+
 
 ## Software ##
 
 - rocker
-  - review rocker-docs
+  - boot2docker-based button launch
   - Post on SWC?
 - EML
   - [CRAN Milestone]
