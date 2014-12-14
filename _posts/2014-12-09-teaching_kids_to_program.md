@@ -67,6 +67,14 @@ There are a number of tools designed to give kids a "softer" introduction to pro
 
 Of course, we didn't jump into decorators and class inheritance.  There should be fast, fun feedback, especially at the start when the learning curve is steepest.  My daughter got a huge kick out of learning she could make the computer talk (using the system command "say" on a Mac).  This was easily incorporated as part of programming some simple games (like guessing a number or hangman).  Those games naturally introduce simple ideas like loops and if-statements.   The goal is always to create something fun or useful; the programming ideas are only incidental.  In my opinion, programming should work that way at all ages and all levels.
 
+Some of the things she has programmed so far include:
+
+- A "guess the number" game (that tells you to guess higher/lower at each iteration)
+- A game that asks simple math questions
+- Hangman (this one was surprisingly easy compared to what I expected, though she didn't implement any graphics)
+- A very simple adventure game (that lets you move around an imaginary world)
+- A "countdown to Christmas" that announces the number of hours and days left before Christmas.  I helped her use chrontab to make it run every hour.
+
 # Maintaining interest
 
 My oldest daughter is 9 now, and while I haven't taught her as much programming as I'd like, she continues to be interested in and excited about it.  Let me mention a couple of things that I think have helped maintain that excitement:
