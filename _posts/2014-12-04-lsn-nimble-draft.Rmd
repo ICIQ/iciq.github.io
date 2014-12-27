@@ -8,16 +8,20 @@ published: false
 
 
 ```{r embedded-svgs, include=FALSE}
+
 library(methods)
 library(knitr)
-local({
-  hook_plot = knit_hooks$get('plot')
-  knit_hooks$set(plot = function(x, options) {
-    if (!grepl('\\.svg', x)) return(hook_plot(x, options))
-    paste(readLines(x)[-1], collapse = '\n')
-  })
-})
-opts_chunk$set(dev='svg', fig.width=2, fig.height=3, cache=TRUE)
+opts_chunk$set(dev='png', fig.width=2, fig.height=3, cache=TRUE)
+
+## embed svgs into the markdown. bad idea, svgs much too big with so many points
+#local({
+#  hook_plot = knit_hooks$get('plot')
+#  knit_hooks$set(plot = function(x, options) {
+#    if (!grepl('\\.svg', x)) return(hook_plot(x, options))
+#    paste(readLines(x)[-1], collapse = '\n')
+#  })
+#})
+#opts_chunk$set(dev='svg', fig.width=2, fig.height=3, cache=TRUE)
 ```
 
 
@@ -30,6 +34,7 @@ set.seed(123)
 d <- expression(0.5 * (10-x))
 s <- expression(1) 
 data <- as.data.frame(sde.sim(X0=6,drift=d, sigma=s, T=20, N=100))
+plot(data)
 ```
 
 
