@@ -17,9 +17,6 @@ subtitle: Saving the world, one numerical method at a time
 
 
 <div class="span4">
-<span>
-  {% include sidebar_footer.html %}
-</span>
 
 ![floatright](assets/img/davidketcheson.jpg)
 I am an associate professor of [applied mathematics](http://cemse.kaust.edu.sa/academic/programs/applied-mathematics-computational-science/default.aspx) at King Abdullah University
@@ -37,6 +34,9 @@ and its application to understanding behavior of nonlinear waves in heterogeneou
 <li style="margin:-6px"> Email &amp; online networks: linked from icons below. </li>
 </ul>
 
+<span>
+  {% include sidebar_footer.html %}
+</span>
 </div>
 
 </div>
