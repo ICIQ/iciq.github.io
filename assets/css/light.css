@@ -5636,24 +5636,6 @@ img {
 -------------------------------------------------- */
 
 @media (max-width: 480px) {
-  {
-    /* Reduce padding above jumbotron */
-  
-    /* Change up some type stuff */
-  
-    /* Adjust the jumbotron */
-  
-    /* Masthead (home page jumbotron) */
-  
-    /* Don't space out quick links so much */
-  
-    /* hide the bullets on mobile since our horizontal space is limited */
-  
-    /* center example sites */
-  
-    /* Modal example */
-  
-  }
   body {
     padding-top: 70px;
   }
@@ -5725,20 +5707,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  {
-    /* Remove any padding from the body */
-  
-    /* Jumbotron buttons */
-  
-    /* Subnav */
-  
-    /* Popovers */
-  
-    /* Space out the show-grid examples */
-  
-    /* Unfloat the back to top link in footer */
-  
-  }
   body {
     padding-top: 0;
   }
@@ -5791,10 +5759,6 @@ img {
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  {
-    /* Scale down the jumbotron content */
-  
-  }
   .jumbotron h1 {
     font-size: 54px;
   }
@@ -5805,12 +5769,6 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 980px) {
-  {
-    /* Remove any padding from the body */
-  
-    /* Scale down the jumbotron content */
-  
-  }
   body {
     padding-top: 0;
   }
@@ -5820,10 +5778,6 @@ img {
 }
 
 @media (max-width: 980px) {
-  {
-    /* Unfloat brand */
-  
-  }
   .navbar-fixed-top .brand {
     float: left;
     padding-right: 10px;
