@@ -12,14 +12,19 @@ Working through quick-start example in [nimble manual](http://r-nimble.org/manua
 ```{r embedded-svgs, include=FALSE}
 library(methods)
 library(knitr)
-local({
-  hook_plot = knit_hooks$get('plot')
-  knit_hooks$set(plot = function(x, options) {
-    if (!grepl('\\.svg', x)) return(hook_plot(x, options))
-    paste(readLines(x)[-1], collapse = '\n')
-  })
-})
-opts_chunk$set(dev='svg', fig.width=2, fig.height=3, cache=TRUE)
+opts_chunk$set(dev='png', fig.width=3, fig.height=4, cache=TRUE, 
+	fig.path=paste0("../assets/figures/", Sys.Date(), "-"), 
+	cache.path="../assets/cache/")
+
+## embed svgs into the markdown. bad idea, svgs much too big with so many points
+#local({
+#  hook_plot = knit_hooks$get('plot')
+#  knit_hooks$set(plot = function(x, options) {
+#    if (!grepl('\\.svg', x)) return(hook_plot(x, options))
+#    paste(readLines(x)[-1], collapse = '\n')
+#  })
+#})
+#opts_chunk$set(dev='svg', fig.width=2, fig.height=3, cache=TRUE)
 ```
 
 
