@@ -3,7 +3,6 @@ layout: post
 category: ecology
 tags:
   - earlywarning
-published: false
 ---
 
 
@@ -12,9 +11,8 @@ Working through quick-start example in [nimble manual](http://r-nimble.org/manua
 ```{r embedded-svgs, include=FALSE}
 library(methods)
 library(knitr)
-opts_chunk$set(dev='png', fig.width=3, fig.height=4, cache=TRUE, 
-	fig.path=paste0("../assets/figures/", Sys.Date(), "-"), 
-	cache.path="../assets/cache/")
+opts_chunk$set(dev='png', fig.width=3, fig.height=4, cache=TRUE)
+opts_knit$set(upload.fun = image_uri)
 
 ## embed svgs into the markdown. bad idea, svgs much too big with so many points
 #local({
