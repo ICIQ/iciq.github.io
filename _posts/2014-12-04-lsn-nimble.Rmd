@@ -10,18 +10,17 @@ tags:
 
 library(methods)
 library(knitr)
-opts_chunk$set(dev='png', fig.width=2, fig.height=3, cache=TRUE)
-opts_knit$set(upload.fun = image_uri)
+opts_chunk$set(dev='svg', fig.width=2, fig.height=3, cache=TRUE, message=FALSE, warning=FALSE, comment=NA)
 
-## embed svgs into the markdown. bad idea, svgs much too big with so many points
-#local({
-#  hook_plot = knit_hooks$get('plot')
-#  knit_hooks$set(plot = function(x, options) {
-#    if (!grepl('\\.svg', x)) return(hook_plot(x, options))
-#    paste(readLines(x)[-1], collapse = '\n')
-#  })
-#})
-#opts_chunk$set(dev='svg', fig.width=2, fig.height=3, cache=TRUE)
+if(opts_chunk$get('dev') != 'svg') opts_knit$set(upload.fun = image_uri) 
+local({
+  hook_plot = knit_hooks$get('plot')
+  knit_hooks$set(plot = function(x, options) {
+    if (!grepl('\\.svg', x)) return(hook_plot(x, options))
+    paste(readLines(x)[-1], collapse = '\n')
+  })
+})
+
 ```
 
 
@@ -41,28 +40,38 @@ plot(data)
 
 ## LSN version ##
 
+Test case: Set prior for `m` $\approx 0$:
+
 ```{r}
 lsn <- modelCode({
    theta ~ dunif(1e-10, 100.0)
-   sigma ~ dunif(1e-10, 100.0)
-       m ~ dunif(-10, 10)
+   sigma_x ~ dunif(1e-10, 100.0)
+   sigma_y ~ dunif(1e-10, 100.0)
+       m ~ dunif(-1e2, 1e2)
     x[1] ~ dunif(0, 100)
-    y[1] ~ dunif(1e-10, 100.0) 
+    y[1] ~ dunif(0, 100) 
 
   for(i in 1:(N-1)){
     mu_x[i] <- x[i] + y[i] * (theta - x[i]) 
-    x[i+1] ~ dnorm(mu_t[i], sd = sigma) 
-    y[i+1] <- y[i] + m * t[i]
+    x[i+1] ~ dnorm(mu_x[i], sd = sigma_x) 
+    mu_y[i] <- y[i] + m * t[i]
+    y[i+1] ~ dnorm(mu_y[i], sd = sigma_y) 
   }
 })
 ```
 
-Nimble parameters. Note we've made time explicit, we'll assume uniform spacing here:
+Constants in the model definition are the length of the dataset, $N$ and the time points of the sample. Note we've made time explicit, we'll assume uniform spacing here. 
 
 ```{r}
 constants <- list(N = length(data$x), t = 1:length(data$x))
-inits <- list(theta = 6, m = 0, sigma = 1, y = rep(1,constants$N))
 ```
+
+Initial values for the parameters
+
+```{r}
+inits <- list(theta = 6, m = 0, sigma_x = 1, sigma_y = 1, y = rep(1,constants$N))
+```
+
 
 and here we go as before:
 
@@ -72,14 +81,19 @@ Rmodel <- nimbleModel(code = lsn,
                       data = data, 
                       inits = inits)
 Cmodel <- compileNimble(Rmodel)
-mcmcspec <- MCMCspec(Rmodel, print=TRUE)
+```
+
+
+
+```{r}
+mcmcspec <- MCMCspec(Rmodel, print=TRUE,thin=1e2)
 Rmcmc <- buildMCMC(mcmcspec)
 Cmcmc <- compileNimble(Rmcmc, project = Cmodel)
 ```
 
 
 ```{r} 
-Cmcmc(1e5)
+Cmcmc(1e4)
 ```
 
 
@@ -87,18 +101,31 @@ and examine results
 
 ```{r}
 samples <- as.data.frame(as.matrix(nfVar(Cmcmc, 'mvSamples')))
+dim(samples)
+samples <- samples[,1:4]
+```
+
+
+```{r}
 mean(samples$theta)
 mean(samples$m)
-mean(samples$sigma)
+mean(samples$sigma_x)
 ```
+
+
 
 
 ```{r fig.show='hold'}
 plot(samples[ , 'm'], type = 'l', xlab = 'iteration', ylab = 'm')
-plot(samples[ , 'sigma'], type = 'l', xlab = 'iteration', ylab = expression(sigma))
+plot(samples[ , 'sigma_x'], type = 'l', xlab = 'iteration', ylab = expression(sigma[x]))
+plot(samples[ , 'sigma_y'], type = 'l', xlab = 'iteration', ylab = expression(sigma[y]))
 plot(samples[ , 'theta'], type = 'l', xlab = 'iteration', ylab = expression(theta))
-plot(samples[ , 'm'], samples[ , 'sigma'], xlab = 'm', ylab = expression(simga))
 ```
 
-
+```{r fig.show='hold'}
+hist(samples[, 'm'], xlab = 'm')
+hist(samples[, 'sigma_x'], xlab = expression(sigma[x]))
+hist(samples[, 'sigma_y'], xlab = expression(sigma[y]))
+hist(samples[, 'theta'], xlab = expression(theta))
+```
 
