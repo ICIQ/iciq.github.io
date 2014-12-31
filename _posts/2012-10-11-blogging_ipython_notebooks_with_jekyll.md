@@ -4,6 +4,11 @@ title: Blogging an iPython notebook with Jekyll
 subtitle: easy-peasy
 categories: blog-post notebook
 ---
+
+> **Update as of December 2014: Don't bother using what's below; go to 
+[Christop Corley's blog](http://cscorley.github.io/2014/02/21/blogging-with-ipython-and-jekyll/)
+for a much better setup!**
+
 I've been playing around with [iPython notebooks](http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html)
 for a while and planning to use them instead of [SAGE](http://www.sagemath.org/) 
 worksheets for my numerical analysis course next spring.  As a warmup,
