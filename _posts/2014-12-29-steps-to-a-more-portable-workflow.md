@@ -7,5 +7,5 @@ tags:
 ---
 
 
-Tweaking dockerfile
+Tweaking Dockerfile for labnotebook to be simpler and more portable. 
 
