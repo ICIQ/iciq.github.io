@@ -13,7 +13,7 @@ library(methods)
 library(knitr)
 # set dev to png for graphs with > 1e3 points
 opts_chunk$set(dev='png', fig.width=3, fig.height=4, cache=TRUE)
-if(opts_chunk$get('dev') != 'svg') opts_knit$set(upload.fun = image_uri) 
+opts_knit$set(upload.fun = image_uri) 
 
 ```
 
