@@ -20,7 +20,8 @@ local({
 		comment = NA,
 	  message = FALSE,
     warning = FALSE,
-		dev = 'png'
+		dev = 'png',
+		fig.cap=""
   )
 
 	## Embed svgs directly -- doesn't work, causes weird knitr errors instead
