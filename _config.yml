@@ -1,4 +1,3 @@
-
 title: Lab Notebook 
 tagline: Theoretical ecology and evolution
 author:
@@ -49,7 +48,8 @@ exclude:
   - Dockerfile
   - build.R
   - _cache
-knitr:
-  dev: svg
+  - Makefile
+  - deploy.sh
+  - fig.yml
 
 
