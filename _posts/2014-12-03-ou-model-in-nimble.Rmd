@@ -10,7 +10,8 @@ tags:
 Sanity test with a simple model,  Start with some sample data from an OU process:
 
 ```{r}
-library(sde)
+library("sde")
+library("nimble")
 set.seed(123)
 d <- expression(0.5 * (10-x))
 s <- expression(1) 

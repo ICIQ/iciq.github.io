@@ -13,7 +13,6 @@ library(methods)
 library(knitr)
 # set dev to png for graphs with > 1e3 points
 opts_chunk$set(dev='png', fig.width=3, fig.height=4, cache=TRUE)
-opts_knit$set(upload.fun = image_uri) 
 
 ```
 
@@ -145,4 +144,3 @@ ylab = expression(beta))
 Note the poor mixing (which is improved by the block sampler, as shown in the manual).
 
 
-------
