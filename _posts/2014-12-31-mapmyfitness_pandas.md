@@ -34,6 +34,7 @@ from mapmyfitness import MapMyFitness
 import matplotlib.pyplot as plt
 import matplotlib
 import numpy as np
+pd.options.display.mpl_style = 'default'
 {% endhighlight %}
 
 The next cell logs into MMF, grabs all my workout data, filters for a specified
@@ -47,28 +48,29 @@ def get_workouts(verbose=True, workout_type='run'):
             access_token='your-token')
 
     # get all workouts
-    workouts = mmf.workout.search(user=48155002,per_page=40)  # doesn't work if per_page>40
+    workout_pages = mmf.workout.search(user=48155002,per_page=40,cache_finds=True)  # doesn't work if per_page>40
 
-    paces = []
+    paces     = []
     distances = []
-    dates = []
+    dates     = []
+    workouts  = []
 
-    for pagenum in workouts.page_range:
-        workout_list = workouts.page(pagenum)
+    for pagenum in workout_pages.page_range:
+        workout_list = workout_pages.page(pagenum)
 
         for i,workout in enumerate(workout_list):
             if verbose:
                 print "processing workout " + str(i+1) + " of " + str(len(workout_list))
-            if workout_type in workout.activity_type.name.lower():
+            if workout_type in workout.activity_type.root_activity_type.name.lower():
+                workouts.append(workout)
                 distances.append(workout.distance_total/1609.344) # convert meters to miles
                 paces.append(26.8224/workout.speed_avg) # convert m/s to minutes per mile
                 dates.append(workout.start_datetime)
-    return distances, paces, dates, workout_list
+    return distances, paces, dates, workouts
 {% endhighlight %}
 
-Be warned that this function takes a while; you can set `verbose=1` to have it
-update you regularly.  I'm not sure why it's slow -- the downloading is fast,
-but the filtering and extracting is slow.
+Be warned that this function takes a while.  You can set `verbose=1` to have it
+update you regularly.
 
 {% highlight python %}
 distances, paces, dates, workout_list = get_workouts(verbose=0)
@@ -135,6 +137,11 @@ df.head()
 
 
 
+As you can see, the workouts are sorted chronologically.  I started training
+(and using MapMyFitness) at the beginning of September, about 4 months ago.  At
+the time I could only comfortably run 2-3 miles, and my pace was slower than 9
+minutes per mile.
+
 # Basic plotting
 
 Now we can easily plot workout distance and pace versus date:
@@ -142,49 +149,123 @@ Now we can easily plot workout distance and pace versus date:
 {% highlight python %}
 fs = 15
 plotargs = {'figsize' : (12,4), 'fontsize' : fs}
-df.Distance.plot(**plotargs);
-{% endhighlight %}
-
-
-![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_13_0.png)
-
-
-{% highlight python %}
-df.Pace.plot(**plotargs);
+df.Distance.plot(title='Workout distance (miles)',lw=2,**plotargs);
 {% endhighlight %}
 
 
 ![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_14_0.png)
 
 
-Clearly, I'm running farther and faster as my training program progresses!
+{% highlight python %}
+df.Pace.plot(title='Average pace (minutes per mile)',lw=2,**plotargs);
+{% endhighlight %}
 
-How far have I run in total?  Here's a cumulative distance plot, showing that
-I've run more than 200 miles.
+
+![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_15_0.png)
+
+
+Clearly, I'm running farther and faster as my training program progresses!  My
+pace is down to around 8 minutes per mile, and my typical runs are 5 miles or
+more.  Here's a histogram of the distances for all my workouts since I started:
 
 {% highlight python %}
-df.Distance.cumsum().plot(**plotargs);
+df.Distance.plot(kind='hist',title='Workout distance (miles)');
+plt.xlabel('Miles'); plt.ylabel('Number of runs');
 {% endhighlight %}
 
 
 ![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_17_0.png)
 
 
-# Longest runs
+How far have I run in total?  Here's a cumulative distance plot, showing that
+I've run more than 200 miles.
 
 {% highlight python %}
-df.Distance.nlargest(5)
+df.Distance.cumsum().plot(title='Total workout distance (miles)',lw=2,**plotargs);
+{% endhighlight %}
+
+
+![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_19_0.png)
+
+
+# Stacked histogram separated by dates
+
+Let's see how my paces in the last two months compare to those in the first two
+months.  I suspect Pandas has a better way to do this than what I've implemented
+below, but this works...
+
+{% highlight python %}
+pace1 = []
+pace2 = []
+
+for date,pace in zip(df.index,df['Pace']):
+    if date.month<11:
+        pace1.append(pace)
+        pace2.append(np.nan)
+    else:
+        pace1.append(np.nan)
+        pace2.append(pace)
+        
+df2 = pd.DataFrame({'First two months pace' : pd.Series(pace1,index=dates), 
+                    'Last two months pace' : pd.Series(pace2,index=dates)})
+df2.plot(kind='hist',stacked=True,fontsize=fs); plt.ylabel('# of runs');
+{% endhighlight %}
+
+
+![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_22_0.png)
+
+
+Again, it's clear that my pace has improved.
+
+# Longest runs
+
+Here are my five longest runs:
+
+{% highlight python %}
+df.sort('Distance')[-5:][::-1]
 {% endhighlight %}
 
 
 
 
-    2014-12-27 04:39:34+00:00    10.28480
-    2014-12-06 04:36:18+00:00     9.00748
-    2014-12-13 04:39:00+00:00     8.97491
-    2014-11-22 03:09:55+00:00     8.47542
-    2014-11-15 03:09:18+00:00     7.65717
-    Name: Distance, dtype: float64
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Distance</th>
+      <th>Pace</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2014-12-27 04:39:34+00:00</th>
+      <td> 10.28480</td>
+      <td> 8.698211</td>
+    </tr>
+    <tr>
+      <th>2014-12-06 04:36:18+00:00</th>
+      <td>  9.00748</td>
+      <td> 8.506801</td>
+    </tr>
+    <tr>
+      <th>2014-12-13 04:39:00+00:00</th>
+      <td>  8.97491</td>
+      <td> 8.635715</td>
+    </tr>
+    <tr>
+      <th>2014-11-22 03:09:55+00:00</th>
+      <td>  8.47542</td>
+      <td> 8.469062</td>
+    </tr>
+    <tr>
+      <th>2014-11-15 03:09:18+00:00</th>
+      <td>  7.65717</td>
+      <td> 8.535385</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -205,7 +286,7 @@ fig.set_ylabel('minutes per mile',fontsize=fs);
 {% endhighlight %}
 
 
-![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_24_0.png)
+![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_31_0.png)
 
 
 The total milage per week:
@@ -216,7 +297,7 @@ fig.set_ylabel('Miles',fontsize=fs);
 {% endhighlight %}
 
 
-![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_26_0.png)
+![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_33_0.png)
 
 
 The plot above shows that I have not been terribly consistent, and have missed a
@@ -232,5 +313,39 @@ fig.set_ylabel('Miles',fontsize=fs);
 {% endhighlight %}
 
 
-![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_29_0.png)
+![]({{ site.baseurl}}notebooks/mmf_pandas_files/mmf_pandas_36_0.png)
+
+
+# Plotting the routes
+MapMyFitness records the actual routes, so we can also plot them.
+
+{% highlight python %}
+import mpld3
+mpld3.enable_notebook()
+
+plt.figure(figsize=(8,8))
+
+for w in workout_list:
+    if w.route is not None:
+        points = [(p['lat'],p['lng']) for p in w.route.points()];
+        lat, long = zip(*points);
+        if min(long)>39:  # Omit workouts in other countries
+            plt.plot(long,lat)
+{% endhighlight %}
+
+
+
+The resulting map was a bit too much for Jekyll to handle, since it
+gets embedded as a huge amount of text.  Go check it out in 
+[the actual notebook](http://nbviewer.ipython.org/url/www.davidketcheson.info/notebooks/mmf_pandas.ipynb).
+The map is zoomable, thanks to mpld3.  You can see
+a lot of the roads at KAUST, as well as the running paths around the Gardens and
+through Thuwal park on the Island (see the squiggly line on the top left).  The
+path to the beacon is also obvious.  The line at the far right goes to the KAUST
+stadium, with a partial lap around the track.  You can even see where the road
+to the south Beach has moved due to construction.
+
+If you're not familiar with KAUST, just compare the plot above with a [satellite
+map](https://www.google.com.sa/maps/@22.3154039,39.1157315,5583m/data=!3m1!1e3?h
+l=en).
 
