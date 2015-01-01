@@ -48,7 +48,7 @@ exclude:
   - Dockerfile
   - build.R
   - _cache
-  - assets/figures/posts
-knitr:
-  dev: svg
+  - Makefile
+  - deploy.sh
+  - fig.yml
 
