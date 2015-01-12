@@ -127,5 +127,17 @@ J
 </blockquote>
 
 
+<blockquote>
 
+Carl - 
+
+I learned about Rmarkdown and knitr only recently and, upon searching for a way to embed my citations, knitcitations.  After piecing it all together, I started reading through your website and your code on GitHub.  It's refreshing to see scientists that are willing to let others poke through their code and their manuscript drafts.  
+
+Poking through your files on Github has lowered my learning curve to Rmd.  It's been incredibly helpful just seeing your header information to format my own .Rmds.  Further, I'm trying your work flow out on a new project of mine.
+
+I just wanted to drop a note to say thanks.  Between knicitations, your website, and your repository, you've been remarkably helpful.
+
+SR
+
+</blockquote>
 
