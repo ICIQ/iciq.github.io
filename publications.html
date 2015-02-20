@@ -3,8 +3,25 @@ title: Publications
 ---
 
 {% include header.html %}
+
+<div class="controls" id="Filters">
+      <h4>Search by title or author: </h4><input type="text" id="input" placeholder="search" >
+  <br>
+
+  <label>Filter:</label>
+  
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter" data-filter=".time-integration">Time integration</button>
+  <button class="filter" data-filter=".periodic-media">Waves in periodic media</button>
+  <button class="filter" data-filter=".hyperbolic">Hyperbolic PDEs</button>
+  <button class="filter" data-filter=".ssp">Strong stability preservation</button>
+  <button class="filter" data-filter=".runge-kutta">Runge-Kutta methods</button>
+</div>
+
+<div id="Container" class="container">
+
 <h2>Submitted preprints</h2>
-<div id="pub">
+<div id="pub" class="pub hyperbolic periodic-media">
 <img src="http://davidketcheson.info/assets/paper_images/quezada_diffractons.png" align="right" />
 <a href="http://arxiv.org/abs/1312.4122"><name> Diffractons: 2D solitary waves in layered periodic media </name><br>
 </a>
@@ -14,7 +31,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub time-integration ssp runge-kutta">
 <a href="http://arxiv.org/abs/1307.8058"><name> Strong Stability Preserving Multistep Runge-Kutta Methods </name><br>
 </a>
 <authors> Christopher Bresten, Sigal Gottlieb, Zachary Grant, Daniel Higgs, David I. Ketcheson,  and Adrian Németh</authors>,
@@ -24,17 +41,17 @@ title: Publications
 </div>
 
 <h2>Refereed Journal Articles</h2>
-<div id="pub">
+<div id="pub" class="pub internal stability runge-kutta extrapolation ssp time-integration">
 <img src="http://davidketcheson.info/assets/paper_images/2014_internal_stability.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/2014_internal_stability.pdf"><name> Internal error propagation in explicit Runge&ndash;Kutta methods </name><br>
 </a>
 <authors> David I Ketcheson, Lajos Lóczi,  and Matteo Parsani</authors>,
-<journal> SINUM</journal>, 52(5):2227-2249 Accepted. (2014)<br>
+<journal> SINUM</journal>, 52(5):2227-2249 (2014)<br>
 <links>  | <a href="http://davidketcheson.info/assets/papers/2014_internal_stability.pdf">Free PDF</a>  | <a href="http://dx.doi.org/10.1137/130936245">Published version</a>  | <a href="http://arxiv.org/abs/1309.1317">arXiv version</a> |</links><div style="clear:both"></div>
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta time-integration">
 <img src="http://davidketcheson.info/assets/paper_images/2014_loczi_exponential.png" align="right" />
 <a href="http://imajna.oxfordjournals.org/cgi/content/abstract/dru039?ijkey=k8rlLsKUMTuJVk4&keytype=ref"><name> On the absolute stability regions corresponding to partial sums of the exponential function </name><br>
 </a>
@@ -44,7 +61,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta time-integration multi-rate">
 <a href="http://dx.doi.org/10.1007/s10915-014-9906-1"><name> Error Analysis of Explicit Partitioned Runge-Kutta Schemes for Conservation Laws </name><br>
 </a>
 <authors> W. Hundsdorfer, D. I. Ketcheson,  and I. Savostianov</authors>,
@@ -53,7 +70,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub periodic-media hyperbolic">
 <img src="http://davidketcheson.info/assets/paper_images/quezada_dispersion.png" align="right" />
 <a href="http://dx.doi.org/10.1137/130937962"><name> Two-dimensional wave propagation in layered periodic media </name><br>
 </a>
@@ -63,7 +80,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub strong stability preserving runge-kutta discontinuous galerkin ssp time-integration">
 <a href="http://dx.doi.org/10.1007/s10915-013-9796-7"><name> Optimal strong-stability-preserving Runge&ndash;Kutta time discretizations for discontinuous Galerkin methods </name><br>
 </a>
 <authors> Ethan J. Kubatko, Benjamin A. Yeager,  and David I. Ketcheson</authors>,
@@ -72,7 +89,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub extrapolation deferred correction runge-kutta time-integration">
 <img src="http://davidketcheson.info/assets/paper_images/2014_hork.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/2014_hork.pdf"><name> A comparison of high order explicit Runge-Kutta, extrapolation, and deferred correction methods in serial and parallel </name><br>
 </a>
@@ -82,7 +99,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub absolute monotonicity rational function ssp">
 <img src="http://davidketcheson.info/assets/paper_images/2014_rational_absmon.png" align="right" />
 <a href="http://dx.doi.org/10.1112/S1461157013000326"><name> Rational functions with maximal radius of absolute monotonicity </name><br>
 </a>
@@ -92,7 +109,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub heterogeneous media nonlinear waves p-system periodic-media solitary waves soliton interaction hyperbolic">
 <a href="http://dx.doi.org/10.1007/s10915-013-9747-3"><name> Numerical simulation of cylindrical solitary waves in periodic media </name><br>
 </a>
 <authors> Manuel Quezada de Luna  and David I. Ketcheson</authors>,
@@ -101,7 +118,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta method of lines optimization spectral difference time-integration">
 <img src="http://davidketcheson.info/assets/paper_images/2013_sd_erk.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/2013_sd_erk.pdf"><name> Optimized explicit Runge-Kutta schemes for the spectral difference method applied to wave propagation problems </name><br>
 </a>
@@ -111,7 +128,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta methods convergence positivity time-integration">
 <img src="http://davidketcheson.info/assets/paper_images/2013_sperk.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/2013_sperk.pdf"><name> Spatially partitioned embedded Runge&ndash;Kutta methods </name><br>
 </a>
@@ -121,7 +138,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub effective order strong stability preservation ssp runge-kutta time-integration">
 <a href="http://davidketcheson.info/assets/papers/2013_effective_order_ssp.pdf"><name> Strong Stability Preserving Explicit Runge&ndash;Kutta Methods of Maximal Effective Order </name><br>
 </a>
 <authors> Yiannis Hadjimichael, Colin B. Macdonald, David I. Ketcheson,  and J. H. Verner</authors>,
@@ -130,7 +147,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta weno clawpack finite volumes high order methods hyperbolic pdes numerical methods scientific computing scientific software sharpclaw hyperbolic">
 <img src="http://davidketcheson.info/assets/paper_images/2013_sharpclaw.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/sharpclaw.pdf"><name> High-order Wave Propagation Algorithms for Hyperbolic Systems </name><br>
 </a>
@@ -140,7 +157,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub clawpack finite volumes hyperbolic pdes petclaw pyclaw python sharpclaw hyperbolic">
 <img src="http://davidketcheson.info/assets/paper_images/2012_pyclaw-sisc.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/2012_pyclaw-sisc.pdf"><name> PyClaw: Accessible, Extensible, Scalable Tools for Wave Propagation Problems </name><br>
 </a>
@@ -150,7 +167,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub numerical analysis optimization and control time-integration runge-kutta">
 <img src="http://davidketcheson.info/assets/paper_images/2012_optimal_stability_polynomials.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/2012_optimal_stability_polynomials.pdf"><name> Optimal stability polynomials for numerical integration of initial value problems </name><br>
 </a>
@@ -160,7 +177,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub clawpack computational science elasticity hyperbolic pdes laminates layered media nonlinear waves periodic media sharpclaw shock waves solitary waves spatially varying flux hyperbolic periodic-media">
 <img src="http://davidketcheson.info/assets/paper_images/2012_ketchesonleveque_periodic.png" align="right" />
 <a href="http://davidketcheson.info/assets/papers/2012_ketchesonleveque_periodic.pdf"><name> Shock Dynamics in Layered Periodic Media </name><br>
 </a>
@@ -170,7 +187,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ssp runge-kutta time-integration">
 <a href="http://davidketcheson.info/assets/papers/2011_tsrk.pdf"><name> Strong Stability Preserving Two-step Runge&ndash;Kutta Methods </name><br>
 </a>
 <authors> David I. Ketcheson, Sigal Gottlieb,  and Colin B. Macdonald</authors>,
@@ -179,7 +196,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub numerical analysis runge-kutta ssp downwind hyperbolic pdes implicit linear multistep methods strong stability preservation hyperbolic time-integration">
 <a href="http://numerics.kaust.edu.sa/papers/dwrk2011/downwind_ssp.html"><name> Step Sizes for Strong Stability Preservation with Downwind-Biased Operators </name><br>
 </a>
 <authors> David I. Ketcheson</authors>,
@@ -188,7 +205,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ode solver runge-kutta shu-osher form algorithms low-storage numerical methods optimization time-integration">
 <a href="http://linkinghub.elsevier.com/retrieve/pii/S0021999109006251"><name> Runge&ndash;Kutta methods with minimum storage implementations </name><br>
 </a>
 <authors> David I. Ketcheson</authors>,
@@ -197,7 +214,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ode solver ssp optimization strong stability preservation time-integration">
 <a href="http://davidketcheson.info/assets/papers/2009_monotonicity-glms.pdf"><name> Computation of optimal monotonicity preserving general linear methods </name><br>
 </a>
 <authors> David I. Ketcheson</authors>,
@@ -206,7 +223,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta ssp implicit optimization strong stability preservation time-integration">
 <a href="http://linkinghub.elsevier.com/retrieve/pii/S0168927408000688"><name> Optimal implicit strong stability preserving Runge&ndash;Kutta methods </name><br>
 </a>
 <authors> David I. Ketcheson, Colin B. Macdonald,  and Sigal Gottlieb</authors>,
@@ -215,7 +232,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub euler's method ode solver runge-kutta ssp contractivity general linear methods linear multistep methods method of lines monotonicity multistep methods nonlinear stability numerical analysis numerical methods optimization positivity review runge-kutta methods spectral deferred correction methods spectral deferred corrections strong stability preservation strong stability preserving time discretization total variation diminishing time-integration">
 <a href="http://www.springerlink.com/index/10.1007/s10915-008-9239-z"><name> High Order Strong Stability Preserving Time Discretizations </name><br>
 </a>
 <authors> Sigal Gottlieb, David I. Ketcheson,  and Chi-Wang Shu</authors>,
@@ -224,7 +241,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub radiation transport">
 <a href="http://www.new.ans.org/pubs/journals/nse/a_9070"><name> Surface and Volume Integrals of Uncollided Adjoint Fluxes and Forward-Adjoint Flux Products </name><br>
 </a>
 <authors> Jeffrey A. Favorite, Keith C. Bledsoe,  and David I. Ketcheson</authors>,
@@ -232,7 +249,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ode solver runge-kutta ssp low-storage optimization strong stability preservation time-integration">
 <a href="http://davidketcheson.info/assets/papers/2008_explicit_ssp.pdf"><name> Highly Efficient Strong Stability Preserving Runge-Kutta Methods with Low-Storage Implementations </name><br>
 </a>
 <authors> David I. Ketcheson</authors>,
@@ -241,7 +258,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub inverse problem optimization radiation transport">
 <a href="http://davidketcheson.info/assets/papers/2007_Favorite_marq.pdf"><name> Using the Levenberg-Marquardt method for the solution of inverse transport problems </name><br>
 </a>
 <authors> Jeffrey A. Favorite  and David I. Ketcheson</authors>,
@@ -250,7 +267,7 @@ title: Publications
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta ssp optimization strong stability preservation time-integration">
 <a href="http://doi.wiley.com/10.1002/fld.837"><name> On the practical importance of the SSP property for Runge-Kutta time integrators for some common Godunov-type schemes </name><br>
 </a>
 <authors> David I. Ketcheson  and Allen C. Robinson</authors>,
@@ -260,7 +277,7 @@ title: Publications
 </div>
 
 <h2>Books</h2>
-<div id="pub">
+<div id="pub" class="pub ode solver runge-kutta ssp contractivity general linear methods initial value problems linear multistep methods low-storage monotonicity nonlinear stability optimization positivity strong stability preservation total variation diminishing time-integration">
 <a href="http://www.amazon.com/Stability-Preserving-Runge-Kutta-Multistep-Discretizations/dp/9814289264"><name> Strong Stability Preserving Runge-Kutta And Multistep Time Discretizations </name><br>
 </a>
 <authors> Sigal Gottlieb, David I. Ketcheson,  and Chi-Wang Shu</authors>,
@@ -270,14 +287,14 @@ title: Publications
 </div>
 
 <h2>Conference Proceedings</h2>
-<div id="pub">
+<div id="pub" class="pub ">
 <name> Teaching numerical methods with IPython notebooks and inquiry-based learning </name><br>
 <authors> David I. Ketcheson</authors>,
-in Proceedings of SciPy 2014. (2014)<div style="clear:both"></div>
+ Available from http://conference.scipy.org/proceedings/scipy2014/ketcheson.htmlin Proceedings of the 13th Python in Science Conference. (2014)<div style="clear:both"></div>
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub high-order spectral difference method optimized explicit runge-kutta wave propagation hyperbolic time-integration runge-kutta">
 <a href="http://www.oulu.fi/mekapaivat2012/meka2012_proceedings.pdf"><name> Optimized low-order explicit Runge-Kutta schemes for high- order spectral difference method </name><br>
 </a>
 <authors> Matteo Parsani  and David I Ketcheson</authors>,
@@ -285,21 +302,21 @@ in Proceedings of the 11th Finnish Mechanics Days. (2012)<div style="clear:both"
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta time-integration">
 <name> Explicit Runge-Kutta schemes for the spectral difference method applied to wave propagation problems </name><br>
 <authors> M Parsani, D I Ketcheson,  and W Deconinck</authors>,
 in Proceedings of the European Congress on Computational Methods in Applied Sciences and Engineering. (2012)<div style="clear:both"></div>
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub runge-kutta time-integration">
 <name> Design of optimal explicit linearly stable strong stability preserving Runge-Kutta schemes for the spectral difference method </name><br>
 <authors> M Parsani  and D I Ketcheson</authors>,
  Extended abstract.in International Conference on Spectral and High Order Methods. (2012)<div style="clear:both"></div>
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub python hyperbolic">
 <a href="http://conference.scipy.org/proceedings/scipy2011/pdfs/mandli_etal.pdf"><name> Using Python to Construct a Scalable Parallel Nonlinear Wave Solver </name><br>
 </a>
 <authors> Kyle T. Mandli, Amal Alghamdi, Aron J. Ahmadia, David I. Ketcheson,  and W. Scullin</authors>,
@@ -307,7 +324,7 @@ in Proceedings of SciPy 2011. (2011)<div style="clear:both"></div>
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub bluegene/p shaheen clawpack computational science finite volumes high performance computing numpy parallel petclaw petsc petsc4py python scaling scientific computing scientific software weak scaling hyperbolic">
 <a href="http://numerics.kaust.edu.sa/papers/petclaw2011/petclaw2011.html"><name> PetClaw: A Scalable Parallel Nonlinear Wave Propagation Solver for Python </name><br>
 </a>
 <authors> Amal Alghamdi, Aron J. Ahmadia, David I. Ketcheson, Matthew G. Knepley, Kyle T. Mandli,  and Lisandro Dalcin</authors>,
@@ -315,7 +332,7 @@ in Proceedings of SpringSim '11. (2011)<div style="clear:both"></div>
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub weno finite volumes hyperbolic pdes hyperbolic">
 <a href="http://www.davidketcheson.info/assets/papers/hyp2006_wenoclaw.pdf"><name> WENOCLAW: A higher order wave propagation method </name><br>
 </a>
 <authors> David I. Ketcheson  and Randall J. LeVeque</authors>,
@@ -324,14 +341,14 @@ in Hyperbolic Problems: Theory, Numerics, Applications: Proceedings of the Eleve
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ">
 <name> The luminosities of horizontal branches and RR Lyrae stars in globular clusters </name><br>
 <authors> DH McNamara, MB Rose, PJ Brown, DI Ketcheson, JE Maxwell, KM Smith,  and RC Wooley</authors>,
 in IAU Colloq. 193: Variable Stars in the Local Group. (2004)<div style="clear:both"></div>
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ">
 <name> CCD Photometry of Variables in the Field of QS Geminorum </name><br>
 <authors> DI Ketcheson, PJ Brown,  and EG Hintz</authors>,
 in Bulletin of the American Astronomical Society. (2002)<div style="clear:both"></div>
@@ -339,7 +356,7 @@ in Bulletin of the American Astronomical Society. (2002)<div style="clear:both">
 </div>
 
 <h2>Technical Reports</h2>
-<div id="pub">
+<div id="pub" class="pub internal stability runge-kutta extrapolation ssp time-integration">
 <a href="http://arxiv.org/abs/1309.1317"><name> Propagation of internal errors in explicit Runge&ndash;Kutta methods and internal stability of SSP and extrapolation methods </name><br>
 </a>
 <authors> David I Ketcheson, Lajos Lóczi,  and Matteo Parsani</authors>,
@@ -348,7 +365,7 @@ in Bulletin of the American Astronomical Society. (2002)<div style="clear:both">
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub eulerian kinematics lagrangian solid mechanics hyperbolic">
 <a href="http://davidketcheson.info/assets/papers/2009_kinematics.pdf"><name> A Comparison of Lagrangian/Eulerian Approaches for Tracking the Kinematics of High Deformation Solid Motion </name><br>
 </a>
 <authors> Allen C. Robinson, David I. Ketcheson, T.L. Ames,  and G.V. Farnsworth</authors>,
@@ -357,7 +374,7 @@ in Bulletin of the American Astronomical Society. (2002)<div style="clear:both">
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ">
 <a href="http://davidketcheson.info/assets/papers/2005_ketcheson_lanl_scattering.pdf"><name> Inverse Solution Methods and Perturbation Estimates for Radiation Leakage without Scattering </name><br>
 </a>
 <authors> David I. Ketcheson</authors>,
@@ -366,7 +383,7 @@ in Bulletin of the American Astronomical Society. (2002)<div style="clear:both">
 
 </div>
 
-<div id="pub">
+<div id="pub" class="pub ssp central schemes godunov type methods hyperbolic pdes method of lines strong stability preservation time discretization time-integration runge-kutta">
 <a href="http://dx.doi.org/10.2172/918357"><name> An assessment of semi-discrete central schemes for hyperbolic conservation laws </name><br>
 </a>
 <authors> Mark A Christon, David I. Ketcheson,  and Allen C. Robinson</authors>,
@@ -376,7 +393,7 @@ in Bulletin of the American Astronomical Society. (2002)<div style="clear:both">
 </div>
 
 <h2>Theses</h2>
-<div id="pub">
+<div id="pub" class="pub ode solver runge-kutta ssp downwinding general linear methods homogenization linear multistep methods nonlinear waves numerical analysis numerical methods optimization sharpclaw stability stegotons strong stability preservation total variation diminishing time-integration hyperbolic">
 <a href="http://davidketcheson.info/assets/papers/ketchesonphdthesis.pdf"><name> High Order Strong Stability Preserving Time Integrators and Numerical Wave Propagation Methods for Hyperbolic PDEs </name><br>
 </a>
 <authors> David I. Ketcheson</authors>,
@@ -385,6 +402,8 @@ in Bulletin of the American Astronomical Society. (2002)<div style="clear:both">
 
 </div>
 
-
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
 
 {% include footer.html %}

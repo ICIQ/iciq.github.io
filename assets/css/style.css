@@ -263,10 +263,11 @@ li.repo .language {
       border-width: 2px; 
       border-style: none; 
       background-color: #fff; 
-      font-size: 1.4em; 
-      line-height: 1.3em;
-      margin-top: 20px; 
-      margin-bottom: 20px;
+      font-size: 1.1em;
+      line-height: 1.1em;
+      margin-top: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
       vertical-align: middle;}
 
 #pub a{font-weight: bold; color: #09434e;}
@@ -274,7 +275,7 @@ li.repo .language {
 #pub journal{font-style: italic;}
 #pub links{ font-weight: bold; color: black; vertical-align: bottom;}
 #pub links a{ font-weight: bold; color: maroon; font-style: italic;}
-#pub img{height: 6em; align: right; padding-right: 5px;}
+#pub img{height: 4em; align: right; padding-right: 3px;}
 
 .highlight { font-size: 85% }
 .highlight { line-height: 120% }
@@ -349,3 +350,56 @@ li.repo .language {
 .highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;} 
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */
+
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.container .pub,
+.container .gap{
+  width: 40%;
+  display: inline-block;
+}
+
+.container .pub{
+  display: none;
+}
