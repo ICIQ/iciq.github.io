@@ -266,7 +266,7 @@ li.repo .language {
       font-size: 1.1em;
       line-height: 1.1em;
       margin-top: 5px;
-      margin-right: 5px;
+      margin-right: 1%;
       margin-bottom: 5px;
       vertical-align: middle;}
 
@@ -396,7 +396,7 @@ button + label{
 
 .container .pub,
 .container .gap{
-  width: 40%;
+  width: 48%;
   display: inline-block;
 }
 
