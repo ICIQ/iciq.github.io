@@ -2,8 +2,19 @@
 <time> {{ post.date | date_to_string }}</time>
 <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 <h4><span>{{ post.subtitle }}</span></h4>
-{{ post.content | strip_html | truncate:200 }} 
-<!-- note that post.content is pulled in with html formatting --> 
-<!--    </ul> </ol> </code> </strong> </em> </pre>  force close any open tags? --> 
+      {% assign foundImage = 0 %}
+      {% assign images = post.content | split:"<img " %}
+      {% for image in images %}
+        {% if image contains 'src' %}
+            {% if foundImage == 0 %}
+                {% assign html = image | split:"/>" | first %}
+<img {{ html }} height="100" />
+                {% break %}
+            {% endif %}
+        {% endif %}
+      {% endfor %}
+
+{{ post.content | strip_html | truncate:300 }} 
 <a href="{{ site.url }}{{ post.url }}"> <em>Read more</em></a>
+
 </div>
