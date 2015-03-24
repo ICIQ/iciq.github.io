@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reviewing my marathon training using MapMyFitness and Pandas
+subtitle: Some fun with data
 tags:
     - python
     - notebook
