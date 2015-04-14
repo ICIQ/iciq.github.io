@@ -112,8 +112,43 @@ div.header h1 {
 }
 
 li.repo {
-  height: 250px;
+  height: 50px;
+  width: 250px;
   font-size: 14px;
+}
+
+.container .gist {
+  width: 30%;
+  display: inline-block;
+}
+
+.gist {padding: 5px; 
+    border-width: 2px; 
+    border-style: none; 
+    background-color: #fff; 
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin-top: 5px;
+    margin-right: 1%;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    min-height: 100px;
+}
+
+.gist a{
+    font-weight: bold; 
+    color: #09434e;
+    display: block
+}
+
+.gist h4 {
+    line-height: 90%;
+    font-style: italic
+}
+
+.gist p {
+    font-size: 75%;
+    font-style: italic;
 }
 
 li.repo > a {
@@ -126,7 +161,6 @@ li.repo > a {
 }
 
 li.repo a:hover {
-  background: #efefef;
   background: rgba(0, 0, 0, 0.05);
 }
 
@@ -269,7 +303,7 @@ li.repo .language {
         float: right;
 }
 
-#pub {padding: 5px; 
+.pub {padding: 5px; 
       border-width: 2px; 
       border-style: none; 
       background-color: #fff; 
@@ -280,12 +314,12 @@ li.repo .language {
       margin-bottom: 5px;
       vertical-align: middle;}
 
-#pub a{font-weight: bold; color: #09434e;}
-#pub name{font-weight: bold; color: #09434e;}
-#pub journal{font-style: italic;}
-#pub links{ font-weight: bold; color: black; vertical-align: bottom;}
-#pub links a{ font-weight: bold; color: maroon; font-style: italic;}
-#pub img{height: 4em; align: right; padding-right: 3px;}
+.pub a{font-weight: bold; color: #09434e;}
+.pub name{font-weight: bold; color: #09434e;}
+.pub journal{font-style: italic;}
+.pub links{ font-weight: bold; color: black; vertical-align: bottom;}
+.pub links a{ font-weight: bold; color: maroon; font-style: italic;}
+.pub img{height: 4em; align: right; padding-right: 3px;}
 
 .highlight { font-size: 85% }
 .highlight { line-height: 120% }
@@ -407,9 +441,24 @@ button + label{
 .container .pub,
 .container .gap{
   width: 48%;
-  display: inline-block;
 }
 
-.container .pub{
+.container .gist{
+  width: 32%;
+}
+
+.container .filterable{
   display: none;
+}
+
+.gist tag{
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+    padding: 2px;
+    margin: 2px;
+    vertical-align: bottom;
+    float: right;
+    font-size: 80%;
+    opacity: 70%;
 }

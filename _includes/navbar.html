@@ -18,13 +18,16 @@
           <a href="{{ site.url }}/publications.html">Publications</a></li>
 
           {% if page.url == "/noteblog.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="{{ site.url }}/noteblog.html">NoteBlog</a></li>
+          <a href="{{ site.url }}/noteblog.html">Blog</a></li>
+
+          {% if page.url == "/notebooks.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{ site.url }}/notebooks.html">Notebooks</a></li>
 
           {% if page.url == "/code.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="{{ site.url }}/code.html">Code</a></li>
+          <a href="{{ site.url }}/code.html">Repos</a></li>
 
           {% if page.url == "/teaching.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="{{ site.url }}/teaching.html">Teaching</a></li>
+          <a href="{{ site.url }}/teaching.html">Learning</a></li>
 
           {% if page.url == "/tools.html" %}<li class="active">{% else %}<li>{% endif %}
           <a href="{{ site.url }}/tools.html">Tools</a></li>
