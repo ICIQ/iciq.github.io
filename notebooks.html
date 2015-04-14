@@ -1,0 +1,96 @@
+---
+title: Jupyter Notebooks
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My open lab notebook">
+    <meta name="author" content="David Ketcheson">
+
+
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario">
+    <link href="{{ site.url }}/assets/css/light.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/style.css">
+
+    <!-- Le javascript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/strftime.js"></script>
+    <script type="text/javascript">
+    (function ($, undefined) {
+        var userName = "ketch";
+
+        $.getJSON("https://api.github.com/users/" + userName + "/gists?per_page=100&callback=?", function (result) {
+
+            var gists = result.data;  // list of my repos from Github in JSON format
+            //var gists = result;  // list of my repos from Github in JSON format
+
+            $.each(gists, function (i, gist) { //loop over all gists
+                var f = gist.files[Object.keys(gist.files)[0]]
+                if (f.filename.split('.')[1] === 'ipynb') { // Only include notebooks
+                    var $item = $("<div>").addClass("gist filterable ");
+                    var urlList = gist.html_url.split('/');
+                    var gist_hash = urlList[urlList.length-1];
+                    var $link = $("<a>").attr("href", "http://nbviewer.ipython.org/" + gist_hash).appendTo($item);
+                    $.each(gist.files, function(j, f){
+                        //$link.append(f.filename.split('.')[0]);
+                        $link.append($("<name>").text(f.filename.split('.')[0]));
+                    });
+                    if (gist.description != null) {
+                        var desc = gist.description.split(/\s+/g);  //unfortunately destroys newlines
+                        var tags = [];
+                        var rest = [];
+                        $.each(desc, function(j, word){
+                            if (word[0] === "#") {
+                                tags.push(word);
+                            }
+                            else {
+                                rest.push(word);
+                            };
+                        });
+                        $item.append($("<p>").text(rest.join(' ')));
+                        $.each(tags, function(j, tag){
+                            $item.append($("<tag>").text(tag));
+                        });
+                    };
+                    //console.log($item.html());
+                    $item.appendTo("#FilteredSet");
+                };
+
+            });
+        });
+    })(jQuery); // so $ means jQuery in the function above.
+
+    </script>
+  </head>
+  <body>
+
+  {% include navbar.html %}
+
+
+
+  <div class="container"> <!-- Twitter bootstrap has all body content in a container -->
+<header class="jumbotron subhead">
+    <h1 class="entry-title">{{ page.title }}</h1>
+    <p>{{ page.subtitle }}</p>
+</header>
+
+This is a searchable list of all my gisted Jupyter notebooks.  It may take a moment to load
+from Github.  The links take you directly to nbviewer.
+
+<div class="controls" id="Filters">
+      <h4>Search by title:</h4><input type="text" id="input" placeholder="search" >
+</div>
+
+<div id="FilteredSet" class="container"></div>
+
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+
+{% include footer.html %}
