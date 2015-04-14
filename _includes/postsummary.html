@@ -3,11 +3,11 @@
 <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 <h4><span>{{ post.subtitle }}</span></h4>
       {% assign foundImage = 0 %}
-      {% assign images = post.content | split:"<img " %}
+      {% assign images = post.content | split:"<img" %}
       {% for image in images %}
         {% if image contains 'src' %}
             {% if foundImage == 0 %}
-                {% assign html = image | split:"/>" | first %}
+                {% assign html = image | split:">" | first %}
 <img {{ html }} height="100" />
                 {% break %}
             {% endif %}
