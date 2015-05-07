@@ -350,3 +350,20 @@ If you're not familiar with KAUST, just compare the plot above with a [satellite
 map](https://www.google.com.sa/maps/@22.3154039,39.1157315,5583m/data=!3m1!1e3?h
 l=en).
 
+# Post-marathon update (May 2015)
+Last Sunday I ran my first marathon!  After reading the above, you may be wondering
+how the rest of my training went.  Well, the short story is told by this graph:
+
+![Total mileage]({{ site.baseurl}}notebooks/mmf_pandas_files/total_miles.png)
+
+Just after my original post, I broke my toe (not from running) and had to stop
+running for 3-4 weeks.  In the meantime, I started biking in order to stay in
+shape.  Later I started getting pain in my calf (still not sure why) when running,
+so I kept replacing some of my run workouts with biking.
+
+In total, I ran about 550 miles and biked about 370 miles.
+That sounds like a lot, but my total time spent on training workouts
+was just over 100 hours.  It seems pretty amazing to me that you can condition
+your body to run a marathon with only that much effort.
+
+My goal was to finish in 4 hours and my finish time was 3:56:44.  :-).
