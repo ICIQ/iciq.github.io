@@ -272,6 +272,12 @@ li.repo .language {
   overflow: hidden;
 }
 
+#related
+{ 
+    background-color: #ccc; 
+    padding: 5px 5px 5px 5px;
+}
+
 #postsum
 {
 	position: relative;
