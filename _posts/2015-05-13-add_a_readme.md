@@ -69,7 +69,8 @@ Here's what to do:
 
 That's it!  Other folks can now legally adapt your code for their own purposes.
 
-Congratulations on making it this far.  Step four is coming soon.
+Congratulations on making it this far.  Now go to 
+[step four]({% post_url 2015-05-14-write_docstrings %}).
 
 
 # Extra credit: Contributing.md and Thanks.md
