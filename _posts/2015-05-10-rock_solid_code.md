@@ -46,7 +46,7 @@ So here it is: my 12-step program to writing scientific code that you can believ
 3. [Add a README and a License]({% post_url 2015-05-13-add_a_readme %})
 4. [Write docstrings]({% post_url 2015-05-14-write_docstrings %})
 5. [Write  tests]({% post_url 2015-05-15-write_tests %})
-6. Keep track of issues (*coming soon*)
+6. [Keep track of issues]({% post_url 2015-05-16-track_issues %})
 7. Automate the tests (*coming soon*)
 8. Automate the build (*coming soon*)
 9. Use continuous integration (*coming soon*)
