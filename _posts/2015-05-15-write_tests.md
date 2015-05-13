@@ -45,5 +45,6 @@ Doctests are certainly not all there is to testing in Python, but for me they ar
 
 From now on, just make it a habit to add a docstring and a doctest whenever you write a new function.  Your future self will thank you.
 
-
 [Here's what my demo repository looks like at this stage](https://github.com/ketch/rock-solid-code-demo/blob/13ab3f8af4e6be813eaee512897948e4c5a178a7/factor.py).
+
+[Continue to step six]({% post_url 2015-05-16-track_issues %}).
