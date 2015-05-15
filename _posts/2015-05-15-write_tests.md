@@ -10,7 +10,7 @@ This is step 5 in your journey toward [rock-solid scientific Python code]({% pos
 
 Tests?  Ugh.
 
-I hear you.  Writing tests is not an inherently fun process.  However, the alternative is, debugging, staring at code and thinking real hard about what could be wrong, and more debugging.  I'll take writing tests any day of the week.
+I hear you.  Writing tests is not an inherently fun process.  However, the alternative is debugging, staring at code and thinking real hard about what could be wrong, and more debugging.  I'll take writing tests any day of the week.
 
 You may still not be convinced.  Fortunately, I don't have to convince you, because I'm not going to ask you to write tests in this step.  As a matter of fact, I tricked you into writing tests in step 4.  Remember those examples you put in your docstring?
 

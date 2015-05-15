@@ -25,9 +25,11 @@ Version control is your first tool in this regard, too.  Your second tool is Git
 
 Github will take you to a screen with different sets of instructions.  Choose that one that says "...or push an existing repository from the command line" and type what is shown there into a terminal (in your project directory):
 
-    cd /my/project/directory
-    git remote add origin git@github.com:username/projectname.git
-    git push -u origin master
+```sh
+cd /my/project/directory
+git remote add origin git@github.com:username/projectname.git
+git push -u origin master
+```
 	
 Tada!  You've just "pushed" your code to Github where it is made available to all the world!  As a bonus, you 
 can sleep soundly knowing that if your office floods and your house burns down tomorrow, your code will still

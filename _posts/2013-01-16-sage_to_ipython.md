@@ -37,8 +37,11 @@ has several limitations (see the list below).  But it has served my needs well.
 
 Usage:
 
-    >>> import sage2ipython
-    >>> sage2ipython.sage2ipy('/path/to/sage/worksheet/html/file','output_file_name.ipynb')
+```python
+   
+import sage2ipython
+sage2ipython.sage2ipy('/path/to/sage/worksheet/html/file','output_file_name.ipynb')
+```
 
 To convert all your SAGE worksheets, do:
 

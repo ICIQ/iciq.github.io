@@ -1,7 +1,7 @@
 ---
 layout: default
-title: David Ketcheson
-subtitle: Saving the world, one numerical method at a time
+title: Science in the Sands
+subtitle: Mathematics and computation from the shores of the Red Sea
 ---
 
 <div class="span12">
@@ -18,6 +18,7 @@ subtitle: Saving the world, one numerical method at a time
 
 <div class="span4">
 
+**David I. Ketcheson**
 ![floatright](assets/img/davidketcheson.jpg)
 I am an associate professor of [applied mathematics](http://cemse.kaust.edu.sa/academic/programs/applied-mathematics-computational-science/default.aspx) at King Abdullah University
 of Science and Technology ([KAUST](http://www.kaust.edu.sa)), where

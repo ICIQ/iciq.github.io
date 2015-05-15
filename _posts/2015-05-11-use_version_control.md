@@ -33,11 +33,13 @@ If you don't have it, get it here: http://git-scm.com/downloads.  Then take a mo
 
 Then do the following (replacing the directory and file names with the directory and files pertaining to your project):
 
-    cd my/project/
-    git init
-    git add project_file1
-    git add project_file2
-    ...
+```sh
+cd my/project/
+git init
+git add project_file1
+git add project_file2
+...
+```
     
 Go ahead and add all the relevant files.  When you're done, tell git to start keeping track of them by doing
 

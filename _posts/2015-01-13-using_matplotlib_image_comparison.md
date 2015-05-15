@@ -101,7 +101,7 @@ things to work (and the matplotlib package itself does the same!) is to put
 a `tests.py` script in the top directory of my package.  This script has the
 following contents:
 
-```
+```python
 #!/usr/bin/env python
 
 import matplotlib
@@ -113,7 +113,7 @@ nose.main()
 Instead of calling nosetests directly on Travis, I use the following in my `.travis.yml`
 file:
 
-```
+```yaml
 script:
   - cd $HOME/build/my/package
   - python tests.py
