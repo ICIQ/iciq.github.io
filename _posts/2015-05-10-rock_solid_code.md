@@ -59,7 +59,7 @@ I know what you're thinking: that sounds like a lot of work.  It is.  But my goa
 There is nothing magical about this precise set of steps; I could have broken them down in a different way or included others.  What's essential are the underlying principles:
 
 - Automation (steps 1, 5, 6,7, 8, 9, 10, 12): Removal of manual processes makes code more reliable.
-- Documentation (steps 3, 4, 5, 6, 11): Writing and thinking about the code make it more reliable.
+- Documentation (steps 3, 4, 5, 6, 11): Writing and thinking about the code makes it more reliable.
 - Communication/collaboration (steps 1, 2, 3, 4, 5, 6, 11): Code that is read and used by more than one person is more reliable.
 
 ## The 12-step challenge

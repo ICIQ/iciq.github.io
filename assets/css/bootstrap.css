@@ -673,8 +673,8 @@ cite {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 15px;
+  font-family: Arial, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 50px;
   color: #586e75;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -715,6 +715,7 @@ pre code {
   color: inherit;
   background-color: transparent;
   border: 0;
+  font-size: 50px;
 }
 
 .pre-scrollable {

@@ -78,7 +78,7 @@ Congratulations on making it this far.  Now go to
 It's great that other people can now make improvements to your code.  It would be even better if they sent those improvements back to you!  To encourage that, you should add a Contributing.md file to tell them what your standards for acceptable code are and what the process is for adding code to your repository.  Github provides a [standard template for such a file](https://raw.githubusercontent.com/contribute-md/contribute-md-template/master/contribute.md), though for small projects you can provide something much simpler.  Some good examples of contributing files are:
 
  - [Puppet](https://github.com/puppetlabs/puppet/blob/master/CONTRIBUTING.md)
- - [Factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails/blob/master/CONTRIBUTING.md)
+ - [Factory\_girl\_rails](https://github.com/thoughtbot/factory_girl_rails/blob/master/CONTRIBUTING.md)
  
  If people have contributed to your project, it's standard to have a file called Thanks.md that lists their names and contributions.
 
