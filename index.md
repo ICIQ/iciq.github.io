@@ -18,16 +18,17 @@ subtitle: Mathematics and computation from the shores of the Red Sea
 
 <div class="span4">
 
-**David I. Ketcheson**
-![floatright](assets/img/davidketcheson.jpg)
-I am an associate professor of [applied mathematics](http://cemse.kaust.edu.sa/academic/programs/applied-mathematics-computational-science/default.aspx) at King Abdullah University
-of Science and Technology ([KAUST](http://www.kaust.edu.sa)), where
-I lead the [Numerical Mathematics Group](http://numerics.kaust.edu.sa).
+<b>David I. Ketcheson</b>
+<img src="assets/img/davidketcheson.jpg" align="right"></img>
+I am an associate professor of
+<a href="http://cemse.kaust.edu.sa/academic/programs/applied-mathematics-computational-science/default.aspx">applied mathematics</a> at King Abdullah University
+of Science and Technology (<a href="http://www.kaust.edu.sa">KAUST</a>), where
+I lead the <a href="http://numerics.kaust.edu.sa">Numerical Mathematics Group</a>.
 
-My [research](http://numerics.kaust.edu.sa/research.html) involves
+My <a href="http://numerics.kaust.edu.sa/research.html">research</a> involves
 analysis and development of numerical methods for integration of ordinary
 and partial differential equations, as well as the implementation of such methods
-in [open source, accessible, high performance software](code.html)
+in <a href="code.html">open source, accessible, high performance software</a>
 and its application to understanding behavior of nonlinear waves in heterogeneous materials.
 
 <ul class="unstyled" style="font-size:.8em;line-height=.8em">
