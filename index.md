@@ -18,7 +18,7 @@ subtitle: Mathematics and computation from the shores of the Red Sea
 
 <div class="span4">
 
-<b>David I. Ketcheson</b>
+<b>David I. Ketcheson</b></br>
 <img src="assets/img/davidketcheson.jpg" align="right"></img>
 I am an associate professor of
 <a href="http://cemse.kaust.edu.sa/academic/programs/applied-mathematics-computational-science/default.aspx">applied mathematics</a> at King Abdullah University
