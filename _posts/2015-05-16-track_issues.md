@@ -93,3 +93,5 @@ project](https://github.com/clawpack/pyclaw/issues).  In academic research, I fi
 open a lot more issues than I close.  That's okay -- the issue tracker is not a to-do list
 that has to be fully completed at some point.  It's just a way of keeping track
 of useful improvements that could be made.
+
+[Continue to step seven]({% post_url 2015-05-29-automate_tests %}).
