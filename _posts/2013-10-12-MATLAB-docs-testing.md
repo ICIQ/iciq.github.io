@@ -88,7 +88,7 @@ If you know of better ways to do any of these things, please let me know in the 
 
 Of course, it's entirely possible to develop large, well-documented,
 well-tested, user-friendly packages in MATLAB --
-[Chebfun](http://www2.maths.ox.ac.uk/chebfun/) is one example.  It's just that
+[Chebfun](http://www.chebfun.org/) is one example.  It's just that
 this is the exception and not the rule in the MATLAB community.  Hopefully
 better integration with testing and documentation tools will improve this
 situation.
