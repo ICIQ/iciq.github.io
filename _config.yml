@@ -1,14 +1,24 @@
-title : David Ketcheson
-tagline: Numerical analysis and nonlinear waves
+title : Xiaodong Qi
+tagline: Exploring Quantum World
 author :
-  name : David I. Ketcheson
-  email : dketch@gmail.com
+  name : Xiaodong Qi
+  givenName: Xiaodong
+  familyName: Qi
+  twitter: i2000s
+  github: i2000s
+  email : i2000s@hotmail.com
 
 permalink: /:year/:month/:day/:title.html
 redirects: yes
-exclude: [ _posts/source/, _posts/_private/ ]
 
+#gems:
+#  - jekyll-pandoc
+
+encoding: utf-8
+
+## Markdown Parser 
 markdown: pandoc
+markdown_ext: markdown,md
 pandoc:
    extensions: [smart, mathjax]
 
@@ -18,10 +28,32 @@ lsi: True
 
 pageviews: yes    ## toggle on sidebar pageviews 
 gitstamps: yes
-repo: https://github.com/ketch/labnotebook # used in linking history
+username: i2000s
+repo: https://github.com/i2000s/Notebook # used in linking history
+
+twitter_api: yes
+#analytics: UA-18401403-1 ## Google Analytics key (in _includes/analytics.html)
 
 baseurl: '/'
 
 markdown: redcarpet
 #redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - .travis.yml
+  - _posts/*.Rmd
+  - _posts/source
+  - assets/_bootstrap-3.1.1
+  - Dockerfile
+  - build.R
+  - _cache
+  - Makefile
+  - deploy.sh
+  - fig.yml
+  - _posts/source/
+  - _posts/_private/
