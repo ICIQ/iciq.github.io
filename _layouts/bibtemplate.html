@@ -1,0 +1,14 @@
+---
+  layout: default
+  permalink: /pubs/
+  title: "Publications"
+  modified: 2016-04-13 6:47
+  tags: [publications]
+  share: true
+---
+
+{{ reference }}
+<br>
+
+{% if entry.poster %} <li> <a href="/poster/{{ entry.key }}.pdf">poster</a></li>{% endif %}
+{% if entry.website %} <li> <a href="{{ entry.website }}" target="_blank">website</a></li>{% endif %}

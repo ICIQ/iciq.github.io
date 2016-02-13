@@ -1,0 +1,42 @@
+---
+  layout: pub_details
+  title: Publication Details
+  image:
+    feature:
+  comments:
+  share: true
+---
+
+ <html>
+
+ <style>
+ div.pdfimg{
+ 	float: right;
+ 	border: 1px solid #BFBFBF;
+ 	box-shadow: 2px 2px 3px #aaaaaa;
+ 	margin: 10px;
+ }
+ </style>
+
+
+ <h3><center>{{ page.entry.title }}</center></h3>
+ <h4><center>{{ page.entry.author }}</center></h4>
+ <hr>
+
+ <div class="pdfimg">
+ 	<a href="/papers/{{ page.entry.key }}.pdf">
+ 		<img src="/papers/{{ page.entry.key }}.png" width="300">
+ 	</a>
+ </div>
+
+ {{ page.entry.abstract }}
+
+ <div style="clear:both"></div>
+
+ <hr>
+ <pre>
+ 	{% highlight tex %}
+ 	{{ page.entry.bibtex }}
+ 	{% endhighlight %}
+ </pre>
+ </html>
