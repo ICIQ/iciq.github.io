@@ -199,3 +199,6 @@ DEPENDENCIES
   rb-gsl
   redcarpet
   twitter
+
+BUNDLED WITH
+   1.11.2

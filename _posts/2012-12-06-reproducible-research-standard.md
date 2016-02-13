@@ -74,7 +74,7 @@ Pub­lish­ers](http://msp.org/about/).  This is a truly remarkable journal that
 will be the subject of another blog post in the near future, but what's
 important in this context is that the journal doesn't require authors to
 transfer copyright!  They only require a [license to
-publish](http://msp.berkeley.edu/editorial/uploads/camcos/accepted/120712-Ketcheson/copyright.pdf)
+publish](http://msp.berkeley.edu/editorial/uploads/camcos/accepted/120712-Qi/copyright.pdf)
 which includes this clause:
 
 >*The copyright holder retains the right to duplicate the Work by any means and to permit others to do the same with the exception of reproduction by services that collect fees for delivery of documents, which may be licensed only by the Publisher. In each case of authorized duplication of the Work in whole or in part, the Author(s) must still ensure that the original publication by the Publisher is properly credited.*

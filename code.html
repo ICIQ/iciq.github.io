@@ -11,7 +11,7 @@ subtitle: Getting science done
     <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My open lab notebook">
-    <meta name="author" content="David Ketcheson">
+    <meta name="author" content="Xiaodong Qi">
 
 
     <!-- Le styles -->
@@ -72,14 +72,14 @@ subtitle: Getting science done
         $link.append($("<h2>").text(repo.name));
         $link.append($("<h3>").text(repo.watchers + " watchers" + " / " + repo.open_issues + " open issues"));
         $link.append($("<p style='line-height:1em;'>").text(repoDescription(repo)));
-        $link.append($("<p style='line-height:1em;'>").text("Updated " + 
+        $link.append($("<p style='line-height:1em;'>").text("Updated " +
           strftime("%h %e, %Y", repo.pushed_at)));
         $link.append($("<h3>").addClass("language").text(repo.language));
-        
+
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/users/ketch/repos?per_page=100&callback=?", function (result) {
+      $.getJSON("https://api.github.com/users/i2000s/repos?per_page=100&callback=?", function (result) {
         var repos = result.data;
 
         $(function () {
@@ -143,19 +143,19 @@ subtitle: Getting science done
 
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
-        <div><h1>David Ketcheson's Projects</h1></div>
+        <div><h1>Xiaodong Qi's Projects</h1></div>
         <p> This is an automated index to Github repositories for my open source software projects.</p>
       </div>
 
       <div class="grid grid-3">
         <div id="statistics" class="grid-1 alpha header">
           <h1>Statistics</h1>
-          <p> <a href="https://github.com/ketch/repositories"><span id="num-repos">&nbsp;</span> public repos</a> </p>
-          <p><a href="https://github.com/ketch">https://github.com/ketch</a></p>
+          <p> <a href="https://github.com/i2000s/repositories"><span id="num-repos">&nbsp;</span> public repos</a> </p>
+          <p><a href="https://github.com/i2000s">https://github.com/i2000s</a></p>
         </div>
 
         <div id="recently-updated" class="grid-2 omega header">
-          <h1>Recently updated <a href="https://github.com/ketch/repositories">View All on GitHub</a></h1>
+          <h1>Recently updated <a href="https://github.com/i2000s/repositories">View All on GitHub</a></h1>
           <ol id="recently-updated-repos"></ol>
         </div>
       </div>
@@ -166,4 +166,3 @@ subtitle: Getting science done
 </html> -->
 
 {% include footer.html %}
-

@@ -49,8 +49,8 @@ module Jekyll
 #         )
         @client = Twitter::REST::Client.new(
           :consumer_key => ENV["TWIT_KEY"],
-          :consumer_secret => ENV["TWIT_SECRET"],
-          :access_token => ENV["TWIT_TOK"],
+         :consumer_secret => ENV["TWIT_SECRET"],
+         :access_token => ENV["TWIT_TOK"],
           :access_token_secret => ENV["TWIT_TOK_SECRET"]
         )
         tweets = @client.user_timeline(@user)

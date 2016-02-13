@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -avz _site/ dketch@davidketcheson.info:~/davidketcheson.info/
+rsync -avz _site/ qxd@unm.edu:~/qxd/
