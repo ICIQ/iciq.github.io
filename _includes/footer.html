@@ -1,26 +1,39 @@
        <footer class="footer">
          <div class="row">
             <div class="span6">
-              <!-- <a href="mailto:dketch@gmail.com"><i class="icon-envelope"></i></a> -->
-              <a href="mailto:dketch@gmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="{{site.url}}/assets/img/icon-email.png" alt="email"> </a> 
-              <a href="https://github.com/ketch" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="{{site.url}}/assets/img/icon-github.png" alt="github"> </a> 
-              <a href="https://plus.google.com/116021515467243730737"><img src="{{site.url}}/assets/img/icon-gplus.png" alt="G+"></a>
-              <a href="http://scholar.google.com/citations?user=ORoYyrYAAAAJ&hl=en"><img src="{{site.url}}/assets/img/icon-scholar.png" alt="G+"></a>
-              <a href="http://figshare.com/authors/David_Ketcheson/98644"><img src="{{site.url}}/assets/img/icon-figshare.png" alt="Figshare"></a>
-              <a href="https://twitter.com/DavidKetch"><img src="{{site.url}}/assets/img/icon-twitter.png" alt="Twitter"></a>
-              <a href="http://scicomp.stackexchange.com/users/123/david-ketcheson"><img src="{{site.url}}/assets/img/icon-scicomp.png" alt="Scientific Computing Stackexchange"></a>
-              <a href="http://academia.stackexchange.com/users/81/david-ketcheson"><img src="{{site.url}}/assets/img/icon-academia.png" alt="Academia Stackexchange"></a>
-              <a href="http://mathoverflow.net/users/20507/david-ketcheson"><img src="{{site.url}}/assets/img/icon-mathoverflow.png" alt="Mathoverflow"></a>
- 
-        <a href="{{ site.url }}/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
+
+              <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="{{site.url}}/assets/img/icon-email.png" alt="email"> </a>
+              <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="{{site.url}}/assets/img/icon-github.png" alt="github"> </a>
+              <a href="https://plus.google.com/+XiaodongQi"><img src="{{site.url}}/assets/img/icon-gplus.png" alt="G+"></a>
+              <a href="http://scholar.google.com/citations?user=6FdqHlIAAAAJ&hl=en"><img src="{{site.url}}/assets/img/icon-scholar.png" alt="G+"></a>
+              <!-- (<a href="http://figshare.com/authors/Xiaodong_Qi/98644"><img src="{{site.url}}/assets/img/icon-figshare.png" alt="Figshare"></a> -->
+              <a href="https://twitter.com/i2000s"><img src="{{site.url}}/assets/img/icon-twitter.png" alt="Twitter"></a>
+              <a href="{{ site.url }}/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
+              <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="{{site.url}}/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>
+
+              <p><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
+              <!--<h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><i class="icon-twitter"></i> Discussing </a></h4>
+              <div class="excerpt">
+                <div class="scroll">
+                  {% twitter_feed i2000s, 5 %}
+                </div>
+              </div>-->
             </div>
+
             <div class="span4">
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">David Ketcheson's NoteBlog</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+              <div class="team-member">
+              <img class="img-responsive img-thumbnail img-circle" width="200px" alt="" src="assets/img/qi2016.jpg" align="middle"></img>
+
+              </div>
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
+                  <img alt="Creative Commons License" style="border-width:0" align="right" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+                  <br /><p>Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }}.</p>
+                  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This site</span> is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
             </div>
         </div>
       </footer>
     </div><!-- /container -->
-    
+
     {% include javascript.html %}
   </body>
 </html>

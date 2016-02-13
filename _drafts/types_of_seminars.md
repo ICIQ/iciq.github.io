@@ -16,7 +16,7 @@ If you're like me, you give quite a few talks of the type just mentioned.  The o
 As a student, you will almost always want to focus most of your time on the top level of the pyramid, for two reasons.  First, 
 
 
-Author: **David Ketcheson**
+Author: **Xiaodong Qi**
 
 License: **CC-BY**
 

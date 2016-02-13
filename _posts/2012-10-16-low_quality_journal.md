@@ -7,7 +7,7 @@ tags: scientific-publishing
 categories: blog-post
 ---
 
-In the spirit of David Letterman's top 10 lists, here are my top 10 signs you might be 
+In the spirit of Xiaodong Letterman's top 10 lists, here are my top 10 signs you might be 
 a low quality scientific journal, inspired by an e-mail I received today from
 [Computing in Mathematics, Natural Sciences, Engineering and Medicine](http://www.ampublisher.com/Canadian-Journal-Computing.html).
 

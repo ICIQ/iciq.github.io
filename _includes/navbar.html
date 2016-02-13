@@ -14,20 +14,23 @@
           {% if page.url == "/index.html" %}<li class="active">{% else %}<li>{% endif %}
           <a href="{{ site.url }}/index.html">Home</a></li>
 
+          {% if page.url == "/research.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{ site.url }}/research.html">Research</a></li>
+
           {% if page.url == "/publications.html" %}<li class="active">{% else %}<li>{% endif %}
           <a href="{{ site.url }}/publications.html">Publications</a></li>
 
           {% if page.url == "/noteblog.html" %}<li class="active">{% else %}<li>{% endif %}
           <a href="{{ site.url }}/noteblog.html">Blog</a></li>
 
-          {% if page.url == "/notebooks.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="{{ site.url }}/notebooks.html">Notebooks</a></li>
+          <!-- {% if page.url == "/notebooks.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{ site.url }}/notebooks.html">Notebooks</a></li> -->
 
           {% if page.url == "/code.html" %}<li class="active">{% else %}<li>{% endif %}
           <a href="{{ site.url }}/code.html">Repos</a></li>
 
-          {% if page.url == "/teaching.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="{{ site.url }}/teaching.html">Learning</a></li>
+          <!-- {% if page.url == "/teaching.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{ site.url }}/teaching.html">Learning</a></li> -->
 
           {% if page.url == "/tools.html" %}<li class="active">{% else %}<li>{% endif %}
           <a href="{{ site.url }}/tools.html">Tools</a></li>
@@ -38,12 +41,10 @@
         </ul>
       </div><!--/.nav-collapse -->
        <form class="navbar-search pull-right" method="get" action="http://google.com/search">
-         <input type="hidden" name="q" value="site:davidketcheson.info">
+         <input type="hidden" name="q" value="site:{{ site.url }}">
          <input type="text" class="search-query" name="q">
-         <button class="btn btn-mini" type="submit"><i class="icon-search"></i></button> 
+         <button class="btn btn-mini" type="submit"><i class="icon-search"></i></button>
        </form>
      </div> <!-- /container -->
    </div> <!-- /navbar-inner -->
  </div> <!-- /navbar -->
-
-

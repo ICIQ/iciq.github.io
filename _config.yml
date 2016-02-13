@@ -16,7 +16,7 @@ redirects: yes
 
 encoding: utf-8
 
-## Markdown Parser 
+## Markdown Parser
 markdown: pandoc
 markdown_ext: markdown,md
 pandoc:
@@ -26,13 +26,13 @@ highlighter: pygments
 source: .
 lsi: True
 
-pageviews: yes    ## toggle on sidebar pageviews 
+pageviews: yes    ## toggle on sidebar pageviews
 gitstamps: yes
 username: i2000s
 repo: https://github.com/i2000s/Notebook # used in linking history
 
 twitter_api: yes
-#analytics: UA-18401403-1 ## Google Analytics key (in _includes/analytics.html)
+analytics: UA-46730871-1 ## Google Analytics key (in _includes/analytics.html)
 
 baseurl: '/'
 

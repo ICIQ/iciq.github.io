@@ -24,7 +24,7 @@ off the top of my head:
 * Because of the program of study requirements, I took a course in optimization,
   without which I would never have written [this paper](http://dx.doi.org/10.1090/S0025-5718-09-02209-1), parts of [this paper](http://arxiv.org/abs/1105.5798), and probably
   [this paper](http://dx.doi.org/10.2140/camcos.2012.7.247).
-* I met David Keyes (a member of the steering committee) and came to KAUST!
+* I met Xiaodong Keyes (a member of the steering committee) and came to KAUST!
   I almost certainly would not be here if it weren't for the CSGF program.
 * I met Carl Boettiger and learned about using Jekyll for open notebook science,
   resulting in the site you are reading.
@@ -43,4 +43,4 @@ know the CSGF program and its significance, I urge you to do so too.
 
 >Sincerely,
 
->Professor David I. Ketcheson
+>Professor Xiaodong I. Qi

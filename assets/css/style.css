@@ -129,10 +129,10 @@ li.repo {
   display: inline-block;
 }
 
-.gist {padding: 5px; 
-    border-width: 2px; 
-    border-style: none; 
-    background-color: #fff; 
+.gist {padding: 5px;
+    border-width: 2px;
+    border-style: none;
+    background-color: #fff;
     font-size: 1.1em;
     line-height: 1.1em;
     margin-top: 5px;
@@ -143,7 +143,7 @@ li.repo {
 }
 
 .gist a{
-    font-weight: bold; 
+    font-weight: bold;
     color: #09434e;
     display: block
 }
@@ -226,7 +226,7 @@ li.repo h3 {
 li.repo .language {
   position: absolute;
   top: -2px;
-  right: 4px;  
+  right: 4px;
   text-align: right;
   z-index: 3;
   color: #000;
@@ -280,8 +280,8 @@ li.repo .language {
 }
 
 #related
-{ 
-    background-color: #ccc; 
+{
+    background-color: #ccc;
     padding: 5px 5px 5px 5px;
 }
 
@@ -316,10 +316,10 @@ li.repo .language {
         float: right;
 }
 
-.pub {padding: 5px; 
-      border-width: 2px; 
-      border-style: none; 
-      background-color: #fff; 
+.pub {padding: 5px;
+      border-width: 2px;
+      border-style: none;
+      background-color: #fff;
       font-size: 1.1em;
       line-height: 1.1em;
       margin-top: 5px;
@@ -404,7 +404,7 @@ li.repo .language {
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
-.highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;} 
+.highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
 .lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
 .lineno::selection {background-color: transparent;} /* Other major browsers */
 
@@ -486,3 +486,54 @@ pre {
           border-radius: 3px;
 }
 
+/*---------------------------------
+# obfuscation for contact info
+-----------------------------------*/
+.obfuscate { unicode-bidi: bidi-override; direction: rtl; }
+
+/*--------------------------------
+# TeamMember
+--------------------------------*/
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+
+/*-----------------------
+# CircleImage
+-----------------------*/
+figure{margin:0}
+img{vertical-align:middle}
+.carousel-inner > .item > a > img, .carousel-inner > .item > img,
+.img-responsive, .thumbnail a > img{display:block;max-width:100%;height:auto}
+.img-rounded{border-radius:6px}
+.img-thumbnail{display:inline-block;
+  max-width:100%;
+  height:auto;
+  padding:4px;
+  line-height:1.42857143;
+  background-color:#fff;
+  border:1px solid #ddd;
+  border-radius:4px;
+  -webkit-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out}
+.img-circle{border-radius:50%}
