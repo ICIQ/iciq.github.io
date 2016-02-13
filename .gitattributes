@@ -15,5 +15,6 @@ README text eol=lf
 *.yml text eol=lf
 *.R text eol=lf
 *.ipynb text eol=lf
+*.csl text eol=lf
 
 *.pdf binary

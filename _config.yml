@@ -40,6 +40,28 @@ markdown: redcarpet
 #redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
+# Publications. Ref: http://tuxette.nathalievilla.org/?p=1426
+# http://eric-tramel.github.io/working-automated-publications/
+# csl style: https://github.com/citation-style-language/styles
+scholar:
+  style: assets/APS.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: assets
+  bibliography: QiPublications
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+
+  details_dir:    pubs
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
 
 exclude:
   - Gemfile
