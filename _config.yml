@@ -43,6 +43,8 @@ markdown: redcarpet
 # Publications. Ref: http://tuxette.nathalievilla.org/?p=1426
 # http://eric-tramel.github.io/working-automated-publications/
 # csl style: https://github.com/citation-style-language/styles
+gems:
+  - "jekyll/scholar"
 scholar:
   style: assets/APS.csl
   locale: en

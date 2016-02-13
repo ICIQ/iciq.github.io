@@ -1,5 +1,7 @@
 _plugins/_cache
 _site
+TEMP
+
 *~
 _twitter.yml
 _garb.yml
