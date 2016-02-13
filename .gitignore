@@ -1,3 +1,6 @@
 _plugins/_cache
 _site
 *~
+_twitter.yml
+_garb.yml
+Gemfile.lock
