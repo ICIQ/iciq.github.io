@@ -12,8 +12,8 @@ before_script:
   - sudo apt-get install pandoc
 
 before_install:
-  - gem update --system
-  - gem update bundler
+  - sudo gem update --system
+  - sudo gem install bundler
 
 install:
   - travis_retry bundle install
