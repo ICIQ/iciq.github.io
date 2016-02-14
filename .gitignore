@@ -1,7 +1,7 @@
 _plugins/_cache
 _site
 _config
-TEMP
+_TEMP
 
 *~
 _twitter.yml
