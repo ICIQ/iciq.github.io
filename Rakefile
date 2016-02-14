@@ -221,7 +221,7 @@ namespace :site do
     Dir.chdir(EXTERNAL) do
 			sh "rsync -a #{WORKDIR}/_site/* ."
       sh "git add --all ."
-      sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
+      sh "git commit -m 'Updating to #{sha}.'"
       sh "git push origin #{DESTINATION_BRANCH} --quiet"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
