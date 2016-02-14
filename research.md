@@ -26,7 +26,7 @@ My study has also been naturally extended to the implementation of atomic coolin
 In addition, through establishing the theoretical fundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons and its application to quantum simulations/computations due to the strong light-atom coupling effects, 
 and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for quantum information applications.  Stay tuned!
 
-## Short course: HyperPython
+## Collaborators
 
 This is a 1-day course (designed to take about 7 hours) introducing the
 basics of hyperbolic PDE theory and numerical discretization, and leading
@@ -35,7 +35,7 @@ flow and fluid dynamics are used as the primary examples.
 
  - [HyperPython notebooks](http://github.com/ketch/HyperPython/)
 
-## Short course: Teaching Numerics with Notebooks
+## Visits and presentations
 
 These notebooks were prepared by myself and [Aron Ahmadia](http://aron.ahamadia.net)
 for a tutorial we gave at SciPy 2014.  They're aimed at university professors
@@ -49,7 +49,7 @@ and others who wish to teach numerical methods with Python.
  - [My SciPy 2014 proceedings paper on the same topic](https://github.com/scipy-conference/scipy_proceedings/pull/82)
 
 
-### About this page
+### Publications
 
 *In 2011, I began keeping my teaching materials under version control.
 In 2013, I began posting them in a public repository on Github, simply as a way
