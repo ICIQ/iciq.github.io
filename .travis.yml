@@ -3,11 +3,23 @@
 language: ruby #haskell
 rvm:
   - 2.2
-  - 2.1
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
 
 branches:
   only:
     - dev
+## Update composer and run the appropriate composer command
+before_script:
+  - composer self-update -q
+  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
+  - if [ -z "$dependencies" ]; then composer install; fi;
+  - if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest -n; fi;
+  - if [ "$dependencies" = "highest" ]; then composer update -n; fi;
+  - composer show -i
 
 before_install:
   - sudo add-apt-repository -y ppa:marutter/c2d4u
@@ -29,6 +41,7 @@ script:
   #  - echo -e $garb2 >> _garb.yml
   #  - bundle exec rake site:deploy --quiet
   #  - rm -f _twitter.yml _garb.yml
+  - bundle exec rake travis
 
 env:
   global:
