@@ -21,6 +21,7 @@ gem 'jekyll-twitter-plugin' # For twitter API.
 
 gem "git"         # Git gem
 gem "redcarpet"
+gem "pygments"
 
 ## Working locally only
 gem "garb" #, "~> 0.9.8"    # Google Analytics API
