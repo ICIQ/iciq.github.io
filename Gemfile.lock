@@ -2,7 +2,7 @@ GIT
   remote: https://github.com/jekyll/classifier-reborn
   revision: 4b3d94fb2b50817a46a629cf427c8494a33f40bd
   specs:
-    classifier-reborn (2.0.3)
+    classifier-reborn (2.0.4)
       fast-stemmer (~> 1.0)
 
 GEM
@@ -59,7 +59,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
-    jekyll (2.5.3)
+    jekyll (>= 2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
       jekyll-coffeescript (~> 1.0)
