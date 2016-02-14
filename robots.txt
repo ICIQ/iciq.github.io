@@ -1,1 +1,1 @@
-Sitemap: http://github.com/i2000s/Notebook/sitemap.txt
+Sitemap: http://i2000s.github.io/sitemap.txt

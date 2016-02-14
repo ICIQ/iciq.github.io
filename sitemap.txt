@@ -2,7 +2,7 @@
 title : Sitemap
 ---
 {% for page in site.pages %} 
-http://github.com/i2000s/Notebook{{ page.url }} {% endfor %}
+http://i2000s.github.io{{ page.url }} {% endfor %}
 
 {% for post in site.posts %} 
-http://github.com/i2000s/Notebook{{ post.url }} {% endfor %}
+http://i2000s.github.io{{ post.url }} {% endfor %}
