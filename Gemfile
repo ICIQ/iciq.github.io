@@ -29,3 +29,4 @@ gem 'classifier-reborn', :git => "https://github.com/jekyll/classifier-reborn"
 gem 'rb-gsl'
 #gem 'narray', :git => "https://github.com/tonyarnold/narray"
 #gem 'gsl', :git => "https://github.com/tonyarnold/rb-gsl"
+gem 'gsl', :git => 'git://github.com/siefca/rb-gsl'
