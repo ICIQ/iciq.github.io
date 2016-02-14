@@ -40,19 +40,19 @@ module Jekyll
         out = "<ul>"
 
 
-         cred = YAML.load_file("_twitter.yml")
-         @client = Twitter::REST::Client.new(
-           :consumer_key => cred[":consumer_key"],
-           :consumer_secret => cred[":consumer_secret"],
-           :access_token => cred[":oauth_token"],
-           :access_token_secret => cred[":oauth_token_secret"]
-         )
-#        @client = Twitter::REST::Client.new(
-#          :consumer_key => ENV["TWIT_KEY"],
-#         :consumer_secret => ENV["TWIT_SECRET"],
-#         :access_token => ENV["TWIT_TOK"],
-#          :access_token_secret => ENV["TWIT_TOK_SECRET"]
-#        )
+#         cred = YAML.load_file("_twitter.yml")
+#         @client = Twitter::REST::Client.new(
+#           :consumer_key => cred[":consumer_key"],
+#           :consumer_secret => cred[":consumer_secret"],
+#           :access_token => cred[":oauth_token"],
+#           :access_token_secret => cred[":oauth_token_secret"]
+#         )
+        @client = Twitter::REST::Client.new(
+          :consumer_key => ENV["TWIT_KEY"],
+         :consumer_secret => ENV["TWIT_SECRET"],
+         :access_token => ENV["TWIT_TOK"],
+          :access_token_secret => ENV["TWIT_TOK_SECRET"]
+        )
         tweets = @client.user_timeline(@user)
         for i in 0 ... @count.to_i
         out = out + "<li>" +

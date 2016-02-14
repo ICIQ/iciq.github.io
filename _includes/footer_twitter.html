@@ -12,7 +12,13 @@
               <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="{{site.url}}/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>
 
               <p><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
-              
+              <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><i class="icon-twitter"></i> Discussing </a></h4>
+              <div class="excerpt">
+                <div class="scroll">
+                  {% twitter_feed i2000s, 5 %}
+                </div>
+              </div>
+            </div>
 
             <div class="span4">
               <div class="team-member">
