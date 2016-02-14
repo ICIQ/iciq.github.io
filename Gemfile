@@ -4,7 +4,7 @@ source "https://rubygems.org/"
 
 gem "rake"#  , "~> 10.2.1"
 
-gem "jekyll", '~>2.5.1'          #, ">= 3.0.0"
+gem "jekyll", '~>2.5.3'          #, ">= 3.0.0"
 gem "jekyll-assets"   #, "~> 0.7.6"
 gem "jekyll-scholar"  #, "~> 2.0.0"
 gem "jekyll-pandoc"   #, "~> 0.0.1"
@@ -21,7 +21,7 @@ gem 'jekyll-twitter-plugin' # For twitter API.
 
 gem "git"         # Git gem
 gem "redcarpet"
-gem 'pygments.rb', '~> 0.3.7'
+gem 'pygments.rb', '~> 0.6.0'
 
 ## Working locally only
 gem "garb" #, "~> 0.9.8"    # Google Analytics API
