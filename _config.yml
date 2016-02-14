@@ -30,7 +30,7 @@ lsi: True
 pageviews: yes    ## toggle on sidebar pageviews
 gitstamps: yes
 username: i2000s
-repo: https://github.com/i2000s/Notebook # used in linking history
+repo: i2000s.github.io # used in linking history and auto-deploy the site on travis-CI.
 
 twitter_api: yes
 analytics: UA-46730871-1 ## Google Analytics key (in _includes/analytics.html)
