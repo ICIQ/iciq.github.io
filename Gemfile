@@ -4,7 +4,7 @@ source "https://rubygems.org/"
 
 gem "rake"#  , "~> 10.2.1"
 
-gem "jekyll"          #, "~> 1.5.0"
+gem "jekyll", '>=3.0.0'          #, ">= 3.0.0"
 gem "jekyll-assets"   #, "~> 0.7.6"
 gem "jekyll-scholar"  #, "~> 2.0.0"
 gem "jekyll-pandoc"   #, "~> 0.0.1"
@@ -25,7 +25,7 @@ gem "redcarpet"
 ## Working locally only
 gem "garb" #, "~> 0.9.8"    # Google Analytics API
 
-gem 'classifier-reborn', :git => "https://github.com/jekyll/classifier-reborn", '>=2.0.4' # To fix the equal sign warning.
+gem 'classifier-reborn', '>=2.0.4', :git => "https://github.com/jekyll/classifier-reborn" # To fix the equal sign warning.
 gem 'rb-gsl'
 #gem 'narray', :git => "https://github.com/tonyarnold/narray"
 #gem 'gsl', :git => "https://github.com/tonyarnold/rb-gsl"
