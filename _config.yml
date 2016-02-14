@@ -1,4 +1,4 @@
-title : Xiaodong Qi
+title : Xiaodong Qi's academic NoteBlog
 tagline: Exploring Quantum World
 author :
   name : Xiaodong Qi
@@ -13,6 +13,7 @@ redirects: yes
 
 #gems:
 #  - jekyll-pandoc
+gems: ['jekyll-twitter-plugin']
 
 encoding: utf-8
 

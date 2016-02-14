@@ -17,6 +17,7 @@ gem "twitter"#, "~> 5.8.0" # Twitter API
 gem "nokogiri"            # HTML / XML parser
 gem "feedjira"            # Atom/RSS parser
 gem "chronic"             # Natural language time parser
+gem 'jekyll-twitter-plugin' # For twitter API.
 
 gem "git"         # Git gem
 gem "redcarpet"

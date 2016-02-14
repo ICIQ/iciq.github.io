@@ -5,22 +5,15 @@
   modified: 2016-02-13 6:47
   tags: [publications]
   image:
-    feature: redriver.jpg
+    feature: /assets/img/qi2016.jpg
   share: true
 ---
 
- <!--## Current Preprints
- {% bibliography --file QiPublications-preprint %}-->
+<h2> Articles </h2>
+ 
+{% bibliography --file QiPublications --query @article %}
 
- <!--## Books & Long-form Articles -->
- <!--{% bibliography --file tramel-book %}-->
+<h2> Theses </h2>
 
- ## Articles
- {% bibliography --file QiPublications-article %}
- <!--{% bibliography --query @article[status!=editorial && status!=other] %}-->
-
- <!--## Patents
- {% bibliography --file tramel-patent %}-->
-
- ## Conference
- {% bibliography --file QiPublications-conference %}
+{% bibliography --file QiPublications --query @phdthesis %}
+{% bibliography --file QiPublications --query @mastersthesis %}
