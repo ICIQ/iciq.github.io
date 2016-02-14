@@ -29,10 +29,12 @@ I am a PhD candidate of
 I am doing theoretical study with <a href="http://info.phys.unm.edu/~ideutsch">Prof. Ivan Deutsch</a>.
 
 My <a href="/research.html">research</a> involves
-analysis and development of numerical methods for integration of ordinary
-and partial differential equations, as well as the implementation of such methods
-in <a href="code.html">open source, accessible, high performance software</a>
-and its application to understanding behavior of nonlinear waves in heterogeneous materials.
+theoretical studies on the strong coupling between atoms and photons on some nanofiber and nanophotonic platforms.
+My current focus is the dispersive response theory of cold atoms trapped in the strong evanescent field of an optical nanofiber. 
+This includes applications on quantum nondemolition (QND) measurement with dramatical improvements compared to the free-space platform that has been widely studied for atomic clocks and quantum information protocols.
+My study has also been naturally extended to the implementation of atomic cooling and state preparation protocols based on optical pumping procedures on the nanofiber platform, which is challenging due to the complicated nature of the field components of fiber modes compared to the well-studied free-space cases.
+In addition, through establishing the theoretical fundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons and its application to quantum simulations/computations due to the strong light-atom coupling effects, 
+and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for quantum information applications.
 
 <ul class="unstyled" style="font-size:.8em;line-height=.8em">
 <li style="margin:-6px"> Office: 30 Physics and Astronomy Department
