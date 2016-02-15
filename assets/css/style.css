@@ -502,7 +502,7 @@ img::-moz-selection {
 }
 .team-member {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 .team-member img {
   margin: 0 auto;

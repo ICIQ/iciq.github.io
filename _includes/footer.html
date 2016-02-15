@@ -1,32 +1,38 @@
        <footer class="footer">
-         <div class="row">
-            <div class="span6">
+         <div class="span12">
+            <div class="span5">
 
-              <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="{{site.url}}/assets/img/icon-email.png" alt="email"> </a>
-              <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="{{site.url}}/assets/img/icon-github.png" alt="github"> </a>
-              <a href="https://plus.google.com/+XiaodongQi"><img src="{{site.url}}/assets/img/icon-gplus.png" alt="G+"></a>
-              <a href="http://scholar.google.com/citations?user=6FdqHlIAAAAJ&hl=en"><img src="{{site.url}}/assets/img/icon-scholar.png" alt="G+"></a>
-              <!-- (<a href="http://figshare.com/authors/Xiaodong_Qi/98644"><img src="{{site.url}}/assets/img/icon-figshare.png" alt="Figshare"></a> -->
-              <a href="https://twitter.com/i2000s"><img src="{{site.url}}/assets/img/icon-twitter.png" alt="Twitter"></a>
-              <a href="{{ site.url }}/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
-              <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="{{site.url}}/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>
+              <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" alt="email"> </a>
+              <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" alt="github"> </a>
+              <a href="https://plus.google.com/+XiaodongQi"><img src="/assets/img/icon-gplus.png" alt="G+"></a>
+              <a href="http://scholar.google.com/citations?user=6FdqHlIAAAAJ&hl=en"><img src="/assets/img/icon-scholar.png" alt="G+"></a>
+              <a href="https://twitter.com/i2000s"><img src="/assets/img/icon-twitter.png" alt="Twitter"></a>
+              <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
+              <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>
 
-              <p><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
-              
+              <br><span> &nbsp; </span> <span><a href="/CV-XiaodongQi.pdf"> CV of Xiaodong Qi</a></span>
 
-            <div class="span4">
-              <div class="team-member">
+                <br><img alt="Creative Commons License" style="border-width:0" align="right" src="https://licensebuttons.net/l/by/3.0/88x31.png" />
+                <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This site</span> is licensed under the
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>.
+                <br>
+
+           </div>
+
+           <div class="span4">
+              <div class="span4 team-member" marge-top="-20px">
               <img class="img-responsive img-thumbnail img-circle" width="200px" alt="" src="/assets/img/qi2016.jpg" align="middle"></img>
+           </div>
 
-              </div>
-                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
-                  <img alt="Creative Commons License" style="border-width:0" align="right" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
-                  <br /><p>Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }}.</p>
-                  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This site</span> is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
-            </div>
-        </div>
-      </footer>
-    </div><!-- /container -->
+      </div>
+      <div class="span12" align="center">
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+              <span align="center" margin-top="-10px">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }}. </span></a>
+            <br>
+      </div>
+
+    </footer>
+   </div><!-- /container -->
 
     {% include javascript.html %}
   </body>
