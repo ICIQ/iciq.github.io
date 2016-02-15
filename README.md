@@ -26,24 +26,58 @@ using some [code David Ketcheson wrote to generate HTML divs from Bibtex](https:
 It also makes use of [jQuery](https://github.com/ketch/tex2_rst_html) and
 [MixItUp](https://mixitup.kunkalabs.com/) for filtering and searching.
 
-Please report any errors or other feedback in the [Issue Tracker](https://github.com/ketch/labnotebook/issues).
+Please report any errors or other feedback in the [Issue Tracker](https://github.com/i2000s/i2000s.github.io/issues).
 
 Additional Site Features & Credits
 ==================================
 * CSS generated with [twitter bootstrap](http://twitter.github.com/bootstrap/)
 * [Carl Boettiger's plugins](https://github.com/cboettig/jekyll-labnotebook-plugins) for Mendeley, Github, Twitter and others
-* Site hosting by [Dreamhost](http://dreamhost.org)
-* Source code hosting on [Github](https://github.com/ketch/labnotebook)
+* ~~Site hosting by [Dreamhost](http://dreamhost.org)~~
+* Source code hosting on [Github](https://github.com/ketch/labnotebook) with automatic deployment using [Travis-CI](http://travis-ci.org) and Rake
 * Improved "related posts" plugin from [David Lynch](https://github.com/kemayo/davidlynch.org/blob/master/_plugins/related_posts.rb)
+* Improved publication and citation support from [Jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) with some customizations
+
+Instruction on hosting the site locally
+=======================================
+I use Ubuntu 12.04 LTS OS to generate the static website from source code.
+Instructions on other operating systems should be similar.
+
+If you run Jekyll sites for the first time, you may need to install Ruby v2.2.* (tested on v2.2.4) and the `gem` development envirenment.
+I was basically following [this instruction](http://tecadmin.net/install-ruby-on-rails-on-ubuntu/) on my Ubuntu,
+except for the step of sourcing RVM which I used the following command line instead  
+```
+source ~/.rvm/scripts/rvm
+```
+If the source is setup correctly, `type rvm | head -n 1` should give `rvm is a function` as the output according to [this](https://rvm.io/rvm/install).
+For other systems, [here](https://www.ruby-lang.org/en/documentation/installation/) is the official guide for Ruby installation.
+
+Besides, the library of `gsl` and the `pandoc` package are recommended to install for better support to the `clarifier-reborn` and other plugins/scripts used in this site.
+On Ubuntu, I use the following lines
+```
+sudo add-apt-repository -y ppa:marutter/c2d4u
+sudo apt-get update
+sudo apt-get install pandoc
+sudo apt-get install gsl-bin libgsl0-dev
+```
+Otherwise, the `.travis.yml` configuration file should have some basic settings to follow.
+
+The `Gemfile` and the configuration file `_conf.yml` should include sufficient information on installing correct dependences.
+Then for a routinely rendering, you only need to run the following command lines:
+```
+bundle install
+bundle exec jekyll serve
+```
+Notice that, I have locked the Jekyll version to `~>2.5.3`.
+If you want to use Jekyll version 3.0.0 or above, you may need to tweak the code a little bit.
 
 Authorships of posts before Feb 10th, 2016
 =========================================
-Please be advised that blog posts time-stamped before Feb 10th of 2016 were written by [David Ketcheson](http://davidketcheson.info).
-I found they are good materials for open science, and didn't remove all of them while adapting the source code of the notebook site for my current website.
-The authorships on those posts will be disclaimed more clearly by explicit statements on those posts once I got a chance. 
+Since this site was basically built on top of [David Ketcheson](http://davidketcheson.info) and [Carl Boettiger](http://carlboettiger.info)'s Labnotebook sites following the permitted Creative Commons license, please be advised that blog posts time-stamped before Feb 10th of 2016 may be written by David Ketcheson or Carl Boettiger.
+I found most of them are good materials for open science, and hence didn't remove all of them while adapting the source code for my current website.
+The authorships on those posts will be disclaimed more clearly by explicit statements and links to the origination on those posts--once I got a chance.
 
 
 License
 -------
 
-[CC-BY](http://creativecommons.org/licenses/by/3.0/deed.en_US)
+[CC-BY](https://creativecommons.org/licenses/by/4.0/)
