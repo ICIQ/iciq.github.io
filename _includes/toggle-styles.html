@@ -5,7 +5,7 @@ Use: Add a button to toggle styles between light and dark css. e.g.
 And add this in _includes/footer.html or _includes/javascript.html, eg
 {% include switch-styles.html %}
 
-Alternate method: see switch-css.js 
+Alternate method: see switch-css.js
 -->
 
 <script type="text/javascript">
@@ -14,7 +14,7 @@ $(document).ready(function() {
   // when click on the element with id="togglestyle"
   $('#togglestyle').click(function(){
     plusmin *= -1;        // change the polarity of "plusmin" var
-    var stl = plusmin>0 ? '{{ site.url }}/assets/css/light.css' : '{{ site.url }}/assets/css/dark.css';     // sets the css file, according to plusmin
+    var stl = plusmin>0 ? '/assets/css/light.css' : '/assets/css/dark.css';     // sets the css file, according to plusmin
 
     // change the css file of the tag with id="stl" and rel="stylesheet"
     $('#stl[rel=stylesheet]').attr('href', stl);
