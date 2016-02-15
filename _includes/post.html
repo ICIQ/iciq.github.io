@@ -3,15 +3,15 @@
   {% include header.html %}
 
       <div class="row">
-        <div class="span9">
+        <div class="span10">
           {{ content }}
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
-          <div class="addthis_sharing_toolbox"></div>
+          <div class="addthis_sharing_toolbox">ShareIt!</div>
         </div>
 
 
         <!-- Custom sidebar -->
-        <div class="span3">
+        <div class="span2">
           <div class="sidebar">
             Posted on
             <time pubdate datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>. <br>
