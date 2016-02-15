@@ -30,8 +30,8 @@ cd /my/project/directory
 git remote add origin git@github.com:username/projectname.git
 git push -u origin master
 ```
-	
-Tada!  You've just "pushed" your code to Github where it is made available to all the world!  As a bonus, you 
+
+Tada!  You've just "pushed" your code to Github where it is made available to all the world!  As a bonus, you
 can sleep soundly knowing that if your office floods and your house burns down tomorrow, your code will still
 be there waiting for you.  The result should look something like [my demo](https://github.com/ketch/rock-solid-code-demo).
 
@@ -39,3 +39,6 @@ To learn more about using Github, take a few minutes to read the [Software Carpe
 lesson](http://www.software-carpentry.org/v5/novice/git/02-collab.html).
 
 Now [go on to step three]({% post_url 2015-05-13-add_a_readme %}).
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/12/code_in_the_open.html](http://www.davidketcheson.info/2015/05/12/code_in_the_open.html)
+ under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

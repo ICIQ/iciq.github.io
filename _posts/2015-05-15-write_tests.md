@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step 5 - write tests 
+title: Step 5 - write tests
 tags:
     - python
     - testing
@@ -35,7 +35,7 @@ if __name__ == "__main__":
 After adding that, I can just do
 
     python my_file.py -v
-    
+
 and it will automatically run the doctests.  One warning: if you don't add the
 `-v` flag (for verbose) on the command line, then there will be no printed
 output at all unless some test fails.  And if you put `-v` before your filename,
@@ -48,3 +48,6 @@ From now on, just make it a habit to add a docstring and a doctest whenever you 
 [Here's what my demo repository looks like at this stage](https://github.com/ketch/rock-solid-code-demo/blob/13ab3f8af4e6be813eaee512897948e4c5a178a7/factor.py).
 
 [Continue to step six]({% post_url 2015-05-16-track_issues %}).
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/15/write_tests.html](http://www.davidketcheson.info/2015/05/15/write_tests.html) 
+under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

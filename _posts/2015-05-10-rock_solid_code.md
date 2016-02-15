@@ -99,3 +99,6 @@ If you're asking this, go read [Donoho et. al.'s paper on reproducible computing
 > "*Error is ubiquitous in scientific computing, and one needs to work very diligently and energetically to eliminate it.*"
 
 Okay, what are you waiting for?  Go read [step one]({% post_url 2015-05-11-use_version_control %})!
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/10/rock_solid_code.html](http://www.davidketcheson.info/2015/05/10/rock_solid_code.html)
+ under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

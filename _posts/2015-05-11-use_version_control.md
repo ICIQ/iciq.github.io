@@ -28,7 +28,7 @@ There are many version control systems in use.  If you haven't used one before, 
 If you're on a Mac- or Linux-based system, you probably already have git.  To check, just open a terminal and type
 
     git
-    
+
 If you don't have it, get it here: http://git-scm.com/downloads.  Then take a moment to [set up git](https://help.github.com/articles/set-up-git/#setting-up-git).  You'll only have to do that once on a given computer.
 
 Then do the following (replacing the directory and file names with the directory and files pertaining to your project):
@@ -40,19 +40,19 @@ git add project_file1
 git add project_file2
 ...
 ```
-    
+
 Go ahead and add all the relevant files.  When you're done, tell git to start keeping track of them by doing
 
     git commit -m "Starting to keep this project under version control."
-    
+
 That's it!  To get a first idea of what's going on, try
 
     git status
-   
+
 and
 
     git log
-    
+
 To get a much better idea, take 15 minutes and go read the [first software carpentry lesson on version control](http://www.software-carpentry.org/v5/novice/git/01-backup.html).
 
 You can get by for awhile with just the few git commands listed above.  Eventually, you will want to go beyond what is described in the Software Carpentry lesson.  When you do, it's worth reading an extended introduction [like this one](http://git-scm.com/book/en/v2).
@@ -69,3 +69,7 @@ In practice, this means things like:
 - If you have two functions that are almost identical, combine them (or the identical parts of them) into one.
 - Don't comment/uncomment lines of code in order to control the behavior of your code.  Instead, use "if" statements and function arguments.
 - If you need to apply some code to two different projects, don't copy the file.  Put it on your path.
+
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/11/use_version_control.html](http://www.davidketcheson.info/2015/05/11/use_version_control.html)
+ under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

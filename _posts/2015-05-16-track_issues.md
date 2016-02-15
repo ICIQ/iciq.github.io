@@ -40,7 +40,7 @@ awesome things become possible:
 
 With Github's issue tracker, there's all kinds of additional goodness: issues are searchable,
 can reference one another, can reference people, can be tagged/labeled, and more.
-Check out [Github's 10-minute explanation](https://guides.github.com/features/issues/) 
+Check out [Github's 10-minute explanation](https://guides.github.com/features/issues/)
 to learn all about it.
 
 # What to do:
@@ -61,7 +61,7 @@ As usual, this should only take two minutes.
 You're now at a page that lists all the issues for your project (presumably there's just
 one so far).  If you click on an issue, you find a page where you can write further
 comments and even have a conversation with other developers.  If you've never seen
-such a conversation, take a look at some issues for bigger projects like 
+such a conversation, take a look at some issues for bigger projects like
 [IPython](https://github.com/ipython/ipython/issues).
 
 ## The benefits of openness
@@ -83,8 +83,8 @@ numpy, scipy, or scikit-learn?  The next time you run into what might be a bug i
 packages, be proactive.  Of course you should first check Stack Overflow, but if it seems
 like a bug to you, you can go raise an issue on the project's issue tracker.  That's right,
 anybody in the world can raise an issue -- you don't need to be one of the project developers.
-Just remember to be polite, and 
-[follow a few best practices](http://coenjacobs.me/effective-bug-reports-on-github/) 
+Just remember to be polite, and
+[follow a few best practices](http://coenjacobs.me/effective-bug-reports-on-github/)
 when you report an issue.
 
 [Here's what the issues page for my demo project looks like](https://github.com/ketch/rock-solid-code-demo/issues)
@@ -95,3 +95,6 @@ that has to be fully completed at some point.  It's just a way of keeping track
 of useful improvements that could be made.
 
 [Continue to step seven]({% post_url 2015-05-29-automate_tests %}).
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/16/track_issues.html](http://www.davidketcheson.info/2015/05/16/track_issues.html) 
+under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

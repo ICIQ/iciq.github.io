@@ -80,7 +80,7 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
 <div class="span12" style="margin:-10px 0 10px">
   <div class="span12" align="center" vertical-align="middle">
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-        <span align="center" margin-top="-10px">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }} under the Creative Commons Attribution License. </span></a>
+        <span align="center" margin-top="-10px">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }} under the Creative Commons Attribution License or specified. </span></a>
   </div>
   <br>
 </div>

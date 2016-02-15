@@ -14,7 +14,7 @@ pattern in many projects is this:
 
 1. Tests are written and run by the person who wrote them.
 2. Others, and even the test-writer at a future date, forget to run the tests before
-   committing new code.  Or they decide not to run the tests because they 
+   committing new code.  Or they decide not to run the tests because they
    forget how, or they don't want to wait for the tests to finish.
 3. The new code breaks the tests.  By the time somebody notices, it's too
    much trouble to go back and figure out where things went wrong, much
@@ -53,7 +53,7 @@ As usual, this should only take two minutes.
    in another file; or (b) add a file called `tests.py` containing at least
    one function with "test" in the name.
    The test function should check something
-   and raise an exception if things are wrong.  See [this example in my 
+   and raise an exception if things are wrong.  See [this example in my
    demo project](https://github.com/ketch/rock-solid-code-demo/blob/master/tests.py).
 3. Now type `nosetests --with-doctest` again.  You should see that your
    new tests were also run.  To get more detailed output, try `nosetests --with-doctest --vs`.
@@ -63,3 +63,6 @@ all just by typing `nosetests --with-doctest`.  That's the kind of thing
 you might want to add to your README.  Your rule now should be:
 
 **Always run the tests before you commit code.**
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/29/automate_tests.html](http://www.davidketcheson.info/2015/05/29/automate_tests.html) 
+under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
