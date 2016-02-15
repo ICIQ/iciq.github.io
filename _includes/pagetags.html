@@ -1,7 +1,6 @@
 <span itemprop="keywords">
             {% for tag in page.tags %}
-              <a rel="tag" class="tag" href="/tags.html#{{ tag | cgi_escape }}">#{{ tag }}</a>
+              <a rel="tag" class="tag" href="/tags.html#{{ tag | cgi_escape }}">#{{ tag }} </a>
               {% unless page.tags.last == tag %}, {% endunless %}
             {% endfor %}
 </span>
-
