@@ -74,10 +74,6 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   After years of serious studies on nature and rigorous trainings on critical thinking, I appreciate and enjoy my life more than ever before.
   Trains of thoughts on general philosophy and methodology are constantly examined in real life and are poured out on the internet and elsewhere with folks around me. Keep in touch!
 
-
-  <!--<span>
-    {% include sidebar_footer.html %}
-  </span> -->
  </div>
 
 </div>
