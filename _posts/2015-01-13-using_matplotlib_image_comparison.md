@@ -43,7 +43,7 @@ is needed.
 
 Fortunately, the matplotlib developers have been grappling with these issues
 for a long time and have a nice packaged solution, in the form of a Python
-decorator `@image_comparison`, whose usage within matplotlib is 
+decorator `@image_comparison`, whose usage within matplotlib is
 [explained here](http://matplotlib.org/devel/testing.html).
 The decorator automatically deals with saving the test image and comparing it
 to the reference image; all you do is add the decorator before your test
@@ -119,5 +119,8 @@ script:
   - python tests.py
 ```
 
-That's it!  Since examples are the best documentation, you can check out my 
+That's it!  Since examples are the best documentation, you can check out my
 working setup [here](https://github.com/ketch/griddle).
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/01/13/using_matplotlib_image_comparison.html](http://www.davidketcheson.info/2015/01/13/using_matplotlib_image_comparison.html)
+ under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

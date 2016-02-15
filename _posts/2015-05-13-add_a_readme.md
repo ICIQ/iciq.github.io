@@ -6,7 +6,7 @@ tags:
 ---
 This is step 3 in your journey toward [rock-solid scientific Python code]({% post_url 2015-05-10-rock_solid_code %}).
 
-So your code is [under version control]({% post_url 2015-05-11-use_version_control %}) and it's 
+So your code is [under version control]({% post_url 2015-05-11-use_version_control %}) and it's
 [floating up there in the cloud]({% post_url 2015-05-12-code_in_the_open %}).
 In principle, someone else could use it.  But how will they know it's there?
 How will they know what it does, and how to install and use it?
@@ -46,7 +46,7 @@ This part is fairly painless because, unlike a README, the license you use
 should NOT generally be customized for your project.  It's much better to
 choose a standard license, so that other people don't need to agonize over all
 the fine print.  The most common licenses for open source scientific software
-are 
+are
 
 - [BSD](http://choosealicense.com/licenses/bsd-2-clause/),
 - [MIT](http://choosealicense.com/licenses/mit/), and
@@ -69,7 +69,7 @@ Here's what to do:
 
 That's it!  Other folks can now legally adapt your code for their own purposes.
 
-Congratulations on making it this far.  Now go to 
+Congratulations on making it this far.  Now go to
 [step four]({% post_url 2015-05-14-write_docstrings %}).
 
 
@@ -79,7 +79,8 @@ It's great that other people can now make improvements to your code.  It would b
 
  - [Puppet](https://github.com/puppetlabs/puppet/blob/master/CONTRIBUTING.md)
  - [Factory\_girl\_rails](https://github.com/thoughtbot/factory_girl_rails/blob/master/CONTRIBUTING.md)
- 
+
  If people have contributed to your project, it's standard to have a file called Thanks.md that lists their names and contributions.
 
-
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/13/add_a_readme.html](http://www.davidketcheson.info/2015/05/13/add_a_readme.html)
+ under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

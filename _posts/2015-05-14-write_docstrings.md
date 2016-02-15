@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step 4 - write docstrings 
+title: Step 4 - write docstrings
 subtitle: including examples!
 tags:
     - python
@@ -18,7 +18,7 @@ function looks like this:
 def square(x):
     """
     Takes a number x and returns x*x.
-    
+
     Examples:
     >>> square(5)
     25
@@ -31,7 +31,7 @@ def square(x):
 The docstring is, of course, the part inside the triple quotes.  If you type a function name followed by a "?" at the Python interpreter (or in a Jupyter notebook):
 
     >>> my_function?
-    
+
 then Python shows you the docstring for the function.  If you've ever tried to get help on a function that had no docstring, you know the dark feeling of despair that attends such a moment.  Don't let your code be that code.  Write docstrings!
 
 For a somewhat longer docstring, see [my Gaussian elimination example](https://github.com/ketch/rock-solid-code-demo/blob/master/factor.py).  
@@ -58,3 +58,6 @@ Here's what to do:
 That's easy: when you start writing a new function, before you write the code itself, add the docstring.  Make it a habit!  Of course, you can come back and refine the docstring as necessary after writing the code.
 
 Now go to [step five]({% post_url 2015-05-15-write_tests %}).
+
+#### Note: this post was originally written by David Ketcheson and posted at [http://www.davidketcheson.info/2015/05/14/write_docstrings.html](http://www.davidketcheson.info/2015/05/14/write_docstrings.html) 
+under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
