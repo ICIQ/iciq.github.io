@@ -77,7 +77,18 @@ I found most of them are good materials for open science, and hence didn't remov
 The authorships on those posts will be disclaimed more clearly by explicit statements and links to the origination on those posts--once I got a chance.
 
 
-License
--------
+Copyrights and Licenses
+=======================
 
-[CC-BY](https://creativecommons.org/licenses/by/4.0/)
+[MIT](http://opensource.org/licenses/MIT) license for the plugins (in the `_plugins` directory of this repo) shown initially written by Carl Boettiger or Xiaodong Qi.
+Creative Commons Attributions 3.0 Unported [CC-BY](http://creativecommons.org/licenses/by/3.0/deed.en_US) license for the content originally created by David Ketcheson.
+Creative Commons Attributions 4.0 [CC-BY](https://creativecommons.org/licenses/by/4.0/) license for content other than plugins originally written by Xiaodong Qi and all the other unspecified cases.
+If a license is clarified at a much specified scope, that specified license should apply to the scope it covers.
+You can find the full editing history of each file.
+Credits should be given appropriately to the origination and the initial author at less and all following contributors if situation permits.
+For instance, you can cite or attribute posts/works originally from this site/repository as:
+
+Xiaodong Qi ("Page publication date"), "Page Title", Lab Notebook, [http://i2000s.github.io](http://i2000s.github.io)
+
+with appropriate page title and publication date as indicated.
+[Greycite](http://greycite.knowledgeblog.org/) is an excellent online tool that can generate the citation information for any particular page given it's URL.
