@@ -11,11 +11,11 @@ share: true
 
 ## Visits and presentations
 
-Up-coming:
+### Up-coming:
 
  - SQuInT workshop.
 
-Selected Past Talks and Academic Activities while doing my PhD study:
+### Selected Past Talks and Academic Activities while doing my PhD study:
 
  - Dec 29-30, 2015: Acadamic visit and a Seminar talk in IPhy, CAS @ Beijing, China.
  - Dec 25-26, 2015: Academic visit and a Seminar talk in Hefei National Lab of Microscale Matter Physics, USTC @ Hefei, China.
