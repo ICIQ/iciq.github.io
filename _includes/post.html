@@ -3,13 +3,15 @@
   {% include header.html %}
 
       <div class="row">
-        <div class="span8">
+        <div class="span9">
           {{ content }}
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
         </div>
 
 
-        <!-- Custom sidebar -->      
-        <div class="span4">
+        <!-- Custom sidebar -->
+        <div class="span3">
           <div class="sidebar">
             Posted on
             <time pubdate datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>. <br>
@@ -19,6 +21,11 @@
               {% unless page.tags.last == tag %}, {% endunless %}
             {% endfor %}
             </span>
+            <div style="font-weight:bold; text-align:center;font-size:0.9em;">
+             <i class="icon-chevron-left"></i> <a href="/archives.html">All posts by date, </a>
+             <i class="icon-list"></i> <a href="/categories.html">by category, </a>
+             <i class="icon-tag"></i> <a href="/tags.html">by tag.</a>
+            </div>
           </div>
         </div>
       </div>
