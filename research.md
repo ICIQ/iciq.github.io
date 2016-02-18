@@ -4,18 +4,22 @@ title: Research
 subtitle: in an open, collaborative way
 ---
 
-## Current project
+## Current projects
 
-My research involves theoretical studies on the strong coupling between atoms and photons on some nanofiber and nanophotonic platforms.
-My current focus is the dispersive response theory of cold atoms trapped in the strong evanescent field of an optical nanofiber.
-This includes applications on quantum nondemolition (QND) measurement with dramatical improvements compared to the free-space platform that has been widely studied for atomic clocks and quantum information protocols.
-My study has also been naturally extended to the implementation of atomic cooling and state preparation protocols based on optical pumping procedures on the nanofiber platform, which is challenging due to the complicated nature of the field components of fiber modes compared to the well-studied free-space cases.
+My research involves theoretical studies on the strong coupling between atoms and photons on an optical nanofiber and other nanophotonic platforms.
+My current focus is the nanofiber trapped cold atom system.
+We have outlined and proposed in our recent theory paper ([Phys. Rev. A 93, 023817](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817)) that, in the dispersive regime, this nanofiber system can generate a strong coupling with the alkali metal atom ensembles, which can be used for quantum demolition (QND) measurement and spin squeezing beyond the Gaussian regime with fewer atoms than the free-space case.
+All of these findings imply a promising future for the nanofiber platform for atomic clocks, precise measurements, quantum data bus and other quantum information applications.
+During the study, our group has been closely involved with our experimental collaborators, and the future of our project is tightly orientated by the new findings and inevitable challenges that our experimental collaborators have concluded and based on the theoretical predictions which can make a fundamental difference for the frontier research of quantum information and quantum computing community.
+My current on-going theory research projects include the following and are open for new directions:
 
- - QND measurement based on birefringence and Faraday interactions.
- - Optical pumping for state preparation and atomic cooling.
+ - Optimal QND measurement protocols on the nanofiber trapped atomic systems.
+ - Optical pumping on the nanofiber platform for atomic state preparation.
+ - Atomic cooling protocols on the trapped atomic ensemble on nanofiber and photonic structures.
 
-In addition, through establishing the theoretical fundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons and its application to quantum simulations/computations due to the strong light-atom coupling effects,
-and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for quantum information applications.  Stay tuned!
+In addition, through establishing the theoretical foundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons for quantum simulations/computations/communications,
+and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for better integratable photonic systems for quantum information processing.  
+Stay tuned!
 
 ## Current Research Group and Main Collaborators
 

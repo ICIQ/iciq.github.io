@@ -4,6 +4,7 @@ _config
 _TEMP
 
 *~
+*.bak
 _twitter.yml
 _garb.yml
 Gemfile.lock
