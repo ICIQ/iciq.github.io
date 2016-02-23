@@ -13,10 +13,11 @@ share: true
 
 ### Up-coming:
 
- - SQuInT workshop.
+ - Gordon seminar and conference. 
 
 ### Selected Past Talks and Academic Activities while doing my PhD study:
 
+ - Feb 18-20, 2016: 18th annual SQuInT workshop, Albuquerque, NM, USA. (poster)
  - Dec 29-30, 2015: Acadamic visit and a Seminar talk in IPhy, CAS @ Beijing, China.
  - Dec 25-26, 2015: Academic visit and a Seminar talk in Hefei National Lab of Microscale Matter Physics, USTC @ Hefei, China.
  - Dec 25, 2015: JuliaQuantum and software ecosystem in the perpective of quantum information science, public talk in USTC.
