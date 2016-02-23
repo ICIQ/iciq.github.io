@@ -18,7 +18,7 @@ While optical fibers have been used for primary quantum communications, atom-fib
 
 ## Note: 
 
-- There are hard-core researchers contacted me and my supervisor before the workshop for some chat, and hence the poster has a handful of equations and extra background content. But they are there not to scare you.
+- There are some researchers contacted me and my supervisor before the workshop for some chat, and hence the chat time over the poster session may be limited. But if you are interested in my poster, we can talk about it at any break time during the workshop.
 
 - Since I am also serving for a few other duties recently, this poster was made in a hurry and was not well organized in a normal order. You may want to talk to me or contact me if you find an error or anywhere confusing.
 
