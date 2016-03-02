@@ -28,9 +28,9 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   </div>
 
   <div class="span3" align="right">
-    <div class="span3" style="width:300px; align:left;">
+    <div class="span3" style="width:400px; align:right;text-align:left;">
            <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" alt="Twitter"> Discussing </a></h4>
-              <div class="excerpt">
+              <div class="excerpt" height="300px">
                 <div class="scroll">
                   {% twitter_feed i2000s, 5 %}
                 </div>
@@ -51,7 +51,7 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
            <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
            <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>  
        </div>
-       <p><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
+       <p style="text-align:left"><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
     </div>
    <br><br><br>
   </div>
