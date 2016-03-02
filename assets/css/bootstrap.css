@@ -4982,3 +4982,10 @@ a.badge:hover {
 .invisible {
   visibility: hidden;
 }
+
+
+/* 
+Some self-defined styles. 
+Some are from https://github.com/cboettig/labnotebook/blob/master/assets/css/bootstrap.min.css.
+*/
+div.excerpt{height:200px;overflow:hidden}div.scroll{width:110%;height:110%;overflow:scroll}.excerpt h1,.excerpt h2,.excerpt h3,.excerpt h4,.excerpt h5,.excerpt h6{font-size:13px;font-weight:700;line-height:18px}.postpreview{text-align:justify}.cv{font-size:13px;line-height:18px;text-align:justify}.cv ul{margin-bottom:30px;margin-left:0;list-style:none}.cv ol{margin-bottom:30px;margin-left:0;list-style-type:decimal}.cv li{margin-bottom:10px}.cv strong{font-weight:bolder}img[alt=floatright]{float:right;margin:10px}img{max-width:100%}
