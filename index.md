@@ -28,8 +28,8 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   </div>
 
   <div class="span3" align="right">
-    <div class="span3">
-           <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><i class="icon-twitter"></i> Discussing </a></h4>
+    <div class="span3" style="width:350px; align:left;">
+           <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" alt="Twitter"> Discussing </a></h4>
               <div class="excerpt">
                 <div class="scroll">
                   {% twitter_feed i2000s, 5 %}
@@ -37,13 +37,15 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
               </div>  
     </div>
 
-           
+    <div class="span3" align="right">       
       <ul class="unstyled" style="font-size:.8em;line-height=.8em" align="left">
       <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
       <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
       <li style="margin:-6px"> </li>
       </ul>
-      <div class="row" align="right">
+    </div>
+      
+    <div class="row" align="right">
        <div class="span3">
            <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" alt="email"> </a>
            <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" alt="github"> </a>
@@ -54,7 +56,7 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
            <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>  
        </div>
        <p><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
-      </div>
+    </div>
    <br><br><br>
   </div>
  </div>
