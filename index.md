@@ -28,15 +28,13 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   </div>
 
   <div class="span3" align="right">
-    
-
-    <div class="span3" align="right">       
+    <br><br><br>
+      
       <ul class="unstyled" style="font-size:.8em;line-height=.8em" align="left">
       <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
       <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
       <li style="margin:-6px"> </li>
       </ul>
-    </div>
       
     <div class="row" align="right">
        <div class="span3">
