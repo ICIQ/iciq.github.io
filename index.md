@@ -42,7 +42,7 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
       <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
       <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
       <li style="margin:-6px"> </li>
-    </ul>
+      </ul>
       <div class="row" align="right">
        <div class="span3">
            <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" alt="email"> </a>
@@ -54,7 +54,7 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
            <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>  
        </div>
        <p><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
-    </div>
+      </div>
    <br><br><br>
   </div>
  </div>
