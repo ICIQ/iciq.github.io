@@ -22,15 +22,15 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   <br><br><br><br>
 
   <div class="span3" align="left">
-      <ul class="unstyled" style="font-size:.8em;line-height=.8em;background-color="transparent";">
-        <li style="margin:-6px"> <img alt="QR Code" src="/assets/img/qrcode.33561508.png" width=200px align="left"></img></li>
-      </ul>
+      <ul class="unstyled" style="font-size:.8em;line-height:.8em; background-color:transparent;">
+        <li style="margin:-6px"> <img alt="QR Code" src="/assets/img/qrcode.33561508.png" width=200px align="left"></li>
+        </ul>
   </div>
 
   <div class="span3" align="right">
     <br><br><br>
       
-      <ul class="unstyled" style="font-size:.8em;line-height=.8em" align="left">
+      <ul class="unstyled" style="font-size:.8em;line-height:.8em; align:left;">
       <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
       <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
       <li style="margin:-6px"> </li>
@@ -56,10 +56,10 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
 
  <div class="span4">
 
-  <b>Xiaodong Qi</b> (<span font="sans-serif">戚晓东</span>)</br>
+  <b>Xiaodong Qi</b> (<span font="sans-serif">戚晓东</span>)<br>
 
   <div class="team-member">
-  <img class="img-responsive img-circle" alt="" src="assets/img/qi2016.jpg" align="right" width=200px></img>
+  <img class="img-responsive img-circle" alt="" src="assets/img/qi2016.jpg" align="right" width=200px>
   </div>
 
   I am a PhD candidate of
@@ -76,7 +76,7 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   After years of serious studies on nature and rigorous trainings on critical thinking, I appreciate and enjoy my life more than ever before.
   Trains of thoughts on general philosophy and methodology are constantly examined in real life and are poured out on the internet and elsewhere with folks around me. Keep in touch!
 
- </div>
+</div>
 
 </div>
 <div class="span12" style="margin:-10px 0 10px">
