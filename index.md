@@ -22,9 +22,9 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   <br><br><br><br>
 
   <div class="span3" align="left">
-      <ul class="unstyled" style="font-size:.8em;line-height:.8em; background-color:transparent;">
+      <ul class="unstyled">
         <li style="margin:-6px"> <img alt="QR Code" src="/assets/img/qrcode.33561508.png" width=200px align="left"></li>
-        </ul>
+      </ul>
   </div>
 
   <div class="span3" align="right">
