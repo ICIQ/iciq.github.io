@@ -28,14 +28,14 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   </div>
 
   <div class="span3" align="right">
-    <!-- <div class="span3" style="width:400px; align:right;text-align:left;">
+    <div class="span3" style="width:350px; align:right;text-align:left;">
            <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" alt="Twitter"> Discussing </a></h4>
               <div class="excerpt" height="300px">
                 <div class="scroll">
                   {% twitter_feed i2000s, 5 %}
                 </div>
               </div>  
-    </div> -->
+    </div>
     <ul class="unstyled" style="font-size:.8em;line-height:.8em; align:left;">
       <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
       <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
@@ -81,7 +81,7 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   After years of serious studies on nature and rigorous trainings on critical thinking, I appreciate and enjoy my life more than ever before.
   Trains of thoughts on general philosophy and methodology are constantly examined in real life and are poured out on the internet and elsewhere with folks around me. Keep in touch!
 
-  <a class="twitter-timeline" href="https://twitter.com/{{site.author.twitter}}" data-widget-id="704862944484421633" data-chrome="transparent noborders noscrollbar" width="400px">Tweets by @{{site.author.twitter}}</a>
+  <a class="twitter-timeline" href="https://twitter.com/{{site.author.twitter}}" data-widget-id="704862944484421633" data-chrome="transparent noborders noscrollbar" width="360px" height="400px">Tweets by @{{site.author.twitter}}</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </div>
