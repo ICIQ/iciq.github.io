@@ -28,7 +28,14 @@ subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
   </div>
 
   <div class="span3" align="right">
-    <br><br><br>
+    <div class="span3" style="width:300px; align:left;">
+           <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" alt="Twitter"> Discussing </a></h4>
+              <div class="excerpt">
+                <div class="scroll">
+                  {% twitter_feed i2000s, 5 %}
+                </div>
+              </div>  
+    </div>
     <ul class="unstyled" style="font-size:.8em;line-height:.8em; align:left;">
       <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
       <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
