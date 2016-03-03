@@ -1,8 +1,8 @@
           {% if page.previous %}
-            <p><a class="btn btn-mini" href='{{ page.previous.url }}'>previous</a>
+            <p><a class="btn btn-default" href='{{ page.previous.url }}'><i class="glyphicon-chevron-left"></i> prev</a>
           {% endif %}
           {% if page.next %}
-            <a class="btn btn-mini" href='{{ page.next.url }}'>next</a></p>
+            <a class="btn btn-default" href='{{ page.next.url }}'>next <i class="glyphicon-chevron-right"></i></a></p>
           {% else %}
             </p>
           {% endif %}
