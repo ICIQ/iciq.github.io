@@ -1,8 +1,9 @@
 <!-- HTML5 metadata -->
 {% if page.keywords %}
-  <meta name="keywords" content=" {{ page.keywords | join: ', ' }}" />
+  <meta name="keywords" content="{{ page.keywords }}" />
 {% elsif page.tags %}
   <meta name="keywords" content="{{site.author.name}}, {{site.author.ChineseName}}, {{ page.tags | join: ', ' }}" />
+  {{ page.keywords=page.tags }}
 {% else %}
   <meta name="keywords" content="{{site.author.name}}, {{site.author.ChineseName}}, quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
 {% endif %}
@@ -11,8 +12,10 @@
   <meta name="description" content="{{ page.description }}" />
 {% elsif page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}" />
+  {{ page.description=page.subtitle }}
 {% else %}
   <meta name="description" content="{{ page.title }}" />
+  {{ page.description=page.title }}
 {% endif %}
 
 <meta http-equiv="Content-Language" content="en, zh-Hans, cmn">
