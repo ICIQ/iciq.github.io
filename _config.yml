@@ -32,7 +32,8 @@ lsi: True
 pageviews: yes    ## toggle on sidebar pageviews
 gitstamps: yes
 username: i2000s
-repo: i2000s.github.io # used in linking history and auto-deploy the site on travis-CI.
+repo: i2000s.github.io # used in linking commit history and auto-deploy the site on travis-CI.
+sourcebranch: dev # used in linking commit history.
 
 twitter_api: yes
 analytics: UA-74657818-1 ## Google Analytics key UA-46730871-1(in _includes/analytics.html and search.html)
