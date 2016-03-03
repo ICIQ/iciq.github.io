@@ -3,19 +3,20 @@
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elsif page.tags %}
   <meta name="keywords" content="{{site.author.name}}, {{site.author.ChineseName}}, {{ page.tags | join: ', ' }}" />
-  {% assign page.keywords = page.tags %}
+  {% assign page_keywords = page.tags %}
 {% else %}
   <meta name="keywords" content="{{site.author.name}}, {{site.author.ChineseName}}, quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
 {% endif %}
 
 {% if page.description %}
   <meta name="description" content="{{ page.description }}" />
+  {% assign page_description = page.description %}
 {% elsif page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}" />
-  {% assign page.description = page.subtitle %}
+  {% assign page_description = page.subtitle %}
 {% else %}
   <meta name="description" content="{{ page.title }}" />
-  {% assign page.description = page.title %}
+  {% assign page_description = page.title %}
 {% endif %}
 
 <meta http-equiv="Content-Language" content="en, zh-Hans, cmn">
@@ -45,12 +46,12 @@
 <meta name="citation_date" content="{{ page.date }}"/>
 <meta name="citation_title" content="{{page.title}}"/>
 <meta name="citation_journal_title" content="{{site.title}}"/>
-<!--NOTE: see also the COinS Metadata in span element in footer -->
+<!--NOTE: see also the COinS Metadata in span element in coins.html and footer. -->
 <!-- Twitter card summary -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@{{site.author.twitter}}" />
 <meta name="twitter:title" content="{{ page.title }}" />
-<meta name="twitter:description" content="{{ page.description }}" />
+<meta name="twitter:description" content="{{ page_description }}" />
 <meta name="twitter:image" content="http://i2000s.github.io/assets/img/qi2016.jpg" />
 <!-- Baidu website verification code -->
 <meta name="baidu-site-verification" content="cAv3dLIDps" />
