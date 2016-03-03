@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Research
-subtitle: in an open, collaborative way
+subtitle: Do science in an open and collaborative way.
 ---
 
 ## Current projects
