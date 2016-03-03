@@ -1,7 +1,8 @@
 ---
 layout: barefooter
-title: Exploring the Open Quantum World
-subtitle: Quantum Optics and Quantum Information with Atoms and Nanostructures
+title: Xiaodong Qi's NoteBlog Site
+subtitle: Exploring the Open Quantum World
+description: Xiaodong Qi's website for hosting his personal blogs and CVs. Most of the content relates to his research work done at the Center for Quantum Information and Control (CQuIC), University of New Mexico, about Quantum Optics and Quantum Information Science with Atoms and Nanostructures.
 ---
 
 <div class="span12">
