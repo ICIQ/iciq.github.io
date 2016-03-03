@@ -27,14 +27,21 @@ install:
 script:
   - bundle exec jekyll build
   #  - echo -e $twitter > _twitter.yml
-  #  - echo -e $twitter2 >> _twitter.yml
-  #  - echo -e $twitter3 >> _twitter.yml
-  #  - echo -e $garb > _garb.yml
-  #  - echo -e $garb2 >> _garb.yml
   #  - bundle exec rake site:deploy --quiet
-  #  - rm -f _twitter.yml _garb.yml
   - bundle exec rake site:deploy
 
+# Export secured global variables. Below is the possible order: 
+# GIT_NAME=[secure] GIT_EMAIL=[secure] GH_TOKEN=[secure]
+# twitter=[secure]
+# garb=[secure] # The old one is in front.
+# TWIT_KEY=[secure]
+# TWIT_SECRET=[secure]
+# TWIT_TOK=[secure]
+# TWIT_TOK_SECRET=[secure]
+# TWITTER_CONSUMER_KEY=[secure]
+# TWITTER_CONSUMER_SECRET=[secure]
+# TWITTER_ACCESS_TOKEN=[secure]
+# TWITTER_ACCESS_TOKEN_SECRET=[secure]
 env:
   global:
     - secure: "eG5RWCB2cE2I0UgSzwD2/nS4zuQI+8zxs8KahDs4brtyrh6zT+zeOExv9k91Z/j6LGcFxniQ4zci4wDcIM5A7lVLNGnAAjBcSSFbDWMdTfd5MqXXZCVv/yUxyC39yfZEJvI57/b/G4Rol1DR9cApV443gVAZxO5zHwdK3ujzrdUaP46BFjUq910+iwP7A4b11p5rqrHM/fu0fgxvvd/TyrJNceXO32OIdrYBrL/xoOusmC5MbYdbRCBoHAUzwPXVVOMrAzV2OZQFWzm5pbbwx+Inbeqfa/EbYEQVproOxPiZDdjcOWnWanWAKgwMOxl0eNV78/G6iTsycl+3wgaFdx0NPN8d+ErOelAD/A/omc++CdlFolwuggreWo3Wqfa6ZxNMWsWGh1/GnZ/U4lwT3LxcU0E4vs3AtVMWQi/of0qyR+AKu20hOm+8YX0P9jFcSigQmL0h2THDFakYK1YpltgOEAMoWNwRJ0DgezOjIk+8zo+Hc11RtdjV/k4sGCnEU+doRkS1S9OAbAeSqkZuYQbw5I9HitDQ+Kv8Jg+w9blwZxmAb84bTkZuUZJ5HviWsF96tZrwmLwjxybdRDUzRaq1halj+iGSZ/0gG5aNCR+VwO6/ZkTs3Us0fxyUQap/Gjgdi1gjMkm+g1dx11ZAs/SUWQlJx4WEsE9iFsKziyc="
