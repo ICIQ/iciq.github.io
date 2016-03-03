@@ -1,12 +1,51 @@
-Posted on
-<time pubdate datetime="{{ page.date | date_to_xmlschema }}"
-      itemprop="datePublished">{{ page.date | date_to_string }}</time>.
-<br /><br />
+<aside prefix="og:http://ogp.me/ns/article#">
+  <p> <i class="icon-calendar"></i>
+    <time datetime="{{ page.date }}" 
+    property="dc:created">{{ page.date | date_to_string }}</time></p>
+  {%if page.modified %}
+  <p><small> modified: <time 
+            datetime="{{ page.modified }}" 
+            property="dc:modified">{{ page.modified }}</time></small></p>
+  {% endif %} 
+
+ <br />
 {% include nextprevious.html %}
 
-<span> <a class="btn btn-mini" href="https://github.com/i2000s/i2000s.github.io/commits/master/_posts">commit history</a></span>
-<br /><br />
-{% include pagetags.html %}
+ <p> <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); 
+            return false;" 
+          class="btn btn-default" 
+          href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/master/_posts/{{page.path}}"><i class="icon-time"></i> history</a></p>
+
+  <br />
+
+  <p><i class="icon-list"></i> Posted in 
+    {% for category in page.categories %} 
+      <a rel="dc:subject" class="category" 
+         href="/categories.html#{{ category | cgi_escape }}">{{ category }}</a>
+    {% unless page.categories.last == category %}, {% endunless %}
+    {% endfor %}</p>
+
+  <p> <i class="icon-tag"></i> tags: 
+    {% for tag in page.tags %}
+    <!-- http://schema.org/BlogPosting/keywords -->
+    <a rel="og:tag" class="tag" 
+       href="/tags.html#{{ tag | cgi_escape }}">#{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
+    {% endfor %}</p>
+
+  <br/>
+
+  {% if site.pageviews %} <p style="font-style:italic"> <i class="icon-signal"></i> pageviews: {{ page.pageviews }}</p>{% endif %}
+
+  <br/>
+  <p><small> <i class="icon-barcode"></i> SHA Hash: <a href="https://github.com/{{site.author.github}}/{{ site.repo }}/commit/{{page.path | prepend:'_posts/' | git_sha }}/_posts/{{ page.path }}"> {{ page.path | prepend:'_posts/' | git_sha }}</a></small></p>
+    
+  <br/>
+  {% if page.code %}
+     <script src="/assets/js/toggleR.js"></script>
+     <button class="btn btn-default" type="button" onclick="toggle_R();">Hide/Show Source</button>
+  {% endif %}
+</aside>
+
 <br /><br />
 <div style="font-weight:bold; text-align:center;font-size:1.0em;">
  <i class="icon-chevron-left"></i> <a href="/archives.html">Archieves by date,</a>
