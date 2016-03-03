@@ -11,6 +11,8 @@
   <meta name="description" content="{{ page.description }}" />
 {% elsif page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}" />
+{% else %}
+  <meta name="description" content="{{ page.title }}" />
 {% endif %}
 
 <meta http-equiv="Content-Language" content="en, zh-Hans, cmn">
