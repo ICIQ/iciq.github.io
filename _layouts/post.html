@@ -26,15 +26,17 @@ $(document).ready(function() {
 </script>
 
       <div class="row" margin-left="-50px">
-        <div class="span8 post" style="float:left;width:73%;">
+        <div class="col-md-7 col-md-offset-1" style="float:left;">
+          <article>
           {{ content }}
+          </article>
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
           <div class="addthis_sharing_toolbox">Share on</div>
         </div>
 
 
         <!-- Custom sidebar -->
-        <div class="span2" style="float:right;width:22%;margin-left:0;">
+        <div class="col-md-4" style="float:right;">
           <div id="sticker" style="width:250px"> <!--class="sidebar">-->
             {% include sidebar.html %}
          </div>
