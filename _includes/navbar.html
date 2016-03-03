@@ -1,16 +1,20 @@
 
 <!-- Navbar  ================================================== -->
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </a>
-      <a class="brand" href="/README.html">  <img style="float:right;" src="/assets/img/icon-info-circle-inverted.png" alt="info"></a>
-      <div class="navbar-collapse">
-        <ul class="navbar-nav">
+      </button>
+      <a class="navbar-brand" href="/README.html"><i class="icon-info-sign"></i></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
           {% if page.url == "/index.html" %}<li class="active">{% else %}<li>{% endif %}
           <a href="/index.html">Home</a></li>
 
@@ -39,12 +43,15 @@
           <a href="/philosophy.html">Philosophy</a></li> -->
 
         </ul>
-      </div><!--/.nav-collapse -->
-       <form class="navbar-search pull-right" method="get" action="http://google.com/search">
-         <input type="hidden" name="q" value="site:{{ site.url }} ">
-         <input type="text" class="search-query" name="q">
-         <button class="btn btn-xs" type="submit"><i class="icon-search"></i></button>
+      <!-- Search site using Google's index -->
+        <form class="navbar-form navbar-right" role="search" method="get" action="http://google.com/search">
+          <div class="form-group">
+            <input type="hidden" name="q" value="site:i2000s.github.io" />
+            <input type="text" class="form-control search-query" name="q" placeholder="Search"/>
+          </div>
+          <button class="btn btn-xs" type="submit"><i class="glyphicon-search"></i></button> 
        </form>
-     </div> <!-- /container -->
-   </div> <!-- /navbar-inner -->
- </div> <!-- /navbar -->
+
+    </div><!--/.nav-collapse -->
+  </div> <!-- /container -->
+</nav>
