@@ -2,6 +2,7 @@
 layout: null
 title: Community
 subtitle: How science is done and for what.
+description: Xiaodong's self-described contribution to the community.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +11,9 @@ subtitle: How science is done and for what.
     <meta charset="utf-8">
     <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xiaodong's open NoteBlog">
-    <meta name="author" content="Xiaodong Qi">
-
+    <meta name="subtitle" content="{{ page.subtitle }}">
+    <meta name="author" content="{{ site.author.name }} | {{ site.author.ChineseName }}">
+    {% include metadata.html %}
 
     <!-- Le styles -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
