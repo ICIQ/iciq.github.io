@@ -1,5 +1,5 @@
 {% include header.html %}
-<style>
+<!-- <style>
 div #sticker {
   width:auto;
   padding:10px;
@@ -23,10 +23,10 @@ $(document).ready(function() {
         }
     });
 });
-</script>
+</script> -->
 
       <div class="row" margin-left="-50px">
-        <div class="col-md-7 col-md-offset-1" style="float:left;">
+        <div class="col-md-7"> <!-- col-md-offset-1 -->
           <article>
           {{ content }}
           </article>
@@ -36,10 +36,10 @@ $(document).ready(function() {
 
 
         <!-- Custom sidebar -->
-        <div class="col-md-4" style="float:right;">
-          <div id="sticker" style="width:250px"> <!--class="sidebar">-->
+        <div class="col-md-4">
+          <!-- <div id="sticker" style="width:250px"> --> <!--class="sidebar">-->
             {% include sidebar.html %}
-         </div>
+         <!-- </div> -->
        </div>
 
       </div>
