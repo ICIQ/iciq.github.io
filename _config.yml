@@ -41,8 +41,8 @@ analytics: UA-74657818-1 ## Google Analytics key UA-46730871-1(in _includes/anal
 baseurl: '/'
 
 markdown: redcarpet
-#redcarpet:
-#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+redcarpet:
+   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 highlighter: pygments
 
 # Publications. Ref: http://tuxette.nathalievilla.org/?p=1426
