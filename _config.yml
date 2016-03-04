@@ -1,4 +1,4 @@
-title : Xiaodong Qi's academic NoteBlog
+title : The NoteBlog of Xiaodong Qi
 tagline: Exploring Quantum World
 author :
   name : Xiaodong Qi
@@ -12,39 +12,23 @@ url: http://i2000s.github.io
 
 permalink: /:year/:month/:day/:title.html
 redirects: yes
-
-#gems:
-#  - jekyll-pandoc
-gems: ['jekyll-twitter-plugin']
-
 encoding: utf-8
+pageviews: no    ## toggle on sidebar pageviews
+twitter_api: yes
+analytics: UA-74657818-1 ## Google Analytics key UA-46730871-1(in _includes/analytics.html and search.html)
+baseurl: '/'
+lsi: True # Possibly for generating related posts with gsl and classifier packages.
 
-## Markdown Parser
-markdown: pandoc
-markdown_ext: markdown,md
-pandoc:
-   extensions: [smart, mathjax]
-
-highlighter: pygments
-source: .
-lsi: True
-
-pageviews: yes    ## toggle on sidebar pageviews
+# GitHub information of this site. Used for extracting commit history of posts.
 gitstamps: yes
 username: i2000s
 repo: i2000s.github.io # used in linking commit history and auto-deploy the site on travis-CI.
 sourcebranch: dev # used in linking commit history.
 
-twitter_api: yes
-analytics: UA-74657818-1 ## Google Analytics key UA-46730871-1(in _includes/analytics.html and search.html)
-
-baseurl: '/'
-
-markdown: redcarpet
-redcarpet:
-   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-highlighter: pygments
-
+source: .
+gems:
+  - jekyll-pandoc
+  - 'jekyll-twitter-plugin'
 # Publications. Ref: http://tuxette.nathalievilla.org/?p=1426
 # http://eric-tramel.github.io/working-automated-publications/
 # csl style: https://github.com/citation-style-language/styles
@@ -52,7 +36,7 @@ gems:
   - "jekyll/scholar"
 scholar:
   style: assets/APS.csl
-  locale: en
+  locale: en, zh, cmn
 
   sort_by: year
   order: descending
@@ -70,6 +54,22 @@ scholar:
   query: "@*"
 
 
+
+## Markdown Parser
+markdown: pandoc
+markdown_ext: markdown,md
+pandoc:
+   extensions: 
+     - smart
+     - mathjax
+
+#highlighter: pygments
+
+#markdown: redcarpet
+#redcarpet:
+#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+#highlighter: pygments
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -77,7 +77,7 @@ exclude:
   - .travis.yml
   - _posts/*.Rmd
   - _posts/source
-  - assets/_bootstrap-3.1.1
+  - assets/_bootstrap-3.3.6
   - Dockerfile
   - build.R
   - _cache
