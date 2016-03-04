@@ -20,8 +20,7 @@ My current on-going theory research projects include the following and are open 
  
 <div style="text-align:center">
 {% include image.html img="/assets/img/NanofiberScheme.png" width="600px" title="Spectroscopy on a nanofiber-trapped atom ensemble system" caption="Fig 1. Polarization spectroscopy on an optical nanofiber coupled atomic ensemble system. Published in <a href='http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817' target='_blank'>X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817(2016)</a>." %}
-</div>
-
+<br><br></div>
 
 In addition, through establishing the theoretical foundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons for quantum simulations/computations/communications,
 and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for better integratable photonic systems for quantum information processing.  
