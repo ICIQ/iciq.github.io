@@ -9,7 +9,7 @@ time: 2016-03-03 03:06:00.000000000 -07:00
 
 My research involves theoretical studies on the strong coupling between atoms and photons on an optical nanofiber (see figure below) and other nanophotonic platforms.
 My current focus is the nanofiber trapped cold atom system.
-We have outlined and proposed in our recent theory paper ([Phys. Rev. A 93, 023817](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817)) that, in the dispersive regime, this nanofiber system can generate a strong coupling with the alkali metal atom ensembles, which can be used for quantum demolition (QND) measurement and spin squeezing beyond the Gaussian regime with fewer atoms than the free-space case.
+We have outlined and proposed in our recent theory paper ([Phys. Rev. A 93, 023817(2016)](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817)) that, in the dispersive regime, this nanofiber system can generate a strong coupling with the alkali metal atom ensembles, which can be used for quantum demolition (QND) measurement and spin squeezing beyond the Gaussian regime with fewer atoms than the free-space case.
 All of these findings imply a promising future for the nanofiber platform for atomic clocks, precise measurements, quantum data bus and other quantum information applications.
 During the study, our group has been closely involved with our experimental collaborators, and the future of our project is tightly orientated by the new findings and inevitable challenges that our experimental collaborators have concluded and based on the theoretical predictions which can make a fundamental difference for the frontier research of quantum information and quantum computing community.
 My current on-going theory research projects include the following and are open for new directions:
@@ -18,8 +18,7 @@ My current on-going theory research projects include the following and are open 
  - Optical pumping on the nanofiber platform for atomic state preparation.
  - Atomic cooling protocols on the trapped atomic ensemble on nanofiber and photonic structures.
  
- {% include image.html img="/assets/img/NanofiberScheme.png" width="600px" title="Spectroscopy on a nanofiber-trapped atom ensemble system"
-  caption="Fig 1. Polarization spectroscopy on an optical nanofiber coupled atomic ensemble system. Published on [X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817)." %}
+ {% include image.html img="/assets/img/NanofiberScheme.png" width="600px" title="Spectroscopy on a nanofiber-trapped atom ensemble system" caption="Fig 1. Polarization spectroscopy on an optical nanofiber coupled atomic ensemble system. Published in [X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817(2016)](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817)." %}
 
 In addition, through establishing the theoretical foundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons for quantum simulations/computations/communications,
 and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for better integratable photonic systems for quantum information processing.  
