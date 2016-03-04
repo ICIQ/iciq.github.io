@@ -148,7 +148,7 @@ description: Xiaodong's self-described contribution to the community.
     <p>{{ page.subtitle }}</p>
 </header>
 
-    <div class="span12">
+    <div class="row">
       <p>This is a fast developing world. Data streams are expanding exponentially. 
           Man-made machines are gaining new capacity every day to replace human forces in every possible area. 
           Today, increasing number of scientists and engineers, including me, are working on the quantum information frontier to build the fundation for making machines in extreme complexity, which will be eventually more intelligent and efficient than ourselves in terms of processing information and creating new ideas. 
@@ -167,7 +167,7 @@ description: Xiaodong's self-described contribution to the community.
           Comments and feedback for the better will be appreciated. 
           I will move on to the next chapter and dig deeper into the scientific philosophy of sustainable development of humanity and practice more in a higher level. 
       </p>
-      <div class="span12">
+      <div class="row">
        <h2>Non-for-profit organizations that I co-created for communities:</h2>
        <ul style="list-style-type:row">
         <li><a href="http://cquic-github.github.io/" target="_blank">CQuIC@GitHub</a>: for CQuIC members who do code for science. </li>
@@ -179,17 +179,17 @@ description: Xiaodong's self-described contribution to the community.
           Check our <a href="https://plus.google.com/communities/112872767737673370045" target="_blank">Google+ community on quantum information science</a> (the biggest as of Feb 2016).</li>
        </ul>
       </div>
-      <div class="span12">
+      <div class="row">
         <h2>Professional communities that I have joined:</h2>
         <p>APS and OSA.</p>
       </div>
-      <div class="span12" width="960px">
+      <div class="row">
         <h2>Selecting tools I think that are useful for poeple who are doing science.</h2>
         <p><a href="/tools.html" target="_blank">Check details here.</a></p>
       </div>
     </div>
 
-  <div class="span12">
+  <div class="row">
     <h2 align="center">Sharing code repositories</h2>
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
@@ -218,34 +218,32 @@ description: Xiaodong's self-described contribution to the community.
         <ol id="repos"></ol>
     </div>
   </div>
-
-   <div class="span10">
+    
+  <div class="row">
+    <div class="col-md-6 col-xs-11">
      <h4> <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;" >
       <img src="{{site.url}}/assets/img/icon-github.png" alt="github"> Coding </a></h4>
-       <div class="excerpt">
+       <div class="excerpt" height="300px">
            <div class="scroll">
                 {% github_feed i2000s, 5 %}
            </div>
        </div>
-  </div>
+    </div>
         
-  <!-- <div class="span5" style="width:400px; align:left;">
-           <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" alt="Twitter"> Discussing </a></h4>
-              <div class="excerpt">
-                <div class="scroll">
-                  {% twitter_feed i2000s, 5 %}
-                </div>
-              </div>  
-  </div> -->
+    <div class="col-md-6 col-xs-11">
+        <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" alt="Twitter"> Discussing </a></h4>
+        <div class="excerpt" height="300px">
+            <div class="scroll">
+                {% twitter_feed i2000s, 5 %}
+            </div>
+        </div>  
+     </div>
+  </div>
 
-  <div class="span12">
-    <br>
-      <h2>My pholosophy on Open Science can be found <a href="/philosophy.html" target="_blank">here</a>. </h2>
+  <div class="row">
+    <h2>My pholosophy on Open Science can be found <a href="/philosophy.html" target="_blank">here</a>. </h2>
     <br>
   </div>
 
 
 {% include footer.html %}
-</div>
-</body>
-</html>
