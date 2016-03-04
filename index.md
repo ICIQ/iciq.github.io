@@ -9,9 +9,11 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
 
  <!-- <span> -->
  <div class="col-md-7 col-md-offset-1 col-sm-12">
-  {% for post in site.posts limit:4 %}
-  {% include postsummary.html %}
-  {% endfor %}
+  <div class="row">
+      {% for post in site.posts limit:4 %}
+      {% include postsummary.html %}
+      {% endfor %}
+  </div>
   <div class="row">
     <div style="font-weight:bold; text-align:center;font-size:1.2em;">
      <i class="glyphicon glyphicon-chevron-left"></i> <a href="/archives.html">Archives by date, </a>
@@ -23,7 +25,7 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
   <div class="row">
     <div class="col-md-4 col-sm-3">
       <ul class="unstyled">
-        <li style="margin:-6px"> <img alt="QR Code" src="/assets/img/qrcode.33561508.png" width=200px align="left"></li>
+        <li style="margin:-6px"> <img alt="QR Code" src="/assets/img/qrcode.33561508.png" align="left"></li>
       </ul>
       <p>Scan to load on your mobile device.</p>
     </div>
@@ -91,6 +93,8 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
 
  </div>
 </div>
+<!-- Add the extra clearfix for only the required viewport -->
+<div class="clearfix visible-md-block"></div>
 <div class="row" style="margin:-10px 0 10px; align:center; vertical-align:middle; clear:both;">
   <!-- <div class="span12" align="center" vertical-align="middle"> -->
   <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
@@ -98,3 +102,6 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
   <!-- </div> -->
   <br>
 </div>
+</div>
+</body>
+</html>
