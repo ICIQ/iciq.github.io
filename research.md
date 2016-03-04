@@ -7,7 +7,7 @@ time: 2016-03-03 03:06:00.000000000 -07:00
 
 ## Current projects
 
-My research involves theoretical studies on the strong coupling between atoms and photons on an optical nanofiber and other nanophotonic platforms.
+My research involves theoretical studies on the strong coupling between atoms and photons on an optical nanofiber (see figure below) and other nanophotonic platforms.
 My current focus is the nanofiber trapped cold atom system.
 We have outlined and proposed in our recent theory paper ([Phys. Rev. A 93, 023817](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817)) that, in the dispersive regime, this nanofiber system can generate a strong coupling with the alkali metal atom ensembles, which can be used for quantum demolition (QND) measurement and spin squeezing beyond the Gaussian regime with fewer atoms than the free-space case.
 All of these findings imply a promising future for the nanofiber platform for atomic clocks, precise measurements, quantum data bus and other quantum information applications.
@@ -17,6 +17,9 @@ My current on-going theory research projects include the following and are open 
  - Optimal QND measurement protocols on the nanofiber trapped atomic systems.
  - Optical pumping on the nanofiber platform for atomic state preparation.
  - Atomic cooling protocols on the trapped atomic ensemble on nanofiber and photonic structures.
+ 
+ ![NanofiberScheme](/assets/img/NanofiberScheme.png =600x "Spectroscopy on a nanofiber-trapped atom ensemble system")
+ Fig 1. Polarization spectroscopy on an optical nanofiber coupled atomic ensemble system. Published on [X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817](http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817).
 
 In addition, through establishing the theoretical foundation of light-atom interaction on the nanofiber platform, I hope to reach the regime of nonlinear interaction between photons for quantum simulations/computations/communications,
 and to deeply understand the quantum behaviors of atoms and photons and the role of nanophotonic geometries for better integratable photonic systems for quantum information processing.  
