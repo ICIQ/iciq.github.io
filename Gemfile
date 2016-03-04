@@ -20,8 +20,8 @@ gem "chronic"             # Natural language time parser
 gem 'jekyll-twitter-plugin' # For twitter API.
 
 gem "git"         # Git gem
-gem "redcarpet"
-gem 'pygments.rb', '~> 0.6.0'
+#gem "redcarpet"
+#gem 'pygments.rb', '~> 0.6.0'
 
 ## Working locally only
 gem "garb" #, "~> 0.9.8"    # Google Analytics API
