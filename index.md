@@ -15,9 +15,9 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
 
   <div class="span6" align="left">
     <div style="font-weight:bold; text-align:center;font-size:1.2em;">
-     <i class="icon-chevron-left"></i> <a href="/archives.html">Archives by date, </a>
-     <i class="icon-list"></i> <a href="/categories.html">by category, </a>
-     <i class="icon-tag"></i> <a href="/tags.html">by tag</a>
+     <i class="glyphicon glyphicon-chevron-left"></i> <a href="/archives.html">Archives by date, </a>
+     <i class="glyphicon glyphicon-list"></i> <a href="/categories.html">by category, </a>
+     <i class="glyphicon glyphicon-tag"></i> <a href="/tags.html">by tag</a>
     </div>
   </div>
   <br><br><br><br>
@@ -65,12 +65,12 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
   <b>Xiaodong Qi</b> (<span font="sans-serif">戚晓东</span>)<br>
 
   <div class="team-member">
-  <img class="img-responsive img-circle" alt="" src="assets/img/qi2016.jpg" align="right" width=200px>
+  <img class="img-responsive img-circle" alt="" src="/assets/img/qi2016.jpg" align="right" width=200px>
   </div>
 
   I am a PhD candidate of
   <a href="http://cquic.org">the Center for Quantum Information and Control (CQuIC)</a> at University of New Mexico (<a href="http://www.unm.edu">UNM</a>), where
-  I am doing theoretical study with <a href="http://info.phys.unm.edu/~ideutsch">Prof. Ivan Deutsch</a>.
+  I am doing theoretical study with <a href="http://cquic.unm.edu/deutsch-group/">Prof. Ivan Deutsch</a>.
 
   Most of my time, I concentrate on <a href="/research.html">research</a>.
   I decode the mathematical rhythms of the dance of photons with matter (atoms, nano-scale objects and macro-scale photonic structures)--they are sometimes powerful, sometimes silky, in general harmonic, vivid, colorful, romantic and marvelous yet with a bit of mystery.
