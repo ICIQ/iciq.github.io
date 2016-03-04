@@ -11,12 +11,10 @@
  <br />
 {% include nextprevious.html %}
 
- <p> <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); 
-            return false;" 
-          class="btn btn-default" 
-          href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/_posts/{{page.path}}"><i class="glyphicon glyphicon-time"></i> history</a></p>
+ <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); return false;"  class="btn btn-default" 
+   href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/_posts/{{page.path}}"><i class="glyphicon glyphicon-time"></i> edit history</a>
 
-  <br />
+  <br><br>
 
   <p><i class="glyphicon glyphicon-list"></i> Posted in 
     {% for category in page.categories %} 
