@@ -18,7 +18,7 @@ My current on-going theory research projects include the following and are open 
  - Optical pumping on the nanofiber platform for atomic state preparation.
  - Atomic cooling protocols on the trapped atomic ensemble on nanofiber and photonic structures.
  
-<div style="align:center">
+<div style="text-align:center">
 {% include image.html img="/assets/img/NanofiberScheme.png" width="600px" title="Spectroscopy on a nanofiber-trapped atom ensemble system" caption="Fig 1. Polarization spectroscopy on an optical nanofiber coupled atomic ensemble system. Published in <a href='http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817' target='_blank'>X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817(2016)</a>." %}
 </div>
 
