@@ -5,15 +5,14 @@ subtitle: Exploring the Open Quantum World
 description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done at the Center for Quantum Information and Control (CQuIC), University of New Mexico.
 ---
 
-<div class="span12">
+<div class="row">
 
- <span>
- <div class="span7" align="left">
+ <!-- <span> -->
+ <div class="col-md-7 col-md-offset-1 col-sm-12">
   {% for post in site.posts limit:4 %}
   {% include postsummary.html %}
   {% endfor %}
-
-  <div class="span6" align="left">
+  <div class="row">
     <div style="font-weight:bold; text-align:center;font-size:1.2em;">
      <i class="glyphicon glyphicon-chevron-left"></i> <a href="/archives.html">Archives by date, </a>
      <i class="glyphicon glyphicon-list"></i> <a href="/categories.html">by category, </a>
@@ -21,29 +20,31 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
     </div>
   </div>
   <br><br><br><br>
-
-  <div class="span3" align="left">
+  <div class="row">
+    <div class="col-md-4 col-sm-3">
       <ul class="unstyled">
         <li style="margin:-6px"> <img alt="QR Code" src="/assets/img/qrcode.33561508.png" width=200px align="left"></li>
       </ul>
-  </div>
-
-  <div class="span3" align="right">
-    <div class="span3" style="width:350px; align:right;text-align:left;">
+      <p>Scan to load on your mobile device.</p>
+    </div>
+    <div class="col-md-8 col-sm-9">
+       <div class="row">
+    <!-- <div class="span3" style="width:350px; align:right;text-align:left;"> -->
            <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" alt="Twitter"> Discussing </a></h4>
               <div class="excerpt" height="300px">
                 <div class="scroll">
                   {% twitter_feed i2000s, 5 %}
                 </div>
               </div>  
-    </div>
-    <ul class="unstyled" style="font-size:.8em;line-height:.8em; align:left;">
-      <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
-      <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
-      <li style="margin:-6px"> </li>
-    </ul>
-    <div class="row" align="right">
-       <div class="span3">
+    <!-- </div> -->
+        <ul class="unstyled" style="font-size:.8em;line-height:.8em; align:left;">
+          <li style="margin:-6px"> Office: 30 Physics and Astronomy Department</li>
+          <li style="margin:-6px">         1919 Lomas Blvd NE, Albuquerque, NM 87131, USA</li>
+          <li style="margin:-6px"> </li>
+        </ul>
+       </div>
+       <div class="row">
+         <div class="row">
            <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" alt="email"> </a>
            <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" alt="github"> </a>
            <a href="https://plus.google.com/+XiaodongQi"><img src="/assets/img/icon-gplus.png" alt="G+"></a>
@@ -51,16 +52,19 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
            <a href="https://twitter.com/i2000s"><img src="/assets/img/icon-twitter.png" alt="Twitter"></a>
            <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
            <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>  
-       </div>
-       <p style="text-align:left"><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
+         </div>
+         <p style="text-align:left"><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
+      </div>
+     <!-- <br><br><br> -->
     </div>
-   <br><br><br>
-  </div>
+    <!-- Add the extra clearfix for only the required viewport -->
+    <div class="clearfix visible-sm-block visible-md-block"></div>
+  </div> 
  </div>
- </span>
+ <!-- </span> -->
 
 
- <div class="span4">
+ <div class="col-md-4 col-sm-12">
 
   <b>Xiaodong Qi</b> (<span font="sans-serif">戚晓东</span>)<br>
 
@@ -85,13 +89,12 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
   <a class="twitter-timeline" href="https://twitter.com/{{site.author.twitter}}" data-widget-id="704862944484421633" data-chrome="transparent noborders noscrollbar" width="360px" height="400px">Tweets by @{{site.author.twitter}}</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+ </div>
 </div>
-
-</div>
-<div class="span12" style="margin:-10px 0 10px">
-  <div class="span12" align="center" vertical-align="middle">
-      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-        <span align="center" margin-top="-10px">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }} under the Creative Commons Attribution License or specified. </span></a>
-  </div>
+<div class="row" style="margin:-10px 0 10px; align:center; vertical-align:middle; clear:both;">
+  <!-- <div class="span12" align="center" vertical-align="middle"> -->
+  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+        <span align="center" margin-top="-10px">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }} under the Creative Commons Attribution License or otherwise specified. </span></a>
+  <!-- </div> -->
   <br>
 </div>
