@@ -1,15 +1,18 @@
        <footer class="footer" style="clear:both;">
-         <div class="span12">
-            <div class="span5" style="float:left;">
-
-              <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" alt="email"> </a>
-              <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" alt="github"> </a>
-              <a href="https://plus.google.com/+XiaodongQi"><img src="/assets/img/icon-gplus.png" alt="G+"></a>
-              <a href="http://scholar.google.com/citations?user=6FdqHlIAAAAJ&hl=en"><img src="/assets/img/icon-scholar.png" alt="GoogleScholar"></a>
-              <a href="https://twitter.com/{{site.author.twitter}}"><img src="/assets/img/icon-twitter.png" alt="Twitter"></a>
-              <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
-              <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>
-              <div>
+         <div class="row">
+            <div class="col-md-7 col-xs-12">
+              <div class="row">
+               <a href="mailto:{{site.author.email}}" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" height="40px" alt="email"> </a>
+               <a href="https://github.com/{{site.author.github}}" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" height="40px" alt="github"> </a>
+               <a href="https://plus.google.com/{{site.author.gplus}}"><img src="/assets/img/icon-gplus.png" height="40px" alt="G+"></a>
+               <a href="https://www.facebook.com/{{site.author.facebook}}"><img src="/assets/img/icon-facebook.png" height="40px" alt="facebook"></a>
+               <a href="http://scholar.google.com/citations?user={{site.author.gscholar}}=en"><img src="/assets/img/icon-scholar.png" height="40px" alt="GoogleScholar"></a>
+               <a href="https://twitter.com/{{site.author.twitter}}"><img src="/assets/img/icon-twitter.png" height="40px" alt="Twitter"></a>
+               <a href="https://www.linkedin.com/in/{{site.author.linkedin}}"><img src="/assets/img/icon-linkedin.png" height="40px" alt="LinkedIn"></a>
+               <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" height="40px" alt="feed"></a>
+               <a href="http://physics.stackexchange.com/users/{{site.author.stackexchangephy}}"><img src="/assets/img/icon-stackoverflow.png" height="40px" alt="Physics Stackexchange"></a> 
+              </div>
+              <div class="row">
                 <br><span> &nbsp; </span> <span><a href="/CV-XiaodongQi.pdf"> CV of Xiaodong Qi</a></span>
                 <br><img alt="Creative Commons License" style="border-width:0" align="right" src="https://licensebuttons.net/l/by/3.0/88x31.png" />
                 <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This site</span> is licensed under the
@@ -18,13 +21,13 @@
               </div>
            </div>
              
-           <div class="span4" style="float:right;">
+           <div class="col-md-4 col-xs-12">
               <div class="span4 team-member" marge-top="-20px">
               <img class="img-responsive img-thumbnail img-circle" width="200px" alt="" src="/assets/img/qi2016.jpg" align="middle">
               </div>
            </div>
          </div>
-      <div class="span12" align="center" clear="both">
+      <div class="row" align="center" clear="both">
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
               <span align="center" margin-top="-10px">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author.name }}. </span></a>
             <br>
