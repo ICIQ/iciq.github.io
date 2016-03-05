@@ -99,16 +99,16 @@ description: Xiaodong's self-described contribution to the community.
         var $item = $("<li>").addClass("repo rep " + (repo.language || '').toLowerCase());
         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
         $link.append($("<h2>").text(repo.name));
-        $link.append($("<h3>").text(repo.watchers + " watchers" + " / " + repo.open_issues + " open issues"));
+        // $link.append($("<h3>").text(repo.watchers + " watchers" + " / " + repo.open_issues + " open issues"));
         $link.append($("<p style='line-height:1em;'>").text(repoDescription(repo)));
         $link.append($("<p style='line-height:1em;'>").text("Updated " +
           strftime("%h %e, %Y", repo.pushed_at)));
-        $link.append($("<h3 style='top:10px; right:14px;'>").addClass("language").text(repo.language));
+        $link.append($("<h3 style='top:20px; right:25px;'>").addClass("language").text(repo.language));
 
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/users/i2000s/repos?per_page=100&callback=?", function (result) {
+      $.getJSON("https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?", function (result) {
         var repos = result.data;
 
         $(function () {
@@ -213,24 +213,24 @@ description: Xiaodong's self-described contribution to the community.
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
         <div><h2>Xiaodong Qi's Open-source Repositories</h2></div>
-        <h6> This is an automated index to Github repositories for my publicly available open source projects.
+        <h5> This is an automated index to Github repositories for my publicly available open source projects.
           All of them are released under open-source initiative licenses,
           so you are free -- and invited! -- to use or adapt them so long as you
           acknowledge the source.  If you do use them, I hope you'll drop me
           a note by email.  I also encourage pull requests with corrections or
-          improvements on these community common resources.</h6>
+          improvements on these community common resources.</h5>
       </div>
 
       <div class="grid grid-3">
         <div id="statistics" class="grid-1 alpha header">
-          <h1 style="margin: 0 5px 0;">Statistics</h1>
-          <p style="margin: 5px 5px 0px;"> <a href="https://github.com/i2000s/repositories"><span id="num-repos">&nbsp;</span> public repos</a> </p>
-          <p style="margin: 5px 5px 0px;"><a href="https://github.com/i2000s">https://github.com/i2000s</a></p>
+          <h1 style="margin: 5px 5px 0;">Statistics</h1>
+          <p style="margin: 5px 5px 0px;"> <a href="https://github.com/{{site.author.github}}/repositories"><span id="num-repos">&nbsp;</span> public repos</a> </p>
+          <p style="margin: 5px 5px 0px;"><a href="https://github.com/{{site.author.github}}">https://github.com/{{site.author.github}}</a></p>
         </div>
 
         <div id="recently-updated" class="grid-2 omega header">
-          <h1 style="margin: 0 5px 0;">Recently updated <a href="https://github.com/i2000s/repositories">View All on GitHub</a></h1>
-          <ol id="recently-updated-repos" style="margin-left: -15px; margin-top: -5px"></ol>
+          <h1 style="margin: 5px 5px 0;">Recently updated <a href="https://github.com/{{site.author.github}}/repositories">View All on GitHub</a></h1>
+          <ol id="recently-updated-repos" style="margin-left: -15px; margin-top: 15px"></ol>
         </div>
       </div>
 

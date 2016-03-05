@@ -1,62 +1,7 @@
-/* Content from Grid.css */
-.grid-1, .grid-2, .grid-3, .grid-4, .rep {
-  display:inline;
-  float: left;
-  position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
-
-.alpha {
-  margin-left: 0;
-}
-
-.omega {
-  margin-right: 0;
-}
-
-/* Grid >> 4 Columns */
-
-.grid .grid-1 {
-  position: relative;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  width: 210px;
-}
-
-.grid .rep {
-  position: relative;
-  border-left-style: none;
-  border-bottom-style: none;
-  border-right-style: none;
-  width: 210px;
-
-  -webkit-border-radius: .5em; 
-  -moz-border-radius: .5em;
-  border-radius: .5em;
-  -webkit-box-shadow: 0 5px 3px rgba(0,0,0,.5);
-  -moz-box-shadow: 0 5px 3px rgba(0,0,0,.5);
-  box-shadow: 0 1px 2px rgba(0,0,0,.2);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
-  background: -moz-linear-gradient(top,  #fff,  #ccc);
-}
-
-.grid .grid-2 {
-  width: 460px;
-}
-
-.grid .grid-3 {
-  width: 700;
-}
-
-.grid .grid-4 {
-  width: 940px;
-}
-
 /* -- Style from Light.css -- */
+html {
+  font-size: 100%;
+}
 /* -- Body -- */
 body {
   background-repeat: repeat;
@@ -69,7 +14,7 @@ body {
 .footer {
   padding: 35px 0 36px;
   margin-top: 45px;
-  font-size: 13px;
+  font-size: 14px;
   border-top: 1px solid #eee8d5;
 }
 /* -- list/table -- */
@@ -250,17 +195,18 @@ li.repo a:hover {
 }
 
 li.repo h2, li.repo h3, li.repo p {
-  margin: 10px 15px;
+  margin: 1px 5px;
 }
 
 li.repo h2 {
+  font-size: 18px;
   margin-bottom: 2px;
   max-width: 160px;
   overflow: hidden;
 }
 
 li.repo h3 {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 2px;
   margin-bottom: 15px;
   color: #999;
@@ -557,3 +503,82 @@ Some self-defined styles.
 Some are from https://github.com/cboettig/labnotebook/blob/master/assets/css/bootstrap.min.css.
 */
 div.excerpt{height:200px;overflow:hidden}div.scroll{width:110%;height:110%;overflow:scroll}.excerpt h1,.excerpt h2,.excerpt h3,.excerpt h4,.excerpt h5,.excerpt h6{font-size:13px;font-weight:700;line-height:18px}
+
+
+
+
+
+
+/* -- Content from Grid.css -- */
+.grid-1, .grid-2, .grid-3, .grid-4, .rep {
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* Grid >> 4 Columns */
+
+.grid .grid-1 {
+  position: relative;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  width: 210px;
+}
+
+.grid .rep {
+  position: relative;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  width: 210px;
+
+  -webkit-border-radius: .5em; 
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 5px 3px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 5px 3px rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+  background: -moz-linear-gradient(top,  #fff,  #ccc);
+}
+
+.grid .grid-2 {
+  width: 460px;
+}
+
+.grid .grid-3 {
+  width: 700;
+}
+
+.grid .grid-4 {
+  width: 940px;
+}
+
+
+
+
+/* -- Self-defined new content -- */
+/* -- Define figure and caption to have the same width. 
+Ref:http://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside -- */ 
+figure {
+   display: table;
+   width: 10px;
+}
+
+img, figcaption {
+    display: table-row;
+    font-size: 14px;
+} 
