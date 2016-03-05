@@ -100,11 +100,11 @@ description: Xiaodong's self-described contribution to the community.
         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
         $link.append($("<h2>").text(repo.name));
         // $link.append($("<h3>").text(repo.watchers + " watchers" + " / " + repo.open_issues + " open issues"));
-        $link.append($("<h3>").text( )); // Make a blank line to shift the later lines.
+        $link.append($("<h3>").addClass("language").text(repo.language)); // Make a blank line to shift the later lines.
         $link.append($("<p style='line-height:1em;'>").text(repoDescription(repo)));
         $link.append($("<p style='line-height:1em;'>").text("Updated " +
           strftime("%h %e, %Y", repo.pushed_at)));
-        $link.append($("<h3 style='top:20px; right:25px;'>").addClass("language").text(repo.language));
+        //$link.append($("<h3 style='top:20px; right:25px;'>").addClass("language").text(repo.language));
 
         $item.appendTo("#repos");
       }
