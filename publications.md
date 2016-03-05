@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: /pubs/
-title: Publications and Academic Activities
-modified: 2016-02-15 0:47
+title: Publications and Presentations
+modified: 2016-03-04 0:47
 tags: [publications]
 image:
   feature: /assets/img/qi2016.jpg
