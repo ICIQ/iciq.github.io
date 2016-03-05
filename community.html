@@ -100,11 +100,10 @@ description: Xiaodong's self-described contribution to the community.
         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
         $link.append($("<h2>").text(repo.name));
         // $link.append($("<h3>").text(repo.watchers + " watchers" + " / " + repo.open_issues + " open issues"));
-        $link.append($("<h3>").addClass("language").text(repo.language)); // Make a blank line to shift the later lines.
         $link.append($("<p style='line-height:1em;'>").text(repoDescription(repo)));
         $link.append($("<p style='line-height:1em;'>").text("Updated " +
           strftime("%h %e, %Y", repo.pushed_at)));
-        //$link.append($("<h3 style='top:20px; right:25px;'>").addClass("language").text(repo.language));
+        $link.append($("<h3 style='top:23px; right:1px;'>").addClass("language").text(repo.language));
 
         $item.appendTo("#repos");
       }
@@ -214,12 +213,12 @@ description: Xiaodong's self-described contribution to the community.
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
         <div><h2>Xiaodong Qi's Open-source Repositories</h2></div>
-        <h5> This is an automated index to Github repositories for my publicly available open source projects.
+        <h4> This is an automated index to Github repositories for my publicly available open source projects.
           All of them are released under open-source initiative licenses,
           so you are free -- and invited! -- to use or adapt them so long as you
           acknowledge the source.  If you do use them, I hope you'll drop me
           a note by email.  I also encourage pull requests with corrections or
-          improvements on these community common resources.</h5>
+          improvements on these community common resources.</h4>
       </div>
 
       <div class="grid grid-3">

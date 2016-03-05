@@ -33,7 +33,7 @@ ul.unstyled {
 }
 
 #main {
-  height: 400px;
+  height: 485px;
   text-align: center;
 }
 
@@ -142,7 +142,7 @@ div.header h1 {
 }
 
 li.repo {
-  height: 50px;
+  height: 65px;
   width: 250px;
   font-size: 14px;
 }
@@ -195,7 +195,7 @@ li.repo a:hover {
 }
 
 li.repo h2, li.repo h3, li.repo p {
-  margin: 1px 5px;
+  margin: 9px 5px;
 }
 
 li.repo h2 {
@@ -228,7 +228,7 @@ li.repo h3 {
 }
 
 .repo.javascript:after {
-  border-right-color: #333;
+  border-right-color: #888;
 }
 
 .repo.scala:after {
@@ -236,15 +236,18 @@ li.repo h3 {
 }
 
 .repo.fortran:after {
-  border-right-color: #cc1100;
+  border-right-color: #C2B269;
 }
 
 .repo.matlab:after {
-  border-right-color: #cc8300;
+  border-right-color: #D66661;
 }
 
 .repo.python:after {
   border-right-color: #6aad2d;
+}
+.repo.julia:after {
+  border-right-color: #AB6DC0;
 }
 
 li.repo .language {
