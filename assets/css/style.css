@@ -581,4 +581,5 @@ figure {
 img, figcaption {
     display: table-row;
     font-size: 14px;
+    text-align: left;
 } 
