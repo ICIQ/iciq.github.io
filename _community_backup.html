@@ -181,22 +181,22 @@ description: Xiaodong's self-described contribution to the community.
             return 0;
           });
           // Only first 12 hotest repos are shown.
- +          $.each(repos.slice(0,12), function (i, repo) {
-              addRepo(repo);
-            });
-  
-           // Sort by most-recently pushed to.
-           repos.sort(function (a, b) {
-             if (a.pushed_at < b.pushed_at) return 1;
-             if (b.pushed_at < a.pushed_at) return -1;
-             return 0;
-           });
- 
-           $.each(repos.slice(0, 3), function (i, repo) {
-             addRecentlyUpdatedRepo(repo);
-           });
-         });
-       });
+          $.each(repos.slice(0,12), function (i, repo) {
+            addRepo(repo);
+          });
+
+          // Sort by most-recently pushed to.
+          repos.sort(function (a, b) {
+            if (a.pushed_at < b.pushed_at) return 1;
+            if (b.pushed_at < a.pushed_at) return -1;
+            return 0;
+          });
+
+          $.each(repos.slice(0, 3), function (i, repo) {
+            addRecentlyUpdatedRepo(repo);
+          });
+        });
+      });
       
      
 
