@@ -109,12 +109,49 @@ description: Xiaodong's self-described contribution to the community.
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?", function (result) {
-          repos = result.data;
+      function queryorgrepo(requrl){
+      //return $.ajax({
+      $.ajax({
+         url: requrl,
+         async: false,
+         dataType: 'json',
+         success: function (result) {
+         //repos = result.data;
+         $.merge(repos, result.data);
+         }
       });
-      // Add organization repos.
-      $.getJSON("https://api.github.com/orgs/CQuIC/repos?per_page=100&callback=?", function (result) {
-          repos.append(result.data);
+      return repos;
+      //console.log(repos);
+      };
+      
+      var orgnames = {{site.author.ghorgs.name}};
+      var orgurls = [];
+      for (var indx = 0; indx < orgnames.length; indx++){
+        orgurls[indx] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
+      };
+      //alert(orgurls);
+      for (var indx = 0; indx < orgurls.length; indx++){
+        //repos=$.merge(repos,queryorgrepo(orgurls[indx]));
+        queryorgrepo(orgurls[indx]);
+        //repos.push(queryorgrepo(orgurls[indx]));
+        //results.push(queryorgrepo(orgurls[indx]));
+        console.log(repos);
+       };
+      
+      //alert(repos);
+      // invoke each function stored in the result array and proceed when they are all done
+      //$.when.apply(this, repos).done(function () {
+        //console.log(repos);
+      //});
+      //alert(repos);
+      // Add user repos.
+      $.ajax({
+         url: 'https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?',
+         async: false,
+         dataType: 'json',
+         success: function (result){
+          
+          $.merge(repos,result.data);
           $(function () {
           $("#num-repos").text(repos.length);
 
