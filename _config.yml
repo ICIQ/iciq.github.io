@@ -13,6 +13,11 @@ author :
   facebook: i2000s
   linkedin: xiaodongqi
   stackexchangephy: 37682/xiaodong-qi
+  ghorgs:
+    - org: CQuIC
+    - org: JuliaQuantum
+    - org: ICIQ
+    - org: JuliaCN
 url: http://i2000s.github.io
 
 permalink: /:year/:month/:day/:title.html
