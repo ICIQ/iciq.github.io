@@ -109,77 +109,34 @@ description: Xiaodong's self-described contribution to the community.
         $item.appendTo("#repos");
       }
       
-      tokenkey=process.env.GH_TOKEN;
-      function queryorgrepo(requrl){
-      //return $.ajax({
-      $.ajax({
-         url: requrl,
-         async: false,
-         dataType: 'json',
-         //headers: 'Authorization: token '+tokenkey,
-         success: function (result) {
-         //repos = result.data;
-         $.merge(repos, result.data);
-         }
-      });
-      return repos;
-      //console.log(repos);
-      };
-      
-      var orgnames = ['CQuIC', 'JuliaCN', 'JuliaQuantum', 'ICIQ'];//{{site.author.ghorgs.name}};
-      var orgurls = [];
-      for (var indx = 0; indx < orgnames.length; indx++){
-        orgurls[indx] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
-      };
-      //alert(orgurls);
-      for (var indx = 0; indx < orgurls.length; indx++){
-        //repos=$.merge(repos,queryorgrepo(orgurls[indx]));
-        queryorgrepo(orgurls[indx]);
-        //repos.push(queryorgrepo(orgurls[indx]));
-        //results.push(queryorgrepo(orgurls[indx]));
-        console.log(repos);
-       };
-      
-      //alert(tokenkey);
-      // invoke each function stored in the result array and proceed when they are all done
-      //$.when.apply(this, repos).done(function () {
-        //console.log(repos);
-      //});
-      //alert(repos);
-      // Add user repos.
-      $.ajax({
-         url: 'https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?',
-         async: false,
-         dataType: 'json',
-         //headers: 'Authorization: token '+tokenkey,
-         success: function (result){
-          
-          $.merge(repos,result.data);
-          $(function () {
-          $("#num-repos").text(repos.length);
-
-          // Convert pushed_at to Date.
-          $.each(repos, function (i, repo) {
-            repo.pushed_at = new Date(repo.pushed_at);
-
-            var weekHalfLife  = 1.146 * Math.pow(10, -9);
-
-            var pushDelta    = (new Date) - Date.parse(repo.pushed_at);
-            var createdDelta = (new Date) - Date.parse(repo.created_at);
-
-            var weightForPush = 1;
-            var weightForWatchers = 1.314 * Math.pow(10, 7);
-
-            repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta);
-            repo.hotness += weightForWatchers * repo.watchers / createdDelta;
-          });
-
-          // Sort by highest # of watchers.
-          repos.sort(function (a, b) {
-            if (a.hotness < b.hotness) return 1;
-            if (b.hotness < a.hotness) return -1;
-            return 0;
-          });
+      $.getJSON("https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?", function (result) {
+         var repos = result.data;
+ 
+         $(function () {
+           $("#num-repos").text(repos.length);
+ 
+           // Convert pushed_at to Date.
+           $.each(repos, function (i, repo) {
+             repo.pushed_at = new Date(repo.pushed_at);
+ 
+             var weekHalfLife  = 1.146 * Math.pow(10, -9);
+ 
+             var pushDelta    = (new Date) - Date.parse(repo.pushed_at);
+             var createdDelta = (new Date) - Date.parse(repo.created_at);
+ 
+             var weightForPush = 1;
+             var weightForWatchers = 1.314 * Math.pow(10, 7);
+ 
+             repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta);
+             repo.hotness += weightForWatchers * repo.watchers / createdDelta;
+           });
+ 
+           // Sort by highest # of watchers.
+           repos.sort(function (a, b) {
+             if (a.hotness < b.hotness) return 1;
+              if (b.hotness < a.hotness) return -1;
+              return 0;
+            });
           // Only first 12 hotest repos are shown.
  +          $.each(repos.slice(0,12), function (i, repo) {
               addRepo(repo);
@@ -196,9 +153,7 @@ description: Xiaodong's self-described contribution to the community.
              addRecentlyUpdatedRepo(repo);
            });
          });
-       });
-      
-     
+       }); 
 
     })(jQuery);
     </script>
