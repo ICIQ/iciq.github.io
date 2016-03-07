@@ -17,6 +17,13 @@ before_install:
 - gem install bundler
 install:
 - travis_retry bundle install
+before_script:
+- composer self-update -q
+- if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
+- if [ -z "$dependencies" ]; then composer install; fi;
+- if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest -n; fi;
+- if [ "$dependencies" = "highest" ]; then composer update -n; fi;
+- composer show -i
 script:
 - bundle exec jekyll build
 - bundle exec rake site:deploy
