@@ -111,7 +111,10 @@ description: Xiaodong's self-described contribution to the community.
       $.getJSON("https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?", function (result) {
         var repos = result.data;
 
-        $(function () {
+      });
+      
+      // Do the sorting and define ids.
+      $(function () {
           $("#num-repos").text(repos.length);
 
           // Convert pushed_at to Date.
@@ -137,7 +140,7 @@ description: Xiaodong's self-described contribution to the community.
             return 0;
           });
           // Only first 12 hotest repos are shown.
-          $.each(repos.slice(0,11), function (i, repo) {
+          $.each(repos.slice(0,12), function (i, repo) {
             addRepo(repo);
           });
 
@@ -151,8 +154,7 @@ description: Xiaodong's self-described contribution to the community.
           $.each(repos.slice(0, 3), function (i, repo) {
             addRecentlyUpdatedRepo(repo);
           });
-        });
-      });
+     });
 
     })(jQuery);
     </script>
@@ -213,9 +215,9 @@ description: Xiaodong's self-described contribution to the community.
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
         <div><h2>Xiaodong Qi's Open-source Repositories</h2></div>
-        <h4> This is an automated index to Github repositories for my publicly available open source projects.
+        <h4> This is an automated index to the top 12 public Github repositories owned by Xiaodong Qi.
           All of them are released under open-source initiative licenses,
-          so you are free -- and invited! -- to use or adapt them so long as you
+          so you are free -- and invited! -- to use or adapt them as long as you
           acknowledge the source.  If you do use them, I hope you'll drop me
           a note by email.  I also encourage pull requests with corrections or
           improvements on these community common resources.</h4>
