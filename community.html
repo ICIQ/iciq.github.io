@@ -124,7 +124,7 @@ description: Xiaodong's self-described contribution to the community.
       //console.log(repos);
       };
       
-      var orgnames = {{site.author.ghorgs.name}};
+      var orgnames = ['CQuIC', 'JuliaCN', 'JuliaQuantum', 'ICIQ'];//{{site.author.ghorgs.name}};
       var orgurls = [];
       for (var indx = 0; indx < orgnames.length; indx++){
         orgurls[indx] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
