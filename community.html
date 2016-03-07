@@ -62,6 +62,7 @@ description: Xiaodong's self-described contribution to the community.
       // Put custom repo descriptions in this object, keyed by repo name.
       var repoDescriptions = {
       };
+      var repos = [];
 
       function repoUrl(repo) {
         return repoUrls[repo.name] || repo.html_url;
@@ -109,7 +110,7 @@ description: Xiaodong's self-described contribution to the community.
       }
 
       $.getJSON("https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?", function (result) {
-        var repos = result.data;
+          repos = result.data;
       });
       // Add organization repos.
       $.getJSON("https://api.github.com/orgs/CQuIC/repos?per_page=100&callback=?", function (result) {
