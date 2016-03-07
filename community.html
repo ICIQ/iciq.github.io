@@ -115,7 +115,7 @@ description: Xiaodong's self-described contribution to the community.
          url: requrl,
          async: false,
          dataType: 'json',
-         headers: {'Authorization: token '+process.env.GH_TOKEN},
+         headers: 'Authorization: token '+process.env.GH_TOKEN,
          success: function (result) {
          //repos = result.data;
          $.merge(repos, result.data);
@@ -150,7 +150,7 @@ description: Xiaodong's self-described contribution to the community.
          url: 'https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?',
          async: false,
          dataType: 'json',
-          headers: {'Authorization: token '+process.env.GH_TOKEN},
+         headers: 'Authorization: token '+process.env.GH_TOKEN,
          success: function (result){
           
           $.merge(repos,result.data);
