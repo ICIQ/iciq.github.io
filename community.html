@@ -136,8 +136,8 @@ description: Xiaodong's self-described contribution to the community.
             if (b.hotness < a.hotness) return -1;
             return 0;
           });
-
-          $.each(repos, function (i, repo) {
+          // Only first 12 hotest repos are shown.
+          $.each(repos.slice(0,11), function (i, repo) {
             addRepo(repo);
           });
 
