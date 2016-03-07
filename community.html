@@ -110,11 +110,15 @@ description: Xiaodong's self-described contribution to the community.
 
       $.getJSON("https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?", function (result) {
         var repos = result.data;
-
+      });
+        
+      $.getJSON("https://api.github.com/orgs/CQuIC/repos?per_page=100&callback=?", function (result) {
+          repos.append(result.data);
       });
       
       // Do the sorting and define ids.
-      $(function () {
+      printRepo(repos);
+      function printRepo(repos) {
           $("#num-repos").text(repos.length);
 
           // Convert pushed_at to Date.
@@ -154,7 +158,7 @@ description: Xiaodong's self-described contribution to the community.
           $.each(repos.slice(0, 3), function (i, repo) {
             addRecentlyUpdatedRepo(repo);
           });
-     });
+     }
 
     })(jQuery);
     </script>
