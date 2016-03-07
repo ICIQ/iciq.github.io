@@ -109,14 +109,14 @@ description: Xiaodong's self-described contribution to the community.
         $item.appendTo("#repos");
       }
       
-      tokenkey='c4e21fd9f9a86fdbe41498d11e70076e2f4b4ed2';//process.env.GH_TOKEN;
+      tokenkey=process.env.GH_TOKEN;
       function queryorgrepo(requrl){
       //return $.ajax({
       $.ajax({
          url: requrl,
          async: false,
          dataType: 'json',
-         headers: 'Authorization: token '+tokenkey,
+         //headers: 'Authorization: token '+tokenkey,
          success: function (result) {
          //repos = result.data;
          $.merge(repos, result.data);
@@ -151,7 +151,7 @@ description: Xiaodong's self-described contribution to the community.
          url: 'https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?',
          async: false,
          dataType: 'json',
-         headers: 'Authorization: token '+tokenkey,
+         //headers: 'Authorization: token '+tokenkey,
          success: function (result){
           
           $.merge(repos,result.data);

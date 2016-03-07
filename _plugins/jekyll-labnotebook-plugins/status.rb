@@ -76,7 +76,7 @@ module Jekyll
       if input[1] == nil
         @count = 3
       end
-      @address = "ketch/"+"#{@text}"
+      @address = "i2000s/"+"#{@text}"
     end
 
     def render(context) 

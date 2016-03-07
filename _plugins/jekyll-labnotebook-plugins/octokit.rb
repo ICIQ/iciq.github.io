@@ -21,7 +21,7 @@ module Jekyll
     def initialize(tag_name, text, tokens)
       super
       @text = text
-      @address = "cboettig/"+"#{@text}"
+      @address = "i2000s/"+"#{@text}"
     end
     def render(context) # learn how to write this to take an argument!
        puts "Getting Github Issues via octokit.rb"
@@ -63,7 +63,7 @@ module Jekyll
     def initialize(tag_name, text, tokens)
       super
       @text = text
-      @address = "cboettig/"+"#{@text}"
+      @address = "i2000s/"+"#{@text}"
     end
     def render(context)
        puts "Getting Github Commits via octokit.rb"
