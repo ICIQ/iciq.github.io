@@ -13,7 +13,7 @@ author :
   facebook: i2000s
   linkedin: xiaodongqi
   stackexchangephy: 37682/xiaodong-qi
-  ghorgs:
+  ghorgs: # Used in the Javascript of Community page to pull out github repos.
     - name: CQuIC
     - name: JuliaQuantum
     - name: ICIQ
