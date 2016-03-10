@@ -129,10 +129,13 @@ description: Xiaodong's self-described contribution to the community.
        });
       };
       
-      var orgnames = ['CQuIC', 
-                      'JuliaCN', 
-                      'JuliaQuantum', 
-                      'ICIQ'];
+        // Call organization names from the YAML.
+      var orgnames = [];
+      var indx=0;
+        {% for item in site.author.ghorgs %}
+          orgnames[indx]= {{ item.name }};
+          indx ++ ;
+        {% endfor %};
       //Define url list as a combination of user's url and the orgs' urls.
       var orgurls = ['https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?'];
       for (var indx = 0; indx < orgnames.length; indx++){
