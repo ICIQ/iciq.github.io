@@ -19,6 +19,15 @@ author :
     - name: ICIQ
     - name: JuliaCN
 url: http://i2000s.github.io
+navigation: # For the navigation menu. Don't use index.html. urls should end with a directory.
+  - text: Home
+    url: /
+  - text: Research
+    url: /research/
+  - text: Publications and Activities
+    url: /pubs/
+  - text: Community
+    url: /community/
 
 permalink: /:year/:month/:day/:title.html
 redirects: yes

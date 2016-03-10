@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /research/
 title: Research
 subtitle: Do science in an open and collaborative way.
 time: 2016-03-03 03:06:00.000000000 -07:00

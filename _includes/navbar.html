@@ -15,33 +15,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          {% if page.url == "/index.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/index.html">Home</a></li>
-
-          {% if page.url == "/research.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/research.html">Research</a></li>
-
-          {% if page.url == "/pubs/index.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/pubs/index.html">Publications and Activities</a></li>
-
-          <!-- {% if page.url == "/noteblog.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/noteblog.html">Blog</a></li> -->
-
-          <!-- {% if page.url == "/notebooks.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="{{ site.url }}/notebooks.html">Notebooks</a></li> -->
-
-          {% if page.url == "/community.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/community.html">Community</a></li>
-
-          <!-- {% if page.url == "/teaching.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="{{ site.url }}/teaching.html">Learning</a></li> -->
-
-          <!--{% if page.url == "/tools.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/tools.html">Tools</a></li>
-
-          {% if page.url == "/philosophy.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/philosophy.html">Philosophy</a></li> -->
-
+         {% for item in site.navigation %}
+            {% assign class = nil %}
+            {% if page.url contains item.url and item.url != '/' %}
+                {% assign class = 'active' %}
+            {% endif %}
+            {% if page.url == '/' and item.url == '/' %}
+                {% assign class = 'active' %}
+            {% endif %}
+            <li><a href="{{ item.url }}" class="{{ class }}">{{ item.text }}</a></li>
+         {% endfor %}
         </ul>
       <!-- Search site using Google's index -->
         <form class="navbar-form navbar-right" role="search" method="get" action="http://google.com/search">
