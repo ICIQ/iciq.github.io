@@ -126,8 +126,7 @@ description: Xiaodong's self-described contribution to the community.
          //We only need results.data in the end. Is this blank function correct?
          // return result.data;
          }
-      });
-      //console.log(promises);
+       });
       };
       
       var orgnames = ['CQuIC', 
@@ -139,12 +138,10 @@ description: Xiaodong's self-described contribution to the community.
       for (var indx = 0; indx < orgnames.length; indx++){
         orgurls[indx + 1] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
       };
-      //alert(orgurls);
       for (var indx = 0; indx < orgurls.length; indx++){
         //add promises in each loop of query.
         promises.push(queryorgrepo(orgurls[indx]));
        }
-      //alert(promises);
       // Invoke each function stored in the result array and proceed when they are all done
       $.when.apply(this, promises).done(function () {
       // Fetch the result from each arguments.
@@ -154,7 +151,7 @@ description: Xiaodong's self-described contribution to the community.
         for (var i = 0; i < arguments.length; i++) {
         // retrieve the entries from the argument parameter
           values = arguments[i][0].data;
-          console.log(values);
+          //console.log(values);
          // Push the retrieved value to a global function variable, which we can.
          // this function is processed synchronously, when all ajax calls have been completed
          tempdata.push(values);
@@ -164,12 +161,9 @@ description: Xiaodong's self-described contribution to the community.
       for (var i = 0; i < tempdata.length; i++) {
         $.merge(repos, tempdata[i]);
       };
-      
-      //  console.log(repos);
       // sort the repos and define html elememts.
       $(function () {
           $("#num-repos").text(repos.length);
-
           // Convert pushed_at to Date.
           $.each(repos, function (i, repo) {
             repo.pushed_at = new Date(repo.pushed_at);
@@ -208,7 +202,6 @@ description: Xiaodong's self-described contribution to the community.
             addRecentlyUpdatedRepo(repo);
           });
         });//function
-        //alert(repos);
       }); //when.apply.done
 
     })(jQuery);
