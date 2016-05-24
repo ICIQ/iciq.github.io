@@ -32,7 +32,7 @@ Additional Site Features & Credits
 ==================================
 * CSS generated with [twitter bootstrap](http://twitter.github.com/bootstrap/)
 * [Carl Boettiger's plugins](https://github.com/cboettig/jekyll-labnotebook-plugins) for Mendeley, Github, Twitter and others
-* ~~Site hosting by [Dreamhost](http://dreamhost.org)~~
+* Integrated with IPython/IJulia/Jupyter notebooks and [MathJax](https://www.mathjax.org)
 * Source code hosting on [Github](https://github.com/ketch/labnotebook) with automatic deployment using [Travis-CI](http://travis-ci.org) and Rake
 * Improved "related posts" plugin from [David Lynch](https://github.com/kemayo/davidlynch.org/blob/master/_plugins/related_posts.rb)
 * Improved publication and citation support from [Jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) with some customizations
@@ -42,7 +42,7 @@ Instruction on hosting the site locally
 I use Ubuntu 12.04 LTS OS to generate the static website from source code.
 Instructions on other operating systems should be similar.
 
-If you run Jekyll sites for the first time, you may need to install Ruby v2.2.* (tested on v2.2.4) and the `gem` development envirenment.
+If you run Jekyll sites for the first time, you may need to install Ruby v2.2.* (tested on v2.2.4 and v2.3.0) and the `gem` development envirenment.
 I was basically following [this instruction](http://tecadmin.net/install-ruby-on-rails-on-ubuntu/) on my Ubuntu,
 except for the step of sourcing RVM which I used the following command line instead  
 ```
@@ -59,6 +59,7 @@ sudo apt-get update
 sudo apt-get install pandoc
 sudo apt-get install gsl-bin libgsl0-dev
 ```
+On Windows OS, `gsl` should be preinstalled in order to gem install rb-gsl.
 Otherwise, the `.travis.yml` configuration file should have some basic settings to follow.
 
 The `Gemfile` and the configuration file `_conf.yml` should include sufficient information on installing correct dependences.
@@ -69,6 +70,10 @@ bundle exec jekyll serve
 ```
 Notice that, I have locked the Jekyll version to `~>2.5.3`.
 If you want to use Jekyll version 3.0.0 or above, you may need to tweak the code a little bit.
+
+If you encounter the missing credentials error for the `twitter_feed` plugin, you may need to export environmental variables `TWIT_KEY`, `TWIT_SECRET`, `TWIT_TOK` and `TWIT_TOK_SECRET` before running the jekyll server. All the credentials of the Twitter plugin should be accessible from the TWitter account used for the site. 
+
+By default, the local build should be accessible at `http://127.0.0.1:4000` on your internet browser.
 
 Authorships of posts before Feb 10th, 2016
 =========================================
