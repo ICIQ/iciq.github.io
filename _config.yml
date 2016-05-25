@@ -1,47 +1,40 @@
-title : The NoteBlog of Xiaodong Qi
-tagline: Exploring Quantum World
+title : ICIQ - Information, Computation, Intelligence and Quantum
+tagline: Getting ready for the Quantum Times
 author :
-  name : Xiaodong Qi
-  givenName: Xiaodong
-  familyName: Qi
-  ChineseName: 戚晓东
-  twitter: i2000s
-  github: i2000s
-  email : i2000s@hotmail.com
-  gplus: +XiaodongQi
-  gscholar: 6FdqHlIAAAAJ&hl
-  facebook: i2000s
-  linkedin: xiaodongqi
-  stackexchangephy: 37682/xiaodong-qi
+  name : iciq community
+  givenName: ICIQ
+  familyName: Community
+  twitter: ICIQ_project
+  github: iciq
+  email : iciqproject@gmail.com
+  gplus: communities/112872767737673370045
+  facebook: groups/488750657941233/
   ghorgs: # Used in the Javascript of Community page to pull out github repos.
-    - name: CQuIC
-    - name: JuliaQuantum
     - name: ICIQ
-    - name: JuliaCN
-url: http://i2000s.github.io
+url: http://iciq.github.io
 navigation: # For the navigation menu. Don't use index.html. urls should end with a directory.
   - text: Home
     url: /
-  - text: Research
-    url: /research/
-  - text: Publications and Activities
-    url: /pubs/
-  - text: Community
-    url: /community/
+  - text: Observe
+    url: /observe/
+  - text: Entangle
+    url: /entangle/
+  - text: More
+    url: /more/
 
 permalink: /:year/:month/:day/:title.html
 redirects: yes
 encoding: utf-8
 pageviews: no    ## toggle on sidebar pageviews
 twitter_api: yes
-analytics: UA-74657818-1 ## Google Analytics key UA-46730871-1(in _includes/analytics.html and search.html)
+analytics: UA-46730871-1 ## Google Analytics key UA-46730871-1(in _includes/analytics.html and search.html)
 baseurl: '/'
 lsi: True # Possibly for generating related posts with gsl and classifier packages.
 
 # GitHub information of this site. Used for extracting commit history of posts.
 gitstamps: yes
-username: i2000s
-repo: i2000s.github.io # used in linking commit history and auto-deploy the site on travis-CI.
+username: iciq
+repo: iciq.github.io # used in linking commit history and auto-deploy the site on travis-CI.
 sourcebranch: dev # used in linking commit history.
 
 source: .
@@ -53,24 +46,24 @@ gems:
 # csl style: https://github.com/citation-style-language/styles
 gems:
   - "jekyll/scholar"
-scholar:
-  style: assets/APS.csl
-  locale: en
-
-  sort_by: year
-  order: descending
-
-  source: assets
-  bibliography: QiPublications
-  bibliography_template: bibtemplate
-
-  replace_strings: true
-
-  details_dir:    pubs
-  details_layout: bibtex.html
-  details_link:   Details
-
-  query: "@*"
+#scholar:
+#  style: assets/APS.csl
+#  locale: en
+#
+#  sort_by: year
+#  order: descending
+#
+#  source: assets
+#  bibliography: QiPublications
+#  bibliography_template: bibtemplate
+#
+#  replace_strings: true
+#
+#  details_dir:    pubs
+#  details_layout: bibtex.html
+#  details_link:   Details
+#
+#  query: "@*"
 
 
 
@@ -78,7 +71,7 @@ scholar:
 markdown: pandoc
 markdown_ext: markdown,md
 pandoc:
-   extensions: 
+   extensions:
      - smart
      - mathjax
 
