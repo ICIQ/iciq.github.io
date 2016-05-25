@@ -1,0 +1,25 @@
+{
+    "foo": [
+        {
+            "display": "<a href=\"https://github.com/ICIQ/iciq.github.io/wiki\" target=\"_blank\">Wiki</a> |"
+        },
+        {
+            "display": "<a href=\"https://github.com/ICIQ/iciq.github.io/issues\" target=\"_blank\">Issues</a> |"
+        },
+        {
+            "display": "<a href=\"https://github.com/ICIQ/iciq.github.io/blob/master/LICENSE.md\" target=\"_blank\">License</a> |"
+        },
+        {
+            "display": "<a href=\"https://github.com/ICIQ/iciq.github.io\" target=\"_blank\">Source Code</a> |"
+        },        
+        {
+            "display": "By <a href=\"http://iciq.github.io\">Information, Computation, Intelligence and Quantum</a> |"
+        },
+        {
+            "display": "Built with <a href=\"http://www.99lime.com\">HTML KickStart</a>."
+        },
+        {
+            "display": "<a id=\"link-top\" href=\"#top\">Top</a>"
+        }
+]
+}

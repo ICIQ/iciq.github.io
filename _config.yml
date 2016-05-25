@@ -16,11 +16,11 @@ navigation: # For the navigation menu. Don't use index.html. urls should end wit
   - text: Home
     url: /
   - text: Observe
-    url: /observe/
+    url: /observe.html
   - text: Entangle
-    url: /entangle/
+    url: /entangle.html
   - text: More
-    url: /more/
+    url: /more.html
 
 permalink: /:year/:month/:day/:title.html
 redirects: yes
