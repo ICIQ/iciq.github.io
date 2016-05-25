@@ -1,7 +1,7 @@
 title : ICIQ - Information, Computation, Intelligence and Quantum
 tagline: Getting ready for the Quantum Times
 author :
-  name : iciq community
+  name : ICIQ Community
   givenName: ICIQ
   familyName: Community
   twitter: ICIQ_project
@@ -44,8 +44,9 @@ gems:
 # Publications. Ref: http://tuxette.nathalievilla.org/?p=1426
 # http://eric-tramel.github.io/working-automated-publications/
 # csl style: https://github.com/citation-style-language/styles
-gems:
-  - "jekyll/scholar"
+
+#gems:
+#  - "jekyll/scholar"
 #scholar:
 #  style: assets/APS.csl
 #  locale: en
