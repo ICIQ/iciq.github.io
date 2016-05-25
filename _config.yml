@@ -12,6 +12,13 @@ author :
   ghorgs: # Used in the Javascript of Community page to pull out github repos.
     - name: ICIQ
 url: http://iciq.github.io
+disqus:
+  sitename: ICIQ_project
+  channel:
+    - name: Quantum Information and Computing
+      shortname: quantuminformationandcomputing
+    - name: Quantum Optics
+      shortname: quantumoptics
 navigation: # For the navigation menu. Don't use index.html. urls should end with a directory.
   - text: Home
     url: /
