@@ -1,8 +1,0 @@
----
-layout: post
-name: how-to-edit-all-files-containing
-title: How to edit all files containing a particular string
-time: 2011-06-27 23:16:00.000000000 +03:00
-tags: linux programming
----
-It's often useful to be able to automatically open all files with a particular string (say, to rename a variable throughout your code).  To do this with ack, and open all files containing my_string in vim, just type:<br /><br />vim $(ack -l my_string)<br /><br />It can be accomplished in a similar way with grep instead of ack.<br /><br /><br /><b>Edit:</b> If you just want to search and replace a particular string in all files under some directory recursively, use <br /><br />grep -rl matchstring somedir/ | xargs sed -i "" 's/search string1/search string2/'   <br /><br />It took me a while to find that the double quotes after -i are necessary on Mac OS X.  And be aware that the single quotes above usually get mangled to be backticks when copying and pasting.<br /><br /><b>Edit 2:</b> Don't do this in the root directory of a git repository!  It will corrupt the repository.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4660225022390848760-2002733795720160146?l=scienceinthesands.blogspot.com' alt='' /></div>

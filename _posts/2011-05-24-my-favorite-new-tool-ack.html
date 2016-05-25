@@ -1,8 +1,0 @@
----
-layout: post
-name: my-favorite-new-tool-ack
-title: ! 'My favorite new tool: ack'
-time: 2011-05-24 01:25:00.000000000 +03:00
-tags: tools UNIX
----
-If you're like me, about once a week you type something like<br /><br />>> grep words<br /><br />and then wait a few seconds before remembering that you really meant<br /><br />>> grep words *<br /><br />or perhaps<br /><br />>> grep -r words *<br /><br />If so, do yourself a favor and install <b><a href="http://betterthangrep.com/">ack</a></b> right now.  You'll be glad you did.<br /><br />Note: ack tries to intelligently search only filetypes that it believes to be text.  Unfortunately, its built-in list of extensions for such files is incomplete.  For instance, it does not include .rst (ReStructured Text) files.  To add more extensions, just create a file ".ackrc" in your home directory and put the following line in it:<br /><br />--type-add=TYPE=.ext<br /><br />Here TYPE is the name of the filetype (anything you want) and .ext is the extension of that filetype.  For example:<br /><br />--type-add=RST=.rst<br /><br />(in the line above, "type" is preceded by two minus characters.  Unfortunately, they look strange in my blog's font).<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4660225022390848760-2755452078765389063?l=scienceinthesands.blogspot.com' alt='' /></div>
