@@ -20,7 +20,9 @@ author :
     - name: JuliaCN
 url: http://i2000s.github.io
 disqus:
-  sitename: qxd
+  sitename: qxd # This is the shortname of the disqus site id to display disqus comments below posts.
+addthis:
+  pubid: ra-54f225a84524edd3 # This is the AddThis button pubid to display social sharing buttons on the website. Used in the header template.
 navigation: # For the navigation menu. Don't use index.html. urls should end with a directory.
   - text: Home
     url: /
