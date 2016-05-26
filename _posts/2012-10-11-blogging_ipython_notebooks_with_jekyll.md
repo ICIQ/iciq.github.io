@@ -4,15 +4,16 @@ title: Blogging an iPython notebook with Jekyll
 subtitle: easy-peasy
 categories: blog-post notebook
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2012/10/11/blogging_ipython_notebooks_with_jekyll.html).
 
-> **Update as of December 2014: Don't bother using what's below; go to 
+> **Update as of December 2014: Don't bother using what's below; go to
 [Christop Corley's blog](http://cscorley.github.io/2014/02/21/blogging-with-ipython-and-jekyll/)
 for a much better setup!**
 
 I've been playing around with [iPython notebooks](http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html)
-for a while and planning to use them instead of [SAGE](http://www.sagemath.org/) 
+for a while and planning to use them instead of [SAGE](http://www.sagemath.org/)
 worksheets for my numerical analysis course next spring.  As a warmup,
-I wrote an iPython notebook explaining a bit about internal stability of Runge-Kutta 
+I wrote an iPython notebook explaining a bit about internal stability of Runge-Kutta
 methods and showing some new research results using [NodePy](http://numerics.kaust.edu.sa/nodepy/).
 
 I also wanted to post the notebook on my blog here; the ability to more easily
@@ -32,7 +33,7 @@ So I tried the markdown option:
 I copied the result to my `_posts/` directory, added the [YAML front-matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) that
 Jekyll expects, and took a look.  Everything
 was great except that all my plots were gone, of course.  After considering a
-few options, I decided for now to put plots for such posts in a subfolder 
+few options, I decided for now to put plots for such posts in a subfolder
 `jekyll_images/` of my public Dropbox folder.  Then it was a simple matter
 of search/replace all the paths to the images.  At that point, it looked
 great; you can see the [source](https://github.com/ketch/nodepy/blob/master/examples/Internal_stability.ipynb)

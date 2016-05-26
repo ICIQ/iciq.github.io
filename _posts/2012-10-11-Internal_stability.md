@@ -8,6 +8,7 @@ categories: notebook
 ---
 Note: this post was generated from an iPython notebook.  You can [download the
 notebook from github](https://github.com/ketch/nodepy/blob/master/examples/Internal_stability.ipynb) and execute all the code yourself.
+This post was originally written by [David Ketcheson](http://www.davidketcheson.info/2012/10/11/Internal_stability.html).
 
 Internal stability deals with the growth of errors (such as roundoff) introduced at the Runge-Kutta stages during a single Runge-Kutta step.  It is usually important only for methods with a large number of stages, since that is when the internal amplification factors can be large.  An excellent explanation of internal stability is given in [this paper](http://oai.cwi.nl/oai/asset/1652/1652A.pdf).  Here we demonstrate some tools for studying internal stability in NodePy.
 
@@ -147,7 +148,7 @@ Let's compute $\theta$ for the classical RK4 method:
     0.08333 x + 0.1667 x + 0.3333 x
             2
     0.1667 x + 0.3333 x
-     
+
     0.1667 x
 
 
@@ -186,7 +187,7 @@ For both methods, we see that some of the curves intersect the absolute stabilit
 
     2.15239281554
     4.04399941143
-    
+
 
 
 We see that both methods have small internal amplification factors, so internal stability is not a concern in either case.  This is not surprising for the method with only four stages; it is a surprisingly good property of the method with ten stages.
@@ -206,7 +207,7 @@ The paper of Verwer, Hundsdorfer, and Sommeijer deals with RKC methods, which ca
 
 
     RKC41
-    
+
      0    |
      1/16 |  1/16
      1/4  |  1/8   1/8
@@ -342,7 +343,7 @@ IDC methods also seem to have excellent internal stability.
 
     16
     6
-    
+
 
 
 ![](https://dl.dropbox.com/u/656693/jekyll_images/Internal_stability_files/Internal_stability_fig_08.png)

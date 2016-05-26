@@ -113,12 +113,6 @@ The Travis-CI server will commit the generate website onto the `master` or `gh-p
 Once you have all the necessary configurations done, Travis-CI will be happily deploying your site on Github.
 If you want the site to be deployed on a host other than Github, you may want to modify and run the `publish.sh` bash script to synchronize your locally generated `_site` folder or the master/gh-pages branch updated by Travis-CI to your target site host.
 
-Authorships of posts before Feb 10th, 2016
-=========================================
-Since this site was basically built on top of [David Ketcheson](http://davidketcheson.info) and [Carl Boettiger](http://carlboettiger.info)'s Labnotebook sites following the permitted Creative Commons license, please be advised that blog posts time-stamped before Feb 10th of 2016 may be written by David Ketcheson or Carl Boettiger.
-I found most of them are good materials for open science, and hence didn't remove all of them while adapting the source code for my current website.
-The authorships on those posts will be disclaimed more clearly by explicit statements and links to the origination on those posts--once I got a chance.
-
 
 Copyrights and Licenses
 =======================

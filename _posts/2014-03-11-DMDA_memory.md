@@ -5,6 +5,7 @@ title:     The PETSc DMDA is not lightweight
 subtitle:  (unless Yokozuna is lightweight)
 tags:      blog-post petsc pyclaw memory profiling
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2014/03/11/DMDA_memory.html).
 
 In [this PETSc-users thread](http://lists.mcs.anl.gov/pipermail/petsc-users/2014-January/020018.html), my good friend Matt Knepley claims that the
 DMDA object is lightweight, and suggests that it is okay to make them willy-
@@ -51,7 +52,7 @@ Now let's run some tests.
     !python -m memory_profiler da.py 128 3 1
 
     Filename: da.py
-    
+
     Line #    Mem usage    Increment   Line Contents
     ================================================
          4   23.473 MiB    0.000 MiB   @profile
@@ -60,8 +61,8 @@ Now let's run some tests.
          7   72.480 MiB    0.086 MiB       q1 = da.createGlobalVec()
          8   88.484 MiB   16.004 MiB       q2 = da.createGlobalVec()
          9  104.488 MiB   16.004 MiB       q3 = da.createGlobalVec()
-    
-    
+
+
 
 
 The third column ("increment") is the key here -- it shows the increase in total

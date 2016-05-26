@@ -1,8 +1,0 @@
----
-layout: post
-name: released
-title: NodePy version 0.4 released
-time: 2012-08-28 22:07:00.000000000 +03:00
-tags: nodepy numerical-analysis python Runge-Kutta-methods software-distribution
----
-<p>NodePy is a Python package for analyzing numerical integrators for initial value ODEs.  It's essentially a collection of all the kinds of analysis I've used in my time integrator research, collected in a single object-oriented package.  </p><p>If you have a new Runge-Kutta method and want to know all about it, NodePy can tell you most anything.  If you want to design new time integration methods, NodePy can help you.</p><p>Although I'm rather proud of it, it fills a very small niche in the world and I'm not aware of anyone using it outside of my group and close collaborators.  If you've used it, please let me know in the comments.</p><p>One of the thorniest issues in NodePy previously was that floating-point representations of method coefficients were sometimes insufficient, especially when studying very high order methods.  I've now updated NodePy to use Sympy Rationals (and radicals, etc.) wherever possible, allowing exact analysis of many properties.</p><p>That and <a href="http://numerics.kaust.edu.sa/nodepy/changes.html#changes">much more</a> awaits in <a href="http://numerics.kaust.edu.sa/nodepy/">NodePy version 0.4</a>, now available via pip.</p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4660225022390848760-4578943333440602491?l=scienceinthesands.blogspot.com' alt='' /></div>

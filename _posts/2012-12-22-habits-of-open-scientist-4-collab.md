@@ -6,6 +6,7 @@ subtitle: "7 habits of the open scientist: habit #4"
 tags: open-science stackexchange
 categories: blog-post
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2012/12/22/habits-of-open-scientist-4-collab.html).
 
 This is the fourth post in my [series on habits of the open
 scientist](http://davidketcheson.info/2012/07/31/habits-of-open-scientist.html).
@@ -17,7 +18,7 @@ As mentioned in the introduction to this series, the first three habits are
 truly essential for any conscientious scientist.  With the fourth habit, we're
 moving into things that are valuable but less essential -- *advanced open
 science*, if you will.
- 
+
 What do I mean by open collaboration?  The use of online tools and social media to connect with new collaborators and provide your own expertise where it is needed most.  For an excellent introduction to the subject, go read [Michael Nielsen's book, *Reinventing  Discovery*](http://michaelnielsen.org/blog/reinventing-discovery/). Here I'll just focus on a few examples from my own experience:
 
 ### Scientific Q&A sites
@@ -36,9 +37,9 @@ I'm an avid participant in (and former moderator of) the
 I also find the [TeX stack exchange](http://tex.stackexchange.com) to be a gold
 mine, and typically far more useful than browsing through package documentation
 on CTAN.
- 
+
 ### Social networks like [Google+](http://plus.google.com)
- 
+
 I use Google+ (and previously Reader, which was a far superior tool) for
 sharing new papers that I think may be of interest to my collaborators.  I've
 also used it to debate journals' editorial policies (with the editors) and for
@@ -52,7 +53,7 @@ to be a platform for sharing professional content.  But I'm not a good judge --
 I don't even have a Facebook account.
 
 ### [Github](http://github.com)
- 
+
 I wanted to say "sites like Github", but I don't think there are any others.
 Online code hosting sites have long facilitated collaboration between existing
 teams, but Github takes this to a new level by explicitly promoting
@@ -80,4 +81,3 @@ felt it was too time-consuming.  But if used in a focused way, open
 collaboration tools can accelerate, enrich, and expand your research.
 
 What other tools or sites ought to be mentioned here?  Let me know in the comments.
-
