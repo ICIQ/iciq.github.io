@@ -2,14 +2,15 @@
          <div class="row">
             <div class="span6">
 
-              <a href="mailto:i2000s@hotmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" alt="email"> </a>
-              <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" alt="github"> </a>
-              <a href="https://plus.google.com/+XiaodongQi"><img src="/assets/img/icon-gplus.png" alt="G+"></a>
-              <a href="http://scholar.google.com/citations?user=6FdqHlIAAAAJ&hl=en"><img src="/assets/img/icon-scholar.png" alt="G+"></a>
-              <!-- (<a href="http://figshare.com/authors/Xiaodong_Qi/98644"><img src="{{site.url}}/assets/img/icon-figshare.png" alt="Figshare"></a> -->
-              <a href="https://twitter.com/i2000s"><img src="/assets/img/icon-twitter.png" alt="Twitter"></a>
-              <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" alt="feed"></a>
-              <a href="http://physics.stackexchange.com/users/37682/xiaodong-qi"><img src="/assets/img/icon-stackoverflow.png" alt="Physics Stackexchange"></a>
+              <a href="mailto:{{site.author.email}}" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" height="48px" alt="email"> </a>
+              <a href="https://github.com/{{site.author.github}}" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" height="40px" alt="github"> </a>
+              <a href="https://plus.google.com/{{site.author.gplus}}"><img src="/assets/img/icon-gplus.png" height="40px" alt="G+"></a>
+              <a href="https://www.facebook.com/{{site.author.facebook}}"><img src="/assets/img/icon-facebook.png" height="42px" alt="facebook"></a>
+              <a href="http://scholar.google.com/citations?user={{site.author.gscholar}}=en"><img src="/assets/img/icon-scholar.png" height="40px" alt="GoogleScholar"></a>
+              <a href="https://twitter.com/{{site.author.twitter}}"><img src="/assets/img/icon-twitter.png" height="45px" alt="Twitter"></a>
+              <a href="https://www.linkedin.com/in/{{site.author.linkedin}}"><img src="/assets/img/icon-linkedin.png" height="40px" alt="LinkedIn"></a>
+              <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" height="40px" alt="feed"></a>
+              <a href="http://physics.stackexchange.com/users/{{site.author.stackexchangephy}}"><img src="/assets/img/icon-stackoverflow.png" height="40px" alt="Physics Stackexchange"></a>
 
               <p><a href="/CV-XiaodongQi.pdf">CV of Xiaodong Qi</a></p>
               <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><i class="icon-twitter"></i> Discussing </a></h4>

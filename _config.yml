@@ -19,6 +19,8 @@ author :
     - name: ICIQ
     - name: JuliaCN
 url: http://i2000s.github.io
+disqus:
+  sitename: qxd
 navigation: # For the navigation menu. Don't use index.html. urls should end with a directory.
   - text: Home
     url: /
@@ -41,7 +43,8 @@ lsi: True # Possibly for generating related posts with gsl and classifier packag
 # GitHub information of this site. Used for extracting commit history of posts.
 gitstamps: yes
 username: i2000s
-repo: i2000s.github.io # used in linking commit history and auto-deploy the site on travis-CI.
+orgname: i2000s # This is used to identify the category of GitHub repository. Use username for personal repository.
+repo: i2000s.github.io # used in linking commit history and auto-deploy the site on travis-CI. The repository address will be identified as https://username:GH_TOKEN@github.com/orgname/repo.git defined in Rakefile.
 sourcebranch: dev # used in linking commit history.
 
 source: .
@@ -78,7 +81,7 @@ scholar:
 markdown: pandoc
 markdown_ext: markdown,md
 pandoc:
-   extensions: 
+   extensions:
      - smart
      - mathjax
 
