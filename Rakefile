@@ -11,6 +11,7 @@ require 'yaml'
 
 CONFIG = YAML.load(File.read('_config.yml'))
 USERNAME = CONFIG["username"]
+ORGNAME = CONFIG["orgname"]
 REPO = CONFIG["repo"]
 EXTERNAL = "../_site"
 
@@ -18,8 +19,8 @@ EXTERNAL = "../_site"
 # User or organization: dev -> master
 # Project: master -> gh-pages
 # Name of source branch for user/organization defaults to "source"
-if REPO == "#{USERNAME}.github.io"
-  SOURCE_BRANCH = CONFIG['branch'] || "dev"
+if REPO == "#{USERNAME}.github.io" || REPO == "#{ORGNAME}.github.io"
+  SOURCE_BRANCH = CONFIG['sourcebranch'] || "dev"
   DESTINATION_BRANCH = "master"
 else
   SOURCE_BRANCH = "master"
@@ -90,8 +91,8 @@ def parameterize(string, sep = '-')
 end
 
 def check_destination
-  unless Dir.exist? EXTERNAL 
-    sh "git clone https://#{USERNAME}:#{ENV['GH_TOKEN']}@github.com/#{USERNAME}/#{REPO}.git #{EXTERNAL}"
+  unless Dir.exist? EXTERNAL
+    sh "git clone https://#{USERNAME}:#{ENV['GH_TOKEN']}@github.com/#{ORGNAME}/#{REPO}.git #{EXTERNAL}"
   end
 end
 

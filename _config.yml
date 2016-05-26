@@ -40,7 +40,8 @@ lsi: True # Possibly for generating related posts with gsl and classifier packag
 
 # GitHub information of this site. Used for extracting commit history of posts.
 gitstamps: yes
-username: iciq
+username: i2000s
+orgname: iciq
 repo: iciq.github.io # used in linking commit history and auto-deploy the site on travis-CI.
 sourcebranch: dev # used in linking commit history.
 
