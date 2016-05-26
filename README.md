@@ -17,14 +17,16 @@ releases it all under [CC0](http://creativecommons.org/publicdomain/zero/1.0/),
 so setting my site up was as easy as following
 [his instructions](http://www.carlboettiger.info/README.html),
 replacing the \_posts directory, and making a few CSS customizations.
+I have customized the source code a little bit more to make it much easier for anyone to adapt this source code to other repos and sites (see detailed instructions in a later section).
 
 To run the site on a local computer, you need to install Jekyll and
-dependencies, run `bundle install` then `bundle exec jekyll serve`.
+dependencies, run `bundle install` then `bundle exec jekyll serve` (see detailed instruction below).
 
-The [Publications page](publications.html) is generated from a bibtex file
+You can generate the [Publications page](publications.html) from a bibtex file
 using some [code David Ketcheson wrote to generate HTML divs from Bibtex](https://github.com/ketch/tex2_rst_html).
 It also makes use of [jQuery](https://github.com/ketch/tex2_rst_html) and
 [MixItUp](https://mixitup.kunkalabs.com/) for filtering and searching.
+Here, I am using the [Jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) with some customizations.
 
 Please report any errors or other feedback in the [Issue Tracker](https://github.com/i2000s/i2000s.github.io/issues).
 
@@ -102,13 +104,14 @@ The last command line should generate a long string of random characters which y
 You can certainly add more encrypt variables or define some non-sensitive variables as explicit/non-encrypted variables in a similar way, but the Github token has to be encrypted to pass the security check of Github.
 
 4. If you have different amount of social accounts or plugin items defined in the `_config.yml` file, you need to double modify the scripts appeared in the header and footer template under the `_include` directory.
+On the top of this README file, there is an icon showing the compilation status of Travis-CI, you might want to modify the icon address to your case--pay attention to the username/organization name which is capital sensitive to Travis-CI.
 
 The publication and citation databases are defined in the `asset` directory as bibtex files with suffix `.bib`, which may want to replace with your own.  
 The rest is to delete or keep posts and pages to fit into your needs.
 I suggest to put this source code in a branch other than `master` or `gh-pages` in your Github repository, which you need to define in the `_config.yml` file as the "sourcebranch".
 The Travis-CI server will commit the generate website onto the `master` or `gh-pages` github branch depending on your case.
 Once you have all the necessary configurations done, Travis-CI will be happily deploying your site on Github.
-If you want the site to be deployed on a host other than Github, you may want to modify and run the `publish.sh` bash script to synchronize your locally generated `_site` folder or the master/gh-pages branch updated by Travis-CI to your target site host. 
+If you want the site to be deployed on a host other than Github, you may want to modify and run the `publish.sh` bash script to synchronize your locally generated `_site` folder or the master/gh-pages branch updated by Travis-CI to your target site host.
 
 Authorships of posts before Feb 10th, 2016
 =========================================
