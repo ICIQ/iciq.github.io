@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
+ <link href="/exploringquantumworld.xml" rel="self"/>
+ <link href=""/>
+ <updated>2016-05-26T02:48:39+00:00</updated>
+ <id></id>
+ <author>
+   <name>ICIQ Community</name>
+   <email>iciqproject@gmail.com</email>
+ </author>
+
+ 
+
+</feed>

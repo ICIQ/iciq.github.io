@@ -1,0 +1,72 @@
+.grid-1, .grid-2, .grid-3, .grid-4, .rep {
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* Grid >> 4 Columns */
+
+.grid .grid-1 {
+  position: relative;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  width: 210px;
+}
+
+.grid .rep {
+  position: relative;
+  border-left-style: none;
+  border-bottom-style: none;
+  border-right-style: none;
+  width: 210px;
+
+  -webkit-border-radius: .5em; 
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 5px 3px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 5px 3px rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+  background: -moz-linear-gradient(top,  #fff,  #ccc);
+}
+
+.grid .grid-2 {
+  width: 460px;
+}
+
+.grid .grid-3 {
+  width: 700;
+}
+
+.grid .grid-4 {
+  width: 940px;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}

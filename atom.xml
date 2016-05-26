@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
+ <link href="/atom.xml" rel="self"/>
+ <link href=""/>
+ <updated>2016-05-26T02:48:39+00:00</updated>
+ <id></id>
+ <author>
+   <name>ICIQ Community</name>
+   <email>iciqproject@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Enable comments and forums</title>
+   <link href="/2016/05/25/Enable-comments-and-forums.html"/>
+   <updated>2016-05-25T00:00:00+00:00</updated>
+   <id>h/2016/05/25/Enable-comments-and-forums</id>
+   <content type="html">&lt;p&gt;Now you can add comments and discuss sophisticated questions on our topical forums on this site!&lt;/p&gt;
+&lt;p&gt;This has been made possible by reprogramming the site with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and integrating with &lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt; functionalities. Comments are enabled on some pages, like this one (see bottom). We have also created a couple of initial forums. Here they are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://disqus.com/home/channel/quantuminformationandcomputing&quot;&gt;Quantum Information and Computing&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://disqus.com/home/channel/quantumoptics&quot;&gt;Quantum Optics&lt;/a&gt; – this will be used for the coming summer group study.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the future, you should be able to add new forums to this site by simply adding the Disqus forum name to the configuration file (_config.yml) of the source code. To add a forum or participate discussions using the two functions, you may be asked by the plugin to create/login the Disqus account using your email/social media accounts.&lt;/p&gt;
+&lt;p&gt;Hopefully this helps! And, yeah, comment below if you have questions or suggestions.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

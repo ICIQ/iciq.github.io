@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+    <meta name="subtitle" content="How science is done and for what.">
+    <meta name="author" content="ICIQ Community | ">
+    <!-- HTML5 metadata -->
+
+  <meta name="keywords" content="ICIQ Community, , quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
+
+
+
+  <meta name="description" content="Xiaodong's self-described contribution to the community." />
+  
+
+
+<meta http-equiv="Content-Language" content="en, zh-Hans, cmn">
+<!-- RDFa Metadata (in DublinCore) -->
+<meta property="dc:title" content="Community" />
+<meta property="dc:creator" content="ICIQ Community" />
+<meta property="dc:date" content="" />
+<meta property="dc:format" content="text/html" />
+<meta property="dc:language" content="en" />
+<meta property="dc:identifier" content="/community/" />
+<meta property="dc:rights" content="CC-BY" />
+<meta property="dc:source" content="ICIQ - Information, Computation, Intelligence and Quantum" />
+<meta property="dc:subject" content="Physics" /> 
+<meta property="dc:type" content="website" /> 
+<meta name="dc.language" content="en, zh-Hans, cmn">
+<!-- RDFa Metadata (in OpenGraph) -->
+<meta property="og:title" content="Community" />
+<meta property="og:author" content="http://iciq.github.io/index.html" />  <!-- Should be Liquid? URI? -->
+<meta property="http://ogp.me/ns/profile#first_name" content="ICIQ"/>
+<meta property="http://ogp.me/ns/profile#last_name" content="Community"/>
+<meta property="http://ogp.me/ns/article#published_time" content="" />
+<meta property="og:site_name" content="ICIQ - Information, Computation, Intelligence and Quantum" /> <!-- Same as dc:source? -->
+<meta property="og:url" content="http://iciq.github.io/community/" />
+<meta property="og:type" content="website" /> 
+<!-- Google Scholar Metadata -->
+<meta name="citation_author" content="ICIQ Community"/>
+<meta name="citation_date" content=""/>
+<meta name="citation_title" content="Community"/>
+<meta name="citation_journal_title" content="ICIQ - Information, Computation, Intelligence and Quantum"/>
+<!--NOTE: see also the COinS Metadata in span element in coins.html and footer. -->
+<!-- Twitter card summary -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ICIQ_project" />
+<meta name="twitter:title" content="Community" />
+<meta name="twitter:description" content="Xiaodong's self-described contribution to the community." />
+<meta name="twitter:image" content="http://i2000s.github.io/assets/img/qi2016.jpg" />
+<!-- Baidu website verification code -->
+<meta name="baidu-site-verification" content="cAv3dLIDps" />
+
+
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario">
+    <!-- <link href="/assets/css/light.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/grid.css"> -->
+    <!-- bootstrap style -->
+    <!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href = "/assets/css/bootstrap.min.css" rel = "stylesheet">
+    <!-- Self-defined style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Le javascript -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/strftime.js"></script>
+    <script type="text/javascript">
+    (function ($, undefined) {
+
+      // Put custom repo URL's in this object, keyed by repo name.
+      var repoUrls = {
+      };
+      // Put custom repo descriptions in this object, keyed by repo name.
+      var repoDescriptions = {
+      };
+      var repos = [];
+
+      function repoUrl(repo) {
+        return repoUrls[repo.name] || repo.html_url;
+      }
+      function repoDescription(repo) {
+        return repoDescriptions[repo.name] || repo.description;
+      }
+
+      function addRecentlyUpdatedRepo(repo) {
+        var $item = $("<li>");
+
+        var $name = $("<a>").attr("href", repo.html_url).text(repo.name);
+        $item.append($("<span>").addClass("name").append($name));
+
+        var $time = $("<a>").attr("href", repo.html_url + "/commits").text(strftime("%h %e, %Y", repo.pushed_at));
+        $item.append($("<span>").addClass("time").append($time));
+
+        $item.append('<span class="bullet">&sdot;</span>');
+
+        var $open_issues = $("<a>").attr("href", repo.html_url + "/open_issues").text(repo.open_issues + " open_issues");
+        $item.append($("<span>").addClass("open_issues").append($open_issues));
+
+        var $watchers = $("<a>").attr("href", repo.html_url + "/watchers").text(repo.watchers + " watchers");
+        $item.append($("<span>").addClass("watchers").append($watchers));
+
+        $item.append('<span class="bullet">&sdot;</span>');
+
+        var $forks = $("<a>").attr("href", repo.html_url + "/network").text(repo.forks + " forks");
+        $item.append($("<span>").addClass("forks").append($forks));
+
+        $item.appendTo("#recently-updated-repos");
+      }
+
+      function addRepo(repo) {
+        var $item = $("<li>").addClass("repo rep " + (repo.language || '').toLowerCase());
+        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+        $link.append($("<h2>").text(repo.name));
+        // $link.append($("<h3>").text(repo.watchers + " watchers" + " / " + repo.open_issues + " open issues"));
+        $link.append($("<p style='line-height:1em;'>").text(repoDescription(repo)));
+        //$link.append($("<p style='line-height:1em;'>").text("Updated " +
+        //  strftime("%h %e, %Y", repo.pushed_at)));
+        $link.append($("<h3 style='top:23px; right:1px;'>").addClass("language").text(repo.language));
+
+        $item.appendTo("#repos");
+      }
+
+      // The following way of querying multiple urls is inspired by blog http://blog.timsommer.be/using-promises-to-merge-async-jquery-ajax-calls/
+      // and discussion with Jake on https://forum.jquery.com/topic/how-to-use-ajax-or-getjson-to-query-multiple-urls-and-then-sort-the-combined-data?reply=true.
+      // More about promises and deferred queries in jQuery may be found at http://www.nurkiewicz.com/2013/03/promises-and-deferred-objects-in-jquery.html.
+      //var tokenkey='9594d317ed5';
+      var promises=[]; //to store the array of returned promises of each query.
+      var temprepos=[];
+      // This is to return the promises of every query on different urls.
+      function queryorgrepo(requrl){
+      return $.ajax({
+         url: requrl,
+         //async: false,
+         dataType: 'json',
+         //headers: 'Authorization: token '+tokenkey,
+         success: function () {
+         //We only need results.data in the end. Is this blank function correct?
+         // return result.data;
+         }
+       });
+      };
+      
+        // Call organization names from the YAML.
+      var orgnames = 
+        [
+          
+           'ICIQ'
+          
+        ];
+      //Define url list as a combination of user's url and the orgs' urls.
+      var orgurls = ['https://api.github.com/users/ICIQ/repos?per_page=100&callback=?'];
+      for (var indx = 0; indx < orgnames.length; indx++){
+        orgurls[indx + 1] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
+      };
+      for (var indx = 0; indx < orgurls.length; indx++){
+        //add promises in each loop of query.
+        promises.push(queryorgrepo(orgurls[indx]));
+       }
+      // Invoke each function stored in the result array and proceed when they are all done
+      $.when.apply(this, promises).done(function () {
+      // Fetch the result from each arguments.
+      var tempdata = [];
+      // Each argument contains the result of one succes ajax function.
+      // in this case, three arguments exist, one for each ajax call.
+        for (var i = 0; i < arguments.length; i++) {
+        // retrieve the entries from the argument parameter
+          values = arguments[i][0].data;
+          //console.log(values);
+         // Push the retrieved value to a global function variable, which we can.
+         // this function is processed synchronously, when all ajax calls have been completed
+         tempdata.push(values);
+        };
+
+      // merge the arrays to get the collected repos.
+      for (var i = 0; i < tempdata.length; i++) {
+        $.merge(repos, tempdata[i]);
+      };
+      // sort the repos and define html elememts.
+      $(function () {
+          $("#num-repos").text(repos.length);
+          // Convert pushed_at to Date.
+          $.each(repos, function (i, repo) {
+            repo.pushed_at = new Date(repo.pushed_at);
+
+            var weekHalfLife  = 1.146 * Math.pow(10, -9);
+
+            var pushDelta    = (new Date) - Date.parse(repo.pushed_at);
+            var createdDelta = (new Date) - Date.parse(repo.created_at);
+
+            var weightForPush = 1;
+            var weightForWatchers = 1.314 * Math.pow(10, 7);
+
+            repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta);
+            repo.hotness += weightForWatchers * repo.watchers / createdDelta;
+          });
+
+          // Sort by highest # of watchers.
+          repos.sort(function (a, b) {
+            if (a.hotness < b.hotness) return 1;
+            if (b.hotness < a.hotness) return -1;
+            return 0;
+          });
+          // Only first 12 hotest repos are shown.
+          $.each(repos.slice(0,12), function (i, repo) {
+            addRepo(repo);
+          });
+
+          // Sort by most-recently pushed to.
+          repos.sort(function (a, b) {
+            if (a.pushed_at < b.pushed_at) return 1;
+            if (b.pushed_at < a.pushed_at) return -1;
+            return 0;
+          });
+
+          $.each(repos.slice(0, 3), function (i, repo) {
+            addRecentlyUpdatedRepo(repo);
+          });
+        });//function
+      }); //when.apply.done
+
+    })(jQuery);
+    </script>
+  </head>
+<body>
+
+  
+<!-- Navbar  ================================================== -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/README.html"><i class="glyphicon glyphicon-info-sign"></i></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         
+            
+            
+            
+            <li class=""><a href="/">Home</a></li>
+         
+            
+            
+            
+            <li class=""><a href="/observe.html">Observe</a></li>
+         
+            
+            
+            
+            <li class=""><a href="/entangle.html">Entangle</a></li>
+         
+            
+            
+            
+            <li class=""><a href="/more.html">More</a></li>
+         
+        </ul>
+      <!-- Search site using Google's index -->
+        <form class="navbar-form navbar-right" role="search" method="get" action="http://google.com/search">
+          <div class="form-group">
+            <input type="hidden" name="q" value="site:i2000s.github.io" />
+            <input type="text" class="form-control search-query" name="q" placeholder="Search this site"/>
+          </div>
+          <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button> 
+       </form>
+
+    </div><!--/.nav-collapse -->
+  </div> <!-- /container -->
+</nav>
+
+
+<div class="container"> <!-- Twitter bootstrap has all body content in a container -->
+<header class="jumbotron subhead">
+    <h1 class="entry-title">Community</h1>
+    <p>How science is done and for what.</p>
+</header>
+
+    <div class="row">
+      <p>This is a fast developing world. Data streams are expanding exponentially.
+          Man-made machines are gaining new capacity every day to replace human forces in every possible area.
+          Today, increasing number of scientists and engineers, including me, are working on the quantum information frontier to build the fundation for making machines in extreme complexity, which will be eventually more intelligent and efficient than ourselves in terms of processing information and creating new ideas.
+          As far as I can see, we are approaching to a critical point that a revolution will dramatically change our personal life, ways of doing research, teaching and working, relationships among people and things, and ultimately the social structure of the human world.
+          We need to rethink about and rebuild our purpose of living, our common sense, moral standards, law systems, policies and the attribution model of profits, knowledge and tools--before it is too late.
+      </p>
+      <p>As a scientist, I am taking some time off to develop tools, to share my works and to organize some social activities.
+         If you find those are opportunities for your to take advantage and participation of, I'd be more than happy to welcome you to the journey of defining sustainable development of humanity.
+      </p>
+
+      <div class="row">
+         <h2>Callout: JuliaQuantum is discussing the coming Google Summer of Code projects for 2016. Come to join <a href="https://github.com/JuliaQuantum/JuliaQuantum.github.io/issues/32" target="_blank">our discussion</a>.</h2>
+      </div>
+
+      <div class="row">
+       <h2>Non-for-profit organizations that I co-created for communities:</h2>
+       <ul style="list-style-type:row">
+        <li><a href="http://cquic-github.github.io/" target="_blank">CQuIC@GitHub</a>: for CQuIC members who do code for science. </li>
+        <li><a href="http://juliaquantum.github.io/" target="_blank">JuliaQuantum</a>: for establishing standards and computational libraries in Julia for quantum science and technology. </li>
+        <li><a href="http://iciq.github.io/" target="_blank">ICIQ</a>: and open community stands for Information, Computation, Intelligence and Quantum.
+          We have scientists, journalists, enterprineurs, students and many other professionals
+          who are interested in crossing the boundaries between classical and quantum information sciences to shape the future and
+          organize group studies, online talks, open discussions and news sharing.
+          Check our <a href="https://plus.google.com/communities/112872767737673370045" target="_blank">Google+ community on quantum information science</a> (the biggest as of Feb 2016).</li>
+       </ul>
+      </div>
+
+      <div class="row">
+          <h2><a href="/tools.html" target="_blank">Selecting tools</a> I think that are useful for poeple who are doing science.</h2>
+      </div>
+    </div>
+
+  <div class="row">
+    <h2 align="center">Sharing code repositories</h2>
+    <div id="wrapper" class="grid clearfix">
+      <div id="main" class="grid-1">
+        <div><h2>Xiaodong Qi's Open-source Repositories</h2></div>
+        <h4> This is an automated index to the top 12 public Github repositories managed by Xiaodong Qi.
+          All of them are released under open-source initiative licenses,
+          so you are free -- and invited! -- to use or adapt them as long as you
+          acknowledge the source.  If you do use them, I hope you'll drop me
+          a note by email.  I also encourage pull requests with corrections or
+          improvements on these community common resources.</h4>
+      </div>
+
+      <div class="grid grid-3">
+        <div id="statistics" class="grid-1 alpha header">
+          <h1 style="margin: 5px 5px 0;">Statistics</h1>
+          <p style="margin: 5px 5px 0px;"> <a href="https://github.com/ICIQ/repositories"><span id="num-repos">&nbsp;</span> public repos</a> </p>
+          <p style="margin: 5px 5px 0px;"><a href="https://github.com/ICIQ">https://github.com/ICIQ</a></p>
+        </div>
+
+        <div id="recently-updated" class="grid-2 omega header">
+          <h1 style="margin: 5px 5px 0;">Recently updated <a href="https://github.com/ICIQ/repositories">View All on GitHub</a></h1>
+          <ol id="recently-updated-repos" style="margin-left: -15px; margin-top: 15px"></ol>
+        </div>
+      </div>
+
+        <ol id="repos"></ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-xs-11">
+     <h4> <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;" >
+      <img src="http://iciq.github.io/assets/img/icon-github.png" alt="github"> Coding </a></h4>
+       <div class="excerpt" height="300px">
+           <div class="scroll">
+                <ul><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Add GH_TOKEN global variable for deployment, and make the Rakefile wo…</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/2464199ab6...37d3cb429d">02:44 2016/05/26</a></li><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Add git username to travis ci.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/2deafdbf41...2464199ab6">12:45 2016/05/26</a></li><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Add new post and encrypt Github information.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/09a277a828...2deafdbf41">12:20 2016/05/26</a></li><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Add twitter encrypted token info.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/a437b9a66d...09a277a828">11:39 2016/05/25</a></li><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Update disqus info.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/cae2a0e80b...a437b9a66d">10:49 2016/05/25</a></li></ul>
+           </div>
+       </div>
+    </div>
+
+    <div class="col-md-6 col-xs-11">
+        <h4><a property="account" href="https://twitter.com/ICIQ_project" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" height=45px alt="Twitter"> Discussing </a></h4>
+        <div class="excerpt" height="300px">
+            <div class="scroll">
+                <ul><li><p>Could computers do more on science? Focus: Computer Chooses Quantum Experiments <a href="https://t.co/iDz6HNv20o">https://t.co/iDz6HNv20o</a></p>
+ <a href="http://twitter.com/i2000s/statuses/707011747861897216">01:15 2016/03/08</a> </li><li><p>RT @quantum_graeme: I hope quantum computing just tunnels through the barrier.  Not sure I can take more hype than this. h/t @nickbronn htt…</p>
+ <a href="http://twitter.com/i2000s/statuses/705260913251581954">05:17 2016/03/03</a> </li><li><p>RT @acidflask: #julialang accepted for Google Summer of Code 2016! <a href="https://t.co/zEvElZRHDg">https://t.co/zEvElZRHDg</a></p>
+ <a href="http://twitter.com/i2000s/statuses/704545387252584449">05:54 2016/03/01</a> </li><li><p>I liked a @YouTube video from @i2000s <a href="https://t.co/ozebqxEzIV">https://t.co/ozebqxEzIV</a> Huawei Honor 5X drop test in an office environment</p>
+ <a href="http://twitter.com/i2000s/statuses/703769635682918401">02:32 2016/02/28</a> </li><li><p>A simple free fall test on the Huawei Honor 5X phone for a user review. <a href="https://t.co/ozebqxEzIV">https://t.co/ozebqxEzIV</a></p>
+ <a href="http://twitter.com/i2000s/statuses/703462412943499264">06:11 2016/02/27</a> </li></ul>
+            </div>
+        </div>
+     </div>
+  </div>
+
+  <div class="row">
+    <h2>My pholosophy on Open Science can be found <a href="/philosophy.html" target="_blank">here</a>. </h2>
+    <br>
+  </div>
+
+
+       <footer class="footer" style="clear:both;">
+         <div class="row">
+            <div class="col-md-7 col-xs-12">
+              <div class="row">
+               <a href="mailto:iciqproject@gmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" height="48px" alt="email"> </a>
+               <a href="https://github.com/ICIQ" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" height="40px" alt="github"> </a>
+               <a href="https://plus.google.com/communities/112872767737673370045"><img src="/assets/img/icon-gplus.png" height="40px" alt="G+"></a>
+               <a href="https://www.facebook.com/groups/488750657941233/"><img src="/assets/img/icon-facebook.png" height="42px" alt="facebook"></a>
+               <a href="https://twitter.com/ICIQ_project"><img src="/assets/img/icon-twitter.png" height="45px" alt="Twitter"></a>
+               <a href="/atom.xml" onClick="recordOutboundLink(this, 'Outbound Links', 'RSS'); return false;"><img src="/assets/img/icon-rss.png" height="40px" alt="feed"></a>
+              </div>
+              <div class="row">
+                <br><span> &nbsp; </span>
+                <br><img alt="Creative Commons License" style="border-width:0" align="right" src="https://licensebuttons.net/l/by/3.0/88x31.png" />
+                <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Content</span> is licensed under the
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a> or otherwise specified.
+                <br>
+              </div>
+           </div>
+
+           <div class="col-md-4 col-xs-12">
+              <div class="row team-member" style="margin-top:-35px">
+              <img class="img-responsive img-thumbnail img-circle" width="200px" alt="" src="/images/favicon/favicon.svg" align="middle">
+              </div>
+           </div>
+         </div>
+      <div class="row" align="center" clear="both">
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+              <span align="center" margin-top="-10px">Copyright &copy; 2016 ICIQ Community. </span></a>
+            <br>
+      </div>
+      
+<!-- COinS metadata (for citation managers like Zotero etc), goes in body text -->
+  <span
+      class="Z3988" 
+      title="ctx_ver=Z39.88-2004
+      &amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc
+      &amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator
+      &amp;rft.title=Community
+      &amp;rft.creator=ICIQ Community
+      &amp;rft.date=
+      &amp;rft.language='en-US, zh-Hans'
+      &amp;rft.rights='CC-BY'
+      &amp;rft_id=http://iciq.github.io/community/">
+  </span>
+
+    </footer>
+   </div><!-- /container -->
+
+        <!-- Le javascript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- JQuery, used on a few pages -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+    <script src="//cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="/assets/js/mixitup-mine.js"></script>
+    <!-- Equations using MathJax -->
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });       </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'],['\\(','\\)'] ] } }); </script>
+    <!-- Twitter Bootstrap Javascript -->
+    <script src="/assets/js/bootstrap-collapse.js"></script> <!-- for collapsing navbar-->
+    <!-- Unused Twitter Bootstrap Javascript
+    <script src="http://iciq.github.io/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://iciq.github.io/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-transition.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-alert.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-modal.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-tab.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-popover.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-button.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://iciq.github.io/assets/js/bootstrap-typeahead.js"></script>
+    <script src="http://iciq.github.io/assets/js/application.js"></script>
+    -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://code.jquery.com/jquery.js"></script>
+      
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
