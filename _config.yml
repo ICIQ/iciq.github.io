@@ -13,12 +13,14 @@ author :
     - name: ICIQ
 url: http://iciq.github.io
 disqus:
-  sitename: ICIQ_project
+  sitename: iciq-project
   channel:
     - name: Quantum Information and Computing
       shortname: quantuminformationandcomputing
     - name: Quantum Optics
       shortname: quantumoptics
+addthis:
+  pubid: ra-54f627261121ebae
 navigation: # For the navigation menu. Don't use index.html. urls should end with a directory.
   - text: Home
     url: /
@@ -41,7 +43,7 @@ lsi: True # Possibly for generating related posts with gsl and classifier packag
 # GitHub information of this site. Used for extracting commit history of posts.
 gitstamps: yes
 username: i2000s
-orgname: iciq
+orgname: ICIQ
 repo: iciq.github.io # used in linking commit history and auto-deploy the site on travis-CI.
 sourcebranch: dev # used in linking commit history.
 
