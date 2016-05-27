@@ -24,7 +24,7 @@ I was thinking to have the following focus for my self-organized summer study:
 
 - Time slot: From June 1st to July 29th. Detailed schedule to be updated.
 
-- More resources:
+- Main references:
     - [Atomic Physics course by Prof. Ivan Deutsch](http://info.phys.unm.edu/~ideutsch/Classes/Phys531F11/index.htm) (lecture videos, notes and homeworks are all available in the link)
     - A book, if you wish, as shown in the photo above by our friend [Yuan-Yu Jau](http://cquic.unm.edu/member/yuan.yu.jau/) and others on Optical Pumping featured with simulation demo codes and detailed analysis.
     - A handful of classical papers to be updated here later.
