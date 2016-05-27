@@ -12,7 +12,7 @@ I was thinking to have the following focus for my self-organized summer study:
 
 - Title: Advanced Topics in Quantum Optics (II)
 
-(Yeah, we have tagged part I [two years before](http://iciq.github.io/entangle/QuantumOpticsGroup.html) already.)
+  (Yeah, we have tagged part I [two years before](http://iciq.github.io/entangle/QuantumOpticsGroup.html) already.)
 
 - Main topics:
     - Optical pumping
