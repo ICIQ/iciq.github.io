@@ -28,7 +28,7 @@ It also makes use of [jQuery](https://github.com/ketch/tex2_rst_html) and
 [MixItUp](https://mixitup.kunkalabs.com/) for filtering and searching.
 Here, I am using the [Jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) with some customizations.
 
-Please report any errors or other feedback in the [Issue Tracker](https://github.com/i2000s/i2000s.github.io/issues).
+Please report any errors or other feedback to the [Issue Tracker](https://github.com/i2000s/i2000s.github.io/issues) for this site, or in general for the Labnotebook on [Carl's repo](http://github.com/cboettig/labnotebook).
 
 Additional Site Features & Credits
 ==================================
