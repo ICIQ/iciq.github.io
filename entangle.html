@@ -6,11 +6,20 @@ subtitle: Information, Computation, Intelligence and Quantum
 keywords: Quantum Information, Quantum Computation, Quantum Intelligence, Quantum Mechanics
 ---
 <div class="grid">
-        <div class="col_12">
-            <div class="notice promo">
-                <i class="glyphicon glyphicon-bell"></i>You can use the online discussion tool (see the "discussion tool" icon and the menu on the right) to communicate with online viewers on the pages under "Entangle" menu! Online viewers can see your instant cursor movements and highlights while chatting with you, if all of the viewers are using the same invitaion code to visit the website pages. No record of your communication content will be stored in any database, as the tool is implemented through a static javascript snippet.
-            </div>
+      <div class="col_12">
 
+          <!-- Forums -->
+            <h3 class="center">
+                <a id="projects">Topical Disqus Forums</a>
+            </h3>
+            <ul>
+              {% for item in site.disqus.channel %}
+                <li><a href="https://disqus.com/home/channel/{{item.shortname}}">{{item.name}}</a></li>
+              {% endfor %}
+            </ul>
+
+            <!-- Divider -->
+            <hr class="alt2" style="margin:4em 0 4em 0" />
             <h3 class="center">
                 <a id="group">Group Studies</a>
             </h3>
@@ -20,24 +29,21 @@ keywords: Quantum Information, Quantum Computation, Quantum Intelligence, Quantu
                 <i class="glyphicon glyphicon-bell"></i>You are invited to join the JuliaQuantum Google Summer of Code project <a href="https://github.com/JuliaQuantum/JuliaQuantum.github.io/issues/32" target="_blank">discussion</a> and <a href="https://github.com/JuliaQuantum/Resources/pull/4" target="_blank">proposal review</a> on GitHub.
             </div>
 
-
-            <h5>
+            <ul>
+              <li>
                 <a href="/entangle/ComputationalComplexityGroup.html">Computational Complexity</a>
-            </h5>
-            <h5>
+              </li>
+              <li>
                 <a href="/entangle/MachineLearningGroup.html">Machine Learning & Deep Learning</a>
-            </h5>
-            <h5>
+              </li>
+              <li>
                 <a href="/entangle/QuantumOpticsGroup.html">Advanced Topics in Quantum Optics</a>
-            </h5>
+              </li>
+            </ul>
 
 
             <!-- Divider -->
             <hr class="alt2" style="margin:4em 0 4em 0" />
-
-
-
-
             <h3 class="center">
                 <a id="projects">Open Projects</a>
             </h3>
@@ -45,34 +51,30 @@ keywords: Quantum Information, Quantum Computation, Quantum Intelligence, Quantu
             <div class="notice promo">
                 <i class="glyphicon glyphicon-bell"></i>Julia (<a href="http://julialang.org/">a new generation of programming language</a>) projects need more libraries in our field.
             </div>
-
-            <h5><a href="http://juliaquantum.github.io/">JuliaQuantum projects</a> (Julia libraries for quantum science and technoligy)
-            </h5>
-            <h5>
+            <ul>
+              <li><a href="http://juliaquantum.github.io/">JuliaQuantum projects</a> (Julia libraries for quantum science and technoligy)
+              </li>
+              <li>
                 <a href="/entangle/WikipediaProject.html">Wikipedia Project</a>
-            </h5>
-            <h5>
+              </li>
+              <li>
                 <a href="/entangle/RoadmapProject.html">Roadmap Project</a>
-            </h5>
-            <h5>
-                <a href="http://qutip.org/">QuTiP</a> (Quantum Toolbox in Python)</h5>
-            <h5>
-                <a href="https://github.com/csferrie/python-qinfer">Python-Qinfer</a> (Library for Bayesian inference via sequential Monte Carlo for quantum parameter estimation)
-            </h5>
-            <h5>
-                <a href="http://neuralnetworksanddeeplearning.com">Neural Networks and Deep Learning</a>
-            </h5>
-            <h5> <a href="http://cquic-github.github.io/">CQuIC@GitHub</a> (Open-source projects from the Center for Quantum Information and Control).
-            </h5>
-
+              </li>
+              <li>
+                <a href="http://qutip.org/">QuTiP</a> (Quantum Toolbox in Python)</li>
+                <li>
+                  <a href="https://github.com/csferrie/python-qinfer">Python-Qinfer</a> (Library for Bayesian inference via sequential Monte Carlo for quantum parameter estimation)
+                </li>
+                <li>
+                  <a href="http://neuralnetworksanddeeplearning.com">Neural Networks and Deep Learning</a>
+                </li>
+                <li> <a href="http://cquic-github.github.io/">CQuIC@GitHub</a> (Open-source projects from the Center for Quantum Information and Control).
+                </li>
+              </ul>
 
 
             <!-- Divider -->
             <hr class="alt2" style="margin:4em 0 4em 0" />
-
-
-
-
             <h3 class="center">
                 <a id="talks">Open Talks and Meetups</a>
             </h3>
@@ -81,15 +83,17 @@ keywords: Quantum Information, Quantum Computation, Quantum Intelligence, Quantu
                 <i class="glyphicon glyphicon-bell"></i>If you would like to have an online talk to our ICIQ community, please consider posting your schedule and topic on our
                 <a href="https://plus.google.com/u/0/b/107578658308929247968/communities/112872767737673370045">G+ community page</a>.
             </div>
-
-            <h5>
+            <ul>
+              <li>
                 <a href="http://qplus.burgarth.de/">Q+ talks</a>
-            </h5>
-            <h5>
-                <a href="http://www.squint.org/">SQuInT workshop and ICIQ community meetup</a> (Coming: Feb 19-21, 2015 at Berkeley, CA, USA; Past: Feb 20-22, 2014 at Santa Fe, NM, USA.)</h5>
-            <h5>
+              </li>
+              <li>
+                <a href="http://www.squint.org/">SQuInT workshop and ICIQ community meetup</a> (Coming: Feb 19-21, 2015 at Berkeley, CA, USA; Past: Feb 20-22, 2014 at Santa Fe, NM, USA.)
+              </li>
+              <li>
                 <a href="http://www.grc.org/programs.aspx?year=2014&program=quantsci">Gordon Workshop and Conference meetup</a> (July 26-Aug 1, 2014)
-            </h5>
+              </li>
+            </ul>
 
        </div>
 </div>
