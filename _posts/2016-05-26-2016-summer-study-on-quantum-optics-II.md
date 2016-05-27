@@ -15,15 +15,15 @@ I was thinking to have the following focus for my self-organized summer study:
 (Yeah, we have tagged part I [two years before](http://iciq.github.io/entangle/QuantumOpticsGroup.html) already.)
 
 - Main topics:
-  - Optical pumping
-  - Laser cooling
-  - matrix/tensor product state representation of many-body systems (let's see if time permits)
+    - Optical pumping
+    - Laser cooling
+    - matrix/tensor product state representation of many-body systems (let's see if time permits)
 
 - Time slot: From June 1st to July 29th. Detailed schedule to be updated.
 
 - More resources:
-  - [Atomic Physics course by Prof. Ivan Deutsch](http://info.phys.unm.edu/~ideutsch/Classes/Phys531F11/index.htm) (lecture videos, notes and homeworks are all available in the link)
-  - A handful of classical papers to be updated here later.
+    - [Atomic Physics course by Prof. Ivan Deutsch](http://info.phys.unm.edu/~ideutsch/Classes/Phys531F11/index.htm) (lecture videos, notes and homeworks are all available in the link)
+    - A handful of classical papers to be updated here later.
 
 - Discussion forum: [see this channel](https://disqus.com/home/channel/quantumoptics) I created recently.
 
