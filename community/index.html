@@ -6,15 +6,15 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-    <meta name="subtitle" content="How science is done and for what.">
-    <meta name="author" content="ICIQ Community | ">
+    <meta name="subtitle" content="">
+    <meta name="author" content="ICIQ Community">
     <!-- HTML5 metadata -->
 
-  <meta name="keywords" content="ICIQ Community, , quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
+  <meta name="keywords" content="ICIQ Community, quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
 
 
 
-  <meta name="description" content="Xiaodong's self-described contribution to the community." />
+  <meta name="description" content="the ICIQ community and friends." />
   
 
 
@@ -28,8 +28,8 @@
 <meta property="dc:identifier" content="/community/" />
 <meta property="dc:rights" content="CC-BY" />
 <meta property="dc:source" content="ICIQ - Information, Computation, Intelligence and Quantum" />
-<meta property="dc:subject" content="Physics" /> 
-<meta property="dc:type" content="website" /> 
+<meta property="dc:subject" content="Physics" />
+<meta property="dc:type" content="website" />
 <meta name="dc.language" content="en, zh-Hans, cmn">
 <!-- RDFa Metadata (in OpenGraph) -->
 <meta property="og:title" content="Community" />
@@ -39,7 +39,7 @@
 <meta property="http://ogp.me/ns/article#published_time" content="" />
 <meta property="og:site_name" content="ICIQ - Information, Computation, Intelligence and Quantum" /> <!-- Same as dc:source? -->
 <meta property="og:url" content="http://iciq.github.io/community/" />
-<meta property="og:type" content="website" /> 
+<meta property="og:type" content="website" />
 <!-- Google Scholar Metadata -->
 <meta name="citation_author" content="ICIQ Community"/>
 <meta name="citation_date" content=""/>
@@ -50,8 +50,8 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ICIQ_project" />
 <meta name="twitter:title" content="Community" />
-<meta name="twitter:description" content="Xiaodong's self-described contribution to the community." />
-<meta name="twitter:image" content="http://i2000s.github.io/assets/img/qi2016.jpg" />
+<meta name="twitter:description" content="the ICIQ community and friends." />
+<meta name="twitter:image" content="/assets/img/favicon/favicon.jpg" />
 <!-- Baidu website verification code -->
 <meta name="baidu-site-verification" content="cAv3dLIDps" />
 
@@ -69,23 +69,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
     <!-- Le javascript -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -168,16 +152,28 @@
          }
        });
       };
-      
+
         // Call organization names from the YAML.
-      var orgnames = 
+      var orgnames =
         [
           
-           'ICIQ'
+           'ICIQ',
+          
+        
+          
+           'CQuIC',
+          
+        
+          
+           'JuliaQuantum',
+          
+        
+          
+           'JuliaCN'
           
         ];
       //Define url list as a combination of user's url and the orgs' urls.
-      var orgurls = ['https://api.github.com/users/ICIQ/repos?per_page=100&callback=?'];
+      var orgurls = ['https://api.github.com/users/i2000s/repos?per_page=100&callback=?']; //['https://api.github.com/users/ICIQ/repos?per_page=100&callback=?'];
       for (var indx = 0; indx < orgnames.length; indx++){
         orgurls[indx + 1] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
       };
@@ -194,7 +190,7 @@
         for (var i = 0; i < arguments.length; i++) {
         // retrieve the entries from the argument parameter
           values = arguments[i][0].data;
-          //console.log(values);
+
          // Push the retrieved value to a global function variable, which we can.
          // this function is processed synchronously, when all ajax calls have been completed
          tempdata.push(values);
@@ -278,17 +274,17 @@
             
             
             
-            <li class=""><a href="/observe.html">Observe</a></li>
+            <li class=""><a href="/observe/">Observe</a></li>
          
             
             
             
-            <li class=""><a href="/entangle.html">Entangle</a></li>
+            <li class=""><a href="/entangle/">Entangle</a></li>
          
             
             
             
-            <li class=""><a href="/more.html">More</a></li>
+            <li class=""><a href="/more/">More</a></li>
          
         </ul>
       <!-- Search site using Google's index -->
@@ -309,7 +305,7 @@
 <div class="container"> <!-- Twitter bootstrap has all body content in a container -->
 <header class="jumbotron subhead">
     <h1 class="entry-title">Community</h1>
-    <p>How science is done and for what.</p>
+    <p></p>
 </header>
 
     <div class="row">
@@ -319,16 +315,13 @@
           As far as I can see, we are approaching to a critical point that a revolution will dramatically change our personal life, ways of doing research, teaching and working, relationships among people and things, and ultimately the social structure of the human world.
           We need to rethink about and rebuild our purpose of living, our common sense, moral standards, law systems, policies and the attribution model of profits, knowledge and tools--before it is too late.
       </p>
-      <p>As a scientist, I am taking some time off to develop tools, to share my works and to organize some social activities.
-         If you find those are opportunities for your to take advantage and participation of, I'd be more than happy to welcome you to the journey of defining sustainable development of humanity.
-      </p>
 
       <div class="row">
          <h2>Callout: JuliaQuantum is discussing the coming Google Summer of Code projects for 2016. Come to join <a href="https://github.com/JuliaQuantum/JuliaQuantum.github.io/issues/32" target="_blank">our discussion</a>.</h2>
       </div>
 
       <div class="row">
-       <h2>Non-for-profit organizations that I co-created for communities:</h2>
+       <h2>Non-for-profit organization network with the ICIQ communities:</h2>
        <ul style="list-style-type:row">
         <li><a href="http://cquic-github.github.io/" target="_blank">CQuIC@GitHub</a>: for CQuIC members who do code for science. </li>
         <li><a href="http://juliaquantum.github.io/" target="_blank">JuliaQuantum</a>: for establishing standards and computational libraries in Julia for quantum science and technology. </li>
@@ -340,17 +333,14 @@
        </ul>
       </div>
 
-      <div class="row">
-          <h2><a href="/tools.html" target="_blank">Selecting tools</a> I think that are useful for poeple who are doing science.</h2>
-      </div>
     </div>
 
   <div class="row">
     <h2 align="center">Sharing code repositories</h2>
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
-        <div><h2>Xiaodong Qi's Open-source Repositories</h2></div>
-        <h4> This is an automated index to the top 12 public Github repositories managed by Xiaodong Qi.
+        <div><h2>ICIQ and friends' Open-source Repositories</h2></div>
+        <h4> This is an automated index to the top 12 public Github repositories by ICIQ and friend-organizations.
           All of them are released under open-source initiative licenses,
           so you are free -- and invited! -- to use or adapt them as long as you
           acknowledge the source.  If you do use them, I hope you'll drop me
@@ -375,13 +365,13 @@
     </div>
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-md-6 col-xs-11">
      <h4> <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;" >
       <img src="http://iciq.github.io/assets/img/icon-github.png" alt="github"> Coding </a></h4>
        <div class="excerpt" height="300px">
            <div class="scroll">
-                <ul><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Fix the orgname with little letters.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/7bf7628d15...729e7b9593">07:40 2016/05/26</a></li><li>i2000s pushed to master at i2000s/i2000s.github.io: <em>Updating to ac3e0ba5657ca03991074f6b8b751c09147260df.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/a144ac93c0...502ee47208">07:15 2016/05/26</a></li><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Fix the disqus shortname and generalize variables on templates.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/37d3cb429d...7bf7628d15">07:12 2016/05/26</a></li><li>i2000s pushed to dev at i2000s/i2000s.github.io: <em>Update more on README.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/fc39dab6ce...ac3e0ba565">07:11 2016/05/26</a></li><li>i2000s pushed to master at i2000s/i2000s.github.io: <em>Updating to fc39dab6ce3c64c467f219fcce7bfffa9dd4ef11.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/99354a4068...a144ac93c0">06:32 2016/05/26</a></li></ul>
+                <ul><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Fully switch to Jekyll.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/729e7b9593...8735a0949b">02:04 2016/05/27</a></li><li>i2000s pushed to master at i2000s/i2000s.github.io: <em>Updating to 7fa57b1005c14506e667873d08a00913ef18cf08.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/ebfb730c45...059a9d14c4">01:06 2016/05/27</a></li><li>i2000s pushed to dev at i2000s/i2000s.github.io: <em>Remove old posts.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/1d7a8e4b61...7fa57b1005">01:01 2016/05/27</a></li><li>i2000s edited the ICIQ/iciq.github.io wiki: <em></em> <a href="https://github.com/ICIQ/iciq.github.io/wiki/Add-other-pages">12:22 2016/05/27</a></li><li>i2000s starred ThinkPad-Forum/TPFanControl: <em></em> <a href="https://github.com/ThinkPad-Forum/TPFanControl">11:08 2016/05/26</a></li></ul>
            </div>
        </div>
     </div>
@@ -399,17 +389,12 @@
             </div>
         </div>
      </div>
-  </div>
-
-  <div class="row">
-    <h2>My pholosophy on Open Science can be found <a href="/philosophy.html" target="_blank">here</a>. </h2>
-    <br>
-  </div>
+  </div> -->
 
 
        <footer class="footer" style="clear:both;">
          <div class="row">
-            <div class="col-md-7 col-xs-12">
+            <div class="col-md-7 col-xs-9">
               <div class="row">
                <a href="mailto:iciqproject@gmail.com" onClick="recordOutboundLink(this, 'Outbound Links', 'email'); return false;"><img src="/assets/img/icon-email.png" height="48px" alt="email"> </a>
                <a href="https://github.com/ICIQ" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;"><img src="/assets/img/icon-github.png" height="40px" alt="github"> </a>
@@ -427,9 +412,9 @@
               </div>
            </div>
 
-           <div class="col-md-4 col-xs-12">
+           <div class="col-md-4 col-xs-3">
               <div class="row team-member" style="margin-top:-35px">
-              <img class="img-responsive img-thumbnail img-circle" width="200px" alt="" src="/images/favicon/favicon.svg" align="middle">
+              <img class="img-responsive img-thumbnail img-circle" width="200px" alt="" src="/assets/img/favicon/favicon.svg" align="middle">
               </div>
            </div>
          </div>
