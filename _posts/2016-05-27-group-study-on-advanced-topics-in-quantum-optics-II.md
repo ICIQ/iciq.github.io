@@ -5,6 +5,8 @@ tags:
     - summer study
     - quantum optics
 ---
+<center>{% include image.html img="http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg" width="300px" title="laser cooling and optical pumping" %}</center>
+<br>
 
 As before, we will have a summer study topics for this year:
 [Advanced Topics in Quantum Optics II](http://i2000s.github.io/2016/05/26/2016-summer-study-on-quantum-optics-II.html).
