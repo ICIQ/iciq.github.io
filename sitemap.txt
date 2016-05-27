@@ -1,5 +1,10 @@
  
+http://i2000s.github.io/entangle/ComputationalComplexityGroup.html  
+http://i2000s.github.io/entangle/MachineLearningGroup.html  
+http://i2000s.github.io/entangle/QuantumOpticsGroup.html  
 http://i2000s.github.io/README.html  
+http://i2000s.github.io/entangle/RoadmapProject.html  
+http://i2000s.github.io/entangle/WikipediaProject.html  
 http://i2000s.github.io/archives.html  
 http://i2000s.github.io/atom.xml  
 http://i2000s.github.io/categories.html  
