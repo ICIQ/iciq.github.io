@@ -2,8 +2,7 @@
 layout: null
 permalink: /community/
 title: Community
-subtitle: How science is done and for what.
-description: Xiaodong's self-described contribution to the community.
+description: the ICIQ community and friends.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +13,7 @@ description: Xiaodong's self-described contribution to the community.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
     <meta name="subtitle" content="{{ page.subtitle }}">
-    <meta name="author" content="{{ site.author.name }} | {{ site.author.ChineseName }}">
+    <meta name="author" content="{{ site.author.name }}">
     {% include metadata.html %}
 
     <!-- Le styles -->
@@ -30,23 +29,7 @@ description: Xiaodong's self-described contribution to the community.
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
     <!-- Le javascript -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -129,9 +112,9 @@ description: Xiaodong's self-described contribution to the community.
          }
        });
       };
-      
+
         // Call organization names from the YAML.
-      var orgnames = 
+      var orgnames =
         [{% for item in site.author.ghorgs %}
           {% if forloop.last != true %}
            '{{ item.name }}',
@@ -140,7 +123,7 @@ description: Xiaodong's self-described contribution to the community.
           {% endif %}
         {% endfor %}];
       //Define url list as a combination of user's url and the orgs' urls.
-      var orgurls = ['https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?'];
+      var orgurls = ['https://api.github.com/users/i2000s/repos?per_page=100&callback=?']; //['https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?'];
       for (var indx = 0; indx < orgnames.length; indx++){
         orgurls[indx + 1] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
       };
@@ -157,7 +140,7 @@ description: Xiaodong's self-described contribution to the community.
         for (var i = 0; i < arguments.length; i++) {
         // retrieve the entries from the argument parameter
           values = arguments[i][0].data;
-          //console.log(values);
+
          // Push the retrieved value to a global function variable, which we can.
          // this function is processed synchronously, when all ajax calls have been completed
          tempdata.push(values);
@@ -231,16 +214,13 @@ description: Xiaodong's self-described contribution to the community.
           As far as I can see, we are approaching to a critical point that a revolution will dramatically change our personal life, ways of doing research, teaching and working, relationships among people and things, and ultimately the social structure of the human world.
           We need to rethink about and rebuild our purpose of living, our common sense, moral standards, law systems, policies and the attribution model of profits, knowledge and tools--before it is too late.
       </p>
-      <p>As a scientist, I am taking some time off to develop tools, to share my works and to organize some social activities.
-         If you find those are opportunities for your to take advantage and participation of, I'd be more than happy to welcome you to the journey of defining sustainable development of humanity.
-      </p>
 
       <div class="row">
          <h2>Callout: JuliaQuantum is discussing the coming Google Summer of Code projects for 2016. Come to join <a href="https://github.com/JuliaQuantum/JuliaQuantum.github.io/issues/32" target="_blank">our discussion</a>.</h2>
       </div>
 
       <div class="row">
-       <h2>Non-for-profit organizations that I co-created for communities:</h2>
+       <h2>Non-for-profit organization network with the ICIQ communities:</h2>
        <ul style="list-style-type:row">
         <li><a href="http://cquic-github.github.io/" target="_blank">CQuIC@GitHub</a>: for CQuIC members who do code for science. </li>
         <li><a href="http://juliaquantum.github.io/" target="_blank">JuliaQuantum</a>: for establishing standards and computational libraries in Julia for quantum science and technology. </li>
@@ -252,17 +232,14 @@ description: Xiaodong's self-described contribution to the community.
        </ul>
       </div>
 
-      <div class="row">
-          <h2><a href="/tools.html" target="_blank">Selecting tools</a> I think that are useful for poeple who are doing science.</h2>
-      </div>
     </div>
 
   <div class="row">
     <h2 align="center">Sharing code repositories</h2>
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
-        <div><h2>Xiaodong Qi's Open-source Repositories</h2></div>
-        <h4> This is an automated index to the top 12 public Github repositories managed by Xiaodong Qi.
+        <div><h2>ICIQ and friends' Open-source Repositories</h2></div>
+        <h4> This is an automated index to the top 12 public Github repositories by ICIQ and friend-organizations.
           All of them are released under open-source initiative licenses,
           so you are free -- and invited! -- to use or adapt them as long as you
           acknowledge the source.  If you do use them, I hope you'll drop me
@@ -287,7 +264,7 @@ description: Xiaodong's self-described contribution to the community.
     </div>
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-md-6 col-xs-11">
      <h4> <a href="https://github.com/i2000s" onClick="recordOutboundLink(this, 'Outbound Links', 'Github'); return false;" >
       <img src="{{site.url}}/assets/img/icon-github.png" alt="github"> Coding </a></h4>
@@ -306,12 +283,7 @@ description: Xiaodong's self-described contribution to the community.
             </div>
         </div>
      </div>
-  </div>
-
-  <div class="row">
-    <h2>My pholosophy on Open Science can be found <a href="/philosophy.html" target="_blank">here</a>. </h2>
-    <br>
-  </div>
+  </div> -->
 
 
 {% include footer.html %}

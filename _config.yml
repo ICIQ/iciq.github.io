@@ -11,6 +11,9 @@ author :
   facebook: groups/488750657941233/
   ghorgs: # Used in the Javascript of Community page to pull out github repos.
     - name: ICIQ
+    - name: CQuIC
+    - name: JuliaQuantum
+    - name: JuliaCN
 url: http://iciq.github.io
 disqus:
   sitename: iciq-project
@@ -25,11 +28,11 @@ navigation: # For the navigation menu. Don't use index.html. urls should end wit
   - text: Home
     url: /
   - text: Observe
-    url: /observe.html
+    url: /observe/
   - text: Entangle
-    url: /entangle.html
+    url: /entangle/
   - text: More
-    url: /more.html
+    url: /more/
 
 permalink: /:year/:month/:day/:title.html
 redirects: yes

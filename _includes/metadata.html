@@ -2,10 +2,10 @@
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elsif page.tags %}
-  <meta name="keywords" content="{{site.author.name}}, {{site.author.ChineseName}}, {{ page.tags | join: ', ' }}" />
+  <meta name="keywords" content="{{site.author.name}}, {{ page.tags | join: ', ' }}" />
   {% assign page_keywords = page.tags %}
 {% else %}
-  <meta name="keywords" content="{{site.author.name}}, {{site.author.ChineseName}}, quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
+  <meta name="keywords" content="{{site.author.name}}, quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
 {% endif %}
 
 {% if page.description %}
@@ -29,8 +29,8 @@
 <meta property="dc:identifier" content="{{ page.url }}" />
 <meta property="dc:rights" content="CC-BY" />
 <meta property="dc:source" content="{{ site.title }}" />
-<meta property="dc:subject" content="Physics" /> 
-<meta property="dc:type" content="website" /> 
+<meta property="dc:subject" content="Physics" />
+<meta property="dc:type" content="website" />
 <meta name="dc.language" content="en, zh-Hans, cmn">
 <!-- RDFa Metadata (in OpenGraph) -->
 <meta property="og:title" content="{{ page.title }}" />
@@ -40,7 +40,7 @@
 <meta property="http://ogp.me/ns/article#published_time" content="{{ page.date }}" />
 <meta property="og:site_name" content="{{ site.title }}" /> <!-- Same as dc:source? -->
 <meta property="og:url" content="{{site.url}}{{ page.url }}" />
-<meta property="og:type" content="website" /> 
+<meta property="og:type" content="website" />
 <!-- Google Scholar Metadata -->
 <meta name="citation_author" content="{{ site.author.name }}"/>
 <meta name="citation_date" content="{{ page.date }}"/>
@@ -52,6 +52,6 @@
 <meta name="twitter:site" content="@{{site.author.twitter}}" />
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta name="twitter:description" content="{{ page_description }}" />
-<meta name="twitter:image" content="http://i2000s.github.io/assets/img/qi2016.jpg" />
+<meta name="twitter:image" content="/assets/img/favicon/favicon.jpg" />
 <!-- Baidu website verification code -->
 <meta name="baidu-site-verification" content="cAv3dLIDps" />
