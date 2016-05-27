@@ -14,6 +14,9 @@ I was thinking to have the following focus for my self-organized summer study:
 
   (Yeah, we have tagged part I [two years before](http://iciq.github.io/entangle/QuantumOpticsGroup.html) already.)
 
+  <center>{% include image.html img="http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg" width="300px" title="optical pumping and laser cooling" %}</center>
+  <br>
+
 - Main topics:
     - Optical pumping
     - Laser cooling
@@ -23,6 +26,7 @@ I was thinking to have the following focus for my self-organized summer study:
 
 - More resources:
     - [Atomic Physics course by Prof. Ivan Deutsch](http://info.phys.unm.edu/~ideutsch/Classes/Phys531F11/index.htm) (lecture videos, notes and homeworks are all available in the link)
+    - A book, if you wish, as shown in the photo above by our friend [Yuan-Yu Jau](http://cquic.unm.edu/member/yuan.yu.jau/) and others on Optical Pumping featured with simulation demo codes and detailed analysis.
     - A handful of classical papers to be updated here later.
 
 - Discussion forum: [see this channel](https://disqus.com/home/channel/quantumoptics) I created recently.
