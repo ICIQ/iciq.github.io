@@ -40,7 +40,8 @@ encoding: utf-8
 pageviews: no    ## toggle on sidebar pageviews
 twitter_api: yes
 analytics: UA-46730871-1 ## Google Analytics key UA-46730871-1(in _includes/analytics.html and search.html)
-baiduid: yIVnlNh83X # Baidu site verification ID.
+baiduid: yIVnlNh83X # Baidu site verification ID. Used in metadata.html.
+baidutongji: a651398a55cb7e55a38cec494ce906a1 # This is for collecting statistical data of visit from Baidu. Used in analytics.html.
 baseurl: '/'
 lsi: True # Possibly for generating related posts with gsl and classifier packages.
 
