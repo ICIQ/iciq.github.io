@@ -9,10 +9,10 @@ tags:
 As before, we will have a summer study topics for this year:
 [Advanced Topics in Quantum Optics II](http://i2000s.github.io/2016/05/26/2016-summer-study-on-quantum-optics-II.html).
 
-* Main topics:
-  * Optical pumping
-  * Laser cooling
-  * matrix/tensor product state representation of many-body systems (let’s see if time permits)
+* Proposed main topics:
+    * Optical pumping
+    * Laser cooling
+    * matrix/tensor product state representation of many-body systems (let’s see if time permits)
 
 The time is from June 1st to July 29th (flexible).
 
