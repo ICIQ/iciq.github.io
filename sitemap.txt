@@ -22,4 +22,5 @@ http://i2000s.github.io/sitemap.txt
 http://i2000s.github.io/tags.html 
 
  
+http://i2000s.github.io/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II.html  
 http://i2000s.github.io/2016/05/25/Enable-comments-and-forums.html 
