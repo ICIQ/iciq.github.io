@@ -4,7 +4,7 @@
  <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2016-05-28T06:09:56+00:00</updated>
+ <updated>2016-05-28T06:38:09+00:00</updated>
  <id></id>
  <author>
    <name>ICIQ Community</name>
@@ -20,7 +20,7 @@
    <content type="html">&lt;center&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;figure&gt;
-&lt;img src=&quot;http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg&quot;   width=&quot;300px&quot;   align=&quot;center&quot; alt=&quot;laser cooling and optical pumping&quot;   /&gt;
+&lt;img src=&quot;http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg&quot;   scale=&quot;95%&quot;    align=&quot;center&quot; alt=&quot;laser cooling and optical pumping&quot;   /&gt;
 &lt;/figure&gt;
 &lt;/div&gt;
 &lt;/center&gt;
