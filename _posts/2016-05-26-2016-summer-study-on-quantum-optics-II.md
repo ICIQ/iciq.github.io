@@ -14,7 +14,7 @@ I was thinking to have the following focus for my self-organized summer study:
 
   (Yeah, we have tagged part I [two years before](http://iciq.github.io/entangle/QuantumOpticsGroup.html) already.)
 
-  <center>{% include image.html img="http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg" width="300px" title="optical pumping and laser cooling" %}</center>
+  <center>{% include image.html img="http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg" scale="95%" title="optical pumping and laser cooling" %}</center>
   <br>
 
 - Main topics:
