@@ -6,6 +6,7 @@ subtitle: Understanding the CFL condition
 tags: numerical-analysis CFL-condition advection hyperbolic-PDEs
 categories: notebook
 ---
+Note: This post was originally published on the KAUST Mathwiki [here](https://mathwiki.kaust.edu.sa/david/A%20curious%20upwind%20implicit%20scheme%20for%20advection) (login required) by [David Ketcheson](http://www.davidketcheson.info/2012/10/11/A_curious_upwind_implicit_scheme_for_advection.html).
 
 The CFL condition
 -----------------
@@ -89,6 +90,3 @@ further, we must consider two cases:
   [CFL condition]: http://en.wikipedia.org/wiki/Courant%E2%80%93Friedrichs%E2%80%93Lewy_condition
   [their seminal paper]: http://http://dx.doi.org/10.1007%2FBF01448839
   [here]: http://www.stanford.edu/class/cme324/classics/courant-friedrichs-lewy.pdf
-
-
-This post was originally published on the KAUST Mathwiki [here](https://mathwiki.kaust.edu.sa/david/A%20curious%20upwind%20implicit%20scheme%20for%20advection) (login required).

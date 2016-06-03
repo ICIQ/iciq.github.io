@@ -6,6 +6,7 @@ subtitle: A first attempt
 tags: python ipython conferences presentations
 categories: blog-post
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2013/09/21/ipython_notebook_slides_talks.html).
 
 # Giving a math talk using IPython notebook slides and Wakari
 Last week I gave my first full-length *executable talk*: one in which I showed the code that produced (almost) all the results I presented.  You can [see the talk](http://www.davidketcheson.info/talks/SciCADE-talk.slides.html#/) and [run the talk on Wakari](https://www.wakari.io/sharing/bundle/ketch/SciCADE-talk) (or download it and run it locally).  All you need is Python with its scientific packages (numpy, scipy, sympy -- I recommend just installing [Anaconda Python](http://www.continuum.io/downloads) if you haven't already).  I took things a step further and actually ran a bunch of demo code live on Wakari.  I was excited beforehand, and judging by the number of people that came into the room right immediately before my talk (and left immediately afterward), so was the audience.  But I was disappointed with how it went.  Here's why.

@@ -5,6 +5,8 @@ name: Teaching with SageMathCloud
 tags: ipython teaching sagemathcloud
 categories: blog-post
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2014/05/31/teaching_with_SMC.html).
+
 During the past Spring semester at KAUST, I again taught AMCS 252, our masters-level
 course on numerical analysis for differential equations.  I've been teaching the course
 using Python for 5 years now.  This year, for the first time, *I didn't spend
@@ -80,7 +82,7 @@ I used SMC again to [teach a 1-day tutorial](https://github.com/ketch/HyperPytho
 a couple of minor hiccups, it again worked very well.  I plan to continue
 using it for teaching in the future.  One feature I haven't used yet (but intend
 to) is the ability to "collaborate" on a project so that multiple users can edit it
-at the same time.  I understand that 
+at the same time.  I understand that
 [many other great features are in the works](http://sagemath.blogspot.com/2014/04/the-sagemathcloud-roadmap.html).
 
 I would strongly recommend SMC to other teachers of computationally-oriented

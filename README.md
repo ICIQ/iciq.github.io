@@ -17,16 +17,18 @@ releases it all under [CC0](http://creativecommons.org/publicdomain/zero/1.0/),
 so setting my site up was as easy as following
 [his instructions](http://www.carlboettiger.info/README.html),
 replacing the \_posts directory, and making a few CSS customizations.
+I have customized the source code a little bit more to make it much easier for anyone to adapt this source code to other repos and sites (see detailed instructions in a later section).
 
 To run the site on a local computer, you need to install Jekyll and
-dependencies, run `bundle install` then `bundle exec jekyll serve`.
+dependencies, run `bundle install` then `bundle exec jekyll serve` (see detailed instruction below).
 
-The [Publications page](publications.html) is generated from a bibtex file
+You can generate the [Publications page](publications.html) from a bibtex file
 using some [code David Ketcheson wrote to generate HTML divs from Bibtex](https://github.com/ketch/tex2_rst_html).
 It also makes use of [jQuery](https://github.com/ketch/tex2_rst_html) and
 [MixItUp](https://mixitup.kunkalabs.com/) for filtering and searching.
+Here, I am using the [Jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) with some customizations.
 
-Please report any errors or other feedback in the [Issue Tracker](https://github.com/i2000s/i2000s.github.io/issues).
+Please report any errors or other feedback to the [Issue Tracker](https://github.com/i2000s/i2000s.github.io/issues) for this site, or in general for the Labnotebook on [Carl's repo](http://github.com/cboettig/labnotebook).
 
 Additional Site Features & Credits
 ==================================
@@ -59,10 +61,11 @@ sudo apt-get update
 sudo apt-get install pandoc
 sudo apt-get install gsl-bin libgsl0-dev
 ```
-On Windows OS, `gsl` should be preinstalled in order to gem install rb-gsl.
-Otherwise, the `.travis.yml` configuration file should have some basic settings to follow.
+On Windows OS, you may be able to follow [this instruction](https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/) to install Jekyll.
+If you find some error related to Ruby Development Kit when you run `bundle exec jekyll serve` or `gem install ***`, you may find [this experience](http://flatshaded.com/2013/05/installing-jekyll-on-windows/) helpful.
+`gsl` should be preinstalled in order to gem install `rb-gsl`, where the step in the `.travis.yml` configuration file about installing `gsl-bin` step does not apply to Windows systems.
 
-The `Gemfile` and the configuration file `_conf.yml` should include sufficient information on installing correct dependences.
+The `Gemfile` and the configuration files `_conf.yml` and `.travis.yml` should include sufficient information on installing correct dependences.
 Then for a routinely rendering, you only need to run the following command lines:
 ```
 bundle install
@@ -71,15 +74,44 @@ bundle exec jekyll serve
 Notice that, I have locked the Jekyll version to `~>2.5.3`.
 If you want to use Jekyll version 3.0.0 or above, you may need to tweak the code a little bit.
 
-If you encounter the missing credentials error for the `twitter_feed` plugin, you may need to export environmental variables `TWIT_KEY`, `TWIT_SECRET`, `TWIT_TOK` and `TWIT_TOK_SECRET` before running the jekyll server. All the credentials of the Twitter plugin should be accessible from the TWitter account used for the site. 
+If you encounter the missing credentials error for the `twitter_feed` plugin, you may need to export environmental variables `TWIT_KEY`, `TWIT_SECRET`, `TWIT_TOK` and `TWIT_TOK_SECRET` before running the jekyll server. All the credentials of the Twitter plugin should be accessible from the TWitter account used for the site.
 
 By default, the local build should be accessible at `http://127.0.0.1:4000` on your internet browser.
 
-Authorships of posts before Feb 10th, 2016
-=========================================
-Since this site was basically built on top of [David Ketcheson](http://davidketcheson.info) and [Carl Boettiger](http://carlboettiger.info)'s Labnotebook sites following the permitted Creative Commons license, please be advised that blog posts time-stamped before Feb 10th of 2016 may be written by David Ketcheson or Carl Boettiger.
-I found most of them are good materials for open science, and hence didn't remove all of them while adapting the source code for my current website.
-The authorships on those posts will be disclaimed more clearly by explicit statements and links to the origination on those posts--once I got a chance.
+How to adapt this source code to generate your own Jekyll website
+=================================================================
+Since Jekyll uses a very efficient way to control common information in fewer places, you can easily modify the source code of this website to generate your own website on GitHub and deploy to elsewhere.
+In fact, when the site was initially designed and modified especially to my end, it has always been a common goal to make it easy for the community to migrate this source code to other web hosts and adapt to various purposes.
+I encourage you to post an issue or make a pull request on this repo or the original [labnotebook repo](http://carlboettiger.info) if you find a way to improve the general design.
+Only in this way, the network of people who have adapted this design to their sites can benefit most from the continuous improvement by the community who are following this body of code for open science and beyond.
+Below are the minimum changes you need to make to serve your own purpose of using the source code.
+
+1. Fork this repo under your GitHub account.
+
+2. Change information defined in the `_config.yml` file for your case.
+There you will find definitions for your site, Github account and repo information, as well as your personal contact information.
+
+3. Add encrypted information in the `.travis.yml` file.
+There you will find the `env/global` section where global variables are defined to automatically generate twitter timeline, github comment history and [deploy the site as gh-pages on the Travis-CI server](http://awestruct.org/auto-deploy-to-github-pages/).
+You should remove all the original code starting with `secure` and replace with your own encrypted codes line by line in the `.travis.yml` file or on the Travis-CI setting page.
+The recommended minimum global variables to be encrypted are: [Github Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) (variable name `GH_TOKEN`), git commit author name (`GIT_NAME`), git commit author email (`GIT_EMAIL`);
+if you want to generate a Twitter message line on your site using the `twitter_feed.rb` plugin, you will also need to encrypt Twitter key (`TWIT_KEY`), secret (`TWIT_SECRET`), token (`TWIT_TOK`), token secret (`TWIT_TOK_SECRET`).
+Before you commit this step, make sure you have [ativated the Travis-CI module for your Github repo](https://travis-ci.org/getting_started).
+You can then generate the encrypted variables by installing travis while on your local repo directory with command `gem install travis` and using the following command line format `travis encrypt GIT_NAME="Xiaodong Qi"`.
+You should replace the variable name and value with the real cases as bash commands one after one.
+Notice that when the variable value has a space inside, you need to use a pair of quotation marks as the example I gave--otherwise no need to use quotation marks in most cases; if you have special characters that bash command doesn't like, you need to [escape those characters](http://wiki.bash-hackers.org/syntax/quoting).
+The last command line should generate a long string of random characters which you should be able to add to the `env/global` section of the `.travis.yml` file in the format of `- secure Your_Encrypt_Random_bits`.
+You can certainly add more encrypt variables or define some non-sensitive variables as explicit/non-encrypted variables in a similar way, but the Github token has to be encrypted to pass the security check of Github.
+
+4. If you have different amount of social accounts or plugin items defined in the `_config.yml` file, you need to double modify the scripts appeared in the header and footer template under the `_include` directory.
+On the top of this README file, there is an icon showing the compilation status of Travis-CI, you might want to modify the icon address to your case--pay attention to the username/organization name which is capital sensitive to Travis-CI.
+
+The publication and citation databases are defined in the `asset` directory as bibtex files with suffix `.bib`, which may want to replace with your own.  
+The rest is to delete or keep posts and pages to fit into your needs.
+I suggest to put this source code in a branch other than `master` or `gh-pages` in your Github repository, which you need to define in the `_config.yml` file as the "sourcebranch".
+The Travis-CI server will commit the generate website onto the `master` or `gh-pages` github branch depending on your case.
+Once you have all the necessary configurations done, Travis-CI will be happily deploying your site on Github.
+If you want the site to be deployed on a host other than Github, you may want to modify and run the `publish.sh` bash script to synchronize your locally generated `_site` folder or the master/gh-pages branch updated by Travis-CI to your target site host.
 
 
 Copyrights and Licenses

@@ -6,6 +6,7 @@ subtitle: Helping MATLAB be a little more like Python
 tags: python MATLAB testing documentation software RK-Opt
 categories: blog-post
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2013/10/12/MATLAB-docs-testing.html).
 
 I primarily develop code in Python and Fortran, but I also use MATLAB for
 certain things.  For instance, I haven't found a Python-friendly nonlinear
@@ -28,7 +29,7 @@ have improved -- see below*.
 
 In any case, all is not lost -- I have found reasonable approximations in the
 MATLAB ecosystem, and in some cases I've adapted the Python tools to work with
-MATLAB. 
+MATLAB.
 
 ### Documenting MATLAB projects using Sphinx
 In principle, Sphinx can be used to write documentation for packages written in
@@ -83,7 +84,7 @@ same: arbitrary subsets of the optional arguments can be specified; default
 values will be used for the rest.  As a bonus, you can check the types of the
 inputs.  [Here's an example of
 usage](https://github.com/ketch/RK-opt/blob/master/polyopt/opt_poly_bisect.m#L258).
- 
+
 If you know of better ways to do any of these things, please let me know in the comments!
 
 Of course, it's entirely possible to develop large, well-documented,

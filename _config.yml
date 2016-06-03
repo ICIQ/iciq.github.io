@@ -19,6 +19,10 @@ author :
     - name: ICIQ
     - name: JuliaCN
 url: http://i2000s.github.io
+disqus:
+  sitename: qxd # This is the shortname of the disqus site id to display disqus comments below posts.
+addthis:  # Get an account at www.addthis.com. You may need to at least enable the Sharing Sidebar and Sharing Buttons functions to fully use our design.
+  pubid: ra-54f225a84524edd3 # This is the AddThis button pubid to display social sharing buttons on the website. Used in the header template.
 navigation: # For the navigation menu. Don't use index.html. urls should end with a directory.
   - text: Home
     url: /
@@ -35,13 +39,16 @@ encoding: utf-8
 pageviews: no    ## toggle on sidebar pageviews
 twitter_api: yes
 analytics: UA-74657818-1 ## Google Analytics key UA-46730871-1(in _includes/analytics.html and search.html)
+baiduid: cAv3dLIDps # Baidu site verification ID. Used in metadata.html.
+baidutongji: a9ed76232076b69dc6afb79ece4d351d # This is for collecting statistical data of visiting from Baidu. Used in analytics.html.
 baseurl: '/'
 lsi: True # Possibly for generating related posts with gsl and classifier packages.
 
 # GitHub information of this site. Used for extracting commit history of posts.
 gitstamps: yes
 username: i2000s
-repo: i2000s.github.io # used in linking commit history and auto-deploy the site on travis-CI.
+orgname: i2000s # This is used to identify the category of GitHub repository. Use username for personal repository.
+repo: i2000s.github.io # used in linking commit history and auto-deploy the site on travis-CI. The repository address will be identified as https://username:GH_TOKEN@github.com/orgname/repo.git defined in Rakefile.
 sourcebranch: dev # used in linking commit history.
 
 source: .
@@ -78,7 +85,7 @@ scholar:
 markdown: pandoc
 markdown_ext: markdown,md
 pandoc:
-   extensions: 
+   extensions:
      - smart
      - mathjax
 

@@ -6,7 +6,7 @@ subtitle: Retaining copyright on my papers
 tags: reproducible-research scientific-publishing open-access publications
 categories: blog-post
 ---
-
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2012/12/06/reproducible-research-standard.html).
 
 Back in July, I read Victoria Stodden's work on licensing reproducible
 research.  Victoria has proposed the Reproducible Research Standard (RRS),
@@ -19,7 +19,7 @@ research project, including:
  - Computer code
  - Data
  - A record of the computing environment used to process the code and data
- 
+
 The idea is that all of these components are part of your research and someone
 wanting to understand your research may need access to all of them.  The RRS
 consists of the following licenses:
@@ -27,7 +27,7 @@ consists of the following licenses:
  - [Creative Commons Attribution (BY)](http://creativecommons.org/licenses/by/3.0/) for **media** (text, figures, movies)
  - [Modified BSD](http://en.wikipedia.org/wiki/BSD_licenses%233-clause_license_.28.22New_BSD_License.22_or_.22Modified_BSD_License.22.29) for **code**
  - [Science Commons Database Protocol](http://sciencecommons.org/resources/faq/database-protocol) for **data**
- 
+
  For the most part, this is easy enough to implement: the current academic
  research system frankly doesn't care what you do with your code, data or
  miscellaneous media outputs.  And I think that actually releasing those is
@@ -35,7 +35,7 @@ consists of the following licenses:
  But the text and figures of the paper itself
  must be published in a journal, and typically the journal will want the
  copyright -- preventing you from releasing those media under CC-BY.
- 
+
 Nevertheless, I've attempted to follow the full RRS with each of the two papers
 I've had accepted since then.  [The first](http://arxiv.org/abs/1111.3499)
 (still in press) was accepted to the SIAM Journal on Scientific Computing
@@ -52,7 +52,7 @@ wanted to be completely above-board, so I pointed out to SIAM that I had
 modified the agreement.  What made this particularly interesting is that one of
 my co-authors on the paper is Randy LeVeque, chair of the SIAM journals
 committee.
- 
+
 Eventually, SIAM objected  "on the grounds that non-exclusive right to publish
 doesn't prohibit
 others from publishing for profit, which may be to [the authors'] disadvantage as
@@ -63,10 +63,10 @@ stated.  Since this gave me what I wanted in practical terms, I agreed and
 signed the copyright transfer + addendum.  I've been told that an ad hoc
 committee of SIAM leadership is now discussing how SIAM should handle these
 copyright questions like this.
- 
+
 I came away from this feeling like we had made progress, but I still wanted to
 see if I could implement the full RRS with respect to the next paper.  My [next
-accepted paper](http://arxiv.org/pdf/1201.3035v3.pdf) (also still in press) 
+accepted paper](http://arxiv.org/pdf/1201.3035v3.pdf) (also still in press)
 was a submission to [Communications in Applied Mathematics and
 Computational Science](msp.org/camcos/), published by the extremely progressive
 not-for-profit [Math­em­at­ic­al Sci­ences

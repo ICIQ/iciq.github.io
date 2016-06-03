@@ -6,14 +6,16 @@ subtitle: A quick and dirty introduction to solving hyperbolic conservation laws
 tags: hyperbolic-PDEs pyclaw ipython teaching
 categories: blog-post
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2014/05/28/hyperpython.html).
+
 <img src="https://raw.githubusercontent.com/ketch/HyperPython/master/figures/finite_volume.png" alt="Finite volumes" height="200" align="center">
 
-Last week, I ran a 1-day tutorial at the 
+Last week, I ran a 1-day tutorial at the
 [Workshop on Design, Simulation, Optimization and Control of Green Vehicles and Transportation](http://jkk.sze.hu/en_GB/program).  The idea was to teach attendees about Python programming,
-basic theory of hyperbolic conservation laws, finite volume methods, and how to use 
+basic theory of hyperbolic conservation laws, finite volume methods, and how to use
 [PyClaw](http://clawpack.github.io/doc/pyclaw/), all in the space of a few hours.
 
-Inspired by Lorena Barba's recent release of 
+Inspired by Lorena Barba's recent release of
 [AeroPython](http://lorenabarba.com/blog/announcing-aeropython/),
 I decided to develop a short set of IPython notebooks for the tutorial.
 The result is [HyperPython](https://github.com/ketch/HyperPython),

@@ -3,16 +3,17 @@ layout: post
 title: Open access is about open access, not journals
 name: Open access is about open access, not journals
 subtitle: Just do it yourself
-tags: 
+tags:
 categories: blog-post
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2013/12/13/open_access_means_open_access.html).
 
 In October, [Science Magazine conducted a survey regarding open
 access](http://news.sciencemag.org/sites/default/files/media/Open%20Access%20SurveySummary_11082013_0.pdf).
 Among the questions:
 
 - *How important is it for scientific papers to be freely accessible to the public?*
-- *Of the papers that you published in the last 3 years, what percentage did you submit to 
+- *Of the papers that you published in the last 3 years, what percentage did you submit to
 fully open access journals?*
 
 **72%** replied "extremely important" to the first question, while only **58%**

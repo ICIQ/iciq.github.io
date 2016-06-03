@@ -5,6 +5,7 @@ name: The Schrodinger equation is not a reaction-diffusion equation
 tags: wave-equation mathematical-exposition
 categories: notebook
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2014/02/22/schrodinger-is-not-diffusion.html).
 
 Recently, a stackexchange answer claimed that [the Schrodinger equation is effectively a reaction-diffusion equation](http://scicomp.stackexchange.com/a/10878/123).  I'll set aside semantic arguments about the meaning of "effectively", and give a more obvious example to explain why I think this statement is misleading.
 

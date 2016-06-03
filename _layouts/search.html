@@ -52,10 +52,10 @@
 
           <div class="row">
             <div class="span2">
-             <iframe class="github-btn" src="http://markdotto.github.com/github-buttons/github-btn.html?user=i2000s&repo=i2000s.github.com&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+             <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{site.orgname}}&repo={{site.repo}}&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px" style="vertical-align:middle; margin-top:9px;"></iframe>
             </div>
             <div class="span1 offset8">
-              <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="http://i.creativecommons.org/l/zero/1.0/88x31.png" style="float:left;margin:0 5 0 0;" alt="CC0" /></a>
+              <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" style="float:left;margin:0 5 0 0;" alt="CC0" /></a>
             </div>
             <div class="span1">
               <a rel=license href="http://onsclaims.wikispaces.com/"><img align="right" alt="ONS" style="border-width: 0pt;" src="http://onsclaims.wikispaces.com/file/view/ons-sci2-icon.png"> </a><br/>
@@ -101,16 +101,7 @@
 
     <!-- Analytics
     ================================================== -->
-  <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-46730871-1']);
-          _gaq.push(['_trackPageview']);
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-  </script>
+  {% include analytics.html %}
 
   </body>
 </html>

@@ -5,6 +5,7 @@ name: Dispersion relations
 tags: wave-equation PDE mathematical-exposition
 categories: notebook
 ---
+Note: this post was originally written by [David Ketcheson](http://www.davidketcheson.info/2014/05/28/dispersion_relations.html).
 
 Fourier analysis is an essential tool for understanding the behavior of
 solutions to linear equations.  Often, this analysis is introduced to students in the
@@ -90,7 +91,7 @@ u_t & = v_x \label{w1} \\
 v_t & = u_x. \label{w2}
 \end{align}
 $$
-(If you're not familiar with this, just differentiate \\eqref{w1} w.r.t. $t$ and \\eqref{w2} w.r.t. $x$, then equate partial derivatives to get back the second-order wave equation \\eqref{wave}).  We have a linear system with $j=1$ and 
+(If you're not familiar with this, just differentiate \\eqref{w1} w.r.t. $t$ and \\eqref{w2} w.r.t. $x$, then equate partial derivatives to get back the second-order wave equation \\eqref{wave}).  We have a linear system with $j=1$ and
 $$ A = \begin{pmatrix}
 0 & 1 \\ 1 & 0
 \end{pmatrix}.$$
@@ -119,8 +120,8 @@ u_t = \sum_{j=0}^n A_j  \frac{\partial^j u}{\partial x^j}.
 $$
 
 Here's a real example from my research.  It comes from homogenization of
-the wave equation in a spatially varying medium 
-(see Equation (5.17) of [this paper](http://faculty.washington.edu/rjl/pubs/solitary/40815.pdf) for 
+the wave equation in a spatially varying medium
+(see Equation (5.17) of [this paper](http://faculty.washington.edu/rjl/pubs/solitary/40815.pdf) for
 more details).  It's the wave equation plus some second-derivative terms:
 $$
 u_t = v_x + v_{xx} \\
@@ -155,7 +156,7 @@ be diagonalizable.  Let's illustrate with a simple case.
 Returning to the wave equation, let's consider a different way of writing it as a system:
 $$
 \begin{align*}
-u_t & = v \\ 
+u_t & = v \\
 v_t & = u_{xx}.
 \end{align*}
 $$
