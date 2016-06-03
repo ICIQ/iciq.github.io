@@ -5,25 +5,60 @@ title: Jupyter Notebooks
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My open notebook">
-    <meta name="author" content="Xiaodong Qi">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+      <!--[if lt IE 9]>
+      <script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <meta name="subtitle" content="{{ page.subtitle }}">
+    <meta name="author" content="{{site.author.name}} | {{site.author.ChineseName}}">
 
-
+    {% include metadata.html %}
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario">
-    <link href="/assets/css/light.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/css/grid.css">
+   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
+   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario">
+    <!-- <link href="/assets/css/light.css" rel="stylesheet" type="text/css" id="stl" title="light">
+    <link href="/assets/css/syntax.css" rel="stylesheet" type="text/css" id="stl" title="light"> -->
+    <!-- bootstrap style -->
+    <!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href = "/assets/css/bootstrap.min.css" rel = "stylesheet">
+    <!-- Self-defined style -->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    {% include analytics.html %}
+
+    <!-- Help the browser identify the RSS feed automatically -->
+    <link rel="alternate" type="application/rss+xml" title="Xiaodong Qi's Website" href="/atom.xml" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Le javascript -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
     <script type="text/javascript" src="/assets/js/strftime.js"></script>
     <script type="text/javascript">
     (function ($, undefined) {
-        var userName = "i2000s";//ketch
+        var userName = "{{site.author.github}}";//ketch
 
         $.getJSON("https://api.github.com/users/" + userName + "/gists?per_page=100&callback=?", function (result) {
 
@@ -68,13 +103,16 @@ title: Jupyter Notebooks
 
     </script>
   </head>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54f225a84524edd3" async="async"></script>
+
   <body>
 
   {% include navbar.html %}
 
 
 
-  <div class="container"> <!-- Twitter bootstrap has all body content in a container -->
+<div class="container"> <!-- Twitter bootstrap has all body content in a container -->
 <header class="jumbotron subhead">
     <h1 class="entry-title">{{ page.title }}</h1>
     <p>{{ page.subtitle }}</p>
@@ -91,6 +129,6 @@ from Github.  The links take you directly to nbviewer.
 
   <div class="gap"></div>
   <div class="gap"></div>
-</div>
+
 
 {% include footer.html %}
