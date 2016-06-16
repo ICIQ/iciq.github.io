@@ -47,9 +47,13 @@ Schedule and progress
 
 - [ ] June 1st-5th:
     - [X] From Ivan's QO lectures: Coherence, density matrix, Bloch-sphere, Rabi oscillations.  Lecture notes #4-6, P.S. #2-4; Optical Bloch equations, Master equation, Damped two-level atom.  Lecture notes #7-8, P.S. #5-6.
-    - [ ] From Yuan-Yu's book: chapters 1-5 (Alkali atoms, wavefunction, Schrodinger space, density matrix, Liouville space, optical pumping of atoms).
+    - [X] From Yuan-Yu's book: chapters 1-5 (Alkali atoms, wavefunction, Schrodinger space, density matrix, Liouville space, optical pumping of atoms).
     - [ ] Get familiar with JuliaQuantum libraries: [QuBase.jl](https://github.com/JuliaQuantum/QuBase.jl), [QuDirac.jl](https://github.com/JuliaQuantum/QuDirac.jl) and [QuDynamics.jl](https://github.com/JuliaQuantum/QuDynamics.jl).
 * [ ] June 6th-12th:
-    * [ ] From Ivan's QO lectures: Quantization of the field, atoms+quantized field. Lecture notes #11-13, P.S. #7;
-    * [ ] From Ivan's AP lectures: notes 10-13.
+    * [X] From Ivan's QO lectures: Quantization of the field, atoms+quantized field. Lecture notes #11-13, P.S. #7;
+    * [X] From Ivan's AP lectures: notes 10-13.
     * [ ] From Yuan-Yu's book: chapters 6-9.
+* [ ] Skip June 13th-19th for more research work to be done. Then from June 20th-26th:
+    * [ ] Wrap up on Yuan-Yu's book.
+    * [ ] A blog post on some essential points.
+    * [ ] Discuss with Nikolas as our visitor on symbolic calculus and quantum simulations in Julia. 
