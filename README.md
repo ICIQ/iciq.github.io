@@ -51,6 +51,23 @@ except for the step of sourcing RVM which I used the following command line inst
 source ~/.rvm/scripts/rvm
 ```
 If the source is setup correctly, `type rvm | head -n 1` should give `rvm is a function` as the output according to [this](https://rvm.io/rvm/install).
+If you encounter any problem before the sourcing step, you should make sure whether the security key has been updated from the official [Ruby site](https://rvm.io/rvm/install).
+Or, if you find the problem is due to the certificate, you may want to check out [this solution](http://stackoverflow.com/questions/3160909/how-do-i-deal-with-certificates-using-curl-while-trying-to-access-an-https-url/30154802#30154802).
+Otherwise, you can also install rvm from a third-party repo following [this instruction](https://github.com/rvm/ubuntu_rvm) on Ubuntu OS and follow the outputed command line instruction on sourcing the profile.
+
+On Ubuntu 16.04, you can follow [this instruction](https://gorails.com/setup/ubuntu/16.04) for updated information.
+I would recommend you to use rvm on Rails to configure a compatible Ruby version, which is employed on travis.CI.
+In the process of installing Ruby through rvm, if you encounter the ***permission denied*** error, you can try
+```
+rvmsudo rvm install 2.3.1
+```
+as an example.
+Similarly, if `gem install rails` or other gem install command lines fail, you can also try
+```
+rvmsudo gem install rails
+```
+or similar to help solve some gem/Ruby package installation errors by promoting permissions in rvm.
+
 For other systems, [here](https://www.ruby-lang.org/en/documentation/installation/) is the official guide for Ruby installation.
 
 Besides, the library of `gsl` and the `pandoc` package are recommended to install for better support to the `clarifier-reborn` and other plugins/scripts used in this site.
@@ -90,6 +107,7 @@ Below are the minimum changes you need to make to serve your own purpose of usin
 
 2. Change information defined in the `_config.yml` file for your case.
 There you will find definitions for your site, Github account and repo information, as well as your personal contact information.
+I will explain more advanced setting information below.
 
 3. Add encrypted information in the `.travis.yml` file.
 There you will find the `env/global` section where global variables are defined to automatically generate twitter timeline, github comment history and [deploy the site as gh-pages on the Travis-CI server](http://awestruct.org/auto-deploy-to-github-pages/).
@@ -104,9 +122,19 @@ The last command line should generate a long string of random characters which y
 You can certainly add more encrypt variables or define some non-sensitive variables as explicit/non-encrypted variables in a similar way, but the Github token has to be encrypted to pass the security check of Github.
 
 4. If you have different amount of social accounts or plugin items defined in the `_config.yml` file, you need to double modify the scripts appeared in the header and footer template under the `_include` directory.
+Notice that, by using different set of social account info in the configure file, the default social media icons will link to the front page of those empty social network websites.
+To avoid these unwanted icons, you may want to delete/comment out those icon blocks in the footer templates and the index.html pages.
+Similarly, if you want to add new social media icons, you can modify the configure file and corresponding footers with a compatible icon image.
 On the top of this README file, there is an icon showing the compilation status of Travis-CI, you might want to modify the icon address to your case--pay attention to the username/organization name which is capital sensitive to Travis-CI.
 
-The publication and citation databases are defined in the `asset` directory as bibtex files with suffix `.bib`, which may want to replace with your own.  
+5. Check the `metadata.html` template defined under the `_include` directory to make sure necessary information are shown correctly for you.
+This metadata is just for different search engines and robots to recognize your website in particular formats.
+I have used fields like `ChineseName` to identify the author's local language name, as well as both Google analytics and Baidu analytics IDs for page visitor statistics. You can delete this field in the `config.yml` and the `metadata.html` files.
+The `analytics.html` template in the `_include` directory has the website visiting analytics scripts for Google and Baidu which you may need to delete one or add a new one according to your preference. 
+The metadata file also defines the language information and keywords where you should most likely modify for your own version.
+Other information if you don't understand, leaving them alone should be fine in most cases.
+
+The publication and citation databases are defined in the `asset` directory as bibtex files with suffix `.bib`, which you may want to replace with your own.  
 The rest is to delete or keep posts and pages to fit into your needs.
 I suggest to put this source code in a branch other than `master` or `gh-pages` in your Github repository, which you need to define in the `_config.yml` file as the "sourcebranch".
 The Travis-CI server will commit the generate website onto the `master` or `gh-pages` github branch depending on your case.
