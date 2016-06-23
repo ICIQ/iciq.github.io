@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NVidia Linux driver update fixed the openGL problem for Matlab 2016a
+title: NVidia Linux driver update fixed the openGL problem of Matlab 2016a
 tags:
     - matlab
 category:
@@ -42,7 +42,7 @@ On my laptop, I got the following information in the Matlab command line window:
                        Extensions: {330x1 cell}
                MaxFrameBufferSize: 16384
 ```
-This was tested working on my Lenovo Thinkpad P50 mobile workstation with Quadro M1000M GPU with Linux kernel 4.5.2 and 4.4.22.
+This was tested working on my Lenovo Thinkpad P50 mobile workstation with Quadro M1000M GPU and Linux kernels 4.5.2 and 4.4.22.
 Kernel 4.6.0 was not compatible with some latest nvidia drivers before this update, and I haven't got a chance to try again.
 
-You may want to remove the graphics driver ppa after this to prevent new updates on the driver which may break your software environment again.
+You may want to remove the graphics driver ppa after this update to prevent new updates of the driver which may screw up your software environment in the future.
