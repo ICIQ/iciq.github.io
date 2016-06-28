@@ -2,6 +2,7 @@ _plugins/_cache
 _site
 _config
 _TEMP
+_cache
 
 *~
 *.bak

@@ -1,0 +1,27 @@
+---
+title: Schrodinger space and Liouville space for superoperators in simulating quantum dynamics
+layout: post
+category: quantum
+tags:
+  - julia
+---
+
+```{r setup}
+library(knitr)
+library(runr)
+j = proc_julia()
+j$start()
+knit_engines$set(julia = function(options) {
+    knitr:::wrap(j$exec(options$code), options)
+})
+```
+
+
+```{r hello, engine = 'julia'}
+a = [1:10]
+```
+
+```{r quit}
+j$stop()
+```
+
