@@ -50,6 +50,12 @@ except for the step of sourcing RVM which I used the following command line inst
 ```
 source ~/.rvm/scripts/rvm
 ```
+But you may find the source command works for you.
+An improvement on the source command line following the instruction in the link is to use
+```
+echo "source /etc/profile.d/rvm.sh" >> ~/.bash_profile
+```
+which will add the rvm path to the bash profile perminantly.
 If the source is setup correctly, `type rvm | head -n 1` should give `rvm is a function` as the output according to [this](https://rvm.io/rvm/install).
 If you encounter any problem before the sourcing step, you should make sure whether the security key has been updated from the official [Ruby site](https://rvm.io/rvm/install).
 Or, if you find the problem is due to the certificate, you may want to check out [this solution](http://stackoverflow.com/questions/3160909/how-do-i-deal-with-certificates-using-curl-while-trying-to-access-an-https-url/30154802#30154802).
@@ -130,7 +136,7 @@ On the top of this README file, there is an icon showing the compilation status 
 5. Check the `metadata.html` template defined under the `_include` directory to make sure necessary information are shown correctly for you.
 This metadata is just for different search engines and robots to recognize your website in particular formats.
 I have used fields like `ChineseName` to identify the author's local language name, as well as both Google analytics and Baidu analytics IDs for page visitor statistics. You can delete this field in the `config.yml` and the `metadata.html` files.
-The `analytics.html` template in the `_include` directory has the website visiting analytics scripts for Google and Baidu which you may need to delete one or add a new one according to your preference. 
+The `analytics.html` template in the `_include` directory has the website visiting analytics scripts for Google and Baidu which you may need to delete one or add a new one according to your preference.
 The metadata file also defines the language information and keywords where you should most likely modify for your own version.
 Other information if you don't understand, leaving them alone should be fine in most cases.
 

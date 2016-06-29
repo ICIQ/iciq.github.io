@@ -4,12 +4,15 @@ layout: post
 category: quantum
 tags:
   - julia
+output: 
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup}
 library(knitr)
 library(runr)
-j = proc_julia()
+j = proc_julia(port = 8000)
 j$start()
 knit_engines$set(julia = function(options) {
     knitr:::wrap(j$exec(options$code), options)
@@ -24,4 +27,3 @@ a = [1:10]
 ```{r quit}
 j$stop()
 ```
-
