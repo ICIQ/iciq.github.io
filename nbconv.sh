@@ -3,7 +3,7 @@
 fname=$1
 
 ipython nbconvert --to markdown ${fname}.ipynb
-sed  -i '' "s#${fname}_files#https:\/\/dl.dropbox.com\/u\/656693\/jekyll_images\/${fname}_files#g"  ${fname}.md
+sed  -i '' "./notebooks/images/"  ${fname}.md
 
 dt=$(date "+%Y-%m-%d")
 
@@ -18,4 +18,4 @@ tags:      TAG-ME
 .
 w" | ed ${fname}.md
 
-mv ${fname}.md ~/Research/labnotebook/_posts/${dt}-${fname}.md
+mv ${fname}.md ./_posts/${dt}-${fname}.md
