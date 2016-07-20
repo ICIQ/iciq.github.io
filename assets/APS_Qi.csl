@@ -83,13 +83,30 @@
   <macro name="note">
     <text variable="note" font-style="italic"/>
   </macro>
+  <!-- define access macro -->
+  <macro name="access">
+    <choose>
+      <if type="webpage online" match="any">
+        <group>
+          <text term="available at" text-case="capitalize-first" suffix=": "/>
+          <text variable="URL" suffix=","/>
+        </group>
+        <text value="Last accessed" prefix=" " suffix=" "/>
+        <date variable="accessed">
+          <date-part name="day" suffix=" "/>
+          <date-part name="month" suffix=" "/>
+          <date-part name="year"/>
+        </date>
+      </if>
+    </choose>
+  </macro>
   <citation collapse="citation-number">
     <sort>
       <key variable="citation-number"/>
     </sort>
-    <!-- <layout delimiter="," prefix="&#160;[" suffix="]">
+    <layout delimiter="," prefix="&#160;[" suffix="]">
       <text variable="citation-number"/>
-    </layout> -->
+    </layout>
   </citation>
   <bibliography entry-spacing="0" second-field-align="flush">
     <layout suffix=".">
@@ -140,6 +157,16 @@
             <text variable="genre"/>
             <text variable="publisher"/>
             <text macro="year-date"/>
+          </group>
+        </else-if>
+        <!-- Define online url type -->
+        <else-if type="online">
+          <group delimiter=", ">
+            <text variable="title" text-case="title"/>
+            <!-- <text variable="url" prefix="<a href=&quot;" suffix="&quot; target=&quot;_blank&quot;>"/>
+            <text variable="url" prefix="URL:" suffix="</a>"/> -->
+            <text macro="access"/>
+            <text macro="year-date" prefix="(" suffix=")"/>
           </group>
         </else-if>
         <else>
