@@ -62,7 +62,7 @@ gems:
 gems:
   - "jekyll/scholar"
 scholar:
-  style: assets/APS.csl
+  style: assets/APS_Qi.csl
   locale: en
 
   sort_by: year
