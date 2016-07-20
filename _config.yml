@@ -43,6 +43,7 @@ baiduid: cAv3dLIDps # Baidu site verification ID. Used in metadata.html.
 baidutongji: a9ed76232076b69dc6afb79ece4d351d # This is for collecting statistical data of visiting from Baidu. Used in analytics.html.
 baseurl: '/'
 lsi: True # Possibly for generating related posts with gsl and classifier packages.
+show_drafts: false
 
 # GitHub information of this site. Used for extracting commit history of posts.
 gitstamps: yes
