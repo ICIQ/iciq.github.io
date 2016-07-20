@@ -87,6 +87,10 @@ further, we must consider two cases:
     scheme is truly a way of computing $U^{n+1}_{j-1}$ based on
     $U^n_j, U^{n+1}_{j}$ and the resulting CFL condition is $\nu\le-1$.
 
-  [CFL condition]: http://en.wikipedia.org/wiki/Courant%E2%80%93Friedrichs%E2%80%93Lewy_condition
-  [their seminal paper]: http://http://dx.doi.org/10.1007%2FBF01448839
-  [here]: http://www.stanford.edu/class/cme324/classics/courant-friedrichs-lewy.pdf
+References:
+-----------
+  [CFL condition](http://en.wikipedia.org/wiki/Courant%E2%80%93Friedrichs%E2%80%93Lewy_condition).
+
+  [their seminal paper](http://http://dx.doi.org/10.1007%2FBF01448839).
+
+  [here](http://www.stanford.edu/class/cme324/classics/courant-friedrichs-lewy.pdf).

@@ -54,7 +54,7 @@ sourcebranch: dev # used in linking commit history.
 
 source: .
 gems:
-  - jekyll-pandoc
+  - jekyll-pandoc # Require to install pandoc, pandoc-citeproc and even pandoc-crossref before hand.
   - 'jekyll-twitter-plugin'
 # Publications. Ref: http://tuxette.nathalievilla.org/?p=1426
 # http://eric-tramel.github.io/working-automated-publications/
@@ -73,10 +73,17 @@ scholar:
   bibliography_template: bibtemplate
 
   replace_strings: true
+  join_strings: true
+
+  use_raw_bibtex_entry: false
+  bibtex_filters:
+    - superscript
+    - latex
+    - markdown
 
   details_dir:    pubs
-  details_layout: bibtex.html
-  details_link:   Details
+  details_layout: noDetailsPage.html #bibtex.html # Use bibtex.html layout to generate details pages for bibtex entries. Use other non-existing names otherwise.
+  details_link: Details
 
   query: "@*"
 
@@ -89,7 +96,10 @@ pandoc:
    extensions:
      - smart
      - mathjax
-
+     - csl: assets/APS_Qi.csl # The citation style file. Optional and may not work properly.
+     - bibliography: assets/References.bib # BibTex source. Optional.
+     - email-obfuscation: javascript
+     
 #highlighter: pygments
 
 #markdown: redcarpet
