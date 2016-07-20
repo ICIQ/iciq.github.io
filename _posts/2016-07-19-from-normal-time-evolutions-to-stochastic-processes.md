@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "schrodinger-space-and-liouville-space-for-superoperators"
+title: From normal quantum time evolutions to Stochastic quantum processes
 tags:
     - notebook
---- 
+    - Julia
+---
 In the JuliaQuantum's [Base.jl](https://github.com/JuliaQuantum/QuBase.jl) and
 [QuDynamics.jl](https://github.com/JuliaQuantum/QuDynamics.jl) projects,
 intensive efforts have been focusing on the time evolution of quantum systems
@@ -21,22 +22,34 @@ There, propagators are not the minimal building blocks any more, but operator
 and superoperator language still valid to define the dynamics of the quantum
 system.
 
- 
- 
+
+
 For a simple example, a quantum measurement on an atomic ensemble through
 photons may be described by the following differential map
-$$\hat{\rho}(t+dt) = \hat{M}_0(dt)\hat{\rho}(t)\hat{M}^\dagger_0(dt) +
-\sum_{\mu>0} \hat{M}_\mu (dt)\hat{\rho}(t)\hat{M}^\dagger(dt) $$
+\begin{equation}\label{eq:drhot}
+\hat{\rho}(t+dt) = \hat{M}_0(dt)\hat{\rho}(t)\hat{M}^\dagger_0(dt) +
+\sum_{\mu>0} \hat{M}_\mu (dt)\hat{\rho}(t)\hat{M}^\dagger(dt)
+\end{equation}
 where the self-evolution operator in the time slot $dt$ is given by
 $\hat{M}_0(dt)=\hat{\mathbb{1}}-\frac{i}{\hbar}\hat{H}_{eff}dt$ with the
 effective Hamiltonian $\hat{H}_{eff}=\hat{H}-\frac{i\hbar}{2}\sum_\mu
 \hat{L}_\mu^\dagger \hat{L}_\mu$.
- 
 
-**In [6]:**
+Eq. $\eqref{eq:drhot}$
+
+Ref: {% cite Eberlein2009 Kress2005 --file References %}
+
+Generalize to quantum circuit model
+===================================
+
+Representation of superoperators
+================================
+Reference on CP-map and superoperator representations.
+
+**In [1]:**
 
 {% highlight julia %}
-rho = [0. 1.; 
+rho = [0. 1.;
        1. 0.]
 {% endhighlight %}
 
@@ -55,8 +68,6 @@ rho = [0. 1.;
 
 {% endhighlight %}
 
-**In [None]:**
-
-{% highlight julia %}
-
-{% endhighlight %}
+References
+----------
+{% bibliography --cited_in_order --file References %}
