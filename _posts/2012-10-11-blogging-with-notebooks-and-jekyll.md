@@ -1,14 +1,18 @@
 ---
 layout: post
-title: Blogging an Jupyter notebook with Jekyll
+title: Blogging with notebooks and Jekyll
 subtitle: easy-peasy
 categories: notebook
-tags: Jupyter
+tags:
+  - Jupyter
+  - knitr
+  - Jekyll
 ---
 First off, if you know [KnitR](https://github.com/yihui/knitr-jekyll), you can write code in R markdown directly and then compile in R/RStudio to generate the blog post easily.
-My blog repo has the knitr plugin installed and you can use `python`, `mathlab` and even `julia` to compile code lines.
+My blog repo has the knitr plugin installed and you can use `Python`, `Mathlab` and even `Julia` engines to compile code lines.
 More information can be found in [Yihui Xie's site](http://yihui.name/knitr/).
-In this post, I will only mention some method that I use to blog with Jupyter notebooks with `Julia`, `Python` and `R` based on the built in functionality of this [Jekyll repo](https://github.com/i2000s/i2000s.github.io) firstly introduced by [Carl Boettiger](http://www.carlboettiger.info/).
+
+Below, I will mention some methods that I use to blog with Jupyter notebooks with `Julia`, `Python` and `R` based on the built in functionality of this [Jekyll repo](https://github.com/i2000s/i2000s.github.io) firstly introduced by Yihui Xie and [Carl Boettiger](http://www.carlboettiger.info/).
 
 In short, you can write ideas in Jupyter (iPython) notebooks and then output in Jykell markdown blog posts in various ways while keep tracking the edit history using version control.
 
