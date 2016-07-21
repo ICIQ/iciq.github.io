@@ -1,3 +1,4 @@
+{% capture true_path %}{{ page.path }}{% endcapture %} <!-- | replace '_posts/', '' -->
 <aside prefix="og:http://ogp.me/ns/article#">
   <p> <i class="glyphicon glyphicon-calendar"></i>
     <time datetime="{{ page.date }}"
@@ -12,7 +13,7 @@
 {% include nextprevious.html %}
 
  <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); return false;"  class="btn btn-default"
-   href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/{{page.path}}"><i class="glyphicon glyphicon-time"></i> edit history</a>
+   href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/{{ true_path }}"><i class="glyphicon glyphicon-time"></i> edit history</a>
 
   <br><br>
 
@@ -30,12 +31,12 @@
        href="/tags.html#{{ tag | cgi_escape }}">#{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
     {% endfor %}</p>
 
-  <!-- <br/>
+   <br/>
 
   {% if site.pageviews %} <p style="font-style:italic"> <i class="glyphicon glyphicon-signal"></i> pageviews: {{ page.pageviews }}</p>{% endif %}
 
-  <br/> -->
-  <!-- <p><tiny> <i class="glyphicon glyphicon-barcode"></i> SHA Hash: <a href="https://github.com/{{site.author.github}}/{{ site.repo }}/commit/{{page.path | prepend:'_posts/' | git_sha }}/_posts/{{ page.path }}"> {{ page.path | prepend:'_posts/' | git_sha }}</a></tiny></p> -->
+   <br/>
+   <p><tiny> <i class="glyphicon glyphicon-barcode"></i> SHA Hash: <a href="https://github.com/{{site.author.github}}/{{ site.repo }}/commit/{{true_path | git_sha }}/{{ true_path }}"> {{ true_path | git_sha | truncate: 7, "" }}</a></tiny></p>
 </aside>
 
 <br /><br />
