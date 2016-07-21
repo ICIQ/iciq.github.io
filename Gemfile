@@ -4,7 +4,7 @@ source "https://rubygems.org/"
 
 gem "rake"#  , "~> 10.2.1"
 
-gem "jekyll", "~> 2.5.3"#, '~>2.5.3'          #
+gem "jekyll", "~> 3.1.0"#, '~>2.5.3'          #
 gem "jekyll-assets"   #, "~> 0.7.6"
 gem "jekyll-scholar"  #, "~> 5.8.1" #~>2.0.0
 gem "jekyll-pandoc"   #, "~> 0.0.1"
