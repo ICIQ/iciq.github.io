@@ -2,8 +2,9 @@
 layout: post
 title: From normal quantum time evolutions to Stochastic quantum processes
 tags:
-    - notebook
     - Julia
+categories:
+    - notebook
 ---
 In the JuliaQuantum's [Base.jl](https://github.com/JuliaQuantum/QuBase.jl) and
 [QuDynamics.jl](https://github.com/JuliaQuantum/QuDynamics.jl) projects,
@@ -44,7 +45,7 @@ Generalize to quantum circuit model
 
 Representation of superoperators
 ================================
-Reference on CP-map and superoperator representations.
+Reference on CP-map and superoperator representations{% cite Caves2014 --file References %}.
 
 **In [1]:**
 
@@ -70,4 +71,7 @@ rho = [0. 1.;
 
 References
 ----------
-{% bibliography --cited_in_order --file References %}
+{% bibliography --cited_in_order --file References --generate_details no %}
+
+Footnotes
+---------

@@ -13,7 +13,7 @@ share: true
 
 ### Up-coming:
 
- - Gordon seminar and conference. 
+ - Gordon seminar and conference (2 posters).
 
 ### Selected Past Talks and Academic Activities while doing my PhD study:
 

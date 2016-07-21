@@ -77,8 +77,8 @@ scholar:
 
   use_raw_bibtex_entry: false
   bibtex_filters:
-    - superscript
-    - latex
+    #- superscript
+    #- latex
     - markdown
 
   details_dir:    pubs
@@ -99,7 +99,7 @@ pandoc:
      - csl: assets/APS_Qi.csl # The citation style file. Optional and may not work properly.
      - bibliography: assets/References.bib # BibTex source. Optional.
      - email-obfuscation: javascript
-     
+
 #highlighter: pygments
 
 #markdown: redcarpet
