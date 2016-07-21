@@ -1,32 +1,32 @@
 <aside prefix="og:http://ogp.me/ns/article#">
   <p> <i class="glyphicon glyphicon-calendar"></i>
-    <time datetime="{{ page.date }}" 
+    <time datetime="{{ page.date }}"
     property="dc:created">{{ page.date | date_to_string }}</time></p>
   {%if page.modified %}
-  <p><small> modified: <time 
-            datetime="{{ page.modified }}" 
+  <p><small> modified: <time
+            datetime="{{ page.modified }}"
             property="dc:modified">{{ page.modified }}</time></small></p>
-  {% endif %} 
+  {% endif %}
 
  <br />
 {% include nextprevious.html %}
 
- <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); return false;"  class="btn btn-default" 
-   href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/_posts/{{page.path}}"><i class="glyphicon glyphicon-time"></i> edit history</a>
+ <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); return false;"  class="btn btn-default"
+   href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/{{page.path}}"><i class="glyphicon glyphicon-time"></i> edit history</a>
 
   <br><br>
 
-  <p><i class="glyphicon glyphicon-list"></i> Posted in 
-    {% for category in page.categories %} 
-      <a rel="dc:subject" class="category" 
+  <p><i class="glyphicon glyphicon-list"></i> Posted in
+    {% for category in page.categories %}
+      <a rel="dc:subject" class="category"
          href="/categories.html#{{ category | cgi_escape }}">{{ category }}</a>
     {% unless page.categories.last == category %}, {% endunless %}
     {% endfor %}</p>
 
-  <p> <i class="glyphicon glyphicon-tag"></i> tags: 
+  <p> <i class="glyphicon glyphicon-tag"></i> tags:
     {% for tag in page.tags %}
     <!-- http://schema.org/BlogPosting/keywords -->
-    <a rel="og:tag" class="tag" 
+    <a rel="og:tag" class="tag"
        href="/tags.html#{{ tag | cgi_escape }}">#{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
     {% endfor %}</p>
 

@@ -4,9 +4,9 @@ source "https://rubygems.org/"
 
 gem "rake"#  , "~> 10.2.1"
 
-gem "jekyll", '~>2.5.3'          #, ">= 3.0.0"
+gem "jekyll", "~> 2.5.3"#, '~>2.5.3'          #
 gem "jekyll-assets"   #, "~> 0.7.6"
-gem "jekyll-scholar"  #, "~> 2.0.0"
+gem "jekyll-scholar"  #, "~> 5.8.1" #~>2.0.0
 gem "jekyll-pandoc"   #, "~> 0.0.1"
 gem 'pandoc-ruby'     #, '~> 0.7.5'
 gem 'psych'           #, '~> 2.0.5'
@@ -20,7 +20,7 @@ gem "chronic"             # Natural language time parser
 gem 'jekyll-twitter-plugin' # For twitter API.
 
 gem "git"         # Git gem
-#gem "redcarpet"
+gem "redcarpet"
 #gem 'pygments.rb', '~> 0.6.0'
 
 ## Working locally only

@@ -1,6 +1,9 @@
 # Adapted from https://github.com/captaincanine/marran.com/blob/master/_plugins/redirects.rb
 # - License: MIT
 
+# Judge the Jekyll version to switch the Jekyll collection settings.
+JEKYLL_MIN_VERSION_3 = Gem::Version.new(Jekyll::VERSION) >= Gem::Version.new('3.0.0') unless defined? JEKYLL_MIN_VERSION_3
+
 module Jekyll
 
   # The redirect page creates a simple page that refreshes a user from a URL alias to an existing post.
@@ -18,7 +21,9 @@ module Jekyll
 
     # find all posts with a redirect property and create a new page for each entry
     def generate_redirects(site)
-      site.posts.select{|x| x.data.key? 'redirects' }.each do |p|
+      #site.posts.docs.select{|x| x.data.key? 'redirects' }.each do |p|
+      postselect = JEKYLL_MIN_VERSION_3 ? site.posts.docs.select{|x| x.data.key? 'redirects' } : site.posts.select{|x| x.data.key? 'redirects' }
+      postselect.each do |p|
         p.data['redirects'].each do |r|
           redirect = RedirectPage.new(site, site.source, r, p.id)
           redirect.render(site.layouts, site.site_payload)

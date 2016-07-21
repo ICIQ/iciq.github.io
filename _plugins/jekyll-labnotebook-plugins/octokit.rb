@@ -95,7 +95,3 @@ end
 #
 
 Liquid::Template.register_tag('octokit_commits', Jekyll::OctokitCommits)
-
-
-
-
