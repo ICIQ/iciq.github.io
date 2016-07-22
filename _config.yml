@@ -62,13 +62,13 @@ gems:
 gems:
   - "jekyll/scholar"
 scholar:
-  style: assets/APS_Qi.csl
+  style: assets/bibliography/APS_Qi.csl
   locale: en
 
   sort_by: year
   order: descending
 
-  source: assets
+  source: assets/bibliography
   bibliography: QiPublications
   bibliography_template: bibtemplate
 
@@ -96,8 +96,8 @@ pandoc:
    extensions:
      - smart
      - mathjax
-     - csl: assets/APS_Qi.csl # The citation style file. Optional and may not work properly.
-     - bibliography: assets/References.bib # BibTex source. Optional.
+     - csl: assets/bibliography/APS_Qi.csl # The citation style file. Optional and may not work properly.
+     - bibliography: assets/bibliography/References.bib # BibTex source. Optional.
      - email-obfuscation: javascript
 
 #highlighter: pygments
