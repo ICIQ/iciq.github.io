@@ -39,12 +39,20 @@ You can directly use the LaTeX syntax to write equations -- either numbered as d
 For inline equations, you can use `$`-`$` pairs or `\\(`-`\\)` pairs to quote the equation environment.
 One difference from normal LaTeX is that it requires to use `$\ref{label}$` or `$\eqref{label}$` to cite equation/label numbers in text.
 
-If you want to define macros and shortcuts for LaTeX inputs or want to reconfigure the MathJax plugin, you can add commands to the `javescript.js` file and modify the `header.html` in the `_includes` directory.
+If you want to define macros and shortcuts for LaTeX inputs or want to reconfigure the MathJax plugin, you can add commands or modify the configurations in the `javescript.js` file under the `_includes` directory.
 We have defined to use `$` sign to note the equation environments and choose to escape special characters, and hence if you want to literally use the dollar sign in text, you can add a `\` sign in front of the dollar sign. For instance, `\$1.5` will yield  \$1.5.
 
 In some cases, a single `\` in front of some LaTeX symbols may not generate the correct symbols. You can try to use `\\` to fix the problem. For instance, `$\\hat{L}_i=\\sigma_z$` will yield $\\hat{L}_i=\\sigma_z$.
-In fact, we recommend to always use `\\` in the equation environment for those predefined LaTeX symbols if possible.  
+The general rule is to try to escape some special symbols by adding anther `\` sign in the front.
 This is to avoid the conflict with HTML tags, like `<br>` and `<>`. When you use the less or greater signs, it is better to leave a space before and after the characters, like `$x < y$`. Even safer, you can use the HTML entities `&lt`, `&gt` and `&amp` for `<`, `>`  and `&` respectively. Finally, you can also use TeX macros `\lt` and `\gt` for the comparison signs for stable results.
+If you're writing your post in markdown, you can also try to put display math in <div> elements and inline math in <span> elements, which most markdown interpreters will leave alone.
+
+Known symbols need to escape in the equation environment:
+
+- The star character `*` should be escaped as `\*`.
+- The double-backslash `\\` in a multi-line display math environment may need to be escaped as `\\\\` for a good outlook.
+- Sometimes, numbers like `1` should be escaped as `\\1` to be displayed for some unclear reason.
+- `~` should be escaped as `&#126;`. A full list of HTML escape characters can be found [here](http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php).
 
 More details about the MathJax plugin for TeX can be found at [its official doc](http://docs.mathjax.org/en/latest/tex.html).
 

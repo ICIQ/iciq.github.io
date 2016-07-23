@@ -78,8 +78,8 @@ scholar:
   use_raw_bibtex_entry: false
   bibtex_filters:
     #- superscript
-    #- latex
-    - markdown
+    - latex
+    #- markdown
 
   details_dir:    pubs
   details_layout: noDetailsPage.html #bibtex.html # Use bibtex.html layout to generate details pages for bibtex entries. Use other non-existing names otherwise.
@@ -99,6 +99,7 @@ pandoc:
      - csl: assets/bibliography/APS_Qi.csl # The citation style file. Optional and may not work properly.
      - bibliography: assets/bibliography/References.bib # BibTex source. Optional.
      - email-obfuscation: javascript
+     - from: markdown+autolink_bare_uris
 
 #highlighter: pygments
 
