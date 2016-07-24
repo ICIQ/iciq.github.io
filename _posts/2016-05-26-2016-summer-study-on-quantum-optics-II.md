@@ -45,15 +45,20 @@ Thanks!
 Schedule and progress
 =====================
 
-- [ ] June 1st-5th:
+- [X] June 1st-5th:
     - [X] From Ivan's QO lectures: Coherence, density matrix, Bloch-sphere, Rabi oscillations.  Lecture notes #4-6, P.S. #2-4; Optical Bloch equations, Master equation, Damped two-level atom.  Lecture notes #7-8, P.S. #5-6.
     - [X] From Yuan-Yu's book: chapters 1-5 (Alkali atoms, wavefunction, Schrodinger space, density matrix, Liouville space, optical pumping of atoms).
-    - [ ] Get familiar with JuliaQuantum libraries: [QuBase.jl](https://github.com/JuliaQuantum/QuBase.jl), [QuDirac.jl](https://github.com/JuliaQuantum/QuDirac.jl) and [QuDynamics.jl](https://github.com/JuliaQuantum/QuDynamics.jl).
-* [ ] June 6th-12th:
+    - [X] Get familiar with JuliaQuantum libraries: [QuBase.jl](https://github.com/JuliaQuantum/QuBase.jl), [QuDirac.jl](https://github.com/JuliaQuantum/QuDirac.jl) and [QuDynamics.jl](https://github.com/JuliaQuantum/QuDynamics.jl).
+* [X] June 6th-12th:
     * [X] From Ivan's QO lectures: Quantization of the field, atoms+quantized field. Lecture notes #11-13, P.S. #7;
     * [X] From Ivan's AP lectures: notes 10-13.
-    * [ ] From Yuan-Yu's book: chapters 6-9.
-* [ ] Skip June 13th-19th for more research work to be done. Then from June 20th-26th:
-    * [ ] Wrap up on Yuan-Yu's book.
-    * [ ] A blog post on some essential points.
-    * [ ] Discuss with Nikolas as our visitor on symbolic calculus and quantum simulations in Julia. 
+    * [X] From Yuan-Yu's book: chapters 6-9.
+* [X] Skip June 13th-19th for more research work to be done. Then from June 20th-26th:
+    * [X] Wrap up on Yuan-Yu's book.
+    * [X] A blog post on some essential points. See [this one](http://i2000s.github.io/2016/07/23/put-everything-on-a-quantum-circuit-part-i.html) and more to come.
+    * [X] Discuss with Nikolas as our visitor on symbolic calculus and quantum simulations in Julia.
+
+A side note: I have to skip a month for preparing the workshop/conference and JuliaQuantum activities.
+Writing notes took much more time than I had expected as there were some Jekyll and plugin problems I had to solve on the first time.
+I will skip the topic on cooling processes for this summer study and will pick up a little bit on matrix product states before July 29th and will write some notes and discuss some important topics with JuliaQuantum members in the coming weeks.
+So, no further plan for the rest of summer study. Sorry about that. Please continue on if you are willing to learn more. 
