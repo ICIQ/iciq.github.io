@@ -13,7 +13,7 @@ share: true
 
 ### Up-coming:
 
- - Gordon seminar and conference (2 posters).
+ - Gordon seminar and conference from July 29th-Aug 5th (poster just passed the internal review by Sandia national labs).
 
 ### Selected Past Talks and Academic Activities while doing my PhD study:
 
