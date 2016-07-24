@@ -4,7 +4,7 @@ author :
   name : Xiaodong Qi
   givenName: Xiaodong
   familyName: Qi
-  ChineseName: 戚晓东
+  OtherName: 戚晓东
   twitter: i2000s
   github: i2000s
   email : i2000s@hotmail.com
@@ -107,6 +107,21 @@ pandoc:
 #redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 #highlighter: pygments
+
+## Have pages & posts use their default layouts, respectively
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 exclude:
   - Gemfile
