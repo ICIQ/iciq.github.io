@@ -39,48 +39,48 @@ Please leave your comments if you find it helpful or have other thoughts.
 
 Let us begin with a simple example: an atomic ensemble interacts with a quantum bath which could be a magnetic field or ideal single photon sources.
 The time evolution of the density operator may be described by the following differential map
-\begin{equation}\label{eq:drhot}
+$$\begin{equation}\label{eq:drhot}
 \hat{\rho}(t+dt) = \hat{M}_0(dt)\hat{\rho}(t)\hat{M}^\dagger_0(dt) +
 \sum_{\mu>0} \hat{M}_\mu (dt)\hat{\rho}(t)\hat{M}^\dagger(dt)
-\end{equation}
+\end{equation}$$
 where the self-evolution operator in the time slot $dt$ is given by
 $\hat{M}_0(dt)=\hat{\mathbb{1}}-\frac{i}{\hbar}\hat{H}_{eff}dt$ with the
 effective Hamiltonian $\hat{H}_{eff}=\hat{H}-\frac{i\hbar}{2}\sum_\mu
 \hat{L}_\mu^\dagger \hat{L}_\mu$.
 The system Hamiltonian $\hat{H}$ can be arbitrary yet Hermitian. It defines how the system processes without interacting with environment and its energy spectrum (levels).
 If we consider a spin-$1/2$ system in the z-basis, a simple free-processing Hamiltonian could be
-\begin{align}
+$$\begin{align}
 \hat{H} &= \left( \matrix{E_+ & 0 \\ 0 & E_-}\right),
-\end{align}
+\end{align}$$
 where $E_+$ and $E_-$ are the two energy levels. Obviously, it can be rewritten using the Pauli operators.
 
 The so-called jump operators $\hat{L}_\mu$ define how the system will evolve in each measurement basis $\mu$. A quantum state will be evolved into
-\begin{align}
+$$\begin{align}
 \ket{\Psi(t+dt)} &= \hat{L}_\mu(dt) \ket{\Psi(t)}
-\end{align}
+\end{align}$$
 if only considering the single jump operator $\hat{L}_\mu$ applied in a small period of time, $dt$.
 We call $\hat{L}_\mu$ a jump operator because it projects the quantum state towards some eigenstate of the operator randomly.
 For example, we could let $ \\hat{L}_i = \\sigma_z $ for a spin-$1/2$ system, which means $\hat{L}_i$ will tend to project the system onto one of its eigenstate for spin number $\pm \frac{1}{2}$ in the z-basis.
 To give a concrete sense of physics, this type of jump operators could corresponding to a magnetic field interaction--the one as we know in the [Stern-Gerlach experiment](https://en.wikipedia.org/wiki/Stern%E2%80%93Gerlach_experiment).
 
 We can formally define a set of Krause operators
-\begin{align}
+$$\begin{align}
 \hat{M}_\mu &= \hat{L}_\mu \sqrt{dt},\quad \mu=1,\cdots,m.
-\end{align}
+\end{align}$$
 Notice that each $\hat{M}_\mu$ is on the order of $\sqrt{dt}$ which makes the Krause operator a second-order effect on the evolution of the system.
 We define the Krause operators in this way is based on the fact that the measurement operators $\hat{E}_\mu$ and the probability of finding the output on the $\mu$ channel $p_\mu$ should be
-\begin{align}
+$$\begin{align}
 \hat{E}_\mu &= \hat{M}^\dagger_\mu\hat{M}_\mu \\
 p_\mu &= \tr\left( \hat{\rho}\hat{E}_\mu\right) \label{eq:jumppmu}
-\end{align}
+\end{align}$$
 which are incremental over $dt$ time slots. The post-measurement state can therefore be written as
-\begin{align}\label{eq:rhodt}
+$$\begin{align}\label{eq:rhodt}
 \hat{\rho}_\mu = \frac{\hat{M}_\mu\hat{\rho}\hat{M}^\dagger_\mu}{p_\mu}.
-\end{align}
+\end{align}$$
 For a pure state $\hat{\rho}=\ketbra{\Psi}{\Psi}$[^a],
-\begin{align} \label{eq:Psidt}
+$$\begin{align} \label{eq:Psidt}
 \ket{\Psi(t+dt)}_\mu = \frac{\hat{M}_\mu\ket{\Psi(t)}}{\sqrt{p_\mu}} = \frac{\hat{L}_\mu\ket{\Psi(t)}}{ \abs{\hat{L}_\mu\ket{\Psi(t)}} }.
-\end{align}
+\end{align}$$
 Eq.$\eqref{eq:Psidt}$ may look more familiar than Eq.$\eqref{eq:rhodt}$ as the former one is commonly used to describe Born's rules on quantum measurements.
 
 If we look at Eqs.$\eqref{eq:Psidt}$ and $\eqref{eq:rhodt}$ more closely, we will find that both has been used in defining the algorithms of ***quantum diffusion Monte Carlo*** (QDMC) or ***quantum wavefunction Monte Carlo*** (QWFMC) method{% cite Dum1992Monte Molmer1993Monte Molmer1996Monte Plenio1998Quantum --file References %}.
@@ -88,14 +88,14 @@ The $\hat{L}_\mu$ operator indeed defines the random quantum jumps in the algori
 Each jump will lead to a new quantum trajectory and *diffuse* the quantum states over time.
 
 Further more, if we rewrite Eq.$\eqref{eq:drhot}$ in the form of an ordinary differential equation, we have obtain
-\begin{align} \label{eq:lindblad}
+$$\begin{align} \label{eq:lindblad}
 \dd{\rho}{t} &= -\frac{i}{\hbar} \left[ \hat{H},\hat{\rho}\right]-\frac{1}{2}\sum_{\mu=1}^m \left( \hat{L}_\mu^\dagger\hat{L}_\mu\hat{\rho}+\hat{\rho}\hat{L}^\dagger_\mu\hat{L}_\mu-2\hat{L}_\mu\hat{\rho}\hat{L}^\dagger_\mu \right).
-\end{align}
+\end{align}$$
 This is the famous *Lindblad* form of the ***quantum master equation*** for an open system!
 In many textbooks, the Lindblad equation can also be formally simplified by defining a superoperator $\mathcal{D}[\cdot]$ via
-\begin{equation}
+$$\begin{equation}
 \mathcal{D}[\hat{\rho}] = -\frac{i}{\hbar} \left[ \hat{H},\hat{\rho}\right]-\frac{1}{2}\sum_{\mu=1}^m \left( \hat{L}_\mu^\dagger\hat{L}_\mu\hat{\rho}+\hat{\rho}\hat{L}^\dagger_\mu\hat{L}_\mu-2\hat{L}_\mu\hat{\rho}\hat{L}^\dagger_\mu \right)
-\end{equation}
+\end{equation}$$
 so that $\dd{\hat{\rho}}{t}=\mathcal{D}[\hat{\rho}]$ describes a dissipative process in a neat form.
 In the mean time, the jump operators $\hat{L}_\mu$ could also be called in many places the Lindblad operators if they yields the POVMs as defined earlier.
 
@@ -109,40 +109,40 @@ Let us take a closer look on its statistic nature in the language of stochastic 
 
 For simplicity, we will stick to a given state $\ket{\Psi(t)}$. We define a random variable--a stochastic interval $dN_\mu(t)$--Poisson distributed with values
 <div>
-\begin{equation}\label{eq:dNmudistr}
+$$\begin{equation}\label{eq:dNmudistr}
 dN_\mu(t) = \left\{
   \begin{array}
   \\1 , & \text{with probability } p_\mu \\
   0, & \text{with probability } 1-p_\mu.
   \end{array}\right.
-\end{equation}
+\end{equation}$$
 </div>
 It satisfies the properties based on the rule of stochastic calculus that
-\begin{align}
+$$\begin{align}
 \sum_{\mu=0}^m dN_\mu(t) &=1,\label{eq:sumdNmu}\\
 dN_\mu(t)dN_\nu (t) &= \delta_{\mu\nu} dN_\mu(t),\\
 \text{expectation value } \langle dN_\mu (t)\rangle &= p_\mu = \bra{\Psi(t)} \hat{L}^\dagger_\mu \hat{L}_\mu \ket{\Psi(t)}dt.
-\end{align}
+\end{align}$$
 Then based on the physical meaning, we can rewrite an unnormalized form of the evolved state by
-\begin{align}
+$$\begin{align}
 \ket{\tilde{\Psi}(t+dt)} &= dN_0(t)\hat{M}_0\ket{\Psi(t)} + \sum_{\mu=1}^m dN_\mu (t)\hat{L}_\mu \ket{\Psi(t)}.
-\end{align}
+\end{align}$$
 We use the property of the stochastic internal $dN_\mu(t)$ to replace
 $dN_0(t)=1-\sum_{\mu=1}^m dN_\mu$, and obtain
-\begin{align}
+$$\begin{align}
 \ket{\tilde{\Psi}(t+dt)} &= \hat{M}_0\ket{\Psi(t)} + \sum_{\mu=1}^m dN_\mu (t) (\hat{L}_\mu -\hat{M}_0) \ket{\Psi(t)}\\
 &= (\mathbb{1} - \frac{i}{\hbar}\hat{H}_{eff}dt)\ket{\Psi(t)} + \sum_{\mu=1}^m dN_\mu (\hat{L}_\mu - \mathbb{1} + \frac{i}{\hbar}\hat{H}_{eff}dt)\ket{\Psi(t)}.
-\end{align}
+\end{align}$$
 We ignore the terms that have an order higher than $dt$ according to the rules of stochastic calculus, that is to let $dN_\mu (t)dt \sim \sqrt{dt}dt=0$, and obtain the unnormalized state update equation
-\begin{align}
+$$\begin{align}
 d\ket{\tilde{\Psi}} &\equiv \ket{\tilde{\Psi}(t+dt)} - \ket{\Psi(t)}\\
 &= -\frac{i}{\hbar} \hat{H}_{eff}dt\ket{\Psi} + \sum_{\mu=1}^m dN_\mu(t)(\hat{L}_\mu-1)\ket{\Psi}.
-\end{align}
+\end{align}$$
 This is the unnormalized ***stochastic Schrodinger equation*** (SSE) for a jump update.
 Alternatively, in the normalized form, the SSE becomes
-\begin{align}\label{eq:SSE}
+$$\begin{align}\label{eq:SSE}
 d\ket{\Psi} &= \left( -\frac{i}{\hbar}\hat{H}_{eff} + \frac{1}{2}\sum_{\mu=1}^m \langle \hat{L}^\dagger_\mu \hat{L}_\mu \rangle \right) dt\ket{\Psi} + \sum_{\mu=1}^m dN_\mu(t) \left( \frac{\hat{L}_\mu}{\sqrt{\langle \hat{L}^\dagger_\mu \hat{L}_\mu\rangle }}-1\right)\ket{\Psi}.
-\end{align}
+\end{align}$$
 
 By using the definition that the density operator is the ensemble average, $\hat{\rho}(t+dt)=\bar{\ketbra{\Psi(t+dt)}{\Psi(t+dt)}}$ and only keep terms up to the order of $dt$, it is trivial to show that the Lindblad equation (Eq.$\eqref{eq:lindblad}$) is equivalent to the SSE.
 
@@ -156,10 +156,10 @@ Lindblad equations with a simple time-homogeneous evolution only works for Marko
 
 In similar cases, one can use different Lindblad operators to describe the quantum dynamics with the same form of Lindblad equations as shown in Eq.$\eqref{eq:lindblad}$.
 Commonly, the *relaxation* process of a quantum system in presence of a reservoir can be described by the Lindblad superoperator
-\begin{align}
+$$\begin{align}
 \mathcal{L}[\hat{\rho}] &= -\frac{1}{2}\sum_{\mu=1} \left( \hat{L}_\mu^\dagger\hat{L}_\mu\hat{\rho}+\hat{\rho}\hat{L}^\dagger_\mu\hat{L}_\mu-2\hat{L}_\mu\hat{\rho}\hat{L}^\dagger_\mu \right)\\
 &= \frac{1}{2}\sum_{\mu=1}\left[\hat{L}_\mu,\left[\hat{\rho}, \hat{L}_\mu \right] \right].
-\end{align}
+\end{align}$$
 
 ## All can be extended to more complicated cases with a small tweak
 We can briefly take a look on how this formalism can be extended to other cases and find the correct Lindblad operators--yes, find a proper Lindblad operator is the only modification without changing the form of equations for some cases.
@@ -173,12 +173,12 @@ For a balanced beam splitter, the two output branches yield the combined and sub
 </center>
 
 By treating the local oscillator as a coherent light with a large amplitude $\alpha$ (related to the averge phone flux with a phase factor), the input-output relationship of the beam splitter can be given by
-\begin{align}
+$$\begin{align}
 \hat{a}_\pm &= \frac{\alpha\hat{\mathbb{1}} \pm \hat{a}}{\sqrt{2}}.
-\end{align}
+\end{align}$$
 Assuming the other part of the quantum system is the same as before and the signal has $\mu=1,\cdots,m$ modes, the Lindblad operators can be written as $\hat{J}_{\mu,\pm} = \frac{A_\mu \hat{\mathbb{1}}\pm \hat{L}_\mu}{\sqrt{2}}$, where $A_\mu$ is a complex constant.
 After some algebra, the Krause operators of the homodyne case can also be defined as a linear transformation of the previous Krause operators:
-\begin{align}
+$$\begin{align}
 \left(\begin{array}{c} \hat{K}_0\\ \hat{K}_{\mu,+} \\ \hat{K}_{\mu,-}\end{array}\right)
 &= \left[ \begin{array}{ccc}
 1-\frac{1}{2}|A_\mu|^2dt & 0 & A_\mu \sqrt{\frac{dt}{2}}\\
@@ -186,15 +186,15 @@ A_\mu\sqrt{\frac{dt}{2}} & \frac{1}{\sqrt{2}} & \frac{1-\frac{1}{2}|A_\mu|^2dt}{
 A_\mu\sqrt{2} & -\frac{1}{\sqrt{2}} & \frac{1-\frac{1}{2}|A_\mu|^2dt}{\sqrt{2}}
 \end{array}\right]
 \left(\begin{array}{c} \hat{M}_0 \\ \hat{M}_\mu \\ 0 \end{array}\right).
-\end{align}
+\end{align}$$
 The form of Lindblad eqution and the stochastic Schrodinger equation will be the same as before{% cite Wiseman1993Interpretation --file References %}.
 
 You may ask could the sampling process have any statistical distribution types other than the uniform random distribution? Indeed, the stochastic interval $dN_\mu(t)$ can have different statistical distribution modes.
 In either homodyne or heterodyne measurements with a local oscillator at a frequency the same as or different from the signal merged at a beam splitter{% cite Wiseman1993Interpretation --file References %}, the local oscillator injects noise to the measurement result and affects the quantum dynamics in the process of continuous measurements.
 Roughly speaking, we may be able to formally rewrite the stochastic interval in the following form,
-\begin{equation}
+$$\begin{equation}
 dN_\mu (t) = <dN_\mu(t)> + \sigma_\mu \delta W_\mu(t),
-\end{equation}
+\end{equation}$$
 where the first part $<dN_\mu(t)>$ is the mean value of stochastic interval, $\sigma_\mu$ is the variance, and $\delta W_\mu(t)$ is the Weiner stochastic variable.
 In our case, $<dN_\mu(t)>$ is proportional to the intensity of the input modes, and the variance of the signals can be determined by the square root of the photon number in the interaction time interval for a coherent light.
 Given a relatively strong local oscillator, the noise generated obeys the central limit law and will be a Gaussian noise.

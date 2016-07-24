@@ -37,7 +37,7 @@ Hosting Jekyll website with Docker:
 `MathJax` plugin was used under the `Jekyll-pandoc` plugin for writing equations in markdown.
 You can directly use the LaTeX syntax to write equations -- either numbered as displayed equations or inline equations.
 For inline equations, you can use `$`-`$` pairs or `\\(`-`\\)` pairs to quote the equation environment.
-One difference from normal LaTeX is that it requires to use `$\ref{label}$` or `$\eqref{label}$` to cite equation/label numbers in text.
+One difference from normal LaTeX is that it requires to use `$\ref{label}$` or `$\eqref{label}$` to cite equation/label numbers in text, and you may always need to put `$$`-`$$` pairs for the display equations (this seems a bug on the travis-ci setting).
 
 If you want to define macros and shortcuts for LaTeX inputs or want to reconfigure the MathJax plugin, you can add commands or modify the configurations in the `javescript.js` file under the `_includes` directory.
 We have defined to use `$` sign to note the equation environments and choose to escape special characters, and hence if you want to literally use the dollar sign in text, you can add a `\` sign in front of the dollar sign. For instance, `\$1.5` will yield  \$1.5.
