@@ -1,14 +1,15 @@
 {% capture true_path %}{{ page.path }}{% endcapture %} <!-- | replace '_posts/', '' -->
+{% capture page_modified %}{{ true_path | git_mod }}{% endcapture %}
 <aside prefix="og:http://ogp.me/ns/article#">
-  <p> <i class="glyphicon glyphicon-calendar"></i>
+  <p> <i class="glyphicon glyphicon-calendar"></i><small>
     <time datetime="{{ page.date }}"
-    property="dc:created">{{ page.date | date_to_string }}</time></p>
-  {%if page.modified %}
-  <p><small> modified: <time
-            datetime="{{ page.modified }}"
-            property="dc:modified">{{ page.modified }}</time></small></p>
+    property="dc:created">{{ page.date | date_to_string }}</time></small></p>
+  {% if page_modified %}
+  <p><small> Updated: <time
+            datetime="{{ true_path | git_mod }}"
+            property="dc:modified">{{ true_path | git_mod | date_to_string }}</time></small></p>
   {% endif %}
-
+<!-- page.modified datetime="{{ page.modified }}" {{ page.modified }}-->
  <br />
 {% include nextprevious.html %}
 
