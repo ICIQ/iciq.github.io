@@ -235,7 +235,8 @@ I will also touch the base of some mathematical fundation in the next part.
 
 
 With the basic stochastic language introduced, we are ready to explore more complicated differential equations and start appreciating the nature of quantum measurements and how all of these can be connected to the quantum circuit model.
-I hope the following notes can help you understand those connections intuitively.
+Content is mainly based on my hand-written lecture notes taught by my supervisor [Ivan Deutsch](http://cquic.unm.edu/deutsch-group/) and my daily journals on reading, meeting and playing.
+I hope the following notes can help understand those content intuitively.
 
 
 
