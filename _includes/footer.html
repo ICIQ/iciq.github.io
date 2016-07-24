@@ -14,7 +14,11 @@
                <iframe class="github-btn" src="//ghbtns.com/github-btn.html?user={{site.orgname}}&repo={{site.repo}}&type=star&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150px" height="40px" style="vertical-align:middle; margin-top:9px;"></iframe>
               </div>
               <div class="row">
-                <br><span> &nbsp; </span> <span><a href="/CV-XiaodongQi.pdf"> CV of Xiaodong Qi</a></span>
+                <span> &nbsp; </span> <span><a href="/CV-XiaodongQi.pdf"
+                  onclick="var that=this;
+                  _gaq.push(['_trackEvent','Download','PDF',this.href]);
+                  setTimeout(function(){location.href=that.href;},200);
+                  return false;" class = "btn btn-default"><i class="fa fa-file-text-o fa-1x"></i> CV of Xiaodong Qi</a></span>
                 <br><img alt="Creative Commons License" style="border-width:0" align="right" src="https://licensebuttons.net/l/by/3.0/88x31.png" />
                 <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Content</span> is licensed under the
                 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a> or otherwise specified.

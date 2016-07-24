@@ -33,7 +33,10 @@ description: Xiaodong Qi's NoteBlogs and CV. Mostly relates to his research done
     </div>
     <div class="col-md-8 col-sm-9">
         <br>
-       <p style="text-align:left; align:center;font-size:1.2em"><a href="/CV-XiaodongQi.pdf">My CV in PDF.</a></p>
+       <p style="text-align:left; align:center;font-size:1.2em"><a href="/CV-XiaodongQi.pdf" onclick="var that=this;
+       _gaq.push(['_trackEvent','Download','PDF',this.href]);
+       setTimeout(function(){location.href=that.href;},200);
+       return false;" class = "btn btn-default"><i class="fa fa-file-text-o fa-1x"></i>My CV in PDF.</a></p>
         <br>
        <div class="row">
         <ul class="unstyled" style="font-size:1.2em;line-height:1.5em; ">
