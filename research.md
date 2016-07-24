@@ -18,7 +18,7 @@ My current on-going theory research projects include the following and are open 
  - Optimal QND measurement protocols on the nanofiber trapped atomic systems.
  - Optical pumping on the nanofiber platform for atomic state preparation.
  - Atomic cooling protocols on the trapped atomic ensemble on nanofiber and photonic structures.
- 
+
 <center>
 {% include image.html img="/assets/img/NanofiberScheme.png" width="680px" title="Spectroscopy on a nanofiber-trapped atom ensemble system" caption="Fig 1. Polarization spectroscopy on an optical nanofiber coupled atomic ensemble system. Figure is adapted from <a href='http://journals.aps.org/pra/abstract/10.1103/PhysRevA.93.023817' target='_blank'>X. Qi, B. Q. Baragiola, P. S. Jessen, I. H. Deutsch, Phys. Rev. A 93, 023817(2016)</a>." %}
 <br><br></center>
@@ -33,4 +33,3 @@ Stay tuned!
  - [Dr. Poul Jessen's Quantum Information and Control Group](http://w3.arizona.edu/~lascool/) (experimental)--mainly with group member [David Melchior](http://www.optics.arizona.edu/academics/students/profile/david-melchior)), from the University of Arizona (College of Optical Sciences and an established node of [CQuIC](http://cquic.org)).
  - [Dr. Yuan-Yu Jau](http://physics.unm.edu/pandaweb/people/person.php?personID=1276) and [Grant Biedermann](http://physics.unm.edu/pandaweb/people/person.php?personID=971)'s experimental group from the [Sandia National Labs on Quantum Systems](http://www.sandia.gov/mstc/quantum/index.html).
  - [Dr. Luis A. Orozco's Quantum Optics and Francium Spectroscopy group](http://www.physics.umd.edu/rgroups/amo/orozco/) (experimental)--mainly with group member [Pablo Solano](http://jqi.umd.edu/people/pablo-solano) and his fellows, from the [Joint Quantum Institute](http://jqi.umd.edu/), University of Maryland.
- - [Dr. Nan Li] from the [Academy of Mathematics and Systems Science](http://english.amss.cas.cn/), Chinese Academy of Sciences.

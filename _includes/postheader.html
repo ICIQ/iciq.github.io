@@ -5,11 +5,19 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
+    {% if site.author.OtherName %}
+    <meta name="author" content="{{site.author.name}} | {{site.author.OtherName}}">
+    {% else %}
     <meta name="author" content="{{site.author.name}}">
+    {% endif %}
     {% include analytics.html %}
     <!-- Le styles -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/quattrocento-sans" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/rosario" type="text/css"/>
+
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href = "/assets/css/bootstrap.min.css" rel = "stylesheet">
   </head>
 
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
