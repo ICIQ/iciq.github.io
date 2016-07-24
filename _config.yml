@@ -99,7 +99,7 @@ pandoc:
      - csl: assets/bibliography/APS_Qi.csl # The citation style file. Optional and may not work properly.
      - bibliography: assets/bibliography/References.bib # BibTex source. Optional.
      - email-obfuscation: javascript
-     - from: markdown+autolink_bare_uris
+     #- from: markdown+autolink_bare_uris
 
 #highlighter: pygments
 

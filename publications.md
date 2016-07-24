@@ -3,7 +3,7 @@ layout: default
 permalink: /pubs/
 title: Publications and Presentations
 modified: 2016-03-04 0:47
-tags: [publications]
+tags: publications
 image:
   feature: /assets/img/qi2016.jpg
 share: true
