@@ -130,12 +130,12 @@ exclude:
   - .travis.yml
   - _posts/*.Rmd
   - _posts/source
-  - assets/_bootstrap-3.3.6
   - Dockerfile
   - build.R
   - _cache
   - Makefile
   - deploy.sh
   - fig.yml
-  - _posts/source/
   - _posts/_private/
+  - _config/
+  - _TEMP/

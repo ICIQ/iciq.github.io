@@ -10,3 +10,4 @@ _twitter.yml
 _garb.yml
 Gemfile.lock
 *.stackdump
+.Rhistory
