@@ -20,7 +20,7 @@
 {% if entry.arxiv %}<li><a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a></li>
 {% elsif entry.archiveprefix == "arXiv" %}<li><a href="http://arxiv.org/abs/{{ entry.eprint }}" target="_blank">arXiv</a></li>{%endif%}
 {% if entry.repo %}<li><a href="{{ entry.repo }}" target="_blank">Source</a></li>{%endif%}
-<!--{% if entry.gsid %}<li><img src="/assets/img/icon_google_scholar.png" height="10px"> {%capture test_gsid%}<a href="{{ gsid_add }}{{ entry.gsid}}" target="_blank">{%endcapture%}{{test_gsid}}Cite</a></li>{% endif %}-->
+<!--{% if entry.gsid %}<li><img src="/assets/img/logos/icon-scholar-s.png" height="10px"> {%capture test_gsid%}<a href="{{ gsid_add }}{{ entry.gsid}}" target="_blank">{%endcapture%}{{test_gsid}}Cite</a></li>{% endif %}-->
 {% if entry.image %}<li><img src="{{ entry.image }}" height="15px"></li>{%endif%}
 </ul>
 {% if entry.abstract %}  <p id="{{key}}-abstract" class="collapse">{{entry.abstract}}</p>{% endif %}
