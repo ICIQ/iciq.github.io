@@ -5,7 +5,6 @@ cache:
   directories:
   - vendor
   - "$HOME/.composer/cache"
-- 2.3.0
 cache: bundler
 branches:
   only:
