@@ -220,7 +220,7 @@ sudo apt-get install gsl-bin libgsl0-dev</code></pre>
 <p>The <code>Gemfile</code> and the configuration files <code>_conf.yml</code> and <code>.travis.yml</code> should include sufficient information on installing correct dependences. Then for a routinely rendering, you only need to run the following command lines:</p>
 <pre><code>bundle install
 bundle exec jekyll serve</code></pre>
-<p>Notice that, I have locked the Jekyll version to <code>~&gt;2.5.3</code>. If you want to use Jekyll version 3.0.0 or above, you may need to tweak the code a little bit.</p>
+<p>Notice that, I have locked the Jekyll version to <code>~&gt;3.1.6</code>. If you want to use Jekyll version 2.5 or earlier, you may need to tweak the code a little bit.</p>
 <p>If you encounter the missing credentials error for the <code>twitter_feed</code> plugin, you may need to export environmental variables <code>TWIT_KEY</code>, <code>TWIT_SECRET</code>, <code>TWIT_TOK</code> and <code>TWIT_TOK_SECRET</code> before running the jekyll server. All the credentials of the Twitter plugin should be accessible from the TWitter account used for the site.</p>
 <p>By default, the local build should be accessible at <code>http://127.0.0.1:4000</code> on your internet browser.</p>
 <h1 id="how-to-adapt-this-source-code-to-generate-your-own-jekyll-website">How to adapt this source code to generate your own Jekyll website</h1>
