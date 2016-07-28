@@ -4,7 +4,7 @@
  <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2016-06-03T03:49:23+00:00</updated>
+ <updated>2016-07-28T22:38:27+00:00</updated>
  <id></id>
  <author>
    <name>ICIQ Community</name>
@@ -20,7 +20,7 @@
    <content type="html">&lt;center&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;figure&gt;
-&lt;img src=&quot;http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg&quot;   scale=&quot;95%&quot;    align=&quot;center&quot; alt=&quot;laser cooling and optical pumping&quot;   /&gt;
+&lt;img src=&quot;http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg&quot;  scale=&quot;95%&quot;    align=&quot;center&quot; alt=&quot;laser cooling and optical pumping&quot;   /&gt;
 &lt;/figure&gt;
 &lt;/div&gt;
 &lt;/center&gt;
@@ -37,6 +37,9 @@
 &lt;p&gt;The time is from June 1st to July 29th (flexible).&lt;/p&gt;
 &lt;p&gt;If you are interested to participate, comment below &lt;a href=&quot;http://i2000s.github.io/2016/05/26/2016-summer-study-on-quantum-optics-II.html&quot;&gt;Xiaodong Qi’s post&lt;/a&gt; or post your academic question on our &lt;a href=&quot;https://disqus.com/home/channel/quantumoptics&quot;&gt;Quantum Optics forum&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Have a fruitful summer of 2016!&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -53,6 +56,9 @@
 &lt;/ul&gt;
 &lt;p&gt;In the future, you should be able to add new forums to this site by simply adding the Disqus forum name to the configuration file (_config.yml) of the source code. To add a forum or participate discussions using the two functions, you may be asked by the plugin to create/login the Disqus account using your email/social media accounts.&lt;/p&gt;
 &lt;p&gt;Hopefully this helps! And, yeah, comment below if you have questions or suggestions.&lt;/p&gt;
+&lt;div class=&quot;references&quot;&gt;
+
+&lt;/div&gt;
 </content>
  </entry>
  

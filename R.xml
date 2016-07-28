@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
- <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
- <link href="/exploringquantumworld.xml" rel="self"/>
+ 
+ <title>ICIQ - Information, Computation, Intelligence and Quantum - R</title>
+ <link href="/R.xml" rel="self"/>
  <link href=""/>
  <updated>2016-07-28T22:38:27+00:00</updated>
  <id></id>
@@ -12,5 +12,5 @@
  </author>
 
  
-
+ 
 </feed>

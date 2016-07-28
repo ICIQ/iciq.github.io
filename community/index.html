@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
     <meta name="subtitle" content="">
+    
     <meta name="author" content="ICIQ Community">
+    
     <!-- HTML5 metadata -->
 
-  <meta name="keywords" content="ICIQ Community, quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
+  <meta name="keywords" content="ICIQ Community, , quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
 
 
 
@@ -57,13 +59,11 @@
 
 
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario">
-    <!-- <link href="/assets/css/light.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/css/grid.css"> -->
-    <!-- bootstrap style -->
-    <!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Le styles -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/quattrocento-sans" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/rosario" type="text/css"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href = "/assets/css/bootstrap.min.css" rel = "stylesheet">
     <!-- Self-defined style -->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -173,7 +173,7 @@
           
         ];
       //Define url list as a combination of user's url and the orgs' urls.
-      var orgurls = ['https://api.github.com/users/i2000s/repos?per_page=100&callback=?']; //['https://api.github.com/users/ICIQ/repos?per_page=100&callback=?'];
+      var orgurls = ['https://api.github.com/users/ICIQ/repos?per_page=100&callback=?'];
       for (var indx = 0; indx < orgnames.length; indx++){
         orgurls[indx + 1] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
       };
@@ -190,7 +190,7 @@
         for (var i = 0; i < arguments.length; i++) {
         // retrieve the entries from the argument parameter
           values = arguments[i][0].data;
-
+          //console.log(values);
          // Push the retrieved value to a global function variable, which we can.
          // this function is processed synchronously, when all ajax calls have been completed
          tempdata.push(values);
@@ -362,7 +362,7 @@
       <img src="http://iciq.github.io/assets/img/icon-github.png" alt="github"> Coding </a></h4>
        <div class="excerpt" height="300px">
            <div class="scroll">
-                <ul><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Update notebook page style.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/572bf350b5...195abdf25a">03:44 2016/06/03</a></li><li>i2000s pushed to master at i2000s/i2000s.github.io: <em>Updating to fddd03fb22756d342ddb219db98e200b35766357.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/d85c15648f...8148640026">03:40 2016/06/03</a></li><li>i2000s pushed to dev at i2000s/i2000s.github.io: <em>Merge from VBox changes. Update notebook page style.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/731b1e730d...fddd03fb22">03:35 2016/06/03</a></li><li>i2000s starred CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers: <em></em> <a href="https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers">02:50 2016/06/03</a></li><li>i2000s commented on issue qingmui/Queens-University-Canada#1: <em>Hi @qingmui, Are you still working on this handbook? How's everything going? Cheers, Xiaodong</em> <a href="https://github.com/qingmui/Queens-University-Canada/issues/1#issuecomment-223477794">02:45 2016/06/03</a></li></ul>
+                <ul><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Fix conflict.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/43b85a7a24...cb5d323908">10:33 2016/07/28</a></li><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>Fix conflict.</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/42fc005bb2...43b85a7a24">10:32 2016/07/28</a></li><li>i2000s pushed to dev at ICIQ/iciq.github.io: <em>added tag for knitcitations changed tag s/derivations/derivation/</em> <a href="https://github.com/ICIQ/iciq.github.io/compare/195abdf25a...42fc005bb2">10:26 2016/07/28</a></li><li>i2000s starred blab/blotter: <em></em> <a href="https://github.com/blab/blotter">02:42 2016/07/01</a></li><li>i2000s pushed to master at i2000s/i2000s.github.io: <em>Updating to 8b74e6f53ed267e6df7645866131b18ba3c8ef08.</em> <a href="https://github.com/i2000s/i2000s.github.io/compare/f226eb1568...ce1d8f7af6">06:00 2016/06/29</a></li></ul>
            </div>
        </div>
     </div>
@@ -371,12 +371,12 @@
         <h4><a property="account" href="https://twitter.com/ICIQ_project" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" height=45px alt="Twitter"> Discussing </a></h4>
         <div class="excerpt" height="300px">
             <div class="scroll">
-                <ul><li><p>Could computers do more on science? Focus: Computer Chooses Quantum Experiments <a href="https://t.co/iDz6HNv20o">https://t.co/iDz6HNv20o</a></p>
+                <ul><li><p>I added a video to a @YouTube playlist <a href="https://t.co/9XhA3aXwt4">https://t.co/9XhA3aXwt4</a> Apocalypto (2006) English Subtitles - Gerardo Taracena, Raoul Max</p>
+ <a href="http://twitter.com/i2000s/statuses/749659039223734274">05:40 2016/07/03</a> </li><li><p>@Travis_Sch @csferrie Ref? BTW, that is a recent photo of @csferrie ? There is a difference between this photo and the old image.</p>
+ <a href="http://twitter.com/i2000s/statuses/745799830367133697">02:05 2016/06/23</a> </li><li><p>Could computers do more on science? Focus: Computer Chooses Quantum Experiments <a href="https://t.co/iDz6HNv20o">https://t.co/iDz6HNv20o</a></p>
  <a href="http://twitter.com/i2000s/statuses/707011747861897216">01:15 2016/03/08</a> </li><li><p>RT @quantum_graeme: I hope quantum computing just tunnels through the barrier.  Not sure I can take more hype than this. h/t @nickbronn htt…</p>
  <a href="http://twitter.com/i2000s/statuses/705260913251581954">05:17 2016/03/03</a> </li><li><p>RT @acidflask: #julialang accepted for Google Summer of Code 2016! <a href="https://t.co/zEvElZRHDg">https://t.co/zEvElZRHDg</a></p>
- <a href="http://twitter.com/i2000s/statuses/704545387252584449">05:54 2016/03/01</a> </li><li><p>I liked a @YouTube video from @i2000s <a href="https://t.co/ozebqxEzIV">https://t.co/ozebqxEzIV</a> Huawei Honor 5X drop test in an office environment</p>
- <a href="http://twitter.com/i2000s/statuses/703769635682918401">02:32 2016/02/28</a> </li><li><p>A simple free fall test on the Huawei Honor 5X phone for a user review. <a href="https://t.co/ozebqxEzIV">https://t.co/ozebqxEzIV</a></p>
- <a href="http://twitter.com/i2000s/statuses/703462412943499264">06:11 2016/02/27</a> </li></ul>
+ <a href="http://twitter.com/i2000s/statuses/704545387252584449">05:54 2016/03/01</a> </li></ul>
             </div>
         </div>
      </div>
@@ -438,14 +438,52 @@
     ================================================== -->
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- JQuery, used on a few pages -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+    <!-- JQuery, used on a few pages as well as Bootstrap's Javascript plugins -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>-->
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="/assets/js/mixitup-mine.js"></script>
     <!-- Equations using MathJax -->
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });       </script>
-    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'],['\\(','\\)'] ] } }); </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'],['\\(','\\)'] ], processEscapes: true } }); </script>
+    <!-- Self-defined extensions and macros. -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+        cancel: ["Extension","cancel"],
+        bcancel: ["Extension","cancel"],
+        xcancel: ["Extension","cancel"],
+        cancelto: ["Extension","cancel"]
+      });
+    });
+    </script>
+    <!-- Customize this part for LaTeX macros.-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        Macros: {
+          br: "{\\bf r}",
+          bold: ["{\\bf #1}",1],
+          abs: ["{\\left \\lvert {#1} \\right \\rvert}", 1],
+          ket: ["{\\left| {#1} \\right\\rangle}",1],
+          bra: ["{\\left\\langle{#1}\\right|}",1],
+          ketbra: ["{\\left|{#1}\\vphantom{#2}\\right\\rangle\\!\\left\\langle{#2}\\vphantom{#1}\\right|}",2],
+          tensor: ["{\\boldsymbol{#1}}",1],
+          dd: ["{\\frac{\\mathrm{d} #1 }{\\mathrm{d} #2 }}",2], // normal derivetives.
+          pp: ["{\\frac{\\partial #1}{\\partial #2}}",2], // partial derivetives.
+          tr: ["{\\mathrm{Tr}}"], // trace.
+        }
+      //extensions: ["autoload-all.js"]
+      }
+    });
+    //MathJax.Hub.Register.StartupHook("TeX autoload-all Ready", function () {
+      //var MACROS = MathJax.InputJax.TeX.Definitions.macros;
+      //MACROS.color = "Color";
+      //delete MACROS.colorbox;
+      //delete MACROS.fcolorbox;
+    //});
+    </script>
     <!-- Twitter Bootstrap Javascript -->
     <script src="/assets/js/bootstrap-collapse.js"></script> <!-- for collapsing navbar-->
     <!-- Unused Twitter Bootstrap Javascript
@@ -464,10 +502,11 @@
     <script src="http://iciq.github.io/assets/js/application.js"></script>
     -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src = "https://code.jquery.com/jquery.js"></script>
-      
+    <!--<script src = "https://code.jquery.com/jquery.js"></script>-->
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src = "/assets/js/bootstrap.min.js"></script>
+
   </body>
 </html>
 

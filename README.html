@@ -12,11 +12,13 @@
       <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     <meta name="subtitle" content="">
+    
     <meta name="author" content="ICIQ Community">
+    
 
     <!-- HTML5 metadata -->
 
-  <meta name="keywords" content="ICIQ Community, quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
+  <meta name="keywords" content="ICIQ Community, , quantum optics, quantum information, quantum computing, quantum computation, 量子光学, 量子信息, 量子计算, 原子物理, atomic physics, blog, notebook, labnotebook, nanophotonics, 纳米光学" />
 
 
 
@@ -31,7 +33,7 @@
 <meta property="dc:date" content="" />
 <meta property="dc:format" content="text/html" />
 <meta property="dc:language" content="en" />
-<meta property="dc:identifier" content="/README.html" />
+<meta property="dc:identifier" content="/README" />
 <meta property="dc:rights" content="CC-BY" />
 <meta property="dc:source" content="ICIQ - Information, Computation, Intelligence and Quantum" />
 <meta property="dc:subject" content="Physics" />
@@ -44,7 +46,7 @@
 <meta property="http://ogp.me/ns/profile#last_name" content="Community"/>
 <meta property="http://ogp.me/ns/article#published_time" content="" />
 <meta property="og:site_name" content="ICIQ - Information, Computation, Intelligence and Quantum" /> <!-- Same as dc:source? -->
-<meta property="og:url" content="http://iciq.github.io/README.html" />
+<meta property="og:url" content="http://iciq.github.io/README" />
 <meta property="og:type" content="website" />
 <!-- Google Scholar Metadata -->
 <meta name="citation_author" content="ICIQ Community"/>
@@ -62,13 +64,13 @@
 <meta name="baidu-site-verification" content="yIVnlNh83X" />
 
     <!-- Le styles -->
-   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
-   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario">
-    <!-- <link href="/assets/css/light.css" rel="stylesheet" type="text/css" id="stl" title="light">
-    <link href="/assets/css/syntax.css" rel="stylesheet" type="text/css" id="stl" title="light"> -->
+   <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
+   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario"> -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/quattrocento-sans" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/rosario" type="text/css"/>
+
     <!-- bootstrap style -->
-    <!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href = "/assets/css/bootstrap.min.css" rel = "stylesheet">
     <!-- Self-defined style -->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -198,24 +200,48 @@ var _hmt = _hmt || [];
 </ul>
 <h1 id="instruction-on-hosting-the-site-locally">Instruction on hosting the site locally</h1>
 <p>I use Ubuntu 16.04 LTS OS to generate the static website from source code. Instructions on other operating systems should be similar.</p>
-<p>If you run Jekyll sites for the first time, you may need to install Ruby v2.2.* (tested on v2.2.4 and v2.3.0) and the <code>gem</code> development envirenment. I was basically following <a href="http://tecadmin.net/install-ruby-on-rails-on-ubuntu/">this instruction</a> on my Ubuntu, except for the step of sourcing RVM which I used the following command line instead</p>
+<p>If you run Jekyll sites for the first time, you may need to install Ruby v2.3.* (tested on v2.3.0 and v2.3.1) and the <code>gem</code> development envirenment. I was basically following <a href="http://tecadmin.net/install-ruby-on-rails-on-ubuntu/">this instruction</a> on my Ubuntu, except for the step of sourcing RVM which I used the following command line instead</p>
 <pre><code>source ~/.rvm/scripts/rvm</code></pre>
-<p>If the source is setup correctly, <code>type rvm | head -n 1</code> should give <code>rvm is a function</code> as the output according to <a href="https://rvm.io/rvm/install">this</a>. For other systems, <a href="https://www.ruby-lang.org/en/documentation/installation/">here</a> is the official guide for Ruby installation.</p>
+<p>But you may find the source command works for you. An improvement on the source command line following the instruction in the link is to use</p>
+<pre><code>echo &quot;source /etc/profile.d/rvm.sh&quot; &gt;&gt; ~/.bash_profile</code></pre>
+<p>which will add the rvm path to the bash profile perminantly. If the source is setup correctly, <code>type rvm | head -n 1</code> should give <code>rvm is a function</code> as the output according to <a href="https://rvm.io/rvm/install">this</a>. If you encounter any problem before the sourcing step, you should make sure whether the security key has been updated from the official <a href="https://rvm.io/rvm/install">Ruby site</a>. Or, if you find the problem is due to the certificate, you may want to check out <a href="http://stackoverflow.com/questions/3160909/how-do-i-deal-with-certificates-using-curl-while-trying-to-access-an-https-url/30154802#30154802">this solution</a>. Otherwise, you can also install rvm from a third-party repo following <a href="https://github.com/rvm/ubuntu_rvm">this instruction</a> on Ubuntu OS and follow the outputed command line instruction on sourcing the profile.</p>
+<p>On Ubuntu 16.04, you can follow <a href="https://gorails.com/setup/ubuntu/16.04">this instruction</a> for updated information. I would recommend you to use rvm on Rails to configure a compatible Ruby version, which is employed on travis.CI. In the process of installing Ruby through rvm, if you encounter the <strong><em>permission denied</em></strong> error, you can try</p>
+<pre><code>rvmsudo rvm install 2.3.1</code></pre>
+<p>as an example. Similarly, if <code>gem install rails</code> or other gem install command lines fail, you can also try</p>
+<pre><code>rvmsudo gem install rails</code></pre>
+<p>or similar to help solve some gem/Ruby package installation errors by promoting permissions in rvm.</p>
+<p>For other systems, <a href="https://www.ruby-lang.org/en/documentation/installation/">here</a> is the official guide for Ruby installation.</p>
 <p>Besides, the library of <code>gsl</code> and the <code>pandoc</code> package are recommended to install for better support to the <code>clarifier-reborn</code> and other plugins/scripts used in this site. On Ubuntu, I use the following lines</p>
 <pre><code>sudo add-apt-repository -y ppa:marutter/c2d4u
 sudo apt-get update
 sudo apt-get install pandoc
 sudo apt-get install gsl-bin libgsl0-dev</code></pre>
-<p>On Windows OS, <code>gsl</code> should be preinstalled in order to gem install rb-gsl. Otherwise, the <code>.travis.yml</code> configuration file should have some basic settings to follow.</p>
-<p>The <code>Gemfile</code> and the configuration file <code>_conf.yml</code> should include sufficient information on installing correct dependences. Then for a routinely rendering, you only need to run the following command lines:</p>
+<p>On Windows OS, you may be able to follow <a href="https://davidburela.wordpress.com/2015/11/28/easily-install-jekyll-on-windows-with-3-command-prompt-entries-and-chocolatey/">this instruction</a> to install Jekyll. If you find some error related to Ruby Development Kit when you run <code>bundle exec jekyll serve</code> or <code>gem install ***</code>, you may find <a href="http://flatshaded.com/2013/05/installing-jekyll-on-windows/">this experience</a> helpful. <code>gsl</code> should be preinstalled in order to gem install <code>rb-gsl</code>, where the step in the <code>.travis.yml</code> configuration file about installing <code>gsl-bin</code> step does not apply to Windows systems.</p>
+<p>The <code>Gemfile</code> and the configuration files <code>_conf.yml</code> and <code>.travis.yml</code> should include sufficient information on installing correct dependences. Then for a routinely rendering, you only need to run the following command lines:</p>
 <pre><code>bundle install
 bundle exec jekyll serve</code></pre>
 <p>Notice that, I have locked the Jekyll version to <code>~&gt;2.5.3</code>. If you want to use Jekyll version 3.0.0 or above, you may need to tweak the code a little bit.</p>
 <p>If you encounter the missing credentials error for the <code>twitter_feed</code> plugin, you may need to export environmental variables <code>TWIT_KEY</code>, <code>TWIT_SECRET</code>, <code>TWIT_TOK</code> and <code>TWIT_TOK_SECRET</code> before running the jekyll server. All the credentials of the Twitter plugin should be accessible from the TWitter account used for the site.</p>
 <p>By default, the local build should be accessible at <code>http://127.0.0.1:4000</code> on your internet browser.</p>
+<h1 id="how-to-adapt-this-source-code-to-generate-your-own-jekyll-website">How to adapt this source code to generate your own Jekyll website</h1>
+<p>Since Jekyll uses a very efficient way to control common information in fewer places, you can easily modify the source code of this website to generate your own website on GitHub and deploy to elsewhere. In fact, when the site was initially designed and modified especially to my end, it has always been a common goal to make it easy for the community to migrate this source code to other web hosts and adapt to various purposes. I encourage you to post an issue or make a pull request on this repo or the original <a href="http://carlboettiger.info">labnotebook repo</a> if you find a way to improve the general design. Only in this way, the network of people who have adapted this design to their sites can benefit most from the continuous improvement by the community who are following this body of code for open science and beyond. Below are the minimum changes you need to make to serve your own purpose of using the source code.</p>
+<ol type="1">
+<li><p>Fork this repo under your GitHub account.</p></li>
+<li><p>Change information defined in the <code>_config.yml</code> file for your case. There you will find definitions for your site, Github account and repo information, as well as your personal contact information. I will explain more advanced setting information below.</p></li>
+<li><p>Add encrypted information in the <code>.travis.yml</code> file. There you will find the <code>env/global</code> section where global variables are defined to automatically generate twitter timeline, github comment history and <a href="http://awestruct.org/auto-deploy-to-github-pages/">deploy the site as gh-pages on the Travis-CI server</a>. You should remove all the original code starting with <code>secure</code> and replace with your own encrypted codes line by line in the <code>.travis.yml</code> file or on the Travis-CI setting page. The recommended minimum global variables to be encrypted are: <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/">Github Token</a> (variable name <code>GH_TOKEN</code>), git commit author name (<code>GIT_NAME</code>), git commit author email (<code>GIT_EMAIL</code>); if you want to generate a Twitter message line on your site using the <code>twitter_feed.rb</code> plugin, you will also need to encrypt Twitter key (<code>TWIT_KEY</code>), secret (<code>TWIT_SECRET</code>), token (<code>TWIT_TOK</code>), token secret (<code>TWIT_TOK_SECRET</code>). Before you commit this step, make sure you have <a href="https://travis-ci.org/getting_started">ativated the Travis-CI module for your Github repo</a>. You can then generate the encrypted variables by installing travis while on your local repo directory with command <code>gem install travis</code> and using the following command line format <code>travis encrypt GIT_NAME=&quot;Xiaodong Qi&quot;</code>. You should replace the variable name and value with the real cases as bash commands one after one. Notice that when the variable value has a space inside, you need to use a pair of quotation marks as the example I gave–otherwise no need to use quotation marks in most cases; if you have special characters that bash command doesn’t like, you need to <a href="http://wiki.bash-hackers.org/syntax/quoting">escape those characters</a>. The last command line should generate a long string of random characters which you should be able to add to the <code>env/global</code> section of the <code>.travis.yml</code> file in the format of <code>- secure Your_Encrypt_Random_bits</code>. You can certainly add more encrypt variables or define some non-sensitive variables as explicit/non-encrypted variables in a similar way, but the Github token has to be encrypted to pass the security check of Github.</p></li>
+<li><p>If you have different amount of social accounts or plugin items defined in the <code>_config.yml</code> file, you need to double modify the scripts appeared in the header and footer template under the <code>_include</code> directory. Notice that, by using different set of social account info in the configure file, the default social media icons will link to the front page of those empty social network websites. To avoid these unwanted icons, you may want to delete/comment out those icon blocks in the footer templates and the index.html pages. Similarly, if you want to add new social media icons, you can modify the configure file and corresponding footers with a compatible icon image. On the top of this README file, there is an icon showing the compilation status of Travis-CI, you might want to modify the icon address to your case–pay attention to the username/organization name which is capital sensitive to Travis-CI.</p></li>
+<li><p>Check the <code>metadata.html</code> template defined under the <code>_include</code> directory to make sure necessary information are shown correctly for you. This metadata is just for different search engines and robots to recognize your website in particular formats. I have used fields like <code>OtherName</code> to identify the author’s local language name, as well as both Google analytics and Baidu analytics IDs for page visitor statistics. You can delete this field in the <code>config.yml</code> and the <code>metadata.html</code> files. The <code>analytics.html</code> template in the <code>_include</code> directory has the website visiting analytics scripts for Google and Baidu which you may need to delete one or add a new one according to your preference. The metadata file also defines the language information and keywords where you should most likely modify for your own version. Other information if you don’t understand, leaving them alone should be fine in most cases.</p></li>
+</ol>
+<p>The publication and citation databases are defined in the <code>asset</code> directory as bibtex files with suffix <code>.bib</code>, which you may want to replace with your own.<br />The rest is to delete or keep posts and pages to fit into your needs. I suggest to put this source code in a branch other than <code>master</code> or <code>gh-pages</code> in your Github repository, which you need to define in the <code>_config.yml</code> file as the “sourcebranch”. The Travis-CI server will commit the generate website onto the <code>master</code> or <code>gh-pages</code> github branch depending on your case. Once you have all the necessary configurations done, Travis-CI will be happily deploying your site on Github. If you want the site to be deployed on a host other than Github, you may want to modify and run the <code>publish.sh</code> bash script to synchronize your locally generated <code>_site</code> folder or the master/gh-pages branch updated by Travis-CI to your target site host.</p>
 <h1 id="copyrights-and-licenses">Copyrights and Licenses</h1>
 <p><a href="http://opensource.org/licenses/MIT">MIT</a> license for the plugins (in the <code>_plugins</code> directory of this repo) shown initially written by Carl Boettiger or Xiaodong Qi. Creative Commons Attributions 3.0 Unported <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">CC-BY</a> license for the content originally created by David Ketcheson. Creative Commons Attributions 4.0 <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> license for content other than plugins originally written by Xiaodong Qi and all the other unspecified cases. If a license is clarified at a much specified scope, that specified license should apply to the scope it covers. You can find the full editing history of each file. Credits should be given appropriately to the origination and the initial author at less and all following contributors if situation permits.</p>
+<p>For instance, you can cite or attribute posts/works originally from this site/repository as:</p>
+<p>Xiaodong Qi (“Page publication date”), “Page Title”, Lab Notebook, <a href="http://i2000s.github.io">http://i2000s.github.io</a></p>
+<p>with appropriate page title and publication date as indicated. <a href="http://greycite.knowledgeblog.org/">Greycite</a> is an excellent online tool that can generate the citation information for any particular page given it’s URL.</p>
 <p>This website is also built with HTML KickStart (Joshua Gatcke http://www.99lime.com | HTML KickStart) which is <a href="https://github.com/joshuagatcke/HTML-KickStart#html-kickstart-is-free-and-open-source">released under MIT Open Source license</a>.</p>
+<div class="references">
+
+</div>
 
       </div>
 
@@ -264,7 +290,7 @@ bundle exec jekyll serve</code></pre>
       &amp;rft.date=
       &amp;rft.language='en-US, zh-Hans'
       &amp;rft.rights='CC-BY'
-      &amp;rft_id=http://iciq.github.io/README.html">
+      &amp;rft_id=http://iciq.github.io/README">
   </span>
 
     </footer>
@@ -274,14 +300,52 @@ bundle exec jekyll serve</code></pre>
     ================================================== -->
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- JQuery, used on a few pages -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+    <!-- JQuery, used on a few pages as well as Bootstrap's Javascript plugins -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>-->
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <script src="/assets/js/mixitup-mine.js"></script>
     <!-- Equations using MathJax -->
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });       </script>
-    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'],['\\(','\\)'] ] } }); </script>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'],['\\(','\\)'] ], processEscapes: true } }); </script>
+    <!-- Self-defined extensions and macros. -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+      MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+        cancel: ["Extension","cancel"],
+        bcancel: ["Extension","cancel"],
+        xcancel: ["Extension","cancel"],
+        cancelto: ["Extension","cancel"]
+      });
+    });
+    </script>
+    <!-- Customize this part for LaTeX macros.-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        Macros: {
+          br: "{\\bf r}",
+          bold: ["{\\bf #1}",1],
+          abs: ["{\\left \\lvert {#1} \\right \\rvert}", 1],
+          ket: ["{\\left| {#1} \\right\\rangle}",1],
+          bra: ["{\\left\\langle{#1}\\right|}",1],
+          ketbra: ["{\\left|{#1}\\vphantom{#2}\\right\\rangle\\!\\left\\langle{#2}\\vphantom{#1}\\right|}",2],
+          tensor: ["{\\boldsymbol{#1}}",1],
+          dd: ["{\\frac{\\mathrm{d} #1 }{\\mathrm{d} #2 }}",2], // normal derivetives.
+          pp: ["{\\frac{\\partial #1}{\\partial #2}}",2], // partial derivetives.
+          tr: ["{\\mathrm{Tr}}"], // trace.
+        }
+      //extensions: ["autoload-all.js"]
+      }
+    });
+    //MathJax.Hub.Register.StartupHook("TeX autoload-all Ready", function () {
+      //var MACROS = MathJax.InputJax.TeX.Definitions.macros;
+      //MACROS.color = "Color";
+      //delete MACROS.colorbox;
+      //delete MACROS.fcolorbox;
+    //});
+    </script>
     <!-- Twitter Bootstrap Javascript -->
     <script src="/assets/js/bootstrap-collapse.js"></script> <!-- for collapsing navbar-->
     <!-- Unused Twitter Bootstrap Javascript
@@ -300,10 +364,11 @@ bundle exec jekyll serve</code></pre>
     <script src="http://iciq.github.io/assets/js/application.js"></script>
     -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src = "https://code.jquery.com/jquery.js"></script>
-      
+    <!--<script src = "https://code.jquery.com/jquery.js"></script>-->
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src = "/assets/js/bootstrap.min.js"></script>
+
   </body>
 </html>
 
