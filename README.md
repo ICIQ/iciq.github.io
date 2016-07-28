@@ -41,10 +41,10 @@ Additional Site Features & Credits
 
 Instruction on hosting the site locally
 =======================================
-I use Ubuntu 12.04 LTS OS to generate the static website from source code.
+I use Ubuntu 16.04 LTS OS to generate the static website from source code.
 Instructions on other operating systems should be similar.
 
-If you run Jekyll sites for the first time, you may need to install Ruby v2.2.* (tested on v2.2.4 and v2.3.0) and the `gem` development envirenment.
+If you run Jekyll sites for the first time, you may need to install Ruby v2.3.* (tested on v2.3.0 and v2.3.1) and the `gem` development envirenment.
 I was basically following [this instruction](http://tecadmin.net/install-ruby-on-rails-on-ubuntu/) on my Ubuntu,
 except for the step of sourcing RVM which I used the following command line instead  
 ```
@@ -94,8 +94,8 @@ Then for a routinely rendering, you only need to run the following command lines
 bundle install
 bundle exec jekyll serve
 ```
-Notice that, I have locked the Jekyll version to `~>2.5.3`.
-If you want to use Jekyll version 3.0.0 or above, you may need to tweak the code a little bit.
+Notice that, I have locked the Jekyll version to `~>3.1.6`.
+If you want to use Jekyll version 2.5 or earlier, you may need to tweak the code a little bit.
 
 If you encounter the missing credentials error for the `twitter_feed` plugin, you may need to export environmental variables `TWIT_KEY`, `TWIT_SECRET`, `TWIT_TOK` and `TWIT_TOK_SECRET` before running the jekyll server. All the credentials of the Twitter plugin should be accessible from the TWitter account used for the site.
 
@@ -135,7 +135,7 @@ On the top of this README file, there is an icon showing the compilation status 
 
 5. Check the `metadata.html` template defined under the `_include` directory to make sure necessary information are shown correctly for you.
 This metadata is just for different search engines and robots to recognize your website in particular formats.
-I have used fields like `ChineseName` to identify the author's local language name, as well as both Google analytics and Baidu analytics IDs for page visitor statistics. You can delete this field in the `config.yml` and the `metadata.html` files.
+I have used fields like `OtherName` to identify the author's local language name, as well as both Google analytics and Baidu analytics IDs for page visitor statistics. You can delete this field in the `config.yml` and the `metadata.html` files.
 The `analytics.html` template in the `_include` directory has the website visiting analytics scripts for Google and Baidu which you may need to delete one or add a new one according to your preference.
 The metadata file also defines the language information and keywords where you should most likely modify for your own version.
 Other information if you don't understand, leaving them alone should be fine in most cases.
