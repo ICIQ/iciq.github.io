@@ -13,17 +13,19 @@ description: the ICIQ community and friends.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
     <meta name="subtitle" content="{{ page.subtitle }}">
-    <meta name="author" content="{{ site.author.name }}">
+    {% if site.author.OtherName %}
+    <meta name="author" content="{{site.author.name}} | {{site.author.OtherName}}">
+    {% else %}
+    <meta name="author" content="{{site.author.name}}">
+    {% endif %}
     {% include metadata.html %}
 
     <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:bold,bolditalic,italic|Quattrocento+Sans">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosario:bold,bolditalic,italic|Rosario">
-    <!-- <link href="/assets/css/light.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/css/grid.css"> -->
-    <!-- bootstrap style -->
-    <!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Le styles -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/quattrocento-sans" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/rosario" type="text/css"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href = "/assets/css/bootstrap.min.css" rel = "stylesheet">
     <!-- Self-defined style -->
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -123,7 +125,7 @@ description: the ICIQ community and friends.
           {% endif %}
         {% endfor %}];
       //Define url list as a combination of user's url and the orgs' urls.
-      var orgurls = ['https://api.github.com/users/i2000s/repos?per_page=100&callback=?']; //['https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?'];
+      var orgurls = ['https://api.github.com/users/{{site.author.github}}/repos?per_page=100&callback=?'];
       for (var indx = 0; indx < orgnames.length; indx++){
         orgurls[indx + 1] = "https://api.github.com/orgs/"+orgnames[indx]+"/repos?per_page=100&callback=?";
       };
@@ -140,7 +142,7 @@ description: the ICIQ community and friends.
         for (var i = 0; i < arguments.length; i++) {
         // retrieve the entries from the argument parameter
           values = arguments[i][0].data;
-
+          //console.log(values);
          // Push the retrieved value to a global function variable, which we can.
          // this function is processed synchronously, when all ajax calls have been completed
          tempdata.push(values);

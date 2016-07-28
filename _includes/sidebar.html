@@ -1,46 +1,48 @@
+{% capture true_path %}{{ page.path }}{% endcapture %} <!-- | replace '_posts/', '' -->
+{% capture page_modified %}{{ true_path | git_mod }}{% endcapture %}
 <aside prefix="og:http://ogp.me/ns/article#">
-  <p> <i class="glyphicon glyphicon-calendar"></i>
-    <time datetime="{{ page.date }}" 
-    property="dc:created">{{ page.date | date_to_string }}</time></p>
-  {%if page.modified %}
-  <p><small> modified: <time 
-            datetime="{{ page.modified }}" 
-            property="dc:modified">{{ page.modified }}</time></small></p>
-  {% endif %} 
-
+  <p> <i class="glyphicon glyphicon-calendar"></i><small>
+    <time datetime="{{ page.date }}"
+    property="dc:created">{{ page.date | date_to_string }}</time></small></p>
+  {% if page_modified %}
+  <p><small> Updated: <time
+            datetime="{{ true_path | git_mod }}"
+            property="dc:modified">{{ true_path | git_mod | date_to_string }}</time></small></p>
+  {% endif %}
+<!-- page.modified datetime="{{ page.modified }}" {{ page.modified }}-->
  <br />
 {% include nextprevious.html %}
 
- <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); return false;"  class="btn btn-default" 
-   href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/_posts/{{page.path}}"><i class="glyphicon glyphicon-time"></i> edit history</a>
+ <a  onclick="recordOutboundLink(this, 'Outbound Links', 'history'); return false;"  class="btn btn-default"
+   href="https://github.com/{{site.author.github}}/{{ site.repo }}/commits/{{ site.sourcebranch }}/{{ true_path }}"><i class="glyphicon glyphicon-time"></i> edit history</a>
 
   <br><br>
 
-  <p><i class="glyphicon glyphicon-list"></i> Posted in 
-    {% for category in page.categories %} 
-      <a rel="dc:subject" class="category" 
+  <p><i class="glyphicon glyphicon-list"></i> Posted in
+    {% for category in page.categories %}
+      <a rel="dc:subject" class="category"
          href="/categories.html#{{ category | cgi_escape }}">{{ category }}</a>
     {% unless page.categories.last == category %}, {% endunless %}
     {% endfor %}</p>
 
-  <p> <i class="glyphicon glyphicon-tag"></i> tags: 
+  <p> <i class="glyphicon glyphicon-tag"></i> tags:
     {% for tag in page.tags %}
     <!-- http://schema.org/BlogPosting/keywords -->
-    <a rel="og:tag" class="tag" 
+    <a rel="og:tag" class="tag"
        href="/tags.html#{{ tag | cgi_escape }}">#{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
     {% endfor %}</p>
 
-  <!-- <br/>
+   <br/>
 
   {% if site.pageviews %} <p style="font-style:italic"> <i class="glyphicon glyphicon-signal"></i> pageviews: {{ page.pageviews }}</p>{% endif %}
 
-  <br/> -->
-  <!-- <p><tiny> <i class="glyphicon glyphicon-barcode"></i> SHA Hash: <a href="https://github.com/{{site.author.github}}/{{ site.repo }}/commit/{{page.path | prepend:'_posts/' | git_sha }}/_posts/{{ page.path }}"> {{ page.path | prepend:'_posts/' | git_sha }}</a></tiny></p> -->
+   <br/>
+   <p><tiny> <i class="glyphicon glyphicon-barcode"></i> SHA Hash: <a href="https://github.com/{{site.author.github}}/{{ site.repo }}/commit/{{true_path | git_sha }}/{{ true_path }}"> {{ true_path | git_sha | truncate: 7, "" }}</a></tiny></p>
 </aside>
 
 <br /><br />
 <div style="font-weight:bold; text-align:center;font-size:1.0em;">
  <i class="glyphicon glyphicon-chevron-left"></i> <a href="/archives.html">Archieves by date,</a>
  <i class="glyphicon glyphicon-list"></i> <a href="/categories.html">by category,</a>
- <i class="glyphicon glyphicon-tag"></i> <a href="/tags.html">by tag.</a>
+ <!--<i class="glyphicon glyphicon-tag"></i>--> <a href="/tags.html">by tag.</a>
 </div>

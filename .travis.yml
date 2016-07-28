@@ -1,10 +1,11 @@
 language: ruby
 rvm:
-- 2.2
+- 2.3.0
 cache:
   directories:
   - vendor
   - "$HOME/.composer/cache"
+- 2.3.0
 cache: bundler
 branches:
   only:
@@ -12,7 +13,7 @@ branches:
 before_install:
 - sudo add-apt-repository -y ppa:marutter/c2d4u
 - sudo apt-get update
-- sudo apt-get install pandoc
+- sudo apt-get install pandoc pandoc-citeproc
 - sudo apt-get install gsl-bin libgsl0-dev
 - gem update --system
 - gem install bundler
