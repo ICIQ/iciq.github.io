@@ -89,8 +89,8 @@ Then for a routinely rendering, you only need to run the following command lines
 bundle install
 bundle exec jekyll serve
 ```
-Notice that, I have locked the Jekyll version to `~>2.5.3`.
-If you want to use Jekyll version 3.0.0 or above, you may need to tweak the code a little bit.
+Notice that, I have locked the Jekyll version to `~>3.1.6`.
+If you want to use Jekyll version 2.5 or earlier, you may need to tweak the code a little bit.
 
 If you encounter the missing credentials error for the `twitter_feed` plugin, you may need to export environmental variables `TWIT_KEY`, `TWIT_SECRET`, `TWIT_TOK` and `TWIT_TOK_SECRET` before running the jekyll server. All the credentials of the Twitter plugin should be accessible from the TWitter account used for the site.
 
