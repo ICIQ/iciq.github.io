@@ -5,9 +5,9 @@ tags:
     - summer study
     - quantum optics
 image:
-    - feature: /assets/img/opticallypumpedatoms_featured.jpg
+    feature: /assets/img/opticallypumpedatoms_featured.jpg
 ---
-<center>{% include image.html img="http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg" width="300px" title="laser cooling and optical pumping" %}</center>
+<center>{% include image.html img="http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg"  scale="95%" title="laser cooling and optical pumping" %}</center>
 <br>
 
 As before, we will have a summer study topics for this year:
