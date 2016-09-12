@@ -8,30 +8,30 @@ header: Posts By Tag
   <div class="span12">
     <div class="sidebar">
       <div class="row">
-        <div class="span5">
-        {% for tag in site.tags %} 
+        <div class="col-md-6 col-md-offset-1 col-sm-12">
+        {% for tag in site.tags %}
           <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
           <ul>
-            {% assign pages_list = tag[1] %}  
+            {% assign pages_list = tag[1] %}
             {% include JB/pages_list %}
           </ul>
           {% endfor %}
         </div>
-        <div class="span3">
+        <div class="col-md-4 col-sm-12">
         <!--
         <h3>  All tags </h3>
         <ul class="tag_box inline">
-          {% assign tags_list = site.tags %}  
+          {% assign tags_list = site.tags %}
           {% include JB/tags_list %}
         </ul>
         -->
           <div class='cloud'>
+            <h1> Tag Cloud</h1>
             {% tag_cloud %}
           </div>
 
-        </div> <!-- end span3--> 
-      </div> <!-- end row--> 
-    </div> <!-- end sidebar--> 
+        </div> <!-- end span3-->
+      </div> <!-- end row-->
+    </div> <!-- end sidebar-->
   </div> <!-- end row-->
 </div> <!-- end span12-->
-

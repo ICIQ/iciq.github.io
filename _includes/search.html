@@ -8,10 +8,11 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/assets/css/code_highlights.css" rel="stylesheet">
-    <link href="/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/quattrocento-sans" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/rosario" type="text/css"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href = "/assets/css/bootstrap.min.css" rel = "stylesheet">
     <!-- Tipue search stylesheet -->
     <link href="/assets/css/tipuesearch.css" rel="stylesheet" type="text/css">
   </head>
@@ -21,43 +22,7 @@
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
-
-  <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="./index.html">Xiaodong Qi</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active">
-                <a href="/index.html">Home</a>
-              </li>
-              <li class="active">
-                <a href="/research.html">Research</a>
-              </li>
-              <li class="active">
-                <a href="/pubs/index.html">Publications and Activities</a>
-              </li>
-              <!--<li class="active">
-                <a href="/noteblog.html">Blog</a>
-              </li> -->
-              <li class="active">
-                <a href="/community.html">Community</a>
-              </li>
-             <!--<li class="active">
-                <a href="/tools.html">Tools</a>
-              </li>-->
-           </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include navbar.html %}
 
     <div class="container">
 
@@ -90,7 +55,7 @@
 
           <div class="row">
             <div class="span2">
-             <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{site.orgname}}&repo={{site.repo}}&type=star&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="20px" style="vertical-align: middle; margin-top:9px;"></iframe>
+             <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{site.orgname}}&repo={{site.repo}}&type=star&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150px" height="40px" style="vertical-align:middle; margin-top:9px;"></iframe>
             </div>
             <div class="span1 offset8">
               <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="https://licensebuttons.net/l/by/3.0/88x31.png" style="float:left;margin:0 5 0 0;" alt="CC-BY" /></a>
@@ -105,7 +70,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- search using tipuesearch -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="/assets/js/tipuesearch_set.js"></script>
     <script type="text/javascript" src="/assets/js/tipuesearch_data.js"></script>
     <script type="text/javascript" src="/assets/js/tipuesearch.js"></script>
@@ -134,16 +99,7 @@
 
     <!-- Analytics
     ================================================== -->
-  <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', '{{site.analytics}}']);
-          _gaq.push(['_trackPageview']);
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-  </script>
+  {% include analytics.html %}
 
   </body>
 </html>
