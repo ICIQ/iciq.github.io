@@ -56,5 +56,7 @@
 
 <header class="jumbotron subhead">
     <h1 class="entry-title">{{ page.title }}</h1>
-    <h3>{{ page.subtitle }}</h3>
+    {% if page.subtitle %}
+      <h3> {{page.subtitle}} </h3>
+    {% endif %}
 </header>
