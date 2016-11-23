@@ -19,11 +19,8 @@ http://i2000s.github.io/atom.xml
 http://i2000s.github.io/categories  
 http://i2000s.github.io/community/  
 http://i2000s.github.io/entangle/  
-http://i2000s.github.io/exploringquantumworld.xml  
 http://i2000s.github.io/  
 http://i2000s.github.io/more/  
-http://i2000s.github.io/noteblog  
-http://i2000s.github.io/noteblog.xml  
 http://i2000s.github.io/notebooks  
 http://i2000s.github.io/observe/  
 http://i2000s.github.io/search  
