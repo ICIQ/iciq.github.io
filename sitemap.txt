@@ -10,7 +10,6 @@ layout: default
 http://i2000s.github.io/entangle/ComputationalComplexityGroup  
 http://i2000s.github.io/entangle/MachineLearningGroup  
 http://i2000s.github.io/entangle/QuantumOpticsGroup  
-http://i2000s.github.io/R.xml  
 http://i2000s.github.io/README  
 http://i2000s.github.io/entangle/RoadmapProject  
 http://i2000s.github.io/entangle/WikipediaProject  

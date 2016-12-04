@@ -1,0 +1,20 @@
+*.tex text eol=lf
+*.bbl text eol=lf
+*.bib text eol=lf
+README text eol=lf
+.git* text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.rb text eol=lf
+*xml text eol=lf
+*.less text eol=lf
+*.css text eol=lf
+*.sh text eol=lf
+*.js text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.R text eol=lf
+*.ipynb text eol=lf
+*.csl text eol=lf
+
+*.pdf binary

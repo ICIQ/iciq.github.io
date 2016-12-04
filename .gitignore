@@ -1,0 +1,13 @@
+_plugins/_cache
+_site
+_config
+_TEMP
+_cache
+
+*~
+*.bak
+_twitter.yml
+_garb.yml
+Gemfile.lock
+*.stackdump
+.Rhistory
