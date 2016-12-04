@@ -4,7 +4,7 @@
  <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2016-12-03T23:59:10-07:00</updated>
+ <updated>2016-12-04T07:07:28+00:00</updated>
  <id></id>
  <author>
    <name>ICIQ Community</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Summer group study on Advanced Topics in Quantum Optics II</title>
    <link href="/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II.html"/>
-   <updated>2016-05-27T00:00:00-06:00</updated>
+   <updated>2016-05-27T00:00:00+00:00</updated>
    <id>h/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II</id>
    <content type="html">&lt;center&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -37,7 +37,7 @@
 &lt;p&gt;The time is from June 1st to July 29th (flexible).&lt;/p&gt;
 &lt;p&gt;If you are interested to participate, comment below &lt;a href=&quot;http://i2000s.github.io/2016/05/26/2016-summer-study-on-quantum-optics-II.html&quot;&gt;Xiaodong Qi’s post&lt;/a&gt; or post your academic question on our &lt;a href=&quot;https://disqus.com/home/channel/quantumoptics&quot;&gt;Quantum Optics forum&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Have a fruitful summer of 2016!&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references&quot;&gt;
+&lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
 </content>
@@ -46,7 +46,7 @@
  <entry>
    <title>Enable comments and forums</title>
    <link href="/2016/05/25/Enable-comments-and-forums.html"/>
-   <updated>2016-05-25T00:00:00-06:00</updated>
+   <updated>2016-05-25T00:00:00+00:00</updated>
    <id>h/2016/05/25/Enable-comments-and-forums</id>
    <content type="html">&lt;p&gt;Now you can add comments and discuss sophisticated questions on our topical forums on this site!&lt;/p&gt;
 &lt;p&gt;This has been made possible by reprogramming the site with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and integrating with &lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt; functionalities. Comments are enabled on some pages, like this one (see bottom). We have also created a couple of initial forums. Here they are:&lt;/p&gt;
@@ -56,7 +56,7 @@
 &lt;/ul&gt;
 &lt;p&gt;In the future, you should be able to add new forums to this site by simply adding the Disqus forum name to the configuration file (_config.yml) of the source code. To add a forum or participate discussions using the two functions, you may be asked by the plugin to create/login the Disqus account using your email/social media accounts.&lt;/p&gt;
 &lt;p&gt;Hopefully this helps! And, yeah, comment below if you have questions or suggestions.&lt;/p&gt;
-&lt;div id=&quot;refs&quot; class=&quot;references&quot;&gt;
+&lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
 </content>
