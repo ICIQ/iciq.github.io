@@ -1,30 +1,222 @@
-
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-  {% capture true_path %}{{ post.path }}{% endcapture %} <!-- | replace '_posts/', '' -->
-  {% capture page_modified %}{{ true_path | git_mod }}{% endcapture %}
+  
+   <!-- | replace '_posts/', '' -->
+  
     <url>
-      <loc>{{ site.url }}{{site.baseurl}}{{ post.url }}</loc>
-      <lastmod>{{ true_path | git_mod | date_to_xmlschema }}</lastmod>
+      <loc>http://iciq.github.io//2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II.html</loc>
+      <lastmod>2016-05-28T06:31:36+00:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
-  {% endfor %}
   
-  {% for page in site.pages %}
-  {% capture true_path %}{{ page.path }}{% endcapture %}
-  {% capture page_modified %}{{ true_path | git_mod }}{% endcapture %}
-    {% if page.layout != null and page.layout != search and page.layout != redirect %}
+   <!-- | replace '_posts/', '' -->
+  
+    <url>
+      <loc>http://iciq.github.io//2016/05/25/Enable-comments-and-forums.html</loc>
+      <lastmod>2016-05-26T00:19:43+00:00</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+
+  
+  
+  
+    
       <url>
-        <loc>{{ site.url }}{{site.baseurl}}{{ page.url }}</loc>
-        <lastmod>{{ true_path | git_mod | date_to_xmlschema }}</lastmod>
+        <loc>http://iciq.github.io//entangle/ComputationalComplexityGroup</loc>
+        <lastmod>2016-05-27T02:34:27+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
-    {% endif %}
-  {% endfor %}
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//entangle/MachineLearningGroup</loc>
+        <lastmod>2016-05-27T02:34:27+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//entangle/QuantumOpticsGroup</loc>
+        <lastmod>2016-05-27T02:34:27+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//README</loc>
+        <lastmod>2016-07-28T23:14:07+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//entangle/RoadmapProject</loc>
+        <lastmod>2016-05-27T02:34:27+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//entangle/WikipediaProject</loc>
+        <lastmod>2016-05-27T02:34:27+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//archives</loc>
+        <lastmod>2016-03-07T13:21:53+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//atom.xml</loc>
+        <lastmod>2016-03-07T13:21:53+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//categories</loc>
+        <lastmod>2016-03-07T13:21:53+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//community/</loc>
+        <lastmod>2016-07-28T22:22:29+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//entangle/</loc>
+        <lastmod>2016-05-27T07:34:39+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//</loc>
+        <lastmod>2016-05-28T06:31:36+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//more/</loc>
+        <lastmod>2016-05-27T05:28:03+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//notebooks</loc>
+        <lastmod>2016-07-28T22:31:48+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//observe/</loc>
+        <lastmod>2016-05-27T05:28:03+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//search</loc>
+        <lastmod>2016-03-07T13:21:53+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//sitemap.xml</loc>
+        <lastmod>2016-12-09T04:52:07+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
+  
+  
+    
+      <url>
+        <loc>http://iciq.github.io//tags</loc>
+        <lastmod>2016-07-24T08:25:59+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+       </url>
+    
+  
 </urlset>
