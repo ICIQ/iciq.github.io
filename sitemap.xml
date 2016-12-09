@@ -6,7 +6,7 @@ title: sitemap
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
-  {% capture true_path %}{{ post.path }}{% endcapture %} <!-- | replace '_posts/', '' -->
+  {% capture true_path %}{{ post.path }}{% endcapture %}
   {% capture page_modified %}{{ true_path | git_mod }}{% endcapture %}
     <url>
       <loc>{{ site.url }}{{site.baseurl}}{{ post.url }}</loc>
@@ -15,11 +15,10 @@ title: sitemap
       <priority>1.0</priority>
     </url>
   {% endfor %}
-
   {% for page in site.pages %}
   {% capture true_path %}{{ page.path }}{% endcapture %}
   {% capture page_modified %}{{ true_path | git_mod }}{% endcapture %}
-    {% if page.layout != null and page.layout != search and page.layout != redirect %}
+    {% if page.layout != null and page.layout != search and page.layout != redirect and page.title != sitemap and page.title != Tags and page.title != Categories page.title != search %}
       <url>
         <loc>{{ site.url }}{{site.baseurl}}{{ page.url }}</loc>
         <lastmod>{{ true_path | git_mod | date_to_xmlschema }}</lastmod>
