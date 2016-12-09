@@ -1,1 +1,2 @@
-Sitemap: http://i2000s.github.io/sitemap.txt
+User-agent: *
+Sitemap: https://iciq.github.io/sitemap.xml
