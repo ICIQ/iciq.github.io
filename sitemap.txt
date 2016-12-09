@@ -1,8 +1,0 @@
----
-title : Sitemap
----
-{% for page in site.pages %} 
-http://i2000s.github.io{{ page.url }} {% endfor %}
-
-{% for post in site.posts %} 
-http://i2000s.github.io{{ post.url }} {% endfor %}
