@@ -18,7 +18,7 @@ title: sitemap
   {% for page in site.pages %}
   {% capture true_path %}{{ page.path }}{% endcapture %}
   {% capture page_modified %}{{ true_path | git_mod }}{% endcapture %}
-    {% if page.layout != null and page.layout != search and page.layout != redirect and page.title != sitemap and page.title != Tags and page.title != Categories page.title != search %}
+    {% if page.layout != null and page.layout != 'search' and page.layout != 'redirect' and page.title != 'sitemap' and page.title != 'Tags' and page.title != 'Categories' and page.title != 'Atom Feed' and page.title != 'search' %}
       <url>
         <loc>{{ site.url }}{{site.baseurl}}{{ page.url }}</loc>
         <lastmod>{{ true_path | git_mod | date_to_xmlschema }}</lastmod>
