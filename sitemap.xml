@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   
-   <!-- | replace '_posts/', '' -->
+  
   
     <url>
       <loc>http://iciq.github.io/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II.html</loc>
@@ -10,7 +10,7 @@
       <priority>1.0</priority>
     </url>
   
-   <!-- | replace '_posts/', '' -->
+  
   
     <url>
       <loc>http://iciq.github.io/2016/05/25/Enable-comments-and-forums.html</loc>
@@ -19,7 +19,6 @@
       <priority>1.0</priority>
     </url>
   
-
   
   
   
@@ -92,7 +91,7 @@
     
       <url>
         <loc>http://iciq.github.io/archives</loc>
-        <lastmod>2016-03-07T13:53:09+00:00</lastmod>
+        <lastmod>2016-03-07T14:07:43+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -103,7 +102,7 @@
     
       <url>
         <loc>http://iciq.github.io/atom.xml</loc>
-        <lastmod>2016-03-07T13:53:09+00:00</lastmod>
+        <lastmod>2016-03-07T14:07:43+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -114,7 +113,7 @@
     
       <url>
         <loc>http://iciq.github.io/categories</loc>
-        <lastmod>2016-03-07T13:53:09+00:00</lastmod>
+        <lastmod>2016-03-07T14:07:43+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -191,7 +190,7 @@
     
       <url>
         <loc>http://iciq.github.io/search</loc>
-        <lastmod>2016-03-07T13:53:09+00:00</lastmod>
+        <lastmod>2016-03-07T14:07:43+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
@@ -202,7 +201,7 @@
     
       <url>
         <loc>http://iciq.github.io/sitemap.xml</loc>
-        <lastmod>2016-12-09T04:52:07+00:00</lastmod>
+        <lastmod>2016-12-09T05:20:44+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
        </url>
