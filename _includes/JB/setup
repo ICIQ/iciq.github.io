@@ -6,8 +6,8 @@
     {% include custom/setup %}
   {% else %}
     {% if site.safe and site.JB.BASE_PATH and site.JB.BASE_PATH != '' %}
-      {% assign BASE_PATH = site.JB.BASE_PATH %}
-      {% assign HOME_PATH = site.JB.BASE_PATH %}
+      {% assign BASE_PATH = site.baseurl %}
+      {% assign HOME_PATH = site.baseurl %}
     {% else %}
       {% assign BASE_PATH = nil %}
       {% assign HOME_PATH = "/" %}
@@ -17,6 +17,6 @@
       {% assign ASSET_PATH = site.JB.ASSET_PATH %}
     {% else %}
       {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ page.theme.name }}{% endcapture %}
-    {% endif %}  
+    {% endif %}
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
