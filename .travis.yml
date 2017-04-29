@@ -6,6 +6,8 @@ cache:
   - vendor
   - "$HOME/.composer/cache"
 cache: bundler
+dist: trusty
+sudo: required
 branches:
   only:
   - dev
