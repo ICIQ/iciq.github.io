@@ -137,6 +137,8 @@ exclude:
   - _cache
   - Makefile
   - deploy.sh
+  - publish.sh
+  - nbconv.sh
   - fig.yml
   - _posts/_private/
   - _config/

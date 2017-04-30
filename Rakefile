@@ -8,12 +8,14 @@
 require 'rake'
 require 'date'
 require 'yaml'
-
+# Load configure variables.
+# Note: please double check the excluded file names in the site:deploy part at the end
+# of this file for the special files in the DESTINATION_BRANCH.
 CONFIG = YAML.load(File.read('_config.yml'))
 USERNAME = CONFIG["username"]
 ORGNAME = CONFIG["orgname"]
 REPO = CONFIG["repo"]
-EXTERNAL = "../_site"
+EXTERNAL = "../_site" # The directory where site files are to be cloned via git.
 
 # Determine source and destination branch
 # User or organization: dev -> master
@@ -23,7 +25,7 @@ if REPO == "#{USERNAME}.github.io" || REPO == "#{ORGNAME}.github.io"
   SOURCE_BRANCH = CONFIG['sourcebranch'] || "dev"
   DESTINATION_BRANCH = "master"
 else
-  SOURCE_BRANCH = "master"
+  SOURCE_BRANCH = CONFIG['sourcebranch'] || "dev"
   DESTINATION_BRANCH = "gh-pages"
 end
 
@@ -220,7 +222,7 @@ namespace :site do
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
     Dir.chdir(EXTERNAL) do
-			sh "rsync -a #{WORKDIR}/_site/* ."
+      sh "rsync -a --delete --exclude='.*' #{WORKDIR}/_site/ ."
       sh "git add --all ."
       sh "git commit -m 'Updating to #{sha}.'"
       sh "git push origin #{DESTINATION_BRANCH} --quiet"
