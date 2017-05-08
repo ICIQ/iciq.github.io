@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.3.0
+- 2.3.1
 cache:
   directories:
   - vendor
@@ -15,7 +15,7 @@ before_install:
 - sudo add-apt-repository -y ppa:marutter/c2d4u
 - sudo apt-get update
 - sudo apt-get install pandoc pandoc-citeproc
-- sudo apt-get install gsl-bin libgsl0-dev
+- sudo apt-get install libgsl0-dev libgsl0ldbl
 - gem update --system
 - gem install bundler
 install:
