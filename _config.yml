@@ -9,6 +9,7 @@ author :
   email : iciqproject@gmail.com
   gplus: communities/112872767737673370045
   facebook: groups/488750657941233/
+  reddit: r/QuantumInformation
   ghorgs: # Used in the Javascript of Community page to pull out github repos.
     - name: ICIQ
     - name: CQuIC
