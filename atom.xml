@@ -4,7 +4,7 @@
  <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2017-06-24T20:14:05+00:00</updated>
+ <updated>2017-06-24T21:13:48+00:00</updated>
  <id>http://iciq.github.io</id>
  <author>
    <name>ICIQ Community</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Summer group study on Quantum Chaos, Randomness, Scrambling and Scientific Computing Basics</title>
+   <title>Integrating with Reddit on /r/QuantumInformation</title>
    <link href="/2017/06/24/integrate-with-reddit.html"/>
    <updated>2017-06-24T00:00:00+00:00</updated>
    <id>hhttp://iciq.github.io/2017/06/24/integrate-with-reddit</id>
@@ -24,10 +24,12 @@
 &lt;li&gt;Automatic moderations for spams, flairing, reminders and other administration works. The CSS style and wiki configurations have been polished to a distinguished shape and satisfy our basic needs in discussing problems and sharing progresses.&lt;/li&gt;
 &lt;li&gt;Automatic posting on periodical discussion threads. We will have a Yearly discussion thread to be automatically posted on July 1st. Hopefully, this kind of threads can go monthly or even weekly as we have more members. This feature could be helpful to satisfy both general audience and exports for their needs on different channels.&lt;/li&gt;
 &lt;li&gt;Automatic YouTube videos posting from some well-known research entities. See the &lt;a href=&quot;https://www.reddit.com/r/QuantumInformation/wiki/index#wiki_youtube_and_blog_channels_to_be_automatically_posted_on_this_sub&quot;&gt;wiki&lt;/a&gt; page for suggesting more channels.&lt;/li&gt;
+&lt;li&gt;Automatic posting new posts from this website to the &lt;a href=&quot;https://www.reddit.com/r/quantuminformation&quot;&gt;/r/QuantumInformation&lt;/a&gt; subreddit.&lt;/li&gt;
+&lt;li&gt;Automatic tweeting short messages to the &lt;a href=&quot;https://twitter.com/iciq_project&quot;&gt;ICIQ project twitter page&lt;/a&gt; so that people following the ICIQ twitter account can easily get updates from the subreddit.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Features to be implemented in the near future:
 &lt;ul&gt;
-&lt;li&gt;Automatic posting updates from blogs or other RSS feeds of the community.&lt;/li&gt;
+&lt;li&gt;Automatic posting updates from community blogs or other websites of the community.&lt;/li&gt;
 &lt;li&gt;Automatic tweeting &lt;a href=&quot;https://www.reddit.com/r/quantuminformation&quot;&gt;/r/QuantumInformation&lt;/a&gt; updates to other social media interfaces.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
