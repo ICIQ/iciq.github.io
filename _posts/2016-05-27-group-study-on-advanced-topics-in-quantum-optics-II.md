@@ -11,7 +11,7 @@ image:
 <br>
 
 As before, we will have a summer study topics for this year:
-[Advanced Topics in Quantum Optics II](http://i2000s.github.io/2016/05/26/2016-summer-study-on-quantum-optics-II.html).
+[Advanced Topics in Quantum Optics II](http://i2000s.github.io/en/2016/05/26/2016-summer-study-on-quantum-optics-II.html).
 
 * Proposed main topics:
     * Optical pumping
@@ -20,6 +20,6 @@ As before, we will have a summer study topics for this year:
 
 The time is from June 1st to July 29th (flexible).
 
-If you are interested to participate, comment below [Xiaodong Qi's post](http://i2000s.github.io/2016/05/26/2016-summer-study-on-quantum-optics-II.html) or post your academic question on our [Quantum Optics forum](https://disqus.com/home/channel/quantumoptics).
+If you are interested to participate, comment below [Xiaodong Qi's post](http://i2000s.github.io/en/2016/05/26/2016-summer-study-on-quantum-optics-II.html) or post your academic question on our [Quantum Optics forum](https://disqus.com/home/channel/quantumoptics).
 
 Have a fruitful summer of 2016!
