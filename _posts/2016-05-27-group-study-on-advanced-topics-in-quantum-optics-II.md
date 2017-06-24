@@ -4,13 +4,14 @@ title: Summer group study on Advanced Topics in Quantum Optics II
 tags:
     - summer study
     - quantum optics
+categories: self-study
 image:
     feature: /assets/img/opticallypumpedatoms_featured.jpg
 ---
 <center>{% include image.html img="http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg"  scale="95%" title="laser cooling and optical pumping" %}</center>
 <br>
 
-As before, we will have a summer study topics for this year:
+As before, we will have a summer study plan for this year:
 [Advanced Topics in Quantum Optics II](http://i2000s.github.io/en/2016/05/26/2016-summer-study-on-quantum-optics-II.html).
 
 * Proposed main topics:

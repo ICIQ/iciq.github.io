@@ -4,6 +4,7 @@ title: Enable comments and forums
 tags:
     - features
     - website
+categories: open-source-development
 ---
 
 Now you can add comments and discuss sophisticated questions on our topical forums on this site!
