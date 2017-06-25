@@ -1,23 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
+    <description>Getting ready for the Quantum Times</description>
+    <link>http://iciq.github.io</link>
+    <atom:link href="http://iciq.github.io/atom.xml" rel="self" type="application/rss+xml" />
 
- <title>ICIQ - Information, Computation, Intelligence and Quantum</title>
- <link href="/atom.xml" rel="self"/>
- <link href=""/>
- <updated>2017-06-25T06:09:36+00:00</updated>
- <id>http://iciq.github.io</id>
- <author>
-   <name>ICIQ Community</name>
-   <email>iciqproject@gmail.com</email>
- </author>
-
- 
- <entry>
-   <title>Integrating with Reddit on /r/QuantumInformation</title>
-   <link href="/2017/06/24/integrate-with-reddit.html"/>
-   <updated>2017-06-24T00:00:00+00:00</updated>
-   <id>hhttp://iciq.github.io/2017/06/24/integrate-with-reddit</id>
-   <content type="html">&lt;p&gt;As a trial, ICIQ is testing an integrated connection to &lt;a href=&quot;https://www.reddit.com&quot;&gt;Reddit&lt;/a&gt; which has some interesting features to allow open-source developments and high engagements. Our trial subreddit is called &lt;a href=&quot;https://www.reddit.com/r/quantuminformation&quot;&gt;/r/QuantumInformation&lt;/a&gt;. Please voice up if you have a good idea on how to make it work better than now.&lt;/p&gt;
+   
+        <item>
+          <title>Integrating with Reddit on /r/QuantumInformation</title>
+          <description>&lt;p&gt;As a trial, ICIQ is testing an integrated connection to &lt;a href=&quot;https://www.reddit.com&quot;&gt;Reddit&lt;/a&gt; which has some interesting features to allow open-source developments and high engagements. Our trial subreddit is called &lt;a href=&quot;https://www.reddit.com/r/quantuminformation&quot;&gt;/r/QuantumInformation&lt;/a&gt;. Please voice up if you have a good idea on how to make it work better than now.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Features that have been enabled by some programming works in the past months in hoping to make it work better than other online groups:
 &lt;ul&gt;
@@ -38,15 +30,15 @@
 &lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Summer group study on Quantum Chaos, Randomness, Scrambling and Scientific Computing Basics</title>
-   <link href="/2017/05/20/group-study-on-chaos-randomness-and-scientific-programming-basics.html"/>
-   <updated>2017-05-20T00:00:00+00:00</updated>
-   <id>hhttp://iciq.github.io/2017/05/20/group-study-on-chaos-randomness-and-scientific-programming-basics</id>
-   <content type="html">&lt;p&gt;As before, we will have a &lt;a href=&quot;https://i2000s.github.io/en/2017/05/20/2017-summer-study.html&quot;&gt;summer study plan for this year&lt;/a&gt;.&lt;/p&gt;
+</description>
+          <link>http://iciq.github.io/2017/06/24/integrate-with-reddit.html</link>
+          <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">/2017/06/24/integrate-with-reddit.html</guid>
+        </item>
+   
+        <item>
+          <title>Summer group study on Quantum Chaos, Randomness, Scrambling and Scientific Computing Basics</title>
+          <description>&lt;p&gt;As before, we will have a &lt;a href=&quot;https://i2000s.github.io/en/2017/05/20/2017-summer-study.html&quot;&gt;summer study plan for this year&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Proposed main topics:
 &lt;ul&gt;
@@ -60,15 +52,15 @@
 &lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Summer group study on Advanced Topics in Quantum Optics II</title>
-   <link href="/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II.html"/>
-   <updated>2016-05-27T00:00:00+00:00</updated>
-   <id>hhttp://iciq.github.io/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II</id>
-   <content type="html">&lt;center&gt;
+</description>
+          <link>http://iciq.github.io/2017/05/20/group-study-on-chaos-randomness-and-scientific-programming-basics.html</link>
+          <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">/2017/05/20/group-study-on-chaos-randomness-and-scientific-programming-basics.html</guid>
+        </item>
+   
+        <item>
+          <title>Summer group study on Advanced Topics in Quantum Optics II</title>
+          <description>&lt;center&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;figure&gt;
 &lt;img src=&quot;http://media.wiley.com/product_data/coverImage300/73/35274070/3527407073.jpg&quot;  scale=&quot;95%&quot;    align=&quot;center&quot; alt=&quot;laser cooling and optical pumping&quot;   /&gt;
@@ -91,15 +83,15 @@
 &lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Enable comments and forums</title>
-   <link href="/2016/05/25/Enable-comments-and-forums.html"/>
-   <updated>2016-05-25T00:00:00+00:00</updated>
-   <id>hhttp://iciq.github.io/2016/05/25/Enable-comments-and-forums</id>
-   <content type="html">&lt;p&gt;Now you can add comments and discuss sophisticated questions on our topical forums on this site!&lt;/p&gt;
+</description>
+          <link>http://iciq.github.io/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II.html</link>
+          <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">/2016/05/27/group-study-on-advanced-topics-in-quantum-optics-II.html</guid>
+        </item>
+   
+        <item>
+          <title>Enable comments and forums</title>
+          <description>&lt;p&gt;Now you can add comments and discuss sophisticated questions on our topical forums on this site!&lt;/p&gt;
 &lt;p&gt;This has been made possible by reprogramming the site with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and integrating with &lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt; functionalities. Comments are enabled on some pages, like this one (see bottom). We have also created a couple of initial forums. Here they are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://disqus.com/home/channel/quantuminformationandcomputing&quot;&gt;Quantum Information and Computing&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
@@ -110,8 +102,11 @@
 &lt;div class=&quot;references&quot;&gt;
 
 &lt;/div&gt;
-</content>
- </entry>
- 
-
-</feed>
+</description>
+          <link>http://iciq.github.io/2016/05/25/Enable-comments-and-forums.html</link>
+          <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+          <guid isPermaLink="true">/2016/05/25/Enable-comments-and-forums.html</guid>
+        </item>
+   
+  </channel>
+</rss>
