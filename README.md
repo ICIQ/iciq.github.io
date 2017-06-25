@@ -5,6 +5,7 @@ title: About this site
 ---
 
 [![Build Status](https://travis-ci.org/ICIQ/iciq.github.io.svg?branch=dev)](https://travis-ci.org/ICIQ/iciq.github.io)
+[![Validate my RSS feed](https://iciq.github.io/assets/img/valid-rss-rogers.png)](https://validator.w3.org/feed/check.cgi?url=https%3A//iciq.github.io/atom.xml)
 
 The website for the ICIQ community
 ==================================
