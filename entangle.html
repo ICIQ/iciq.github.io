@@ -17,12 +17,23 @@ keywords: Quantum Information, Quantum Computation, Quantum Intelligence, Quantu
                 Welcome to post your thoughts on the <a href="https://www.reddit.com/{{site.author.reddit}}">QuantumInformation subreddit</a>.
             </div>
 
-            <ul>
+            <div class="col-md-6 col-xs-11">
+             <ul>
                 <li><a href="https://www.reddit.com/{{site.author.reddit}}">QuantumInformation subreddit</a></li>
               {% for item in site.disqus.channel %}
                 <li><a href="https://disqus.com/home/channel/{{item.shortname}}">{{item.name}}</a></li>
               {% endfor %}
-            </ul>
+             </ul>
+            </div>
+
+            <div class="col-md-6 col-xs-11">
+                <h4><a property="account" href="https://twitter.com/{{site.author.twitter}}" onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); return false;"><img src="/assets/img/icon-twitter.png" height=45px alt="Twitter"> Discussing </a></h4>
+                <div class="excerpt" height="300px">
+                    <div class="scroll">
+                        {% twitter_feed iciq_project, 50 %}
+                    </div>
+                </div>
+            </div>
 
             <!-- Divider -->
             <hr class="alt2" style="margin:4em 0 4em 0" />
