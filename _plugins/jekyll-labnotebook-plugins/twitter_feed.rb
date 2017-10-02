@@ -67,4 +67,3 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('twitter_feed', Jekyll::TwitterFeed)
-
