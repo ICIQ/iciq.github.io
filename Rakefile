@@ -30,6 +30,10 @@ else
 end
 
 WORKDIR = Dir.pwd
+# Define the directory for the submodule storage folder.
+if CONFIG['submodule_directory']
+  SUBMODULEDIR = CONFIG['submodule_directory'] # This is relative.
+end
 
 #############################################################################
 #
@@ -94,7 +98,7 @@ end
 
 def check_destination
   unless Dir.exist? EXTERNAL
-    sh "git clone https://#{USERNAME}:#{ENV['GH_TOKEN']}@github.com/#{ORGNAME}/#{REPO}.git #{EXTERNAL}"
+    sh "git clone --recursive https://#{USERNAME}:#{ENV['GH_TOKEN']}@github.com/#{ORGNAME}/#{REPO}.git #{EXTERNAL}"
   end
 end
 
@@ -214,7 +218,12 @@ namespace :site do
     check_destination
 
     sh "git checkout #{SOURCE_BRANCH}"
-    Dir.chdir(EXTERNAL) { sh "git checkout #{DESTINATION_BRANCH}" }
+    Dir.chdir(EXTERNAL) do
+      if (defined? SUBMODULEDIR)
+        sh "rm -rf #{SUBMODULEDIR}" # This is to delete the git file in the submodule folder so that git won't complain when switching to the destination branch where the folder is not a submodule.
+      end
+      sh "git checkout #{DESTINATION_BRANCH}"
+    end
 
     # Generate the site
     sh "bundle exec jekyll build --trace"

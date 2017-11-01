@@ -34,11 +34,17 @@ Additional Site Features & Credits
 * Source code hosting on [Github](https://github.com/ketch/labnotebook) with automatic deployment using [Travis-CI](http://travis-ci.org) and Rake
 * Improved "related posts" plugin from [David Lynch](https://github.com/kemayo/davidlynch.org/blob/master/_plugins/related_posts.rb)
 * Improved publication and citation support from [Jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) with some customizations
+* Allow pulling BibTeX database of bibliography from an external repository using [submodule](https://git-scm.com/docs/git-submodule) for centralized bibliography management
 
 Instruction on hosting the site locally
 =======================================
 I use Ubuntu 16.04 LTS OS to generate the static website from source code.
 Instructions on other operating systems should be similar.
+The first thing to do is to clone the remote repository files to your local computer by
+```
+git clone --recursive https://github.com/iciq/iciq.github.io.git
+```
+where the `--recursive` option is to make sure submodules (if any) are pulled down completely.
 
 If you run Jekyll sites for the first time, you may need to install Ruby v2.3.* (tested on v2.3.0 and v2.3.1) and the `gem` development envirenment.
 I was basically following [this instruction](http://tecadmin.net/install-ruby-on-rails-on-ubuntu/) on my Ubuntu,
@@ -105,7 +111,7 @@ I encourage you to post an issue or make a pull request on this repo or the orig
 Only in this way, the network of people who have adapted this design to their sites can benefit most from the continuous improvement by the community who are following this body of code for open science and beyond.
 Below are the minimum changes you need to make to serve your own purpose of using the source code.
 
-1. Fork this repo under your GitHub account.
+1. Fork this repo under your GitHub account, and then clone the repo to your local folder by `git clone --recursive YOURGITREPOREMOTE`.
 
 2. Change information defined in the `_config.yml` file for your case.
 There you will find definitions for your site, Github account and repo information, as well as your personal contact information.
@@ -136,12 +142,22 @@ The `analytics.html` template in the `_include` directory has the website visiti
 The metadata file also defines the language information and keywords where you should most likely modify for your own version.
 Other information if you don't understand, leaving them alone should be fine in most cases.
 
-The publication and citation databases are defined in the `asset` directory as bibtex files with suffix `.bib`, which you may want to replace with your own.  
-The rest is to delete or keep posts and pages to fit into your needs.
-I suggest to put this source code in a branch other than `master` or `gh-pages` in your Github repository, which you need to define in the `_config.yml` file as the "sourcebranch".
+    The publication and citation databases are defined in the `asset` directory as bibtex files with suffix `.bib`, which you may want to replace with your own.  
+    The rest is to delete or keep posts and pages to fit into your needs.
+    Notice that you can use [submodule](https://git-scm.com/docs/git-submodule) and put references in a folder like `assets/bibliography/refs` to a centralized bibliography database.
+    The information of the submodule is then recorded in the `.gitsubmodules` file under the root direction of the repo.
+    To use your own submodule, add the submodule by `git submodule add -b YOURBibliographyBRANCH https://YOURBibliographyRemoteAddress.git assets/bibliography/refs`.
+    It might be also necessary to run `git submodule init` or `git submodule update` to pull your submodule files into the actual folder if it's empty.
+    After that, you also need to update the bibliography address in the corresponding `pandoc` bibliography extension configuration item of the `_config.yml` file.
+    One advantage of using the [submodule](https://git-scm.com/docs/git-submodule) feature of Git is that you can commit and push changes from this webpage repo to your bibliography repo on the specific branch and vice verse. Changes of the submodule can be committed in the corresponding submodule folder using Git the same as an independent git repo.
+    When you want to pull changes from the centralized bibliography repo, you can use `git submodule update --remote` and the webpage repo will have the corresponding SHA reference recorded in the git configuration file.
+    Make sure you always commit the submodule changes before committing to this webpage development repo (also regarded as the *superproject*).
+
+I suggest to put this source code in a branch other than `master` or `gh-pages` in your Github repository, which you need to define in the `_config.yml` file as the `sourcebranch`.
 The Travis-CI server will commit the generate website onto the `master` or `gh-pages` github branch depending on your case.
 Once you have all the necessary configurations done, Travis-CI will be happily deploying your site on Github.
 If you want the site to be deployed on a host other than Github, you may want to modify and run the `publish.sh` bash script to synchronize your locally generated `_site` folder or the master/gh-pages branch updated by Travis-CI to your target site host.
+
 
 
 Copyrights and Licenses
