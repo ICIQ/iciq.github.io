@@ -126,6 +126,9 @@ defaults:
     values:
       layout: "post"
 
+# This is the directory/file to be deleted in the compiled folder before committing. Separate entries with blank if there are more than one. Use relative address.
+delete_directory: assets/bibliography/refs
+# Files to ignore in compiling.
 exclude:
   - Gemfile
   - Gemfile.lock

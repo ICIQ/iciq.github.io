@@ -31,3 +31,4 @@ gem 'rb-gsl'
 #gem 'narray', :git => "https://github.com/tonyarnold/narray"
 #gem 'gsl', :git => "https://github.com/tonyarnold/rb-gsl"
 #gem 'gsl', :git => 'git://github.com/siefca/rb-gsl'
+gem 'latex-decode', '0.2.2' # There seems to be a problem with 0.3.0.
