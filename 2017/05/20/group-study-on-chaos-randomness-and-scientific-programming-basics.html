@@ -118,7 +118,7 @@ var _hmt = _hmt || [];
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54f627261121ebae" async="async"></script>
 
-  <body>
+  <body onload="load()"> <!-- load() is to offset the navbar for anchor links. -->
 
   
 <!-- Navbar  ================================================== -->
@@ -455,6 +455,12 @@ $(document).ready(function() {
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src = "https://code.jquery.com/jquery.js"></script>-->
 
+    <!-- Offset the navbar for anchor tab links. Ref: https://github.com/twbs/bootstrap/issues/1768 -->
+    <script>
+      var shiftWindow = function() { scrollBy(0, -50) };
+      window.addEventListener("hashchange", shiftWindow);
+      function load() { if (window.location.hash) shiftWindow(); }
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src = "/assets/js/bootstrap.min.js"></script>
 

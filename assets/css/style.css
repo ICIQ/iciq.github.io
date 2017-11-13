@@ -845,3 +845,6 @@ clear:both;
   	font-size: .85em;
   	padding: 10px;
   }
+
+  /* -- This is to make the references of citations list in the citation order and numbered correctly. See the source code of the post github.com/i2000s/en/_posts/2016-07-23... for example. --*/
+  .referencelist ol{list-style-type:none;padding-left:0;margin-left:0;}
