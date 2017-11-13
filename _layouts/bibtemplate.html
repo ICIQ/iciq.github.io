@@ -17,8 +17,8 @@
 {% if entry.doi %} <li><a href="http://dx.doi.org/{{entry.doi}}" target="_blank">Link</a></li>
 {% elsif entry.url %}<li><a href="{{entry.url}}" target="_blank">Link</a></li>
 {% elsif entry.website %}<li><a href="{{ entry.website }}" target="_blank">Link</a></li>{% endif %}
-{% if entry.arxiv %}<li><a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a></li>
-{% elsif entry.archiveprefix == "arXiv" %}<li><a href="http://arxiv.org/abs/{{ entry.eprint }}" target="_blank">arXiv</a></li>{%endif%}
+{% if entry.arxiv %}<li><a href="https://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">ePrint</a></li>
+{% elsif entry.archiveprefix == "arXiv" %}<li><a href="https://arxiv.org/abs/{{ entry.eprint }}" target="_blank">ePrint</a></li>{%endif%}
 {% if entry.repo %}<li><a href="{{ entry.repo }}" target="_blank">Source</a></li>{%endif%}
 <!--{% if entry.gsid %}<li><img src="/assets/img/logos/icon-scholar-s.png" height="10px"> {%capture test_gsid%}<a href="{{ gsid_add }}{{ entry.gsid}}" target="_blank">{%endcapture%}{{test_gsid}}Cite</a></li>{% endif %}-->
 {% if entry.image %}<li><img src="{{ entry.image }}" height="15px"></li>{%endif%}

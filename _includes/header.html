@@ -50,7 +50,7 @@
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{site.addthis.pubid}}" async="async"></script>
 
-  <body>
+  <body onload="load()"> <!-- load() is to offset the navbar for anchor links. -->
 
   {% include navbar.html %}
 

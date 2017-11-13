@@ -49,7 +49,7 @@
     //});
     </script>
     <!-- Twitter Bootstrap Javascript -->
-    <script src="/assets/js/bootstrap-collapse.js"></script> <!-- for collapsing navbar-->
+    <script src="{{ site.baseurl }}/assets/js/bootstrap-collapse.js"></script> <!-- for collapsing navbar-->
     <!-- Unused Twitter Bootstrap Javascript
     <script src="{{ site.url }}/assets/js/bootstrap-dropdown.js"></script>
     <script src="{{ site.url }}/assets/js/google-code-prettify/prettify.js"></script>
@@ -68,5 +68,11 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src = "https://code.jquery.com/jquery.js"></script>-->
 
+    <!-- Offset the navbar for anchor tab links. Ref: https://github.com/twbs/bootstrap/issues/1768 -->
+    <script>
+      var shiftWindow = function() { scrollBy(0, -50) };
+      window.addEventListener("hashchange", shiftWindow);
+      function load() { if (window.location.hash) shiftWindow(); }
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src = "/assets/js/bootstrap.min.js"></script>
+    <script src = "{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>

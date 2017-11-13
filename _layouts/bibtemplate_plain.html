@@ -1,0 +1,13 @@
+---
+  layout: default
+  permalink: /pubs/
+  title: "Publications"
+  modified: 2016-02-13 15:47
+  tags: [publications]
+  share: true
+---
+<!--{% assign gsid_add= 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=' %}-->
+{{ reference }}
+{% if entry.note %}<mark> ({{ entry.note }})</mark>
+{% elsif entry.comment %}<mark> ({{ entry.comment }})</mark>
+{% endif %}

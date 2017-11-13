@@ -1,0 +1,25 @@
+---
+  layout: default
+  permalink: /pubs/
+  title: "Publications"
+  modified: 2016-02-13 15:47
+  tags: [publications]
+  share: true
+---
+<!--{% assign gsid_add= 'https://scholar.google.com/scholar?oi=bibs&hl=en&cites=' %}-->
+<div id="{{key}}-materials">
+<ul class="nav nav-pills" style="margin-top:0px;padding-top:2px;padding-bottom:2px;">
+<li>{{ reference }}
+{% if entry.note %}<mark> ({{ entry.note }})</mark>
+{% elsif entry.comment %}<mark> ({{ entry.comment }})</mark>
+{% endif %}</li>
+{% if entry.abstract %}  <li><a style="margin-top:-10px;padding-top=0px;padding-bottom:0px;" data-toggle="collapse" href="#{{key}}-abstract">Abstract</a> </li>{% endif %}
+{% if entry.doi %} <li><a style="margin-top:-10px;padding-top=0px;padding-bottom:0px;" href="https://dx.doi.org/{{entry.doi}}" target="_blank">Link</a></li>
+{% elsif entry.url %}<li><a style="margin-top:-10px;padding-top=0px;padding-bottom:0px;" href="{{entry.url}}" target="_blank">Link</a></li>
+{% elsif entry.website %}<li><a style="margin-top:-10px;padding-top=0px;padding-bottom:0px;" href="{{ entry.website }}" target="_blank">Link</a></li>{% endif %}
+{% if entry.arxiv %}<li><a style="margin-top:-10px;padding-top=0px;padding-bottom:0px;" href="https://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">ePrint</a></li>
+{% elsif entry.archiveprefix == "arXiv" %}<li><a style="margin-top:-10px;padding-top=0px;padding-bottom:0px;" href="https://arxiv.org/abs/{{ entry.eprint }}" target="_blank">ePrint</a></li>{%endif%}
+{% if entry.repo %}<li><a style="margin-top:-10px;padding-top=0px;padding-bottom:0px;" href="{{ entry.repo }}" target="_blank">Repo</a></li>{%endif%}
+</ul>
+{% if entry.abstract %}  <p id="{{key}}-abstract" class="collapse">{{entry.abstract}}</p>{% endif %}
+</div>
