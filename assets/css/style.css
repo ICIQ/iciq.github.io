@@ -578,7 +578,6 @@ div.excerpt{height:200px;overflow:hidden}div.scroll{width:110%;height:110%;overf
 Ref:http://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside -- */
 figure {
    display: table;
-   width: 10px;
 }
 
 figcaption {
