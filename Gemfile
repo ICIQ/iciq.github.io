@@ -26,7 +26,7 @@ gem "redcarpet"
 ## Working locally only
 gem "garb" #, "~> 0.9.8"    # Google Analytics API
 
-gem 'classifier-reborn', '>=2.0.4', :git => "https://github.com/jekyll/classifier-reborn" # To fix the equal sign warning.
+gem 'classifier-reborn', '~>2.2'  #, :git => "https://github.com/jekyll/classifier-reborn" # To fix the equal sign warning.gem 
 gem 'rb-gsl'
 #gem 'narray', :git => "https://github.com/tonyarnold/narray"
 #gem 'gsl', :git => "https://github.com/tonyarnold/rb-gsl"
