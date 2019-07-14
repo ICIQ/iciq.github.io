@@ -1,6 +1,7 @@
 require 'feedjira' # atom/rss API
 require 'octokit'   # Github API
 require 'nokogiri'  # Parse HTML
+require 'httparty' # To use feedjira v3.0
 
 # Github repo commit feed based on feedzirra rather than the Github API.
 # By Xiaodong Qi, based on the github_feed.rb plugin.
@@ -19,8 +20,9 @@ module Jekyll
     end
     def render(context)
       Feedjira.logger.level = Logger::FATAL # Hide log of warning. See https://github.com/feedjira/feedjira/issues/380 also the earlier warning message: https://travis-ci.org/i2000s/en/builds/207516706
-      puts "Generating Github repo feed from rss using feedzirra with github_repo_feed.rb"
-      feed = Feedjira::Feed.fetch_and_parse("https://github.com/" + @user + "/" + @repo + "/commits.atom") # This will call the rss from the repo's default branch.
+      puts "Generating Github repo feed from rss using feedjira with github_repo_feed.rb"
+      xml = HTTParty.get("https://github.com/" + @user + "/" + @repo + "/commits.atom").body # Updated for Feedjira 3.0
+      feed = Feedjira.parse(xml) # This will call the rss from the repo's default branch.
       # consider formatting properly
       if defined?(feed.entries)
         out = "<ul>"

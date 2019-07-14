@@ -15,7 +15,8 @@ gem "json"            #, '~>1.8'
 gem "octokit"#, "~> 2.0"   # Github API (octokit plugin)
 gem "twitter"#, "~> 5.8.0" # Twitter API
 gem "nokogiri", ">=1.6.8"            # HTML / XML parser
-gem "feedjira"            # Atom/RSS parser
+gem "httparty"
+gem "feedjira", "~>3.0.0"            # Atom/RSS parser
 gem "chronic"             # Natural language time parser
 gem 'jekyll-twitter-plugin' # For twitter API.
 
